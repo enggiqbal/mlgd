@@ -1,3 +1,5 @@
+#see license.txt 
+
 import networkx as nx
 import pygraphviz as pgv
 import json

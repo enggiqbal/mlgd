@@ -1,0 +1,20 @@
+{
+  "name": "multilayergraph",
+  "version": "1.0.0",
+  "description": "map app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel direct.html   -p 8086 --host uamap-dev.arl.arizona.edu ",
+    "build": "parcel build --public-url . *.html "
+  },
+  "author": "Iqbal Hossain",
+  "license": "Apache License, Version 2.0",
+  "dependencies": {
+    "express": "^4.16.4",
+    "ol": "^5.3.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}

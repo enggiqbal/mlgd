@@ -1,3 +1,4 @@
+#see license.txt 
 import xml.etree.ElementTree as ET
 import numpy as np
 import json
@@ -25,9 +26,10 @@ def getLayer0(t1):
 
 
 
-
-mappath="/Users/iqbal/MLGD/mlgd/pipeline/direct_approach/direct2/map/T8.dotmap.svg"
-inputdir="/Users/iqbal/MLGD/mlgd/datasets/topics/set2/input/"
+#for direct approach
+#mappath="../direct_approach_output/direct2/map/T8.dotmap.svg"
+mappath="../impred_output/map/map.svg"
+inputdir="../datasets/topics/set2/input/"
 
 input_graph="Topics_Graph.dot"
 layer_file_format="Topics_layer_{0}.dot"
@@ -64,11 +66,18 @@ def getLevel(x):
 
 
 
+#for direct approach
+#clusteroutput="../visualization_system/cluster.geojson"
+#polylineoutput="../visualization_system/cluster_boundary.geojson"
+#edgesoutput="../visualization_system/edges.geojson"
+#nodesoutput="../visualization_system/nodes.geojson"
 
-clusteroutput="/Users/iqbal/openlayerapp/cluster.geojson"
-polylineoutput="/Users/iqbal/openlayerapp/cluster_boundary.geojson"
-edgesoutput="/Users/iqbal/openlayerapp/edges.geojson"
-nodesoutput="/Users/iqbal/openlayerapp/nodes.geojson"
+
+clusteroutput="../visualization_system/im_cluster.geojson"
+polylineoutput="../visualization_system/im_cluster_boundary.geojson"
+edgesoutput="../visualization_system/im_edges.geojson"
+nodesoutput="../visualization_system/im_nodes.geojson"
+
 
 root = ET.parse(mappath).getroot()
 n={}
