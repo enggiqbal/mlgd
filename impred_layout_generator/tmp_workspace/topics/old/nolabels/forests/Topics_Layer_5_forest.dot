@@ -1,0 +1,4682 @@
+strict graph  {
+	4503	 [label="b'tourism'",
+		level=2];
+	4972	 [label="b'leisure'",
+		level=5];
+	4503 -- 4972;
+	4973	 [label="b'hospitality'",
+		level=5];
+	4503 -- 4973;
+	4970	 [label="b'recreation'",
+		level=5];
+	4503 -- 4970;
+	4971	 [label="b'sustainable tourism'",
+		level=5];
+	4503 -- 4971;
+	1036	 [label="b'evolutionary robotics'",
+		level=5];
+	838	 [label="b'artificial intelligence'",
+		level=1];
+	1036 -- 838;
+	2389	 [label="b'control theory'",
+		level=1];
+	4963	 [label="b'applications'",
+		level=5];
+	2389 -- 4963;
+	3190	 [label="b'regulatory genomics'",
+		level=5];
+	661	 [label="b'computational biology'",
+		level=1];
+	3190 -- 661;
+	476	 [label="b'neuroimaging'",
+		level=1];
+	2474	 [label="b'brain development'",
+		level=5];
+	476 -- 2474;
+	498	 [label="b'dopamine'",
+		level=3];
+	4934	 [label="b'serotonin'",
+		level=5];
+	498 -- 4934;
+	3329	 [label="b'cancer metabolism'",
+		level=5];
+	317	 [label="b'cancer biology'",
+		level=1];
+	3329 -- 317;
+	5191	 [label="b'uwb'",
+		level=5];
+	2658	 [label="b'rfid'",
+		level=3];
+	5191 -- 2658;
+	5086	 [label="b'lithic technology'",
+		level=5];
+	5080	 [label="b'human evolution'",
+		level=2];
+	5086 -- 5080;
+	5445	 [label="b'paleolithic archaeology'",
+		level=5];
+	5086 -- 5445;
+	1775	 [label="b'banking'",
+		level=2];
+	3721	 [label="b'money'",
+		level=5];
+	1775 -- 3721;
+	4758	 [label="b'mm'",
+		level=5];
+	4614	 [label="b'qm'",
+		level=5];
+	4758 -- 4614;
+	1685	 [label="b'language production'",
+		level=5];
+	1007	 [label="b'cognitive science'",
+		level=1];
+	1685 -- 1007;
+	618	 [label="b'astrophysics'",
+		level=1];
+	1151	 [label="b'astronomical instrumentation'",
+		level=5];
+	618 -- 1151;
+	1149	 [label="b'radio astronomy'",
+		level=5];
+	618 -- 1149;
+	532	 [label="b'parkinson s disease'",
+		level=2];
+	5806	 [label="b'deep brain stimulation'",
+		level=5];
+	532 -- 5806;
+	442	 [label="b'nuclear weapons'",
+		level=5];
+	430	 [label="b'international relations'",
+		level=1];
+	442 -- 430;
+	5253	 [label="b'pensions'",
+		level=5];
+	1177	 [label="b'retirement'",
+		level=5];
+	5253 -- 1177;
+	2896	 [label="b'construction'",
+		level=3];
+	5305	 [label="b'building materials'",
+		level=5];
+	2896 -- 5305;
+	311	 [label="b'quorum sensing'",
+		level=5];
+	241	 [label="b'microbiology'",
+		level=1];
+	311 -- 241;
+	787	 [label="b'community ecology'",
+		level=1];
+	1650	 [label="b'species interactions'",
+		level=5];
+	787 -- 1650;
+	1654	 [label="b'ecological networks'",
+		level=5];
+	787 -- 1654;
+	962	 [label="b'digital image processing'",
+		level=5];
+	659	 [label="b'machine learning'",
+		level=1];
+	962 -- 659;
+	2730	 [label="b'transition'",
+		level=5];
+	2715	 [label="b'transportation'",
+		level=1];
+	2730 -- 2715;
+	526	 [label="b'neuropsychopharmacology'",
+		level=5];
+	327	 [label="b'neuroscience'",
+		level=1];
+	526 -- 327;
+	2491	 [label="b'information forensics'",
+		level=5];
+	1637	 [label="b'security'",
+		level=1];
+	2491 -- 1637;
+	2333	 [label="b'architecture'",
+		level=1];
+	2346	 [label="b'digital fabrication'",
+		level=5];
+	2333 -- 2346;
+	2343	 [label="b'space'",
+		level=5];
+	2333 -- 2343;
+	2347	 [label="b'architectural theory'",
+		level=5];
+	2333 -- 2347;
+	2351	 [label="b'urban history'",
+		level=5];
+	2333 -- 2351;
+	5812	 [label="b'ethnomethodology'",
+		level=5];
+	4363	 [label="b'conversation analysis'",
+		level=3];
+	5812 -- 4363;
+	507	 [label="b'alzheimer s disease'",
+		level=2];
+	5270	 [label="b'mild cognitive impairment'",
+		level=5];
+	507 -- 5270;
+	4904	 [label="b'gesture'",
+		level=5];
+	4901	 [label="b'cognitive development'",
+		level=2];
+	4904 -- 4901;
+	4813	 [label="b'authoritarianism'",
+		level=5];
+	418	 [label="b'democratization'",
+		level=3];
+	4813 -- 418;
+	4902	 [label="b'comparative psychology'",
+		level=5];
+	4898	 [label="b'developmental psychology'",
+		level=2];
+	4902 -- 4898;
+	1607	 [label="b'iot'",
+		level=2];
+	5624	 [label="b'wsn'",
+		level=5];
+	1607 -- 5624;
+	4925	 [label="b'stretchable electronics'",
+		level=5];
+	5569	 [label="b'flexible'",
+		level=5];
+	4925 -- 5569;
+	3719	 [label="b'flexible electronics'",
+		level=2];
+	4925 -- 3719;
+	1766	 [label="b'law'",
+		level=1];
+	4477	 [label="b'property'",
+		level=5];
+	1766 -- 4477;
+	4476	 [label="b'courts'",
+		level=5];
+	1766 -- 4476;
+	4472	 [label="b'contracts'",
+		level=5];
+	1766 -- 4472;
+	4478	 [label="b'private law'",
+		level=5];
+	1766 -- 4478;
+	4479	 [label="b'legal history'",
+		level=5];
+	1766 -- 4479;
+	4475	 [label="b'legal profession'",
+		level=5];
+	1766 -- 4475;
+	4710	 [label="b'relationship marketing'",
+		level=5];
+	4709	 [label="b'marketing strategy'",
+		level=3];
+	4710 -- 4709;
+	1778	 [label="b'urban economics'",
+		level=2];
+	5003	 [label="b'regional'",
+		level=5];
+	1778 -- 5003;
+	4468	 [label="b'ictd'",
+		level=5];
+	4460	 [label="b'hci'",
+		level=1];
+	4468 -- 4460;
+	1226	 [label="b'positron emission tomography'",
+		level=5];
+	1223	 [label="b'nuclear medicine'",
+		level=3];
+	1226 -- 1223;
+	3316	 [label="b'drug design'",
+		level=2];
+	5005	 [label="b'virtual screening'",
+		level=5];
+	3316 -- 5005;
+	856	 [label="b'medical image analysis'",
+		level=2];
+	4459	 [label="b'computer aided diagnosis'",
+		level=5];
+	856 -- 4459;
+	3025	 [label="b'molecular biophysics'",
+		level=5];
+	3011	 [label="b'structural biology'",
+		level=1];
+	3025 -- 3011;
+	1051	 [label="b'intelligent robotics'",
+		level=5];
+	838 -- 1051;
+	1070	 [label="b'computational creativity'",
+		level=5];
+	838 -- 1070;
+	1042	 [label="b'natural language understanding'",
+		level=5];
+	838 -- 1042;
+	1027	 [label="b'developmental robotics'",
+		level=5];
+	838 -- 1027;
+	1021	 [label="b'collective intelligence'",
+		level=5];
+	838 -- 1021;
+	1067	 [label="b'artificial neural networks'",
+		level=5];
+	838 -- 1067;
+	1008	 [label="b'expert systems'",
+		level=5];
+	838 -- 1008;
+	1028	 [label="b'procedural content generation'",
+		level=5];
+	838 -- 1028;
+	1025	 [label="b'probabilistic programming'",
+		level=5];
+	838 -- 1025;
+	1052	 [label="b'computational social choice'",
+		level=5];
+	838 -- 1052;
+	1037	 [label="b'agents'",
+		level=5];
+	838 -- 1037;
+	1054	 [label="b'answer set programming'",
+		level=5];
+	838 -- 1054;
+	1039	 [label="b'probabilistic inference'",
+		level=5];
+	838 -- 1039;
+	1044	 [label="b'rough sets'",
+		level=5];
+	838 -- 1044;
+	1035	 [label="b'heuristic search'",
+		level=5];
+	838 -- 1035;
+	1031	 [label="b'relational learning'",
+		level=5];
+	838 -- 1031;
+	3715	 [label="b'asteroids'",
+		level=5];
+	3696	 [label="b'planetary science'",
+		level=2];
+	3715 -- 3696;
+	5761	 [label="b'comets'",
+		level=5];
+	3715 -- 5761;
+	3394	 [label="b'er stress'",
+		level=5];
+	3370	 [label="b'diabetes'",
+		level=1];
+	3394 -- 3370;
+	2643	 [label="b'head'",
+		level=3];
+	2647	 [label="b'neck surgery'",
+		level=5];
+	2643 -- 2647;
+	2644	 [label="b'otolaryngology'",
+		level=5];
+	2643 -- 2644;
+	5693	 [label="b'materials design'",
+		level=5];
+	5692	 [label="b'computational materials science'",
+		level=2];
+	5693 -- 5692;
+	4618	 [label="b'energy transfer'",
+		level=5];
+	4158	 [label="b'ultrafast spectroscopy'",
+		level=2];
+	4618 -- 4158;
+	5527	 [label="b'prions'",
+		level=5];
+	515	 [label="b'neurodegenerative diseases'",
+		level=2];
+	5527 -- 515;
+	2318	 [label="b'mbe'",
+		level=5];
+	110	 [label="b'solar cells'",
+		level=1];
+	2318 -- 110;
+	5850	 [label="b'biochemical engineering'",
+		level=5];
+	304	 [label="b'biotechnology'",
+		level=1];
+	5850 -- 304;
+	589	 [label="b'entrepreneurship'",
+		level=1];
+	4192	 [label="b'small business'",
+		level=5];
+	589 -- 4192;
+	4181	 [label="b'crowdfunding'",
+		level=5];
+	589 -- 4181;
+	4184	 [label="b'social innovation'",
+		level=5];
+	589 -- 4184;
+	4193	 [label="b'corporate entrepreneurship'",
+		level=5];
+	589 -- 4193;
+	4655	 [label="b'handwriting recognition'",
+		level=5];
+	862	 [label="b'pattern recognition'",
+		level=1];
+	4655 -- 862;
+	3543	 [label="b'magnetosphere'",
+		level=5];
+	3541	 [label="b'ionosphere'",
+		level=3];
+	3543 -- 3541;
+	1305	 [label="b'geomorphology'",
+		level=1];
+	2572	 [label="b'quaternary'",
+		level=5];
+	1305 -- 2572;
+	2579	 [label="b'morphodynamics'",
+		level=5];
+	1305 -- 2579;
+	2583	 [label="b'coastal processes'",
+		level=5];
+	1305 -- 2583;
+	2575	 [label="b'quaternary science'",
+		level=5];
+	1305 -- 2575;
+	926	 [label="b'causality'",
+		level=5];
+	659 -- 926;
+	908	 [label="b'biomedicine'",
+		level=5];
+	659 -- 908;
+	875	 [label="b'unsupervised learning'",
+		level=5];
+	659 -- 875;
+	931	 [label="b'distributed optimization'",
+		level=5];
+	659 -- 931;
+	922	 [label="b'multimedia information retrieval'",
+		level=5];
+	659 -- 922;
+	864	 [label="b'high-dimensional data'",
+		level=5];
+	659 -- 864;
+	866	 [label="b'bayesian networks'",
+		level=5];
+	659 -- 866;
+	933	 [label="b'variable selection'",
+		level=5];
+	659 -- 933;
+	916	 [label="b'probabilistic graphical models'",
+		level=5];
+	659 -- 916;
+	895	 [label="b'probabilistic modeling'",
+		level=5];
+	659 -- 895;
+	937	 [label="b'big data analysis'",
+		level=5];
+	659 -- 937;
+	909	 [label="b'numerical optimization'",
+		level=5];
+	659 -- 909;
+	898	 [label="b'speech signal processing'",
+		level=5];
+	659 -- 898;
+	865	 [label="b'feature selection'",
+		level=5];
+	659 -- 865;
+	873	 [label="b'transfer learning'",
+		level=5];
+	659 -- 873;
+	953	 [label="b'gesture recognition'",
+		level=5];
+	659 -- 953;
+	872	 [label="b'emotion recognition'",
+		level=5];
+	659 -- 872;
+	867	 [label="b'predictive modeling'",
+		level=5];
+	659 -- 867;
+	934	 [label="b'bayesian methods'",
+		level=5];
+	659 -- 934;
+	859	 [label="b'anomaly detection'",
+		level=5];
+	659 -- 859;
+	2969	 [label="b'rdf'",
+		level=5];
+	1010	 [label="b'semantic web'",
+		level=1];
+	2969 -- 1010;
+	2091	 [label="b'visual computing'",
+		level=5];
+	1518	 [label="b'computer graphics'",
+		level=1];
+	2091 -- 1518;
+	320	 [label="b'cellular'",
+		level=5];
+	282	 [label="b'molecular biology'",
+		level=1];
+	320 -- 282;
+	4291	 [label="b'compressible flow'",
+		level=5];
+	3757	 [label="b'turbulence'",
+		level=1];
+	4291 -- 3757;
+	1210	 [label="b'agricultural economics'",
+		level=2];
+	1218	 [label="b'food policy'",
+		level=5];
+	1210 -- 1218;
+	1219	 [label="b'agribusiness'",
+		level=5];
+	1210 -- 1219;
+	5007	 [label="b'astrodynamics'",
+		level=5];
+	3616	 [label="b'celestial mechanics'",
+		level=5];
+	5007 -- 3616;
+	3761	 [label="b'flow control'",
+		level=3];
+	5363	 [label="b'experimental fluid mechanics'",
+		level=5];
+	3761 -- 5363;
+	2322	 [label="b'photodetectors'",
+		level=5];
+	110 -- 2322;
+	2320	 [label="b'transistors'",
+		level=5];
+	110 -- 2320;
+	673	 [label="b'translational medicine'",
+		level=5];
+	346	 [label="b'bioinformatics'",
+		level=1];
+	673 -- 346;
+	306	 [label="b'microbiota'",
+		level=5];
+	306 -- 241;
+	4595	 [label="b'dental implants'",
+		level=5];
+	2874	 [label="b'dentistry'",
+		level=2];
+	4595 -- 2874;
+	1525	 [label="b'autonomous robotics'",
+		level=5];
+	841	 [label="b'computer vision'",
+		level=1];
+	1525 -- 841;
+	2971	 [label="b'ontology engineering'",
+		level=5];
+	2971 -- 1010;
+	4549	 [label="b'cell adhesion'",
+		level=4];
+	4550	 [label="b'integrins'",
+		level=5];
+	4549 -- 4550;
+	3093	 [label="b'biomarker discovery'",
+		level=5];
+	660	 [label="b'proteomics'",
+		level=1];
+	3093 -- 660;
+	1485	 [label="b'biofuels'",
+		level=1];
+	3440	 [label="b'supercritical fluids'",
+		level=5];
+	1485 -- 3440;
+	3441	 [label="b'bioprocessing'",
+		level=5];
+	1485 -- 3441;
+	1679	 [label="b'ad hoc networks'",
+		level=5];
+	1656	 [label="b'wireless networks'",
+		level=1];
+	1679 -- 1656;
+	3016	 [label="b'protein science'",
+		level=5];
+	315	 [label="b'biochemistry'",
+		level=1];
+	3016 -- 315;
+	5651	 [label="b'model reduction'",
+		level=5];
+	5406	 [label="b'uncertainty quantification'",
+		level=2];
+	5651 -- 5406;
+	1858	 [label="b'philosophy of science'",
+		level=2];
+	5500	 [label="b'philosophy of physics'",
+		level=5];
+	1858 -- 5500;
+	1684	 [label="b'categorization'",
+		level=5];
+	1684 -- 1007;
+	1539	 [label="b'biomedical image processing'",
+		level=5];
+	1539 -- 841;
+	4320	 [label="b'cloud physics'",
+		level=5];
+	3482	 [label="b'aerosols'",
+		level=2];
+	4320 -- 3482;
+	381	 [label="b'cooperation'",
+		level=2];
+	4810	 [label="b'social dilemmas'",
+		level=5];
+	381 -- 4810;
+	1077	 [label="b'category theory'",
+		level=3];
+	5470	 [label="b'homological algebra'",
+		level=5];
+	1077 -- 5470;
+	3857	 [label="b'eor'",
+		level=5];
+	3852	 [label="b'petroleum engineering'",
+		level=3];
+	3857 -- 3852;
+	4233	 [label="b'functional connectivity'",
+		level=5];
+	488	 [label="b'fmri'",
+		level=1];
+	4233 -- 488;
+	729	 [label="b'evolutionary biology'",
+		level=1];
+	2485	 [label="b'ecological genetics'",
+		level=5];
+	729 -- 2485;
+	2478	 [label="b'plant reproduction'",
+		level=5];
+	729 -- 2478;
+	2480	 [label="b'morphometrics'",
+		level=5];
+	729 -- 2480;
+	1168	 [label="b'aging'",
+		level=1];
+	1168 -- 1177;
+	1182	 [label="b'senescence'",
+		level=5];
+	1168 -- 1182;
+	1776	 [label="b'public budgeting'",
+		level=5];
+	1764	 [label="b'finance'",
+		level=1];
+	1776 -- 1764;
+	847	 [label="b'natural language processing'",
+		level=1];
+	1984	 [label="b'dialogue'",
+		level=5];
+	847 -- 1984;
+	1988	 [label="b'dialogue systems'",
+		level=5];
+	847 -- 1988;
+	1996	 [label="b'natural language generation'",
+		level=5];
+	847 -- 1996;
+	1994	 [label="b'parsing'",
+		level=5];
+	847 -- 1994;
+	1985	 [label="b'sentic computing'",
+		level=5];
+	847 -- 1985;
+	1308	 [label="b'irrigation'",
+		level=3];
+	3991	 [label="b'drainage'",
+		level=5];
+	1308 -- 3991;
+	4909	 [label="b'continental philosophy'",
+		level=5];
+	1867	 [label="b'phenomenology'",
+		level=3];
+	4909 -- 1867;
+	5244	 [label="b'chronobiology'",
+		level=5];
+	505	 [label="b'sleep'",
+		level=2];
+	5244 -- 505;
+	5055	 [label="b'lipidomics'",
+		level=5];
+	3097	 [label="b'metabolomics'",
+		level=1];
+	5055 -- 3097;
+	233	 [label="b'metastasis'",
+		level=3];
+	5773	 [label="b'invasion'",
+		level=5];
+	233 -- 5773;
+	471	 [label="b'addiction'",
+		level=1];
+	1458	 [label="b'behavioural neuroscience'",
+		level=5];
+	471 -- 1458;
+	1456	 [label="b'gambling'",
+		level=5];
+	471 -- 1456;
+	177	 [label="b'electrospinning'",
+		level=3];
+	5368	 [label="b'nanofibers'",
+		level=5];
+	177 -- 5368;
+	2875	 [label="b'maternal health'",
+		level=5];
+	1808	 [label="b'public health'",
+		level=1];
+	2875 -- 1808;
+	4440	 [label="b'time series econometrics'",
+		level=5];
+	2246	 [label="b'macroeconomics'",
+		level=1];
+	4440 -- 2246;
+	3281	 [label="b'trapped ions'",
+		level=5];
+	3256	 [label="b'quantum information'",
+		level=1];
+	3281 -- 3256;
+	3349	 [label="b'diaspora'",
+		level=5];
+	2807	 [label="b'migration'",
+		level=1];
+	3349 -- 2807;
+	28	 [label="b'electrochemistry'",
+		level=1];
+	67	 [label="b'bioelectrochemistry'",
+		level=5];
+	28 -- 67;
+	64	 [label="b'solid oxide fuel cells'",
+		level=5];
+	28 -- 64;
+	66	 [label="b'chemical sensors'",
+		level=5];
+	28 -- 66;
+	58	 [label="b'electrodeposition'",
+		level=5];
+	28 -- 58;
+	56	 [label="b'electrocatalyst'",
+		level=5];
+	28 -- 56;
+	5718	 [label="b'dengue'",
+		level=5];
+	5484	 [label="b'malaria'",
+		level=2];
+	5718 -- 5484;
+	5429	 [label="b'pharmacometrics'",
+		level=5];
+	5423	 [label="b'clinical pharmacology'",
+		level=4];
+	5429 -- 5423;
+	1140	 [label="b'bibliometrics'",
+		level=2];
+	2984	 [label="b'informetrics'",
+		level=5];
+	1140 -- 2984;
+	2981	 [label="b'research evaluation'",
+		level=5];
+	1140 -- 2981;
+	2633	 [label="b'generic programming'",
+		level=5];
+	2021	 [label="b'functional programming'",
+		level=3];
+	2633 -- 2021;
+	5179	 [label="b'conflict studies'",
+		level=5];
+	5177	 [label="b'peace'",
+		level=3];
+	5179 -- 5177;
+	2440	 [label="b'performance studies'",
+		level=5];
+	2438	 [label="b'theatre'",
+		level=4];
+	2440 -- 2438;
+	5258	 [label="b'special education'",
+		level=3];
+	5544	 [label="b'inclusive education'",
+		level=5];
+	5258 -- 5544;
+	2804	 [label="b'social movements'",
+		level=1];
+	3004	 [label="b'historical sociology'",
+		level=5];
+	2804 -- 3004;
+	3899	 [label="b'finite element method'",
+		level=2];
+	5630	 [label="b'meshless methods'",
+		level=5];
+	3899 -- 5630;
+	4469	 [label="b'sts'",
+		level=5];
+	4469 -- 4460;
+	1765	 [label="b'economic history'",
+		level=2];
+	3564	 [label="b'social history'",
+		level=5];
+	1765 -- 3564;
+	617	 [label="b'optics'",
+		level=1];
+	631	 [label="b'adaptive optics'",
+		level=5];
+	617 -- 631;
+	630	 [label="b'optical tweezers'",
+		level=5];
+	617 -- 630;
+	5604	 [label="b'microwave imaging'",
+		level=5];
+	2659	 [label="b'computational electromagnetics'",
+		level=3];
+	5604 -- 2659;
+	5288	 [label="b'communication technology'",
+		level=5];
+	2134	 [label="b'information'",
+		level=3];
+	5288 -- 2134;
+	4295	 [label="b'direct numerical simulation'",
+		level=5];
+	4295 -- 3757;
+	169	 [label="b'stem cell engineering'",
+		level=5];
+	146	 [label="b'tissue engineering'",
+		level=1];
+	169 -- 146;
+	4506	 [label="b'branding'",
+		level=2];
+	5103	 [label="b'digital marketing'",
+		level=5];
+	4506 -- 5103;
+	591	 [label="b'economic geography'",
+		level=2];
+	4690	 [label="b'innovation studies'",
+		level=5];
+	591 -- 4690;
+	69	 [label="b'nanotechnology'",
+		level=1];
+	127	 [label="b'carbon nanomaterials'",
+		level=5];
+	69 -- 127;
+	116	 [label="b'process engineering'",
+		level=5];
+	69 -- 116;
+	117	 [label="b'advanced materials'",
+		level=5];
+	69 -- 117;
+	124	 [label="b'colloidal chemistry'",
+		level=5];
+	69 -- 124;
+	131	 [label="b'bioimaging'",
+		level=5];
+	69 -- 131;
+	3655	 [label="b'seabirds'",
+		level=5];
+	733	 [label="b'conservation'",
+		level=1];
+	3655 -- 733;
+	3264	 [label="b'atomic physics'",
+		level=2];
+	5632	 [label="b'laser cooling'",
+		level=5];
+	3264 -- 5632;
+	5043	 [label="b'coastal engineering'",
+		level=2];
+	5249	 [label="b'coastal geomorphology'",
+		level=5];
+	5043 -- 5249;
+	3864	 [label="b'motor development'",
+		level=5];
+	3371	 [label="b'physical activity'",
+		level=1];
+	3864 -- 3371;
+	5751	 [label="b'geometric topology'",
+		level=5];
+	5471	 [label="b'algebraic topology'",
+		level=4];
+	5751 -- 5471;
+	504	 [label="b'neuroplasticity'",
+		level=5];
+	504 -- 327;
+	3453	 [label="b'protein aggregation'",
+		level=3];
+	5759	 [label="b'amyloid'",
+		level=5];
+	3453 -- 5759;
+	1911	 [label="b'neutron scattering'",
+		level=4];
+	2568	 [label="b'x-ray scattering'",
+		level=5];
+	1911 -- 2568;
+	2943	 [label="b'satellite communications'",
+		level=5];
+	2112	 [label="b'wireless communications'",
+		level=1];
+	2943 -- 2112;
+	1640	 [label="b'system security'",
+		level=3];
+	4819	 [label="b'mobile security'",
+		level=5];
+	1640 -- 4819;
+	727	 [label="b'climate change'",
+		level=1];
+	1271	 [label="b'biogeochemical cycles'",
+		level=5];
+	727 -- 1271;
+	1279	 [label="b'greenhouse gases'",
+		level=5];
+	727 -- 1279;
+	1278	 [label="b'earth system science'",
+		level=5];
+	727 -- 1278;
+	1277	 [label="b'sea level'",
+		level=5];
+	727 -- 1277;
+	1301	 [label="b'permafrost'",
+		level=5];
+	727 -- 1301;
+	1280	 [label="b'mitigation'",
+		level=5];
+	727 -- 1280;
+	1266	 [label="b'crop modeling'",
+		level=5];
+	727 -- 1266;
+	4767	 [label="b'behavioural economics'",
+		level=5];
+	1833	 [label="b'experimental economics'",
+		level=1];
+	4767 -- 1833;
+	3163	 [label="b'molecular dynamics'",
+		level=1];
+	4614 -- 3163;
+	4556	 [label="b'evidence-based medicine'",
+		level=5];
+	718	 [label="b'meta-analysis'",
+		level=3];
+	4556 -- 718;
+	376	 [label="b'sexual selection'",
+		level=2];
+	3559	 [label="b'sexual conflict'",
+		level=5];
+	376 -- 3559;
+	3560	 [label="b'sperm competition'",
+		level=5];
+	376 -- 3560;
+	3562	 [label="b'mate choice'",
+		level=5];
+	376 -- 3562;
+	4787	 [label="b'benthic ecology'",
+		level=5];
+	799	 [label="b'marine ecology'",
+		level=1];
+	4787 -- 799;
+	3977	 [label="b'smoking'",
+		level=5];
+	1452	 [label="b'alcohol'",
+		level=2];
+	3977 -- 1452;
+	3478	 [label="b'particulate matter'",
+		level=5];
+	1268	 [label="b'air pollution'",
+		level=2];
+	3478 -- 1268;
+	5599	 [label="b'pharmaceutical policy'",
+		level=5];
+	3421	 [label="b'health policy'",
+		level=2];
+	5599 -- 3421;
+	2736	 [label="b'corporate governance'",
+		level=1];
+	2746	 [label="b'company law'",
+		level=5];
+	2736 -- 2746;
+	2745	 [label="b'executive compensation'",
+		level=5];
+	2736 -- 2745;
+	2748	 [label="b'earnings management'",
+		level=5];
+	2736 -- 2748;
+	2751	 [label="b'securities regulation'",
+		level=5];
+	2736 -- 2751;
+	2741	 [label="b'family firms'",
+		level=5];
+	2736 -- 2741;
+	5555	 [label="b'american political development'",
+		level=5];
+	3554	 [label="b'american politics'",
+		level=2];
+	5555 -- 3554;
+	4002	 [label="b'systems medicine'",
+		level=5];
+	662	 [label="b'systems biology'",
+		level=1];
+	4002 -- 662;
+	4043	 [label="b'history of medicine'",
+		level=5];
+	579	 [label="b'history of science'",
+		level=3];
+	4043 -- 579;
+	2805	 [label="b'work'",
+		level=2];
+	3041	 [label="b'occupational'",
+		level=5];
+	2805 -- 3041;
+	3071	 [label="b'nonlinear dynamics'",
+		level=1];
+	5326	 [label="b'pattern formation'",
+		level=5];
+	3071 -- 5326;
+	4511	 [label="b'crm'",
+		level=5];
+	2915	 [label="b'marketing'",
+		level=1];
+	4511 -- 2915;
+	1207	 [label="b'institutional economics'",
+		level=5];
+	406	 [label="b'development economics'",
+		level=1];
+	1207 -- 406;
+	3374	 [label="b'eating disorders'",
+		level=3];
+	5364	 [label="b'body image'",
+		level=5];
+	3374 -- 5364;
+	4529	 [label="b'ultrasonics'",
+		level=4];
+	5166	 [label="b'ndt'",
+		level=5];
+	4529 -- 5166;
+	12	 [label="b'catalysis'",
+		level=1];
+	35	 [label="b'mofs'",
+		level=5];
+	12 -- 35;
+	39	 [label="b'asymmetric synthesis'",
+		level=5];
+	12 -- 39;
+	42	 [label="b'reaction engineering'",
+		level=5];
+	12 -- 42;
+	48	 [label="b'biomass conversion'",
+		level=5];
+	12 -- 48;
+	1866	 [label="b'literature'",
+		level=2];
+	3157	 [label="b'modernism'",
+		level=5];
+	1866 -- 3157;
+	3156	 [label="b'creative writing'",
+		level=5];
+	1866 -- 3156;
+	4298	 [label="b'particle image velocimetry'",
+		level=5];
+	3757 -- 4298;
+	4290	 [label="b'mixing'",
+		level=5];
+	3757 -- 4290;
+	4296	 [label="b'les'",
+		level=5];
+	3757 -- 4296;
+	4286	 [label="b'waves'",
+		level=5];
+	3757 -- 4286;
+	3088	 [label="b'mass spectrometry'",
+		level=1];
+	3098	 [label="b'glycoproteomics'",
+		level=5];
+	3088 -- 3098;
+	3099	 [label="b'liquid chromatography'",
+		level=5];
+	3088 -- 3099;
+	720	 [label="b'longitudinal data'",
+		level=5];
+	658	 [label="b'biostatistics'",
+		level=1];
+	720 -- 658;
+	167	 [label="b'nano'",
+		level=5];
+	133	 [label="b'biomaterials'",
+		level=1];
+	167 -- 133;
+	4057	 [label="b'waste management'",
+		level=3];
+	4061	 [label="b'recycling'",
+		level=5];
+	4057 -- 4061;
+	3346	 [label="b'integration'",
+		level=5];
+	3346 -- 2807;
+	2584	 [label="b'geochemistry'",
+		level=1];
+	2601	 [label="b'isotopes'",
+		level=5];
+	2584 -- 2601;
+	2598	 [label="b'environmental geochemistry'",
+		level=5];
+	2584 -- 2598;
+	2596	 [label="b'clumped isotopes'",
+		level=5];
+	2584 -- 2596;
+	2603	 [label="b'isotope geology'",
+		level=5];
+	2584 -- 2603;
+	148	 [label="b'controlled release'",
+		level=5];
+	148 -- 133;
+	3166	 [label="b'photobiology'",
+		level=5];
+	3012	 [label="b'biophysics'",
+		level=1];
+	3166 -- 3012;
+	5641	 [label="b'prognostics'",
+		level=3];
+	5642	 [label="b'health management'",
+		level=5];
+	5641 -- 5642;
+	3843	 [label="b'offshore engineering'",
+		level=5];
+	3839	 [label="b'geotechnical engineering'",
+		level=2];
+	3843 -- 3839;
+	168	 [label="b'stem cells'",
+		level=1];
+	195	 [label="b'heart'",
+		level=5];
+	168 -- 195;
+	3123	 [label="b'dynamical systems'",
+		level=1];
+	3123 -- 3616;
+	3618	 [label="b'mathematical neuroscience'",
+		level=5];
+	3123 -- 3618;
+	4395	 [label="b'hydrogen production'",
+		level=5];
+	55	 [label="b'fuel cells'",
+		level=1];
+	4395 -- 55;
+	4411	 [label="b'sequence stratigraphy'",
+		level=5];
+	2588	 [label="b'sedimentology'",
+		level=2];
+	4411 -- 2588;
+	5908	 [label="b'solar fuels'",
+		level=5];
+	4797	 [label="b'artificial photosynthesis'",
+		level=3];
+	5908 -- 4797;
+	1108	 [label="b'nitrogen'",
+		level=5];
+	5805	 [label="b'phosphorus'",
+		level=5];
+	1108 -- 5805;
+	1085	 [label="b'biogeochemistry'",
+		level=1];
+	1108 -- 1085;
+	984	 [label="b'data privacy'",
+		level=5];
+	837	 [label="b'data mining'",
+		level=1];
+	984 -- 837;
+	1864	 [label="b'ethics'",
+		level=1];
+	1873	 [label="b'comparative philosophy'",
+		level=5];
+	1864 -- 1873;
+	1874	 [label="b'applied ethics'",
+		level=5];
+	1864 -- 1874;
+	3067	 [label="b'statistical physics'",
+		level=1];
+	3081	 [label="b'phase transitions'",
+		level=5];
+	3067 -- 3081;
+	2933	 [label="b'information theory'",
+		level=1];
+	2960	 [label="b'compression'",
+		level=5];
+	2933 -- 2960;
+	2957	 [label="b'molecular communication'",
+		level=5];
+	2933 -- 2957;
+	1690	 [label="b'linguistics'",
+		level=1];
+	2213	 [label="b'spanish'",
+		level=5];
+	1690 -- 2213;
+	3937	 [label="b'harmonic analysis'",
+		level=3];
+	3947	 [label="b'geometric measure theory'",
+		level=5];
+	3937 -- 3947;
+	2830	 [label="b'labour'",
+		level=5];
+	562	 [label="b'gender'",
+		level=1];
+	2830 -- 562;
+	708	 [label="b'cancer genetics'",
+		level=5];
+	708 -- 346;
+	3577	 [label="b'palaeoclimate'",
+		level=5];
+	3573	 [label="b'palaeoecology'",
+		level=3];
+	3577 -- 3573;
+	5489	 [label="b'sound'",
+		level=4];
+	5491	 [label="b'music computing'",
+		level=5];
+	5489 -- 5491;
+	313	 [label="b'genetics'",
+		level=1];
+	335	 [label="b'breeding'",
+		level=5];
+	313 -- 335;
+	331	 [label="b'wheat'",
+		level=5];
+	313 -- 331;
+	338	 [label="b'sex determination'",
+		level=5];
+	313 -- 338;
+	337	 [label="b'complex traits'",
+		level=5];
+	313 -- 337;
+	4451	 [label="b'skeletal biology'",
+		level=5];
+	4449	 [label="b'biological anthropology'",
+		level=3];
+	4451 -- 4449;
+	4667	 [label="b'building energy efficiency'",
+		level=5];
+	4665	 [label="b'thermal comfort'",
+		level=5];
+	4667 -- 4665;
+	502	 [label="b'neuropathology'",
+		level=5];
+	502 -- 327;
+	2622	 [label="b'women s'",
+		level=5];
+	2142	 [label="b'gender studies'",
+		level=3];
+	2622 -- 2142;
+	51	 [label="b'materials science'",
+		level=1];
+	83	 [label="b'nuclear engineering'",
+		level=5];
+	51 -- 83;
+	102	 [label="b'phase transformation'",
+		level=5];
+	51 -- 102;
+	98	 [label="b'optical spectroscopy'",
+		level=5];
+	51 -- 98;
+	75	 [label="b'first-principles calculations'",
+		level=5];
+	51 -- 75;
+	397	 [label="b'political economy'",
+		level=1];
+	407	 [label="b'neoliberalism'",
+		level=5];
+	397 -- 407;
+	4516	 [label="b'service management'",
+		level=5];
+	4516 -- 2915;
+	1747	 [label="b'functional data analysis'",
+		level=5];
+	844	 [label="b'statistics'",
+		level=1];
+	1747 -- 844;
+	613	 [label="b'design thinking'",
+		level=5];
+	583	 [label="b'creativity'",
+		level=2];
+	613 -- 583;
+	3654	 [label="b'coral reef ecology'",
+		level=5];
+	733 -- 3654;
+	1148	 [label="b'star formation'",
+		level=3];
+	3726	 [label="b'interstellar medium'",
+		level=5];
+	1148 -- 3726;
+	857	 [label="b'information retrieval'",
+		level=1];
+	4541	 [label="b'search'",
+		level=5];
+	857 -- 4541;
+	5440	 [label="b'human behavioral ecology'",
+		level=5];
+	5438	 [label="b'evolutionary anthropology'",
+		level=4];
+	5440 -- 5438;
+	3809	 [label="b'noise'",
+		level=5];
+	3804	 [label="b'vibration'",
+		level=2];
+	3809 -- 3804;
+	4585	 [label="b'decision neuroscience'",
+		level=5];
+	4581	 [label="b'neuroeconomics'",
+		level=3];
+	4585 -- 4581;
+	2293	 [label="b'neuroprosthetics'",
+		level=5];
+	2289	 [label="b'neural engineering'",
+		level=2];
+	2293 -- 2289;
+	3471	 [label="b'processing'",
+		level=5];
+	3463	 [label="b'modeling'",
+		level=1];
+	3471 -- 3463;
+	2824	 [label="b'sport'",
+		level=2];
+	5482	 [label="b'exercise science'",
+		level=5];
+	2824 -- 5482;
+	5550	 [label="b'spirituality'",
+		level=5];
+	4822	 [label="b'religion'",
+		level=1];
+	5550 -- 4822;
+	5361	 [label="b'music theory'",
+		level=5];
+	2780	 [label="b'music cognition'",
+		level=3];
+	5361 -- 2780;
+	326	 [label="b'genomics'",
+		level=1];
+	368	 [label="b'polyploidy'",
+		level=5];
+	326 -- 368;
+	369	 [label="b'domestication'",
+		level=5];
+	326 -- 369;
+	351	 [label="b'alternative splicing'",
+		level=5];
+	326 -- 351;
+	356	 [label="b'high-throughput sequencing'",
+		level=5];
+	326 -- 356;
+	357	 [label="b'dna sequencing'",
+		level=5];
+	326 -- 357;
+	1470	 [label="b'stochastics'",
+		level=5];
+	840	 [label="b'optimization'",
+		level=1];
+	1470 -- 840;
+	4680	 [label="b'radiochemistry'",
+		level=5];
+	2636	 [label="b'pet'",
+		level=2];
+	4680 -- 2636;
+	2698	 [label="b'mathematical optimization'",
+		level=5];
+	1462	 [label="b'operations research'",
+		level=1];
+	2698 -- 1462;
+	3416	 [label="b'business process modeling'",
+		level=5];
+	1885	 [label="b'business process management'",
+		level=3];
+	3416 -- 1885;
+	52	 [label="b'corrosion'",
+		level=2];
+	1893	 [label="b'nuclear materials'",
+		level=5];
+	52 -- 1893;
+	4166	 [label="b'theoretical chemistry'",
+		level=2];
+	5507	 [label="b'quantum dynamics'",
+		level=5];
+	4166 -- 5507;
+	5054	 [label="b'metabonomics'",
+		level=5];
+	5054 -- 3097;
+	3146	 [label="b'power amplifiers'",
+		level=5];
+	3141	 [label="b'rf'",
+		level=2];
+	3146 -- 3141;
+	3911	 [label="b'orthogonal polynomials'",
+		level=5];
+	4985	 [label="b'special functions'",
+		level=5];
+	3911 -- 4985;
+	3896	 [label="b'approximation theory'",
+		level=5];
+	3911 -- 3896;
+	24	 [label="b'buildings'",
+		level=5];
+	2	 [label="b'energy'",
+		level=1];
+	24 -- 2;
+	4274	 [label="b'internet studies'",
+		level=5];
+	3961	 [label="b'social media'",
+		level=1];
+	4274 -- 3961;
+	5064	 [label="b'publishing'",
+		level=5];
+	1129	 [label="b'scholarly communication'",
+		level=2];
+	5064 -- 1129;
+	1199	 [label="b'illness'",
+		level=5];
+	1172	 [label="b'health'",
+		level=1];
+	1199 -- 1172;
+	1642	 [label="b'qos'",
+		level=5];
+	1623	 [label="b'networks'",
+		level=1];
+	1642 -- 1623;
+	3257	 [label="b'nonlinear optics'",
+		level=2];
+	4382	 [label="b'ultrafast lasers'",
+		level=5];
+	3257 -- 4382;
+	4383	 [label="b'solitons'",
+		level=5];
+	3257 -- 4383;
+	3186	 [label="b'molecular dynamics simulation'",
+		level=5];
+	3186 -- 3012;
+	5001	 [label="b'chinese philosophy'",
+		level=5];
+	5001 -- 1873;
+	4663	 [label="b'philosophy of technology'",
+		level=5];
+	580	 [label="b'science'",
+		level=1];
+	4663 -- 580;
+	5381	 [label="b'lubrication'",
+		level=5];
+	4959	 [label="b'tribology'",
+		level=2];
+	5381 -- 4959;
+	4522	 [label="b'sales'",
+		level=5];
+	4522 -- 2915;
+	481	 [label="b'neurodegeneration'",
+		level=1];
+	3452	 [label="b'neuroprotection'",
+		level=5];
+	481 -- 3452;
+	3450	 [label="b'amyotrophic lateral sclerosis'",
+		level=5];
+	481 -- 3450;
+	3451	 [label="b'alpha-synuclein'",
+		level=5];
+	481 -- 3451;
+	3770	 [label="b'early childhood education'",
+		level=5];
+	563	 [label="b'child development'",
+		level=2];
+	3770 -- 563;
+	191	 [label="b'stem cell therapy'",
+		level=5];
+	191 -- 146;
+	4092	 [label="b'distributed energy resources'",
+		level=5];
+	1482	 [label="b'smart grid'",
+		level=1];
+	4092 -- 1482;
+	2586	 [label="b'geophysics'",
+		level=1];
+	3710	 [label="b'inversion'",
+		level=5];
+	2586 -- 3710;
+	3698	 [label="b'petrophysics'",
+		level=5];
+	2586 -- 3698;
+	3699	 [label="b'volcanoes'",
+		level=5];
+	2586 -- 3699;
+	3711	 [label="b'seismic imaging'",
+		level=5];
+	2586 -- 3711;
+	5399	 [label="b'thailand'",
+		level=5];
+	4825	 [label="b'southeast asia'",
+		level=4];
+	5399 -- 4825;
+	3685	 [label="b'nuclear physics'",
+		level=2];
+	3691	 [label="b'nuclear theory'",
+		level=5];
+	3685 -- 3691;
+	3689	 [label="b'hadron physics'",
+		level=5];
+	3685 -- 3689;
+	2238	 [label="b'coping'",
+		level=5];
+	473	 [label="b'stress'",
+		level=1];
+	2238 -- 473;
+	3028	 [label="b'protein crystallography'",
+		level=5];
+	3028 -- 3011;
+	2340	 [label="b'fabrication'",
+		level=5];
+	585	 [label="b'design'",
+		level=1];
+	2340 -- 585;
+	1338	 [label="b'gis'",
+		level=1];
+	1390	 [label="b'spatial databases'",
+		level=5];
+	1338 -- 1390;
+	1384	 [label="b'geospatial analysis'",
+		level=5];
+	1338 -- 1384;
+	1385	 [label="b'spatial epidemiology'",
+		level=5];
+	1338 -- 1385;
+	1392	 [label="b'rs'",
+		level=5];
+	1338 -- 1392;
+	1395	 [label="b'health geography'",
+		level=5];
+	1338 -- 1395;
+	1391	 [label="b'geoinformatics'",
+		level=5];
+	1338 -- 1391;
+	826	 [label="b'cardiology'",
+		level=2];
+	833	 [label="b'cardiovascular imaging'",
+		level=5];
+	826 -- 833;
+	829	 [label="b'interventional cardiology'",
+		level=5];
+	826 -- 829;
+	827	 [label="b'echocardiography'",
+		level=5];
+	826 -- 827;
+	1871	 [label="b'political philosophy'",
+		level=2];
+	3586	 [label="b'feminist philosophy'",
+		level=5];
+	1871 -- 3586;
+	2599	 [label="b'cosmochemistry'",
+		level=4];
+	5024	 [label="b'meteoritics'",
+		level=5];
+	2599 -- 5024;
+	2673	 [label="b'tropical meteorology'",
+		level=5];
+	2669	 [label="b'tropical cyclones'",
+		level=4];
+	2673 -- 2669;
+	3733	 [label="b'financial institutions'",
+		level=5];
+	2742	 [label="b'corporate finance'",
+		level=1];
+	3733 -- 2742;
+	2374	 [label="b'community development'",
+		level=5];
+	2360	 [label="b'housing'",
+		level=2];
+	2374 -- 2360;
+	3260	 [label="b'cavity qed'",
+		level=5];
+	3250	 [label="b'quantum optics'",
+		level=1];
+	3260 -- 3250;
+	2686	 [label="b'network optimization'",
+		level=5];
+	2686 -- 1462;
+	3356	 [label="b'obesity'",
+		level=1];
+	3373	 [label="b'nutrigenomics'",
+		level=5];
+	3356 -- 3373;
+	5736	 [label="b'time-delay systems'",
+		level=5];
+	2407	 [label="b'robust control'",
+		level=3];
+	5736 -- 2407;
+	539	 [label="b'cerebellum'",
+		level=5];
+	539 -- 327;
+	249	 [label="b't cells'",
+		level=5];
+	205	 [label="b'immunology'",
+		level=1];
+	249 -- 205;
+	2003	 [label="b'implementation science'",
+		level=3];
+	4579	 [label="b'dissemination'",
+		level=5];
+	2003 -- 4579;
+	5164	 [label="b'antarctica'",
+		level=5];
+	1347	 [label="b'glaciology'",
+		level=2];
+	5164 -- 1347;
+	1699	 [label="b'english for specific purposes'",
+		level=5];
+	1694	 [label="b'applied linguistics'",
+		level=2];
+	1699 -- 1694;
+	2090	 [label="b'computer animation'",
+		level=5];
+	2090 -- 1518;
+	874	 [label="b'bayesian statistics'",
+		level=2];
+	5199	 [label="b'mcmc'",
+		level=5];
+	874 -- 5199;
+	4976	 [label="b'parks'",
+		level=5];
+	4976 -- 4970;
+	1524	 [label="b'image processing'",
+		level=1];
+	4216	 [label="b'watermarking'",
+		level=5];
+	1524 -- 4216;
+	4221	 [label="b'data hiding'",
+		level=5];
+	1524 -- 4221;
+	4217	 [label="b'feature extraction'",
+		level=5];
+	1524 -- 4217;
+	4210	 [label="b'video'",
+		level=5];
+	1524 -- 4210;
+	4226	 [label="b'color'",
+		level=5];
+	1524 -- 4226;
+	3319	 [label="b'organic synthesis'",
+		level=2];
+	5732	 [label="b'heterocycles'",
+		level=5];
+	3319 -- 5732;
+	172	 [label="b'plastic surgery'",
+		level=5];
+	172 -- 146;
+	1448	 [label="b'computing education'",
+		level=5];
+	1397	 [label="b'software engineering'",
+		level=1];
+	1448 -- 1397;
+	716	 [label="b'epidemiology'",
+		level=1];
+	1818	 [label="b'paediatrics'",
+		level=5];
+	716 -- 1818;
+	4165	 [label="b'theoretical'",
+		level=5];
+	4156	 [label="b'computational chemistry'",
+		level=1];
+	4165 -- 4156;
+	2417	 [label="b'robot learning'",
+		level=5];
+	1519	 [label="b'robotics'",
+		level=1];
+	2417 -- 1519;
+	608	 [label="b'evolutionary economics'",
+		level=5];
+	577	 [label="b'innovation'",
+		level=1];
+	608 -- 577;
+	594	 [label="b'knowledge management'",
+		level=2];
+	5299	 [label="b'intellectual capital'",
+		level=5];
+	594 -- 5299;
+	4615	 [label="b'atomistic simulations'",
+		level=5];
+	3163 -- 4615;
+	2233	 [label="b'internal waves'",
+		level=5];
+	2224	 [label="b'physical oceanography'",
+		level=2];
+	2233 -- 2224;
+	4933	 [label="b'ocean mixing'",
+		level=5];
+	2233 -- 4933;
+	4568	 [label="b'book history'",
+		level=5];
+	4563	 [label="b'digital humanities'",
+		level=2];
+	4568 -- 4563;
+	4442	 [label="b'computational economics'",
+		level=5];
+	4442 -- 2246;
+	2305	 [label="b'dna methylation'",
+		level=5];
+	329	 [label="b'epigenetics'",
+		level=1];
+	2305 -- 329;
+	2020	 [label="b'compilers'",
+		level=1];
+	2031	 [label="b'runtime systems'",
+		level=5];
+	2020 -- 2031;
+	20	 [label="b'lca'",
+		level=5];
+	20 -- 2;
+	2199	 [label="b'thermal sciences'",
+		level=5];
+	2175	 [label="b'heat transfer'",
+		level=1];
+	2199 -- 2175;
+	4582	 [label="b'expertise'",
+		level=5];
+	4524	 [label="b'decision making'",
+		level=1];
+	4582 -- 4524;
+	2228	 [label="b'ocean'",
+		level=5];
+	1304	 [label="b'climate'",
+		level=1];
+	2228 -- 1304;
+	2783	 [label="b'concepts'",
+		level=5];
+	556	 [label="b'cognitive neuroscience'",
+		level=1];
+	2783 -- 556;
+	1697	 [label="b'language education'",
+		level=5];
+	1697 -- 1694;
+	1241	 [label="b'energy harvesting'",
+		level=2];
+	1257	 [label="b'nanogenerator'",
+		level=5];
+	1241 -- 1257;
+	641	 [label="b'fiber optics'",
+		level=3];
+	5807	 [label="b'optical fiber sensors'",
+		level=5];
+	641 -- 5807;
+	4183	 [label="b'venture capital'",
+		level=3];
+	4958	 [label="b'private equity'",
+		level=5];
+	4183 -- 4958;
+	2544	 [label="b'structural optimization'",
+		level=4];
+	3989	 [label="b'topology optimization'",
+		level=5];
+	2544 -- 3989;
+	2523	 [label="b'spine'",
+		level=5];
+	2376	 [label="b'biomechanics'",
+		level=1];
+	2523 -- 2376;
+	1407	 [label="b'software visualization'",
+		level=5];
+	1407 -- 1397;
+	4936	 [label="b'structural equation modeling'",
+		level=5];
+	4942	 [label="b'multilevel modeling'",
+		level=5];
+	4936 -- 4942;
+	1743	 [label="b'psychometrics'",
+		level=2];
+	4936 -- 1743;
+	1003	 [label="b'predictive analytics'",
+		level=5];
+	1003 -- 837;
+	5600	 [label="b'medicare'",
+		level=5];
+	5597	 [label="b'health services research'",
+		level=2];
+	5600 -- 5597;
+	674	 [label="b'rna structure'",
+		level=5];
+	674 -- 346;
+	3871	 [label="b'service operations'",
+		level=5];
+	2701	 [label="b'operations management'",
+		level=2];
+	3871 -- 2701;
+	3335	 [label="b'diptera'",
+		level=5];
+	732	 [label="b'entomology'",
+		level=1];
+	3335 -- 732;
+	2513	 [label="b'balance'",
+		level=4];
+	5347	 [label="b'posture'",
+		level=5];
+	2513 -- 5347;
+	752	 [label="b'botany'",
+		level=2];
+	5592	 [label="b'lichenology'",
+		level=5];
+	752 -- 5592;
+	3940	 [label="b'nonlinear analysis'",
+		level=5];
+	3897	 [label="b'partial differential equations'",
+		level=2];
+	3940 -- 3897;
+	283	 [label="b'microbial ecology'",
+		level=1];
+	1090	 [label="b'soil microbiology'",
+		level=5];
+	283 -- 1090;
+	1086	 [label="b'microbial diversity'",
+		level=5];
+	283 -- 1086;
+	1095	 [label="b'biodegradation'",
+		level=5];
+	283 -- 1095;
+	1092	 [label="b'microbial interactions'",
+		level=5];
+	283 -- 1092;
+	1088	 [label="b'archaea'",
+		level=5];
+	283 -- 1088;
+	4594	 [label="b'periodontics'",
+		level=5];
+	2874 -- 4594;
+	5818	 [label="b'mexico'",
+		level=5];
+	426	 [label="b'latin america'",
+		level=2];
+	5818 -- 426;
+	2511	 [label="b'knee'",
+		level=5];
+	2511 -- 2376;
+	1880	 [label="b'health law'",
+		level=5];
+	1870	 [label="b'bioethics'",
+		level=2];
+	1880 -- 1870;
+	4773	 [label="b'marine protected areas'",
+		level=5];
+	737	 [label="b'fisheries'",
+		level=2];
+	4773 -- 737;
+	3585	 [label="b'political theory'",
+		level=2];
+	3626	 [label="b'democratic theory'",
+		level=5];
+	3585 -- 3626;
+	2047	 [label="b'electronic design automation'",
+		level=5];
+	5677	 [label="b'computer-aided design'",
+		level=5];
+	2047 -- 5677;
+	2030	 [label="b'computer architecture'",
+		level=1];
+	2047 -- 2030;
+	3555	 [label="b'political behaviour'",
+		level=5];
+	3548	 [label="b'public opinion'",
+		level=1];
+	3555 -- 3548;
+	3483	 [label="b'ozone'",
+		level=5];
+	3475	 [label="b'atmospheric chemistry'",
+		level=2];
+	3483 -- 3475;
+	3505	 [label="b'food chemistry'",
+		level=3];
+	3992	 [label="b'functional foods'",
+		level=5];
+	3505 -- 3992;
+	4467	 [label="b'vr'",
+		level=5];
+	4460 -- 4467;
+	3819	 [label="b'structural engineering'",
+		level=2];
+	3835	 [label="b'concrete structures'",
+		level=5];
+	3819 -- 3835;
+	3837	 [label="b'reinforced concrete'",
+		level=5];
+	3819 -- 3837;
+	523	 [label="b'psychiatric disorders'",
+		level=5];
+	523 -- 327;
+	10	 [label="b'green building'",
+		level=5];
+	1	 [label="b'sustainability'",
+		level=1];
+	10 -- 1;
+	1119	 [label="b'copyright'",
+		level=2];
+	1127	 [label="b'trademark'",
+		level=5];
+	1119 -- 1127;
+	1486	 [label="b'energy efficiency'",
+		level=2];
+	1486 -- 4665;
+	2208	 [label="b'translation'",
+		level=3];
+	4778	 [label="b'terminology'",
+		level=5];
+	2208 -- 4778;
+	3648	 [label="b'gas separation'",
+		level=5];
+	2924	 [label="b'membranes'",
+		level=2];
+	3648 -- 2924;
+	2556	 [label="b'structural analysis'",
+		level=5];
+	2499	 [label="b'computational mechanics'",
+		level=1];
+	2556 -- 2499;
+	3040	 [label="b'organizational psychology'",
+		level=3];
+	3045	 [label="b'industrial'",
+		level=5];
+	3040 -- 3045;
+	3194	 [label="b'point-of-care diagnostics'",
+		level=5];
+	1243	 [label="b'microfluidics'",
+		level=1];
+	3194 -- 1243;
+	3519	 [label="b'membrane bioreactor'",
+		level=5];
+	2271	 [label="b'wastewater treatment'",
+		level=2];
+	3519 -- 2271;
+	454	 [label="b'china'",
+		level=2];
+	5679	 [label="b'east asia'",
+		level=5];
+	454 -- 5679;
+	3598	 [label="b'morphology'",
+		level=2];
+	3603	 [label="b'typology'",
+		level=5];
+	3598 -- 3603;
+	303	 [label="b'bacteriophage'",
+		level=5];
+	303 -- 241;
+	4462	 [label="b'context awareness'",
+		level=5];
+	2851	 [label="b'ubiquitous computing'",
+		level=1];
+	4462 -- 2851;
+	4547	 [label="b'software defined radio'",
+		level=5];
+	2936	 [label="b'cognitive radio'",
+		level=2];
+	4547 -- 2936;
+	1842	 [label="b'matching'",
+		level=5];
+	1461	 [label="b'game theory'",
+		level=1];
+	1842 -- 1461;
+	622	 [label="b'photonics'",
+		level=1];
+	638	 [label="b'optical materials'",
+		level=5];
+	622 -- 638;
+	637	 [label="b'magneto-optics'",
+		level=5];
+	622 -- 637;
+	639	 [label="b'semiconductor lasers'",
+		level=5];
+	622 -- 639;
+	640	 [label="b'optical sensors'",
+		level=5];
+	622 -- 640;
+	3891	 [label="b'perceptual learning'",
+		level=5];
+	485	 [label="b'vision'",
+		level=1];
+	3891 -- 485;
+	2832	 [label="b'childhood'",
+		level=5];
+	2832 -- 562;
+	4270	 [label="b'public relations'",
+		level=3];
+	5111	 [label="b'crisis communication'",
+		level=5];
+	4270 -- 5111;
+	5114	 [label="b'corporate communication'",
+		level=5];
+	4270 -- 5114;
+	4074	 [label="b'self-control'",
+		level=5];
+	1923	 [label="b'motivation'",
+		level=1];
+	4074 -- 1923;
+	3574	 [label="b'palaeobotany'",
+		level=5];
+	377	 [label="b'palaeontology'",
+		level=2];
+	3574 -- 377;
+	5529	 [label="b'ms'",
+		level=5];
+	5056	 [label="b'lc-ms'",
+		level=3];
+	5529 -- 5056;
+	2509	 [label="b'electromyography'",
+		level=5];
+	2509 -- 2376;
+	112	 [label="b'semiconductors'",
+		level=1];
+	4020	 [label="b'crystal growth'",
+		level=5];
+	112 -- 4020;
+	2294	 [label="b'neural interfaces'",
+		level=5];
+	2294 -- 2289;
+	3794	 [label="b'radiation biology'",
+		level=5];
+	3783	 [label="b'radiation physics'",
+		level=4];
+	3794 -- 3783;
+	4078	 [label="b'human mobility'",
+		level=5];
+	4080	 [label="b'urban computing'",
+		level=5];
+	4078 -- 4080;
+	3068	 [label="b'complex networks'",
+		level=2];
+	4078 -- 3068;
+	2258	 [label="b'urban education'",
+		level=5];
+	2255	 [label="b'education policy'",
+		level=2];
+	2258 -- 2255;
+	4374	 [label="b'social policy'",
+		level=2];
+	4708	 [label="b'welfare state'",
+		level=5];
+	4374 -- 4708;
+	1103	 [label="b'stream ecology'",
+		level=5];
+	1103 -- 1085;
+	4940	 [label="b'quantitative psychology'",
+		level=5];
+	4940 -- 1743;
+	2782	 [label="b'episodic memory'",
+		level=5];
+	556 -- 2782;
+	4879	 [label="b'interface science'",
+		level=5];
+	3746	 [label="b'colloids'",
+		level=2];
+	4879 -- 3746;
+	5496	 [label="b'building information modeling'",
+		level=3];
+	5498	 [label="b'lean construction'",
+		level=5];
+	5496 -- 5498;
+	4119	 [label="b'ethnicity'",
+		level=2];
+	4129	 [label="b'latina'",
+		level=5];
+	4119 -- 4129;
+	2907	 [label="b'internationalization'",
+		level=5];
+	2903	 [label="b'international business'",
+		level=2];
+	2907 -- 2903;
+	706	 [label="b'protein-protein interactions'",
+		level=5];
+	706 -- 346;
+	4008	 [label="b'dna nanotechnology'",
+		level=3];
+	4335	 [label="b'molecular programming'",
+		level=5];
+	4008 -- 4335;
+	3981	 [label="b'active tectonics'",
+		level=3];
+	4403	 [label="b'tectonic geomorphology'",
+		level=5];
+	3981 -- 4403;
+	2564	 [label="b'damage mechanics'",
+		level=5];
+	2543	 [label="b'fracture mechanics'",
+		level=2];
+	2564 -- 2543;
+	4289	 [label="b'fluid dynamics'",
+		level=1];
+	5652	 [label="b'hydrodynamic instability'",
+		level=5];
+	4289 -- 5652;
+	1967	 [label="b'chronic pain'",
+		level=5];
+	1936	 [label="b'health psychology'",
+		level=2];
+	1967 -- 1936;
+	736	 [label="b'bats'",
+		level=5];
+	374	 [label="b'ecology'",
+		level=1];
+	736 -- 374;
+	4284	 [label="b'computer-mediated communication'",
+		level=5];
+	3961 -- 4284;
+	4269	 [label="b'web 2.0'",
+		level=5];
+	3961 -- 4269;
+	4282	 [label="b'political participation'",
+		level=5];
+	3961 -- 4282;
+	4268	 [label="b'digital culture'",
+		level=5];
+	3961 -- 4268;
+	3252	 [label="b'optical sensing'",
+		level=5];
+	644	 [label="b'nanophotonics'",
+		level=1];
+	3252 -- 644;
+	599	 [label="b'competition'",
+		level=5];
+	599 -- 577;
+	2833	 [label="b'intersectionality'",
+		level=5];
+	562 -- 2833;
+	2822	 [label="b'sexual violence'",
+		level=5];
+	562 -- 2822;
+	1075	 [label="b'automata'",
+		level=5];
+	1005	 [label="b'logic'",
+		level=1];
+	1075 -- 1005;
+	4491	 [label="b'strength'",
+		level=5];
+	4485	 [label="b'conditioning'",
+		level=5];
+	4491 -- 4485;
+	3225	 [label="b'cell division'",
+		level=5];
+	3013	 [label="b'cell biology'",
+		level=1];
+	3225 -- 3013;
+	1669	 [label="b'vanet'",
+		level=5];
+	1656 -- 1669;
+	1675	 [label="b'network economics'",
+		level=5];
+	1656 -- 1675;
+	1680	 [label="b'cognitive radio networks'",
+		level=5];
+	1656 -- 1680;
+	5167	 [label="b'shm'",
+		level=5];
+	5166 -- 5167;
+	3700	 [label="b'earthquakes'",
+		level=3];
+	5136	 [label="b'crustal deformation'",
+		level=5];
+	3700 -- 5136;
+	4984	 [label="b'quantum groups'",
+		level=5];
+	3954	 [label="b'representation theory'",
+		level=3];
+	4984 -- 3954;
+	4338	 [label="b'critical care medicine'",
+		level=5];
+	4336	 [label="b'pulmonary'",
+		level=5];
+	4338 -- 4336;
+	1573	 [label="b'medical physics'",
+		level=2];
+	3785	 [label="b'radiation therapy'",
+		level=5];
+	1573 -- 3785;
+	3789	 [label="b'dosimetry'",
+		level=5];
+	1573 -- 3789;
+	3787	 [label="b'radiotherapy'",
+		level=5];
+	1573 -- 3787;
+	3784	 [label="b'monte carlo simulation'",
+		level=5];
+	1573 -- 3784;
+	3793	 [label="b'monte carlo'",
+		level=5];
+	1573 -- 3793;
+	3960	 [label="b'journalism'",
+		level=2];
+	4149	 [label="b'periodismo'",
+		level=5];
+	3960 -- 4149;
+	1707	 [label="b'criminology'",
+		level=1];
+	3489	 [label="b'corrections'",
+		level=5];
+	1707 -- 3489;
+	3493	 [label="b'cybercrime'",
+		level=5];
+	1707 -- 3493;
+	3604	 [label="b'transportation engineering'",
+		level=3];
+	3612	 [label="b'transportation safety'",
+		level=5];
+	3604 -- 3612;
+	1472	 [label="b'variational analysis'",
+		level=5];
+	1472 -- 840;
+	3105	 [label="b'biochar'",
+		level=5];
+	1102	 [label="b'soil science'",
+		level=2];
+	3105 -- 1102;
+	2528	 [label="b'muscle physiology'",
+		level=5];
+	2528 -- 2376;
+	1957	 [label="b'cultural psychology'",
+		level=5];
+	1922	 [label="b'social psychology'",
+		level=1];
+	1957 -- 1922;
+	4606	 [label="b'teacher education'",
+		level=2];
+	4736	 [label="b'history of education'",
+		level=5];
+	4606 -- 4736;
+	4923	 [label="b'human computation'",
+		level=5];
+	870	 [label="b'crowdsourcing'",
+		level=2];
+	4923 -- 870;
+	5154	 [label="b'enhanced oil recovery'",
+		level=5];
+	3858	 [label="b'reservoir engineering'",
+		level=3];
+	5154 -- 3858;
+	160	 [label="b'dental materials'",
+		level=5];
+	160 -- 133;
+	1852	 [label="b'free will'",
+		level=5];
+	1683	 [label="b'philosophy of mind'",
+		level=1];
+	1852 -- 1683;
+	3923	 [label="b'working memory'",
+		level=2];
+	5565	 [label="b'cognitive training'",
+		level=5];
+	3923 -- 5565;
+	1543	 [label="b'shape analysis'",
+		level=5];
+	1543 -- 841;
+	2487	 [label="b'animal behaviour'",
+		level=2];
+	5150	 [label="b'comparative cognition'",
+		level=5];
+	2487 -- 5150;
+	2370	 [label="b'homelessness'",
+		level=5];
+	2370 -- 2360;
+	2627	 [label="b'embryology'",
+		level=5];
+	330	 [label="b'developmental biology'",
+		level=1];
+	2627 -- 330;
+	1869	 [label="b'history of philosophy'",
+		level=5];
+	1856	 [label="b'philosophy'",
+		level=1];
+	1869 -- 1856;
+	5338	 [label="b'data protection'",
+		level=5];
+	2494	 [label="b'privacy'",
+		level=1];
+	5338 -- 2494;
+	5566	 [label="b'multimodality'",
+		level=5];
+	2219	 [label="b'discourse analysis'",
+		level=2];
+	5566 -- 2219;
+	1829	 [label="b'matching theory'",
+		level=5];
+	1829 -- 1461;
+	396	 [label="b'phenotypic plasticity'",
+		level=5];
+	345	 [label="b'evolution'",
+		level=1];
+	396 -- 345;
+	5187	 [label="b'justice'",
+		level=5];
+	2820	 [label="b'diversity'",
+		level=2];
+	5187 -- 2820;
+	4761	 [label="b'insect behavior'",
+		level=5];
+	3338	 [label="b'chemical ecology'",
+		level=2];
+	4761 -- 3338;
+	3395	 [label="b'insulin'",
+		level=5];
+	3370 -- 3395;
+	3398	 [label="b'lipid metabolism'",
+		level=5];
+	3370 -- 3398;
+	3240	 [label="b'international criminal law'",
+		level=5];
+	3248	 [label="b'public international law'",
+		level=5];
+	3240 -- 3248;
+	3233	 [label="b'international law'",
+		level=2];
+	3240 -- 3233;
+	275	 [label="b'autoimmune diseases'",
+		level=5];
+	275 -- 205;
+	3318	 [label="b'synthetic organic chemistry'",
+		level=5];
+	3303	 [label="b'medicinal chemistry'",
+		level=1];
+	3318 -- 3303;
+	4484	 [label="b'exercise physiology'",
+		level=2];
+	4484 -- 4485;
+	3995	 [label="b'nursing education'",
+		level=5];
+	1974	 [label="b'nursing'",
+		level=2];
+	3995 -- 1974;
+	5617	 [label="b'reconstructive surgery'",
+		level=5];
+	519	 [label="b'plasticity'",
+		level=2];
+	5617 -- 519;
+	3657	 [label="b'music'",
+		level=2];
+	4085	 [label="b'music psychology'",
+		level=5];
+	3657 -- 4085;
+	4084	 [label="b'musicology'",
+		level=5];
+	3657 -- 4084;
+	2492	 [label="b'access control'",
+		level=5];
+	2492 -- 1637;
+	743	 [label="b'dispersal'",
+		level=5];
+	743 -- 374;
+	1447	 [label="b'software product lines'",
+		level=5];
+	1397 -- 1447;
+	1415	 [label="b'web development'",
+		level=5];
+	1397 -- 1415;
+	1411	 [label="b'service oriented computing'",
+		level=5];
+	1397 -- 1411;
+	1422	 [label="b'software process improvement'",
+		level=5];
+	1397 -- 1422;
+	1428	 [label="b'software analysis'",
+		level=5];
+	1397 -- 1428;
+	1418	 [label="b'unitartucs'",
+		level=5];
+	1397 -- 1418;
+	1408	 [label="b'mining software repositories'",
+		level=5];
+	1397 -- 1408;
+	1439	 [label="b'service oriented architecture'",
+		level=5];
+	1397 -- 1439;
+	2500	 [label="b'rehabilitation engineering'",
+		level=5];
+	2376 -- 2500;
+	2502	 [label="b'orthopedics'",
+		level=5];
+	2376 -- 2502;
+	2524	 [label="b'tendon'",
+		level=5];
+	2376 -- 2524;
+	2537	 [label="b'neuromechanics'",
+		level=5];
+	2376 -- 2537;
+	4703	 [label="b'change management'",
+		level=5];
+	2916	 [label="b'leadership'",
+		level=1];
+	4703 -- 2916;
+	5444	 [label="b'network function virtualization'",
+		level=5];
+	1661	 [label="b'software defined networking'",
+		level=3];
+	5444 -- 1661;
+	1722	 [label="b'landscape archaeology'",
+		level=5];
+	1714	 [label="b'archaeology'",
+		level=1];
+	1722 -- 1714;
+	4721	 [label="b'cerebrovascular disease'",
+		level=5];
+	4242	 [label="b'stroke'",
+		level=2];
+	4721 -- 4242;
+	1850	 [label="b'philosophy of psychology'",
+		level=5];
+	1850 -- 1683;
+	1016	 [label="b'swarm intelligence'",
+		level=3];
+	4257	 [label="b'swarm robotics'",
+		level=5];
+	1016 -- 4257;
+	4378	 [label="b'phytotherapy'",
+		level=5];
+	4377	 [label="b'pharmacognosy'",
+		level=4];
+	4378 -- 4377;
+	3289	 [label="b'quantum thermodynamics'",
+		level=5];
+	3289 -- 3256;
+	5141	 [label="b'sanitation'",
+		level=4];
+	5436	 [label="b'hygiene'",
+		level=5];
+	5141 -- 5436;
+	5623	 [label="b'cancer immunology'",
+		level=5];
+	262	 [label="b'immunotherapy'",
+		level=3];
+	5623 -- 262;
+	2852	 [label="b'multimodal interaction'",
+		level=5];
+	1009	 [label="b'human-computer interaction'",
+		level=1];
+	2852 -- 1009;
+	1751	 [label="b'research methods'",
+		level=2];
+	5790	 [label="b'program evaluation'",
+		level=5];
+	1751 -- 5790;
+	5865	 [label="b'wetland ecology'",
+		level=5];
+	821	 [label="b'restoration ecology'",
+		level=3];
+	5865 -- 821;
+	4120	 [label="b'immigration'",
+		level=1];
+	4200	 [label="b'latino politics'",
+		level=5];
+	4120 -- 4200;
+	4201	 [label="b'latino'",
+		level=5];
+	4120 -- 4201;
+	5188	 [label="b'inclusion'",
+		level=5];
+	2820 -- 5188;
+	5717	 [label="b'mosquitoes'",
+		level=5];
+	5484 -- 5717;
+	4243	 [label="b'neurocritical care'",
+		level=5];
+	489	 [label="b'neurology'",
+		level=1];
+	4243 -- 489;
+	432	 [label="b'methodology'",
+		level=3];
+	4739	 [label="b'design theory'",
+		level=5];
+	432 -- 4739;
+	2992	 [label="b'phonetics'",
+		level=2];
+	2995	 [label="b'laboratory phonology'",
+		level=5];
+	2992 -- 2995;
+	29	 [label="b'organic chemistry'",
+		level=1];
+	3308	 [label="b'organocatalysis'",
+		level=5];
+	29 -- 3308;
+	151	 [label="b'immunoengineering'",
+		level=5];
+	151 -- 133;
+	1854	 [label="b'philosophy of action'",
+		level=5];
+	1683 -- 1854;
+	1767	 [label="b'industrial organization'",
+		level=1];
+	4639	 [label="b'competition policy'",
+		level=5];
+	1767 -- 4639;
+	4863	 [label="b'reading'",
+		level=2];
+	5419	 [label="b'word recognition'",
+		level=5];
+	4863 -- 5419;
+	3855	 [label="b'hydraulic fracturing'",
+		level=5];
+	3842	 [label="b'geomechanics'",
+		level=2];
+	3855 -- 3842;
+	295	 [label="b'microbial pathogenesis'",
+		level=5];
+	295 -- 241;
+	3171	 [label="b'polymer physics'",
+		level=2];
+	5400	 [label="b'polymer nanocomposites'",
+		level=5];
+	3171 -- 5400;
+	788	 [label="b'landscape ecology'",
+		level=2];
+	2846	 [label="b'conservation ecology'",
+		level=5];
+	788 -- 2846;
+	2761	 [label="b'personality disorders'",
+		level=5];
+	1937	 [label="b'personality'",
+		level=1];
+	2761 -- 1937;
+	2114	 [label="b'acoustic signal processing'",
+		level=5];
+	848	 [label="b'signal processing'",
+		level=1];
+	2114 -- 848;
+	2654	 [label="b'rf circuits'",
+		level=5];
+	2648	 [label="b'antennas'",
+		level=2];
+	2654 -- 2648;
+	2638	 [label="b'diffusion'",
+		level=5];
+	1572	 [label="b'mri'",
+		level=1];
+	2638 -- 1572;
+	553	 [label="b'basal ganglia'",
+		level=5];
+	553 -- 327;
+	5232	 [label="b'emerging infectious diseases'",
+		level=5];
+	254	 [label="b'virology'",
+		level=1];
+	5232 -- 254;
+	5255	 [label="b'credit risk'",
+		level=5];
+	2892	 [label="b'derivatives'",
+		level=3];
+	5255 -- 2892;
+	5519	 [label="b'bees'",
+		level=5];
+	747	 [label="b'pollination'",
+		level=3];
+	5519 -- 747;
+	3749	 [label="b'gels'",
+		level=5];
+	3159	 [label="b'soft matter'",
+		level=1];
+	3749 -- 3159;
+	1251	 [label="b'nanomanufacturing'",
+		level=5];
+	109	 [label="b'mems'",
+		level=1];
+	1251 -- 109;
+	535	 [label="b'neuroanatomy'",
+		level=5];
+	535 -- 327;
+	1147	 [label="b'cosmology'",
+		level=1];
+	3671	 [label="b'relativity'",
+		level=5];
+	1147 -- 3671;
+	3676	 [label="b'gravitational lensing'",
+		level=5];
+	1147 -- 3676;
+	3683	 [label="b'galaxy evolution'",
+		level=5];
+	1147 -- 3683;
+	1225	 [label="b'contrast agents'",
+		level=5];
+	1220	 [label="b'molecular imaging'",
+		level=2];
+	1225 -- 1220;
+	1583	 [label="b'surgery'",
+		level=2];
+	1587	 [label="b'gastrointestinal'",
+		level=5];
+	1583 -- 1587;
+	1586	 [label="b'surgical oncology'",
+		level=5];
+	1583 -- 1586;
+	3423	 [label="b'health technology assessment'",
+		level=5];
+	2245	 [label="b'health economics'",
+		level=1];
+	3423 -- 2245;
+	1698	 [label="b'tesol'",
+		level=5];
+	1694 -- 1698;
+	2086	 [label="b'animation'",
+		level=5];
+	2086 -- 1518;
+	4861	 [label="b'adolescent development'",
+		level=5];
+	1975	 [label="b'child'",
+		level=3];
+	4861 -- 1975;
+	23	 [label="b'renewables'",
+		level=5];
+	23 -- 2;
+	3336	 [label="b'insect ecology'",
+		level=5];
+	3336 -- 732;
+	1015	 [label="b'knowledge representation'",
+		level=2];
+	3935	 [label="b'computational logic'",
+		level=5];
+	1015 -- 3935;
+	4419	 [label="b'administration'",
+		level=5];
+	431	 [label="b'public policy'",
+		level=1];
+	4419 -- 431;
+	256	 [label="b'cytokines'",
+		level=5];
+	205 -- 256;
+	265	 [label="b'vaccinology'",
+		level=5];
+	205 -- 265;
+	279	 [label="b'neutrophils'",
+		level=5];
+	205 -- 279;
+	263	 [label="b'antibodies'",
+		level=5];
+	205 -- 263;
+	4617	 [label="b'charge transfer'",
+		level=5];
+	4617 -- 4158;
+	1916	 [label="b'magnonics'",
+		level=5];
+	1910	 [label="b'spintronics'",
+		level=2];
+	1916 -- 1910;
+	1681	 [label="b'manet'",
+		level=5];
+	1669 -- 1681;
+	3201	 [label="b'optofluidics'",
+		level=5];
+	1243 -- 3201;
+	3198	 [label="b'electrokinetics'",
+		level=5];
+	1243 -- 3198;
+	595	 [label="b'knowledge'",
+		level=5];
+	595 -- 577;
+	603	 [label="b'technology transfer'",
+		level=5];
+	577 -- 603;
+	612	 [label="b'industrial dynamics'",
+		level=5];
+	577 -- 612;
+	593	 [label="b'science policy'",
+		level=5];
+	577 -- 593;
+	741	 [label="b'phycology'",
+		level=5];
+	741 -- 374;
+	3089	 [label="b'post-translational modifications'",
+		level=5];
+	3089 -- 660;
+	4100	 [label="b'power system protection'",
+		level=5];
+	4100 -- 1482;
+	888	 [label="b'computational neuroscience'",
+		level=1];
+	5412	 [label="b'sensory systems'",
+		level=5];
+	888 -- 5412;
+	5415	 [label="b'neural coding'",
+		level=5];
+	888 -- 5415;
+	5413	 [label="b'theoretical neuroscience'",
+		level=5];
+	888 -- 5413;
+	5414	 [label="b'neuromorphic engineering'",
+		level=5];
+	888 -- 5414;
+	3776	 [label="b'heterogeneous computing'",
+		level=5];
+	2038	 [label="b'high performance computing'",
+		level=1];
+	3776 -- 2038;
+	568	 [label="b'bilingual education'",
+		level=5];
+	555	 [label="b'education'",
+		level=1];
+	568 -- 555;
+	4807	 [label="b'polymer processing'",
+		level=5];
+	2926	 [label="b'rheology'",
+		level=2];
+	4807 -- 2926;
+	1464	 [label="b'simulation'",
+		level=1];
+	3467	 [label="b'system modeling'",
+		level=5];
+	1464 -- 3467;
+	5458	 [label="b'crop physiology'",
+		level=5];
+	3106	 [label="b'agronomy'",
+		level=3];
+	5458 -- 3106;
+	3287	 [label="b'quantum computing'",
+		level=2];
+	5208	 [label="b'quantum error correction'",
+		level=5];
+	3287 -- 5208;
+	5066	 [label="b'phononics'",
+		level=5];
+	2191	 [label="b'thermoelectrics'",
+		level=2];
+	5066 -- 2191;
+	1786	 [label="b'complexity'",
+		level=3];
+	5723	 [label="b'self-organization'",
+		level=5];
+	1786 -- 5723;
+	3649	 [label="b'purification'",
+		level=5];
+	3647	 [label="b'separation'",
+		level=3];
+	3649 -- 3647;
+	3132	 [label="b'guidance'",
+		level=5];
+	2377	 [label="b'control'",
+		level=1];
+	3132 -- 2377;
+	3659	 [label="b'literacy'",
+		level=2];
+	4864	 [label="b'children s literature'",
+		level=5];
+	3659 -- 4864;
+	4249	 [label="b'thrombosis'",
+		level=3];
+	4332	 [label="b'hemostasis'",
+		level=5];
+	4249 -- 4332;
+	4331	 [label="b'platelets'",
+		level=5];
+	4249 -- 4331;
+	4333	 [label="b'coagulation'",
+		level=5];
+	4249 -- 4333;
+	5457	 [label="b'weed science'",
+		level=5];
+	5457 -- 3106;
+	2297	 [label="b'histone modifications'",
+		level=5];
+	329 -- 2297;
+	2299	 [label="b'non-coding rna'",
+		level=5];
+	329 -- 2299;
+	76	 [label="b'thin films'",
+		level=1];
+	4327	 [label="b'complex oxides'",
+		level=5];
+	76 -- 4327;
+	4324	 [label="b'cvd'",
+		level=5];
+	76 -- 4324;
+	4178	 [label="b'fuzzy sets'",
+		level=5];
+	1639	 [label="b'systems'",
+		level=1];
+	4178 -- 1639;
+	843	 [label="b'biomedical informatics'",
+		level=2];
+	1645	 [label="b'electronic health records'",
+		level=5];
+	843 -- 1645;
+	2547	 [label="b'isogeometric analysis'",
+		level=5];
+	2547 -- 2499;
+	1134	 [label="b'information science'",
+		level=2];
+	1141	 [label="b'information behavior'",
+		level=5];
+	1134 -- 1141;
+	1198	 [label="b'well-being'",
+		level=2];
+	5591	 [label="b'happiness'",
+		level=5];
+	1198 -- 5591;
+	1888	 [label="b'electronic commerce'",
+		level=5];
+	1402	 [label="b'information systems'",
+		level=1];
+	1888 -- 1402;
+	1849	 [label="b'metaphysics'",
+		level=1];
+	1859	 [label="b'ancient philosophy'",
+		level=5];
+	1849 -- 1859;
+	2034	 [label="b'embedded systems'",
+		level=1];
+	2068	 [label="b'hardware design'",
+		level=5];
+	2034 -- 2068;
+	2067	 [label="b'low power design'",
+		level=5];
+	2034 -- 2067;
+	2064	 [label="b'hardware'",
+		level=5];
+	2034 -- 2064;
+	5662	 [label="b'prediction'",
+		level=5];
+	1355	 [label="b'data assimilation'",
+		level=2];
+	5662 -- 1355;
+	4953	 [label="b'emc'",
+		level=5];
+	2657	 [label="b'electromagnetics'",
+		level=2];
+	4953 -- 2657;
+	2667	 [label="b'caregiving'",
+		level=5];
+	1173	 [label="b'dementia'",
+		level=2];
+	2667 -- 1173;
+	2260	 [label="b'comparative education'",
+		level=5];
+	2260 -- 2255;
+	5115	 [label="b'international'",
+		level=5];
+	2260 -- 5115;
+	1166	 [label="b'spatial audio'",
+		level=5];
+	839	 [label="b'audio signal processing'",
+		level=3];
+	1166 -- 839;
+	2565	 [label="b'fatigue'",
+		level=2];
+	5061	 [label="b'creep'",
+		level=5];
+	2565 -- 5061;
+	4159	 [label="b'spectroscopy'",
+		level=1];
+	4994	 [label="b'interferometry'",
+		level=5];
+	4159 -- 4994;
+	4993	 [label="b'biophysical chemistry'",
+		level=5];
+	4159 -- 4993;
+	4992	 [label="b'luminescence'",
+		level=5];
+	4159 -- 4992;
+	4111	 [label="b'hiv prevention'",
+		level=4];
+	5649	 [label="b'lgbt health'",
+		level=5];
+	4111 -- 5649;
+	3769	 [label="b'parenting'",
+		level=2];
+	3771	 [label="b'temperament'",
+		level=5];
+	3769 -- 3771;
+	783	 [label="b'parasites'",
+		level=5];
+	783 -- 374;
+	218	 [label="b'leukemia'",
+		level=4];
+	4852	 [label="b'lymphoma'",
+		level=5];
+	218 -- 4852;
+	846	 [label="b'algorithms'",
+		level=1];
+	1788	 [label="b'parameterized complexity'",
+		level=5];
+	846 -- 1788;
+	2024	 [label="b'program synthesis'",
+		level=5];
+	1403	 [label="b'programming languages'",
+		level=1];
+	2024 -- 1403;
+	3075	 [label="b'network theory'",
+		level=5];
+	1638	 [label="b'complex systems'",
+		level=1];
+	3075 -- 1638;
+	3980	 [label="b'paleoseismology'",
+		level=5];
+	3632	 [label="b'structural geology'",
+		level=2];
+	3980 -- 3632;
+	310	 [label="b'bacterial genetics'",
+		level=5];
+	310 -- 241;
+	1621	 [label="b'mapreduce'",
+		level=5];
+	1591	 [label="b'cloud computing'",
+		level=1];
+	1621 -- 1591;
+	5609	 [label="b'marine biogeochemistry'",
+		level=5];
+	1106	 [label="b'oceanography'",
+		level=1];
+	5609 -- 1106;
+	156	 [label="b'drug delivery systems'",
+		level=5];
+	156 -- 133;
+	2237	 [label="b'social support'",
+		level=5];
+	2237 -- 473;
+	692	 [label="b'computational genomics'",
+		level=5];
+	692 -- 346;
+	2335	 [label="b'systems analysis'",
+		level=5];
+	2335 -- 585;
+	3107	 [label="b'digital soil mapping'",
+		level=5];
+	3107 -- 1102;
+	1315	 [label="b'land surface modeling'",
+		level=5];
+	1264	 [label="b'hydrology'",
+		level=1];
+	1315 -- 1264;
+	2928	 [label="b'composites'",
+		level=1];
+	5104	 [label="b'multifunctional materials'",
+		level=5];
+	2928 -- 5104;
+	4968	 [label="b'esl'",
+		level=5];
+	1698 -- 4968;
+	3024	 [label="b'cryo-em'",
+		level=5];
+	3011 -- 3024;
+	3033	 [label="b'protein design'",
+		level=5];
+	3011 -- 3033;
+	1750	 [label="b'financial mathematics'",
+		level=5];
+	1750 -- 844;
+	467	 [label="b'psychology'",
+		level=1];
+	557	 [label="b'human development'",
+		level=5];
+	467 -- 557;
+	3893	 [label="b'numerical analysis'",
+		level=1];
+	3903	 [label="b'pdes'",
+		level=5];
+	3893 -- 3903;
+	3893 -- 3896;
+	328	 [label="b'plant biology'",
+		level=2];
+	1083	 [label="b'arabidopsis'",
+		level=5];
+	328 -- 1083;
+	2218	 [label="b'language contact'",
+		level=5];
+	2205	 [label="b'sociolinguistics'",
+		level=2];
+	2218 -- 2205;
+	5335	 [label="b'usable security'",
+		level=5];
+	5335 -- 2494;
+	1755	 [label="b'statistical computing'",
+		level=5];
+	1755 -- 844;
+	4068	 [label="b'molecular recognition'",
+		level=5];
+	3304	 [label="b'supramolecular chemistry'",
+		level=2];
+	4068 -- 3304;
+	2035	 [label="b'neuromorphic computing'",
+		level=4];
+	2631	 [label="b'memristor'",
+		level=5];
+	2035 -- 2631;
+	3046	 [label="b'headache'",
+		level=5];
+	478	 [label="b'pain'",
+		level=2];
+	3046 -- 478;
+	3051	 [label="b'migraine'",
+		level=5];
+	3046 -- 3051;
+	4143	 [label="b'string theory'",
+		level=2];
+	4896	 [label="b'supersymmetry'",
+		level=5];
+	4143 -- 4896;
+	663	 [label="b'software'",
+		level=5];
+	663 -- 346;
+	3393	 [label="b'hypertension'",
+		level=2];
+	5494	 [label="b'kidney disease'",
+		level=5];
+	3393 -- 5494;
+	1322	 [label="b'erosion'",
+		level=5];
+	1322 -- 1264;
+	1324	 [label="b'wildfire'",
+		level=5];
+	1324 -- 1264;
+	501	 [label="b'neurodevelopmental disorders'",
+		level=5];
+	501 -- 327;
+	3728	 [label="b'real estate finance'",
+		level=5];
+	3728 -- 2742;
+	5119	 [label="b'hpv'",
+		level=5];
+	2006	 [label="b'cervical cancer'",
+		level=5];
+	5119 -- 2006;
+	2668	 [label="b'long-term care'",
+		level=5];
+	2668 -- 1173;
+	2991	 [label="b'software analytics'",
+		level=5];
+	2991 -- 1408;
+	3052	 [label="b'electron transport'",
+		level=5];
+	111	 [label="b'graphene'",
+		level=1];
+	3052 -- 111;
+	4081	 [label="b'music education'",
+		level=3];
+	4086	 [label="b'music technology'",
+		level=5];
+	4081 -- 4086;
+	2197	 [label="b'boiling'",
+		level=5];
+	2197 -- 2175;
+	3986	 [label="b'neotectonics'",
+		level=5];
+	3632 -- 3986;
+	3984	 [label="b'earthquake geology'",
+		level=5];
+	3632 -- 3984;
+	4827	 [label="b'colonialism'",
+		level=5];
+	4821	 [label="b'history'",
+		level=1];
+	4827 -- 4821;
+	3952	 [label="b'commutative algebra'",
+		level=5];
+	1802	 [label="b'algebraic geometry'",
+		level=2];
+	3952 -- 1802;
+	3345	 [label="b'borders'",
+		level=5];
+	2807 -- 3345;
+	3347	 [label="b'asylum'",
+		level=5];
+	2807 -- 3347;
+	3515	 [label="b'water'",
+		level=2];
+	5143	 [label="b'wastewater'",
+		level=5];
+	3515 -- 5143;
+	1807	 [label="b'hiv'",
+		level=1];
+	2005	 [label="b'hcv'",
+		level=5];
+	1807 -- 2005;
+	1807 -- 2006;
+	3331	 [label="b'therapeutics'",
+		level=5];
+	3331 -- 317;
+	3737	 [label="b'entrepreneurial finance'",
+		level=5];
+	3737 -- 2742;
+	3820	 [label="b'masonry structures'",
+		level=5];
+	3810	 [label="b'earthquake engineering'",
+		level=2];
+	3820 -- 3810;
+	1574	 [label="b'magnetic resonance imaging'",
+		level=2];
+	5041	 [label="b'functional mri'",
+		level=5];
+	1574 -- 5041;
+	5026	 [label="b'skull base surgery'",
+		level=5];
+	500	 [label="b'neurosurgery'",
+		level=2];
+	5026 -- 500;
+	309	 [label="b'microbial physiology'",
+		level=5];
+	309 -- 241;
+	5409	 [label="b'food processing'",
+		level=5];
+	297	 [label="b'food safety'",
+		level=2];
+	5409 -- 297;
+	3037	 [label="b'x-ray diffraction'",
+		level=5];
+	3020	 [label="b'crystallography'",
+		level=2];
+	3037 -- 3020;
+	2504	 [label="b'rehabilitation'",
+		level=2];
+	4231	 [label="b'occupational therapy'",
+		level=5];
+	2504 -- 4231;
+	979	 [label="b'databases'",
+		level=1];
+	3454	 [label="b'query processing'",
+		level=5];
+	979 -- 3454;
+	3456	 [label="b'data warehouse'",
+		level=5];
+	979 -- 3456;
+	3457	 [label="b'data quality'",
+		level=5];
+	979 -- 3457;
+	71	 [label="b'condensed matter physics'",
+		level=1];
+	1898	 [label="b'low temperature physics'",
+		level=5];
+	71 -- 1898;
+	3518	 [label="b'bioelectrochemical systems'",
+		level=5];
+	2271 -- 3518;
+	1019	 [label="b'multi-agent systems'",
+		level=2];
+	4744	 [label="b'cooperative control'",
+		level=5];
+	1019 -- 4744;
+	1946	 [label="b'group processes'",
+		level=5];
+	1946 -- 1922;
+	4546	 [label="b'dynamic spectrum access'",
+		level=5];
+	2936 -- 4546;
+	5638	 [label="b'cardiomyopathy'",
+		level=5];
+	832	 [label="b'heart failure'",
+		level=3];
+	5638 -- 832;
+	459	 [label="b'conflict resolution'",
+		level=5];
+	459 -- 430;
+	540	 [label="b'neuroinflammation'",
+		level=4];
+	5898	 [label="b'microglia'",
+		level=5];
+	540 -- 5898;
+	209	 [label="b'melanoma'",
+		level=5];
+	192	 [label="b'cancer'",
+		level=1];
+	209 -- 192;
+	3796	 [label="b'skin cancer'",
+		level=5];
+	209 -- 3796;
+	4466	 [label="b'cscw'",
+		level=2];
+	4977	 [label="b'cscl'",
+		level=5];
+	4466 -- 4977;
+	3953	 [label="b'singularity theory'",
+		level=5];
+	3953 -- 1802;
+	2878	 [label="b'health education'",
+		level=5];
+	1808 -- 2878;
+	2873	 [label="b'clinical epidemiology'",
+		level=5];
+	1808 -- 2873;
+	5341	 [label="b'surveillance'",
+		level=5];
+	5341 -- 2494;
+	2925	 [label="b'adhesion'",
+		level=3];
+	4800	 [label="b'wetting'",
+		level=5];
+	2925 -- 4800;
+	4660	 [label="b'technology policy'",
+		level=5];
+	580 -- 4660;
+	2230	 [label="b'atmospheric dynamics'",
+		level=5];
+	1304 -- 2230;
+	4532	 [label="b'financial econometrics'",
+		level=2];
+	4539	 [label="b'empirical finance'",
+		level=5];
+	4532 -- 4539;
+	4538	 [label="b'quantitative finance'",
+		level=5];
+	4532 -- 4538;
+	5636	 [label="b'general surgery'",
+		level=5];
+	5636 -- 1586;
+	686	 [label="b'plant genomics'",
+		level=5];
+	686 -- 346;
+	584	 [label="b'intellectual property'",
+		level=2];
+	1125	 [label="b'cyberlaw'",
+		level=5];
+	584 -- 1125;
+	1121	 [label="b'internet law'",
+		level=5];
+	584 -- 1121;
+	5570	 [label="b'swine'",
+		level=5];
+	1828	 [label="b'isu-vdpam'",
+		level=5];
+	5570 -- 1828;
+	2234	 [label="b'ocean modeling'",
+		level=5];
+	2234 -- 2224;
+	4836	 [label="b'cmos'",
+		level=5];
+	4175	 [label="b'integrated circuits'",
+		level=3];
+	4836 -- 4175;
+	2394	 [label="b'visual servoing'",
+		level=5];
+	1519 -- 2394;
+	2425	 [label="b'biorobotics'",
+		level=5];
+	1519 -- 2425;
+	2378	 [label="b'grasping'",
+		level=5];
+	1519 -- 2378;
+	2414	 [label="b'bio-inspired robotics'",
+		level=5];
+	1519 -- 2414;
+	2434	 [label="b'state estimation'",
+		level=5];
+	1519 -- 2434;
+	2429	 [label="b'multibody dynamics'",
+		level=5];
+	1519 -- 2429;
+	2401	 [label="b'hri'",
+		level=5];
+	1519 -- 2401;
+	2432	 [label="b'intelligent control'",
+		level=5];
+	1519 -- 2432;
+	2403	 [label="b'multi-robot systems'",
+		level=5];
+	1519 -- 2403;
+	2431	 [label="b'soft robotics'",
+		level=5];
+	1519 -- 2431;
+	5431	 [label="b'distributed'",
+		level=5];
+	3779	 [label="b'parallel computing'",
+		level=1];
+	5431 -- 3779;
+	1579	 [label="b'hifu'",
+		level=5];
+	1571	 [label="b'ultrasound'",
+		level=2];
+	1579 -- 1571;
+	5535	 [label="b'disaster risk reduction'",
+		level=5];
+	5534	 [label="b'climate change adaptation'",
+		level=4];
+	5535 -- 5534;
+	4044	 [label="b'environmental history'",
+		level=5];
+	4044 -- 579;
+	4130	 [label="b'environmental statistics'",
+		level=5];
+	1383	 [label="b'spatial statistics'",
+		level=3];
+	4130 -- 1383;
+	4824	 [label="b'art history'",
+		level=3];
+	5308	 [label="b'visual culture'",
+		level=5];
+	4824 -- 5308;
+	3734	 [label="b'ipos'",
+		level=5];
+	3734 -- 2742;
+	3791	 [label="b'radiation oncology'",
+		level=3];
+	5897	 [label="b'lung cancer'",
+		level=5];
+	3791 -- 5897;
+	3108	 [label="b'pedology'",
+		level=5];
+	3108 -- 1102;
+	993	 [label="b'social media mining'",
+		level=5];
+	837 -- 993;
+	987	 [label="b'data streams'",
+		level=5];
+	837 -- 987;
+	991	 [label="b'data warehousing'",
+		level=5];
+	837 -- 991;
+	4355	 [label="b'pediatric surgery'",
+		level=5];
+	4353	 [label="b'pediatric urology'",
+		level=5];
+	4355 -- 4353;
+	1865	 [label="b'theology'",
+		level=5];
+	1865 -- 1856;
+	5093	 [label="b'fear'",
+		level=5];
+	3973	 [label="b'anxiety'",
+		level=2];
+	5093 -- 3973;
+	145	 [label="b'pharmaceutical sciences'",
+		level=5];
+	108	 [label="b'drug delivery'",
+		level=1];
+	145 -- 108;
+	5661	 [label="b'numerical weather prediction'",
+		level=5];
+	5661 -- 1355;
+	3284	 [label="b'quantum metrology'",
+		level=5];
+	3284 -- 3256;
+	5125	 [label="b'cement'",
+		level=5];
+	5051	 [label="b'concrete'",
+		level=2];
+	5125 -- 5051;
+	511	 [label="b'neurodevelopment'",
+		level=5];
+	511 -- 327;
+	5120	 [label="b'bridges'",
+		level=5];
+	5051 -- 5120;
+	5122	 [label="b'frp'",
+		level=5];
+	5051 -- 5122;
+	5123	 [label="b'construction materials'",
+		level=5];
+	5051 -- 5123;
+	5121	 [label="b'masonry'",
+		level=5];
+	5051 -- 5121;
+	386	 [label="b'host-parasite interactions'",
+		level=5];
+	345 -- 386;
+	385	 [label="b'plant systematics'",
+		level=5];
+	345 -- 385;
+	387	 [label="b'coevolution'",
+		level=5];
+	345 -- 387;
+	380	 [label="b'insects'",
+		level=5];
+	345 -- 380;
+	4696	 [label="b'regional economics'",
+		level=3];
+	5910	 [label="b'spatial econometrics'",
+		level=5];
+	4696 -- 5910;
+	696	 [label="b'human genomics'",
+		level=5];
+	696 -- 346;
+	5813	 [label="b'm2m'",
+		level=5];
+	2946	 [label="b'lte'",
+		level=4];
+	5813 -- 2946;
+	808	 [label="b'conservation planning'",
+		level=5];
+	726	 [label="b'conservation biology'",
+		level=1];
+	808 -- 726;
+	2267	 [label="b'particle technology'",
+		level=5];
+	72	 [label="b'chemical engineering'",
+		level=1];
+	2267 -- 72;
+	1872	 [label="b'moral psychology'",
+		level=3];
+	3695	 [label="b'experimental philosophy'",
+		level=5];
+	1872 -- 3695;
+	2441	 [label="b'drama'",
+		level=5];
+	2438 -- 2441;
+	3866	 [label="b'fitness'",
+		level=5];
+	3866 -- 3371;
+	2829	 [label="b'sexuality'",
+		level=2];
+	5572	 [label="b'sex work'",
+		level=5];
+	2829 -- 5572;
+	3094	 [label="b'glycomics'",
+		level=5];
+	660 -- 3094;
+	2254	 [label="b'family economics'",
+		level=5];
+	1206	 [label="b'labor economics'",
+		level=1];
+	2254 -- 1206;
+	2109	 [label="b'virtual environments'",
+		level=5];
+	2085	 [label="b'virtual reality'",
+		level=2];
+	2109 -- 2085;
+	2040	 [label="b'vlsi'",
+		level=2];
+	4496	 [label="b'low power'",
+		level=5];
+	2040 -- 4496;
+	3826	 [label="b'seismic design'",
+		level=5];
+	3826 -- 3810;
+	4437	 [label="b'fiscal policy'",
+		level=5];
+	4437 -- 2246;
+	4952	 [label="b'antenna design'",
+		level=5];
+	2657 -- 4952;
+	493	 [label="b'pharmacology'",
+		level=1];
+	4683	 [label="b'pharmacy'",
+		level=5];
+	493 -- 4683;
+	4686	 [label="b'cardiovascular physiology'",
+		level=5];
+	493 -- 4686;
+	5157	 [label="b'model-based testing'",
+		level=5];
+	1417	 [label="b'formal methods'",
+		level=1];
+	5157 -- 1417;
+	3930	 [label="b'intrinsically disordered proteins'",
+		level=5];
+	3160	 [label="b'protein folding'",
+		level=2];
+	3930 -- 3160;
+	4540	 [label="b'medical geography'",
+		level=5];
+	1385 -- 4540;
+	1480	 [label="b'process systems engineering'",
+		level=5];
+	840 -- 1480;
+	1469	 [label="b'stochastic systems'",
+		level=5];
+	840 -- 1469;
+	1465	 [label="b'convex analysis'",
+		level=5];
+	840 -- 1465;
+	1471	 [label="b'variational inequalities'",
+		level=5];
+	840 -- 1471;
+	4444	 [label="b'international macroeconomics'",
+		level=5];
+	4444 -- 2246;
+	1530	 [label="b'intelligent vehicles'",
+		level=4];
+	5248	 [label="b'driver assistance systems'",
+		level=5];
+	1530 -- 5248;
+	3192	 [label="b'biological networks'",
+		level=5];
+	3192 -- 661;
+	1247	 [label="b'biomedical devices'",
+		level=5];
+	1247 -- 109;
+	5266	 [label="b'cataloging'",
+		level=5];
+	4567	 [label="b'metadata'",
+		level=3];
+	5266 -- 4567;
+	5554	 [label="b'presidency'",
+		level=5];
+	3554 -- 5554;
+	1657	 [label="b'flamingo project'",
+		level=5];
+	1624	 [label="b'computer networks'",
+		level=1];
+	1657 -- 1624;
+	1844	 [label="b'horticulture'",
+		level=5];
+	314	 [label="b'plant physiology'",
+		level=2];
+	1844 -- 314;
+	4557	 [label="b'knowledge translation'",
+		level=5];
+	4554	 [label="b'systematic reviews'",
+		level=3];
+	4557 -- 4554;
+	4236	 [label="b'connectivity'",
+		level=5];
+	4236 -- 488;
+	1848	 [label="b'abiotic stress'",
+		level=5];
+	314 -- 1848;
+	1577	 [label="b'elastography'",
+		level=5];
+	1577 -- 1571;
+	1602	 [label="b'data centers'",
+		level=5];
+	1602 -- 1591;
+	5094	 [label="b'cognitive behavioral therapy'",
+		level=5];
+	5094 -- 3973;
+	2722	 [label="b'land use'",
+		level=2];
+	4048	 [label="b'land cover change'",
+		level=5];
+	2722 -- 4048;
+	3218	 [label="b'calcium signaling'",
+		level=5];
+	480	 [label="b'ion channels'",
+		level=2];
+	3218 -- 480;
+	757	 [label="b'physiological ecology'",
+		level=3];
+	5654	 [label="b'energetics'",
+		level=5];
+	757 -- 5654;
+	2778	 [label="b'attention'",
+		level=1];
+	3919	 [label="b'auditory neuroscience'",
+		level=5];
+	2778 -- 3919;
+	4888	 [label="b'topology'",
+		level=3];
+	4889	 [label="b'geometric group theory'",
+		level=5];
+	4888 -- 4889;
+	4756	 [label="b'social geography'",
+		level=5];
+	4754	 [label="b'cultural geography'",
+		level=4];
+	4756 -- 4754;
+	2383	 [label="b'uav'",
+		level=3];
+	4330	 [label="b'uas'",
+		level=5];
+	2383 -- 4330;
+	2906	 [label="b'international entrepreneurship'",
+		level=5];
+	2903 -- 2906;
+	427	 [label="b'african politics'",
+		level=5];
+	405	 [label="b'comparative politics'",
+		level=1];
+	427 -- 405;
+	1232	 [label="b'learning design'",
+		level=5];
+	560	 [label="b'educational technology'",
+		level=1];
+	1232 -- 560;
+	5089	 [label="b'paleoanthropology'",
+		level=5];
+	5089 -- 5080;
+	812	 [label="b'avian ecology'",
+		level=5];
+	812 -- 726;
+	1884	 [label="b'adoption'",
+		level=5];
+	1884 -- 1402;
+	4285	 [label="b'computational fluid dynamics'",
+		level=1];
+	4300	 [label="b'turbulent flows'",
+		level=5];
+	4285 -- 4300;
+	4872	 [label="b'mathematical statistics'",
+		level=5];
+	1742	 [label="b'probability'",
+		level=2];
+	4872 -- 1742;
+	5659	 [label="b'plato'",
+		level=5];
+	1859 -- 5659;
+	5273	 [label="b'asphalt'",
+		level=5];
+	3840	 [label="b'pavement'",
+		level=4];
+	5273 -- 3840;
+	1914	 [label="b'spin waves'",
+		level=5];
+	1910 -- 1914;
+	449	 [label="b'security studies'",
+		level=5];
+	449 -- 430;
+	4103	 [label="b'energy markets'",
+		level=5];
+	1482 -- 4103;
+	4099	 [label="b'power market'",
+		level=5];
+	1482 -- 4099;
+	54	 [label="b'nanomaterials'",
+		level=1];
+	3880	 [label="b'lithium batteries'",
+		level=5];
+	54 -- 3880;
+	1806	 [label="b'veterinary medicine'",
+		level=4];
+	1806 -- 1828;
+	5044	 [label="b'coastal'",
+		level=5];
+	1312	 [label="b'sediment transport'",
+		level=2];
+	5044 -- 1312;
+	1712	 [label="b'sociology of religion'",
+		level=5];
+	561	 [label="b'sociology'",
+		level=1];
+	1712 -- 561;
+	570	 [label="b'labour market'",
+		level=5];
+	555 -- 570;
+	574	 [label="b'international education'",
+		level=5];
+	555 -- 574;
+	566	 [label="b'adult education'",
+		level=5];
+	555 -- 566;
+	325	 [label="b'genetic engineering'",
+		level=5];
+	325 -- 282;
+	1601	 [label="b'workflows'",
+		level=5];
+	1601 -- 1591;
+	2589	 [label="b'earth history'",
+		level=5];
+	2571	 [label="b'geology'",
+		level=1];
+	2589 -- 2571;
+	2490	 [label="b'malware'",
+		level=5];
+	2490 -- 1637;
+	2864	 [label="b'computer supported cooperative work'",
+		level=5];
+	1009 -- 2864;
+	4367	 [label="b'optometry'",
+		level=5];
+	1165	 [label="b'vision science'",
+		level=3];
+	4367 -- 1165;
+	2814	 [label="b'identity'",
+		level=1];
+	4741	 [label="b'narrative'",
+		level=5];
+	2814 -- 4741;
+	457	 [label="b'european integration'",
+		level=5];
+	430 -- 457;
+	450	 [label="b'international conflict'",
+		level=5];
+	430 -- 450;
+	1115	 [label="b'mercury'",
+		level=5];
+	1115 -- 1085;
+	3782	 [label="b'parallel algorithms'",
+		level=5];
+	3782 -- 2038;
+	4513	 [label="b'services'",
+		level=5];
+	2915 -- 4513;
+	4508	 [label="b'fashion'",
+		level=5];
+	2915 -- 4508;
+	5337	 [label="b'anonymity'",
+		level=5];
+	5337 -- 2494;
+	4394	 [label="b'flow batteries'",
+		level=5];
+	55 -- 4394;
+	4397	 [label="b'hydrogen'",
+		level=5];
+	55 -- 4397;
+	5561	 [label="b'zooplankton'",
+		level=5];
+	749	 [label="b'limnology'",
+		level=2];
+	5561 -- 749;
+	2092	 [label="b'scientific visualization'",
+		level=5];
+	2092 -- 1518;
+	4906	 [label="b'developmental cognitive neuroscience'",
+		level=5];
+	4906 -- 4901;
+	5486	 [label="b'couples'",
+		level=5];
+	2826	 [label="b'family'",
+		level=2];
+	5486 -- 2826;
+	5138	 [label="b'severe plastic deformation'",
+		level=5];
+	5137	 [label="b'superplasticity'",
+		level=5];
+	5138 -- 5137;
+	3867	 [label="b'lean'",
+		level=5];
+	2701 -- 3867;
+	3869	 [label="b'healthcare operations'",
+		level=5];
+	2701 -- 3869;
+	3868	 [label="b'behavioral operations'",
+		level=5];
+	2701 -- 3868;
+	2731	 [label="b'auditing'",
+		level=1];
+	2738	 [label="b'accounting education'",
+		level=5];
+	2731 -- 2738;
+	2922	 [label="b'human resource management'",
+		level=3];
+	4113	 [label="b'compensation'",
+		level=5];
+	2922 -- 4113;
+	4398	 [label="b'supercapacitors'",
+		level=2];
+	4402	 [label="b'metal oxides'",
+		level=5];
+	4398 -- 4402;
+	1157	 [label="b'exoplanets'",
+		level=3];
+	1159	 [label="b'planetary atmospheres'",
+		level=5];
+	1157 -- 1159;
+	2217	 [label="b'dialectology'",
+		level=5];
+	2217 -- 2205;
+	763	 [label="b'ants'",
+		level=5];
+	763 -- 374;
+	5242	 [label="b'insomnia'",
+		level=5];
+	5242 -- 505;
+	210	 [label="b'viruses'",
+		level=5];
+	210 -- 192;
+	5323	 [label="b'volcano seismology'",
+		level=5];
+	3702	 [label="b'seismology'",
+		level=2];
+	5323 -- 3702;
+	2980	 [label="b'smt'",
+		level=5];
+	2979	 [label="b'sat'",
+		level=5];
+	2980 -- 2979;
+	2855	 [label="b'assistive technology'",
+		level=3];
+	4997	 [label="b'alternative communication'",
+		level=5];
+	2855 -- 4997;
+	2695	 [label="b'stochastic programming'",
+		level=5];
+	1462 -- 2695;
+	3109	 [label="b'soil chemistry'",
+		level=5];
+	3109 -- 1102;
+	4999	 [label="b'augmentative'",
+		level=5];
+	4997 -- 4999;
+	721	 [label="b'clinical research'",
+		level=5];
+	658 -- 721;
+	179	 [label="b'bone regeneration'",
+		level=5];
+	179 -- 146;
+	3276	 [label="b'quantum photonics'",
+		level=5];
+	3276 -- 3250;
+	4857	 [label="b'family policy'",
+		level=5];
+	4857 -- 1975;
+	1013	 [label="b'intelligent tutoring systems'",
+		level=3];
+	3547	 [label="b'artificial intelligence in education'",
+		level=5];
+	1013 -- 3547;
+	3147	 [label="b'mm-wave'",
+		level=5];
+	3147 -- 3141;
+	4598	 [label="b'implant dentistry'",
+		level=5];
+	4588	 [label="b'periodontology'",
+		level=4];
+	4598 -- 4588;
+	5367	 [label="b'thyroid'",
+		level=5];
+	3392	 [label="b'endocrinology'",
+		level=2];
+	5367 -- 3392;
+	1947	 [label="b'discursive psychology'",
+		level=5];
+	1947 -- 1922;
+	2312	 [label="b'quality improvement'",
+		level=5];
+	2310	 [label="b'patient safety'",
+		level=3];
+	2312 -- 2310;
+	2022	 [label="b'type systems'",
+		level=5];
+	1403 -- 2022;
+	1203	 [label="b'iii-v semiconductors'",
+		level=5];
+	634	 [label="b'optoelectronics'",
+		level=1];
+	1203 -- 634;
+	2373	 [label="b'gentrification'",
+		level=5];
+	2373 -- 2360;
+	5720	 [label="b'smru'",
+		level=5];
+	5781	 [label="b'soi-ustan'",
+		level=5];
+	5720 -- 5781;
+	813	 [label="b'marine mammals'",
+		level=3];
+	5720 -- 813;
+	4420	 [label="b'federalism'",
+		level=5];
+	4420 -- 431;
+	1594	 [label="b'distributed systems'",
+		level=1];
+	1627	 [label="b'p2p'",
+		level=5];
+	1594 -- 1627;
+	4759	 [label="b'plant-herbivore interactions'",
+		level=5];
+	3338 -- 4759;
+	5015	 [label="b'acceptance'",
+		level=5];
+	5013	 [label="b'mindfulness'",
+		level=2];
+	5015 -- 5013;
+	5538	 [label="b'learning disabilities'",
+		level=5];
+	5418	 [label="b'dyslexia'",
+		level=3];
+	5538 -- 5418;
+	4764	 [label="b'corpus linguistics'",
+		level=2];
+	5213	 [label="b'academic writing'",
+		level=5];
+	4764 -- 5213;
+	1600	 [label="b'scientific workflows'",
+		level=5];
+	1591 -- 1600;
+	1597	 [label="b'grid'",
+		level=5];
+	1591 -- 1597;
+	1599	 [label="b'soa'",
+		level=5];
+	1591 -- 1599;
+	506	 [label="b'autism'",
+		level=1];
+	5263	 [label="b'sensory processing'",
+		level=5];
+	506 -- 5263;
+	5256	 [label="b'early intervention'",
+		level=5];
+	506 -- 5256;
+	1894	 [label="b'coatings'",
+		level=2];
+	4960	 [label="b'thermal spray'",
+		level=5];
+	1894 -- 4960;
+	3569	 [label="b'critical care'",
+		level=3];
+	3569 -- 4336;
+	1501	 [label="b'digital control'",
+		level=5];
+	1484	 [label="b'power electronics'",
+		level=1];
+	1501 -- 1484;
+	1326	 [label="b'fluvial geomorphology'",
+		level=5];
+	1326 -- 1264;
+	183	 [label="b'bioreactors'",
+		level=5];
+	183 -- 146;
+	3174	 [label="b'fluorescence microscopy'",
+		level=5];
+	3174 -- 3012;
+	3509	 [label="b'international accounting'",
+		level=5];
+	2737	 [label="b'financial accounting'",
+		level=3];
+	3509 -- 2737;
+	300	 [label="b'mycobacterium tuberculosis'",
+		level=5];
+	300 -- 241;
+	1302	 [label="b'remote sensing'",
+		level=1];
+	1372	 [label="b'environmental modelling'",
+		level=5];
+	1302 -- 1372;
+	1363	 [label="b'geographic information science'",
+		level=5];
+	1302 -- 1363;
+	1341	 [label="b'drylands'",
+		level=5];
+	1302 -- 1341;
+	1352	 [label="b'geomorphometry'",
+		level=5];
+	1302 -- 1352;
+	1344	 [label="b'soil moisture'",
+		level=5];
+	1302 -- 1344;
+	3753	 [label="b'discourse'",
+		level=5];
+	3751	 [label="b'pragmatics'",
+		level=2];
+	3753 -- 3751;
+	1578	 [label="b'photoacoustics'",
+		level=5];
+	1578 -- 1571;
+	2942	 [label="b'green communications'",
+		level=5];
+	2942 -- 2112;
+	4596	 [label="b'implantology'",
+		level=5];
+	4596 -- 4588;
+	5000	 [label="b'aac'",
+		level=5];
+	5000 -- 4999;
+	3214	 [label="b'meiosis'",
+		level=5];
+	208	 [label="b'dna repair'",
+		level=2];
+	3214 -- 208;
+	2792	 [label="b'learning'",
+		level=1];
+	4843	 [label="b'language teaching'",
+		level=5];
+	2792 -- 4843;
+	681	 [label="b'metagenomics'",
+		level=2];
+	5581	 [label="b'metatranscriptomics'",
+		level=5];
+	681 -- 5581;
+	5523	 [label="b'oil'",
+		level=5];
+	19	 [label="b'gas'",
+		level=5];
+	5523 -- 19;
+	4740	 [label="b'complex analysis'",
+		level=5];
+	3949	 [label="b'operator theory'",
+		level=4];
+	4740 -- 3949;
+	1529	 [label="b'graph matching'",
+		level=5];
+	1529 -- 841;
+	2798	 [label="b'metacognition'",
+		level=3];
+	5905	 [label="b'self-regulated learning'",
+		level=5];
+	2798 -- 5905;
+	219	 [label="b'therapy'",
+		level=5];
+	219 -- 192;
+	4361	 [label="b'bladder cancer'",
+		level=5];
+	1263	 [label="b'prostate cancer'",
+		level=3];
+	4361 -- 1263;
+	2717	 [label="b'freight'",
+		level=5];
+	2700	 [label="b'logistics'",
+		level=1];
+	2717 -- 2700;
+	4561	 [label="b'voting'",
+		level=5];
+	3552	 [label="b'elections'",
+		level=2];
+	4561 -- 3552;
+	1011	 [label="b'constraint programming'",
+		level=3];
+	2979 -- 1011;
+	2259	 [label="b'philosophy of education'",
+		level=5];
+	2259 -- 2255;
+	2317	 [label="b'photovoltaics'",
+		level=1];
+	2456	 [label="b'perovskite'",
+		level=5];
+	2317 -- 2456;
+	3747	 [label="b'active matter'",
+		level=5];
+	3159 -- 3747;
+	3411	 [label="b'rural development'",
+		level=5];
+	1267	 [label="b'agriculture'",
+		level=1];
+	3411 -- 1267;
+	2563	 [label="b'elasticity'",
+		level=5];
+	2563 -- 2543;
+	4913	 [label="b'flow assurance'",
+		level=5];
+	4301	 [label="b'multiphase flow'",
+		level=2];
+	4913 -- 4301;
+	182	 [label="b'vascular'",
+		level=5];
+	182 -- 146;
+	3762	 [label="b'cavitation'",
+		level=5];
+	2187	 [label="b'fluid mechanics'",
+		level=1];
+	3762 -- 2187;
+	2062	 [label="b'fpgas'",
+		level=4];
+	4698	 [label="b'high-level synthesis'",
+		level=5];
+	2062 -- 4698;
+	5820	 [label="b'infectious disease epidemiology'",
+		level=5];
+	1820	 [label="b'mathematical modeling'",
+		level=1];
+	5820 -- 1820;
+	3575	 [label="b'palaeobiology'",
+		level=5];
+	3575 -- 377;
+	2168	 [label="b'gas turbines'",
+		level=5];
+	13	 [label="b'combustion'",
+		level=1];
+	2168 -- 13;
+	3752	 [label="b'formal semantics'",
+		level=5];
+	3752 -- 3751;
+	5036	 [label="b'bullying'",
+		level=5];
+	5034	 [label="b'aggression'",
+		level=3];
+	5036 -- 5034;
+	1073	 [label="b'automata theory'",
+		level=3];
+	1081	 [label="b'formal languages'",
+		level=5];
+	1073 -- 1081;
+	4638	 [label="b'transport economics'",
+		level=3];
+	4950	 [label="b'transport policy'",
+		level=5];
+	4638 -- 4950;
+	3797	 [label="b'mitochondria'",
+		level=2];
+	3800	 [label="b'calcium'",
+		level=5];
+	3797 -- 3800;
+	2464	 [label="b'integrable systems'",
+		level=5];
+	2458	 [label="b'mathematical physics'",
+		level=2];
+	2464 -- 2458;
+	5153	 [label="b'reservoir simulation'",
+		level=3];
+	5311	 [label="b'flow in porous media'",
+		level=5];
+	5153 -- 5311;
+	4461	 [label="b'mobile sensing'",
+		level=5];
+	4461 -- 2851;
+	5430	 [label="b'gpu computing'",
+		level=5];
+	5430 -- 3779;
+	1030	 [label="b'evolutionary computation'",
+		level=2];
+	5303	 [label="b'hyper-heuristics'",
+		level=5];
+	1030 -- 5303;
+	849	 [label="b'classification'",
+		level=3];
+	2666	 [label="b'mixture models'",
+		level=5];
+	849 -- 2666;
+	2642	 [label="b'interventional radiology'",
+		level=5];
+	2635	 [label="b'radiology'",
+		level=2];
+	2642 -- 2635;
+	3755	 [label="b'instability'",
+		level=5];
+	3755 -- 2187;
+	1659	 [label="b'network security'",
+		level=1];
+	5047	 [label="b'intrusion detection'",
+		level=5];
+	1659 -- 5047;
+	1744	 [label="b'quality control'",
+		level=5];
+	844 -- 1744;
+	322	 [label="b'rnai'",
+		level=5];
+	322 -- 282;
+	284	 [label="b'bacteria'",
+		level=5];
+	284 -- 241;
+	3127	 [label="b'decision'",
+		level=5];
+	3127 -- 2377;
+	242	 [label="b'infectious diseases'",
+		level=1];
+	2078	 [label="b'tropical medicine'",
+		level=5];
+	242 -- 2078;
+	2083	 [label="b'infection control'",
+		level=5];
+	242 -- 2083;
+	2 -- 19;
+	26	 [label="b'climate policy'",
+		level=5];
+	2 -- 26;
+	2036	 [label="b'interconnection networks'",
+		level=5];
+	2036 -- 2030;
+	2190	 [label="b'two-phase flow'",
+		level=5];
+	2175 -- 2190;
+	2198	 [label="b'condensation'",
+		level=5];
+	2175 -- 2198;
+	2902	 [label="b'process monitoring'",
+		level=5];
+	1463	 [label="b'process control'",
+		level=3];
+	2902 -- 1463;
+	4927	 [label="b'participatory design'",
+		level=3];
+	4931	 [label="b'co-design'",
+		level=5];
+	4927 -- 4931;
+	2660	 [label="b'electromagnetic compatibility'",
+		level=5];
+	2660 -- 2648;
+	816	 [label="b'amphibians'",
+		level=5];
+	816 -- 726;
+	140	 [label="b'liposomes'",
+		level=5];
+	108 -- 140;
+	2221	 [label="b'linguistic anthropology'",
+		level=5];
+	2221 -- 2205;
+	688	 [label="b'computational genetics'",
+		level=5];
+	688 -- 346;
+	3170	 [label="b'saxs'",
+		level=5];
+	3170 -- 3012;
+	3131	 [label="b'fluid power'",
+		level=5];
+	3131 -- 2377;
+	1691	 [label="b'bilingualism'",
+		level=2];
+	5312	 [label="b'second language learning'",
+		level=5];
+	1691 -- 5312;
+	2156	 [label="b'shock waves'",
+		level=5];
+	2156 -- 13;
+	3121	 [label="b'vehicle dynamics'",
+		level=5];
+	2377 -- 3121;
+	5278	 [label="b'soft materials'",
+		level=5];
+	2549	 [label="b'solid mechanics'",
+		level=2];
+	5278 -- 2549;
+	4360	 [label="b'kidney cancer'",
+		level=5];
+	4360 -- 1263;
+	5319	 [label="b'tectonophysics'",
+		level=5];
+	3702 -- 5319;
+	5320	 [label="b'inverse theory'",
+		level=5];
+	3702 -- 5320;
+	1877	 [label="b'neuroethics'",
+		level=5];
+	1877 -- 1870;
+	811	 [label="b'invasion ecology'",
+		level=5];
+	811 -- 726;
+	2244	 [label="b'economic demography'",
+		level=5];
+	2244 -- 1206;
+	1197	 [label="b'relationships'",
+		level=5];
+	1172 -- 1197;
+	3226	 [label="b'mitosis'",
+		level=5];
+	3226 -- 3013;
+	3283	 [label="b'quantum entanglement'",
+		level=5];
+	3283 -- 3256;
+	497	 [label="b'audiology'",
+		level=5];
+	497 -- 327;
+	4041	 [label="b'efficiency'",
+		level=5];
+	588	 [label="b'productivity'",
+		level=2];
+	4041 -- 588;
+	4648	 [label="b'greenland'",
+		level=5];
+	1340	 [label="b'cryosphere'",
+		level=3];
+	4648 -- 1340;
+	2051	 [label="b'memory systems'",
+		level=5];
+	2051 -- 2030;
+	2266	 [label="b'environmental engineering'",
+		level=1];
+	2270	 [label="b'chemical'",
+		level=5];
+	2266 -- 2270;
+	2467	 [label="b'poisson geometry'",
+		level=5];
+	2465	 [label="b'symplectic geometry'",
+		level=5];
+	2467 -- 2465;
+	2337	 [label="b'analysis of algorithms'",
+		level=5];
+	585 -- 2337;
+	2336	 [label="b'typography'",
+		level=5];
+	585 -- 2336;
+	2339	 [label="b'product design'",
+		level=5];
+	585 -- 2339;
+	2447	 [label="b'urology'",
+		level=3];
+	2447 -- 4353;
+	1735	 [label="b'prehistory'",
+		level=5];
+	1735 -- 1714;
+	5137 -- 5061;
+	1252	 [label="b'transducers'",
+		level=5];
+	109 -- 1252;
+	153	 [label="b'scaffold'",
+		level=5];
+	153 -- 133;
+	3823	 [label="b'seismic isolation'",
+		level=5];
+	3823 -- 3810;
+	1768	 [label="b'political economics'",
+		level=5];
+	1760	 [label="b'economics'",
+		level=1];
+	1768 -- 1760;
+	5621	 [label="b'nicotine'",
+		level=5];
+	2881	 [label="b'tobacco'",
+		level=3];
+	5621 -- 2881;
+	4912	 [label="b'lattice boltzmann method'",
+		level=5];
+	4301 -- 4912;
+	2773	 [label="b'resuscitation'",
+		level=5];
+	2769	 [label="b'emergency medicine'",
+		level=3];
+	2773 -- 2769;
+	3270	 [label="b'circuit qed'",
+		level=5];
+	3270 -- 3250;
+	2459	 [label="b'differential geometry'",
+		level=2];
+	2459 -- 2465;
+	809	 [label="b'mammals'",
+		level=5];
+	809 -- 726;
+	616	 [label="b'problem solving'",
+		level=5];
+	583 -- 616;
+	5336	 [label="b'trust'",
+		level=2];
+	5696	 [label="b'reputation'",
+		level=5];
+	5336 -- 5696;
+	2477	 [label="b'behavioural ecology'",
+		level=2];
+	2488	 [label="b'sensory ecology'",
+		level=5];
+	2477 -- 2488;
+	5217	 [label="b'eap'",
+		level=5];
+	5217 -- 5213;
+	1796	 [label="b'algebra'",
+		level=2];
+	4887	 [label="b'ring theory'",
+		level=5];
+	1796 -- 4887;
+	779	 [label="b'biodiversity conservation'",
+		level=5];
+	779 -- 374;
+	3280	 [label="b'entanglement'",
+		level=5];
+	3250 -- 3280;
+	3271	 [label="b'ultracold quantum gases'",
+		level=5];
+	3250 -- 3271;
+	3277	 [label="b'quantum communication'",
+		level=5];
+	3250 -- 3277;
+	3263	 [label="b'quantum measurement'",
+		level=5];
+	3250 -- 3263;
+	820	 [label="b'fisheries science'",
+		level=5];
+	726 -- 820;
+	814	 [label="b'pollination biology'",
+		level=5];
+	726 -- 814;
+	3846	 [label="b'soil dynamics'",
+		level=5];
+	3846 -- 3839;
+	1674	 [label="b'mobile computing'",
+		level=1];
+	5396	 [label="b'multimedia networking'",
+		level=5];
+	1674 -- 5396;
+	5739	 [label="b'surveying'",
+		level=5];
+	3705	 [label="b'geodesy'",
+		level=2];
+	5739 -- 3705;
+	876	 [label="b'recommender systems'",
+		level=2];
+	5203	 [label="b'collaborative filtering'",
+		level=5];
+	876 -- 5203;
+	5224	 [label="b'rapid prototyping'",
+		level=5];
+	5222	 [label="b'additive manufacturing'",
+		level=2];
+	5224 -- 5222;
+	2934	 [label="b'channel coding'",
+		level=5];
+	2112 -- 2934;
+	2949	 [label="b'physical layer security'",
+		level=5];
+	2112 -- 2949;
+	4818	 [label="b'foreign direct investment'",
+		level=5];
+	4636	 [label="b'international trade'",
+		level=2];
+	4818 -- 4636;
+	3730	 [label="b'asset pricing'",
+		level=2];
+	4534	 [label="b'macro-finance'",
+		level=5];
+	3730 -- 4534;
+	1549	 [label="b'variational methods'",
+		level=5];
+	1549 -- 841;
+	3914	 [label="b'mining'",
+		level=5];
+	3853	 [label="b'rock mechanics'",
+		level=2];
+	3914 -- 3853;
+	784	 [label="b'corals'",
+		level=5];
+	784 -- 374;
+	668	 [label="b'protein structure prediction'",
+		level=5];
+	668 -- 346;
+	750	 [label="b'conservation science'",
+		level=5];
+	374 -- 750;
+	2718	 [label="b'supply chain'",
+		level=3];
+	5779	 [label="b'manufacturing systems'",
+		level=5];
+	2718 -- 5779;
+	4255	 [label="b'antioxidants'",
+		level=5];
+	4248	 [label="b'oxidative stress'",
+		level=2];
+	4255 -- 4248;
+	1506	 [label="b'multilevel converters'",
+		level=5];
+	1506 -- 1484;
+	2716	 [label="b'material handling'",
+		level=5];
+	2716 -- 2700;
+	4047	 [label="b'history of biology'",
+		level=5];
+	4047 -- 579;
+	2674	 [label="b'supply chain management'",
+		level=1];
+	2706	 [label="b'inventory control'",
+		level=5];
+	2674 -- 2706;
+	292	 [label="b'bacterial pathogenesis'",
+		level=5];
+	292 -- 241;
+	4010	 [label="b'protein engineering'",
+		level=2];
+	5172	 [label="b'directed evolution'",
+		level=5];
+	4010 -- 5172;
+	3286	 [label="b'quantum foundations'",
+		level=5];
+	3256 -- 3286;
+	226	 [label="b'genome stability'",
+		level=5];
+	226 -- 192;
+	2854	 [label="b'interaction design'",
+		level=2];
+	4930	 [label="b'industrial design'",
+		level=5];
+	2854 -- 4930;
+	2121	 [label="b'sparse representation'",
+		level=5];
+	848 -- 2121;
+	2122	 [label="b'speech enhancement'",
+		level=5];
+	848 -- 2122;
+	4885	 [label="b'mobile networks'",
+		level=5];
+	1641	 [label="b'wireless'",
+		level=2];
+	4885 -- 1641;
+	4876	 [label="b'stochastic analysis'",
+		level=5];
+	4874	 [label="b'mathematical finance'",
+		level=3];
+	4876 -- 4874;
+	2043	 [label="b'approximate computing'",
+		level=5];
+	2030 -- 2043;
+	2170	 [label="b'detonation'",
+		level=5];
+	13 -- 2170;
+	2160	 [label="b'laser diagnostics'",
+		level=5];
+	13 -- 2160;
+	2162	 [label="b'sprays'",
+		level=5];
+	13 -- 2162;
+	1979	 [label="b'substance abuse'",
+		level=5];
+	1971	 [label="b'mental health'",
+		level=1];
+	1979 -- 1971;
+	3337	 [label="b'pest management'",
+		level=5];
+	3337 -- 732;
+	3086	 [label="b'child maltreatment'",
+		level=5];
+	1981	 [label="b'child welfare'",
+		level=3];
+	3086 -- 1981;
+	184	 [label="b'3d bioprinting'",
+		level=5];
+	184 -- 146;
+	3477	 [label="b'aerosol science'",
+		level=5];
+	1268 -- 3477;
+	4000	 [label="b'systems pharmacology'",
+		level=5];
+	4000 -- 662;
+	712	 [label="b'rna-seq'",
+		level=5];
+	712 -- 346;
+	3717	 [label="b'origin of life'",
+		level=5];
+	3712	 [label="b'astrobiology'",
+		level=2];
+	3717 -- 3712;
+	170	 [label="b'biofabrication'",
+		level=5];
+	146 -- 170;
+	1948	 [label="b'psychology of religion'",
+		level=5];
+	1922 -- 1948;
+	1944	 [label="b'environmental psychology'",
+		level=5];
+	1922 -- 1944;
+	155	 [label="b'biocompatibility'",
+		level=5];
+	133 -- 155;
+	3918	 [label="b'tunnelling'",
+		level=5];
+	3853 -- 3918;
+	3426	 [label="b'education economics'",
+		level=5];
+	3426 -- 2245;
+	2444	 [label="b'computational topology'",
+		level=5];
+	1780	 [label="b'computational geometry'",
+		level=2];
+	2444 -- 1780;
+	4837	 [label="b'rfic'",
+		level=5];
+	4175 -- 4837;
+	4399	 [label="b'electrolytes'",
+		level=5];
+	4391	 [label="b'batteries'",
+		level=2];
+	4399 -- 4391;
+	4697	 [label="b'tdcs'",
+		level=5];
+	4235	 [label="b'tms'",
+		level=4];
+	4697 -- 4235;
+	3317	 [label="b'total synthesis'",
+		level=5];
+	3303 -- 3317;
+	1720	 [label="b'material culture'",
+		level=5];
+	1720 -- 1714;
+	3339	 [label="b'ipm'",
+		level=5];
+	732 -- 3339;
+	3763	 [label="b'piv'",
+		level=5];
+	2187 -- 3763;
+	1496	 [label="b'motor drives'",
+		level=5];
+	1484 -- 1496;
+	3706	 [label="b'geodynamics'",
+		level=2];
+	5741	 [label="b'plate tectonics'",
+		level=5];
+	3706 -- 5741;
+	5076	 [label="b'market efficiency'",
+		level=5];
+	4533	 [label="b'behavioral finance'",
+		level=2];
+	5076 -- 4533;
+	422	 [label="b'chinese politics'",
+		level=5];
+	405 -- 422;
+	4600	 [label="b'aircraft design'",
+		level=5];
+	3758	 [label="b'aerodynamics'",
+		level=2];
+	4600 -- 3758;
+	3848	 [label="b'slope stability'",
+		level=5];
+	3848 -- 3839;
+	1342	 [label="b'forestry'",
+		level=2];
+	4699	 [label="b'agroforestry'",
+		level=5];
+	1342 -- 4699;
+	2623	 [label="b'disability studies'",
+		level=5];
+	2623 -- 2142;
+	231	 [label="b'animal models'",
+		level=5];
+	231 -- 192;
+	5228	 [label="b'cryptology'",
+		level=5];
+	3114	 [label="b'information security'",
+		level=2];
+	5228 -- 3114;
+	2133	 [label="b'media'",
+		level=1];
+	5275	 [label="b'popular music'",
+		level=5];
+	2133 -- 5275;
+	1965	 [label="b'behavioral medicine'",
+		level=5];
+	1936 -- 1965;
+	4415	 [label="b'philosophy of logic'",
+		level=5];
+	1857	 [label="b'philosophy of language'",
+		level=2];
+	4415 -- 1857;
+	247	 [label="b'inflammation'",
+		level=1];
+	4253	 [label="b'sepsis'",
+		level=5];
+	247 -- 4253;
+	2462	 [label="b'noncommutative geometry'",
+		level=5];
+	2462 -- 2458;
+	667	 [label="b'microarray'",
+		level=5];
+	667 -- 346;
+	499	 [label="b'als'",
+		level=5];
+	327 -- 499;
+	487	 [label="b'visual science'",
+		level=5];
+	327 -- 487;
+	4016	 [label="b'gan'",
+		level=4];
+	5306	 [label="b'zno'",
+		level=5];
+	4016 -- 5306;
+	2912	 [label="b'organizational behavior'",
+		level=2];
+	2921	 [label="b'human resources'",
+		level=5];
+	2912 -- 2921;
+	5683	 [label="b'sport management'",
+		level=5];
+	4525	 [label="b'sport marketing'",
+		level=5];
+	5683 -- 4525;
+	1555	 [label="b'human vision'",
+		level=5];
+	1555 -- 841;
+	3688	 [label="b'lattice qcd'",
+		level=5];
+	3662	 [label="b'particle physics'",
+		level=2];
+	3688 -- 3662;
+	1843	 [label="b'information economics'",
+		level=5];
+	1843 -- 1461;
+	1564	 [label="b'field robotics'",
+		level=5];
+	1564 -- 841;
+	5356	 [label="b'infertility'",
+		level=5];
+	2626	 [label="b'reproductive biology'",
+		level=3];
+	5356 -- 2626;
+	3780	 [label="b'energy efficient computing'",
+		level=5];
+	3780 -- 2038;
+	298	 [label="b'host-microbe interactions'",
+		level=5];
+	298 -- 241;
+	1729	 [label="b'archaeobotany'",
+		level=5];
+	1729 -- 1714;
+	5025	 [label="b'neuro-oncology'",
+		level=5];
+	500 -- 5025;
+	4880	 [label="b'interfacial phenomena'",
+		level=5];
+	3746 -- 4880;
+	4882	 [label="b'surfactants'",
+		level=5];
+	3746 -- 4882;
+	5615	 [label="b'ethnomusicology'",
+		level=5];
+	5275 -- 5615;
+	4915	 [label="b'game studies'",
+		level=5];
+	1020	 [label="b'game design'",
+		level=4];
+	4915 -- 1020;
+	2561	 [label="b'boundary element method'",
+		level=5];
+	2561 -- 2499;
+	1327	 [label="b'watershed modeling'",
+		level=5];
+	1264 -- 1327;
+	4001	 [label="b'network biology'",
+		level=5];
+	4001 -- 662;
+	3164	 [label="b'protein dynamics'",
+		level=5];
+	3164 -- 3012;
+	5650	 [label="b'forest entomology'",
+		level=5];
+	756	 [label="b'invasive species'",
+		level=2];
+	5650 -- 756;
+	4345	 [label="b'environmental chemistry'",
+		level=2];
+	5332	 [label="b'environmental toxicology'",
+		level=5];
+	4345 -- 5332;
+	3169	 [label="b'dna'",
+		level=5];
+	3169 -- 3012;
+	4198	 [label="b'monitoring'",
+		level=5];
+	2765	 [label="b'evaluation'",
+		level=2];
+	4198 -- 2765;
+	3232	 [label="b'histology'",
+		level=5];
+	3232 -- 3013;
+	2496	 [label="b'authentication'",
+		level=5];
+	2496 -- 1637;
+	5788	 [label="b'machine design'",
+		level=5];
+	5225	 [label="b'cad'",
+		level=3];
+	5788 -- 5225;
+	4939	 [label="b'educational measurement'",
+		level=5];
+	4939 -- 1743;
+	4500	 [label="b'consumer behavior'",
+		level=1];
+	4525 -- 4500;
+	2247	 [label="b'microeconometrics'",
+		level=5];
+	1206 -- 2247;
+	4244	 [label="b'clinical neurophysiology'",
+		level=5];
+	4244 -- 489;
+	3425	 [label="b'impact evaluation'",
+		level=5];
+	3425 -- 2245;
+	5175	 [label="b'algorithm design'",
+		level=5];
+	3939	 [label="b'analysis'",
+		level=2];
+	5175 -- 3939;
+	4209	 [label="b'video coding'",
+		level=3];
+	5180	 [label="b'multimedia communications'",
+		level=5];
+	4209 -- 5180;
+	1112	 [label="b'nutrient cycling'",
+		level=5];
+	1112 -- 1085;
+	5100	 [label="b'counseling'",
+		level=5];
+	5096	 [label="b'psychotherapy'",
+		level=3];
+	5100 -- 5096;
+	666	 [label="b'sequence analysis'",
+		level=5];
+	346 -- 666;
+	1545	 [label="b'retrieval'",
+		level=5];
+	841 -- 1545;
+	2546	 [label="b'applied mechanics'",
+		level=5];
+	2546 -- 2499;
+	5686	 [label="b'module theory'",
+		level=5];
+	5686 -- 4887;
+	217	 [label="b'liver'",
+		level=5];
+	217 -- 192;
+	5607	 [label="b'phytoplankton'",
+		level=5];
+	1106 -- 5607;
+	3808	 [label="b'modal analysis'",
+		level=5];
+	3804 -- 3808;
+	3420	 [label="b'population economics'",
+		level=5];
+	3420 -- 2245;
+	285	 [label="b'enzymes'",
+		level=5];
+	285 -- 241;
+	222	 [label="b'nuclear receptors'",
+		level=5];
+	192 -- 222;
+	288	 [label="b'pathogenesis'",
+		level=5];
+	241 -- 288;
+}

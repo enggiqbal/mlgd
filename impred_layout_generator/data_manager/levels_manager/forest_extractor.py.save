@@ -1,0 +1,56 @@
+
+import sys
+import os
+
+import pygraphviz as pgv
+import networkx as nx
+from networkx.drawing.nx_agraph import write_dot
+from networkx.drawing.nx_agraph import read_dot as nx_read_dot
+import math
+import random
+
+# Main Flow
+t1path = sys.argv[1]
+t2path = sys.argv[2]
+outputpath = sys.argv[3]
+
+# Main Graph
+t1_name = os.path.basename(t1path).split(".")[0]
+t2_name = os.path.basename(t2path).split(".")[0]
+
+print(t1_name, t2_name)
+
+
+# Reading graph and subgraph
+G_t1 = nx_read_dot(t1path)
+G_t2 = nx_read_dot(t2path)
+
+# print(nx.info(G_t1))
+# print(nx.info(G_t2))
+
+# Extract common vertices
+commonVertices = set(set(G_t1.nodes()) & set(G_t2.nodes()))
+t2_only_vertices = set(G_t2.nodes()).difference(set(G_t1.nodes()))
+forest_vertices = set()
+forest_vertices = set(G_t2.nodes()).difference(set(G_t1.nodes()))
+
+for v_id in commonVertices:
+
+    v_adjs = set(nx.neighbors(G_t2, v_id))
+
+    adjs_new = v_adjs.difference(commonVertices)
+
+    if len(adjs_new)>0:
+        # v is connected to new vertices
+        forest_vertices.add(v_id)
+
+# print("forest vertices", forest_vertices)
+
+t2_forest = nx.Graph(nx.subgraph(G_t2, forest_vertices))
+t2_forest.remove_edges_from(nx.edges(G_t1))
+
+# print("forest", nx.info(t2_forest))
+
+write_dot(t2_forest, outputpath+t2_name+"_forest.dot")
+
+print("done")

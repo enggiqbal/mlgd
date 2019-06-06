@@ -1,0 +1,7263 @@
+strict graph "" {
+	graph ["edge"="{}",
+		file="/Users/felicedeluca/Developer/UofA/mlgd/pipeline/impred/tmp_workspace/topics/labels2/forests/Topics_Layer_3_forest.dot",
+		"graph"="{'edge': '{}', 'file': '/Users/felicedeluca/Developer/UofA/mlgd/pipeline/impred/tmp_workspace/topics/labels2/forests/Topics_Layer_\
+3_forest.dot', 'graph': '{\'edge\': \'{}\', \'file\': \'/Users/felicedeluca/Developer/UofA/mlgd/pipeline/impred/tmp_workspace/topics/\
+labels/forests/Topics_Layer_3_forest.dot\', \'graph\': \'{\\\'edge\\\': \\\'{}\\\', \\\'file\\\': \\\'/Users/felicedeluca/Developer/\
+UofA/mlgd/pipeline/impred/tmp_workspace/topics/labels/forests/Topics_Layer_3_forest.dot\\\', \\\'graph\\\': \\\'{\\\\\\\'edge\\\\\\\': \\\\\\\'{}\\\\\\\', \\\\\\\'\
+file\\\\\\\': \\\\\\\'/Users/felicedeluca/Developer/UofA/mlgd/pipeline/impred/tmp_workspace/topics/labels/forests/Topics_Layer_3_\
+forest.dot\\\\\\\', \\\\\\\'graph\\\\\\\': \"{\\\\\\\'file\\\\\\\': \\\\\\\'/Users/felicedeluca/Developer/UofA/mlgd/pipeline/impred/\
+tmp_workspace/topics/set2/forests/Topics_Layer_3_forest.dot\\\\\\\'}\", \\\\\\\'node\\\\\\\': \"{\\\\\\\'label\\\\\\\': \\\\\\\'\\\\\\\', \\\\\\\'\
+level\\\\\\\': \\\\\\\'\\\\\\\'}\"}\\\', \\\'node\\\': \"{\\\'height\\\': \\\'\\\', \\\'label\\\': \\\'\\\', \\\'level\\\': \\\'\\\', \\\'\
+width\\\': \\\'\\\'}\"}\', \'node\': \"{\'height\': \'\', \'label\': \'\', \'level\': \'\', \'width\': \'\'}\"}', 'node': \"{'fontsize': '', '\
+height': '', 'label': '', 'level': '', 'width': ''}\"}",
+		"node"="{'fontsize': '', 'height': '', 'label': '', 'level': '', 'width': ''}"
+	];
+	2303	 [fontsize=6,
+		height=36,
+		label="b'chromatin'",
+		level=3,
+		width=36];
+	329	 [fontsize=8,
+		height=45,
+		label="b'epigenetics'",
+		level=1,
+		width=45];
+	2303 -- 329;
+	4609	 [fontsize=6,
+		height=73,
+		label="b'engineering education'",
+		level=3,
+		width=73];
+	4602	 [fontsize=6,
+		height=61,
+		label="b'science education'",
+		level=2,
+		width=61];
+	4609 -- 4602;
+	661	 [fontsize=8,
+		height=80,
+		label="b'computational biology'",
+		level=1,
+		width=80];
+	3193	 [fontsize=6,
+		height=81,
+		label="b'transcriptional regulation'",
+		level=3,
+		width=81];
+	661 -- 3193;
+	348	 [fontsize=6,
+		height=40,
+		label="b'rna biology'",
+		level=3,
+		width=40];
+	326	 [fontsize=8,
+		height=40,
+		label="b'genomics'",
+		level=1,
+		width=40];
+	348 -- 326;
+	347	 [fontsize=6,
+		height=74,
+		label="b'personalized medicine'",
+		level=3,
+		width=74];
+	326 -- 347;
+	364	 [fontsize=6,
+		height=69,
+		label="b'quantitative genetics'",
+		level=3,
+		width=69];
+	326 -- 364;
+	363	 [fontsize=6,
+		height=44,
+		label="b'epigenomics'",
+		level=3,
+		width=44];
+	326 -- 363;
+	355	 [fontsize=6,
+		height=30,
+		label="b'disease'",
+		level=3,
+		width=30];
+	326 -- 355;
+	372	 [fontsize=6,
+		height=74,
+		label="b'transposable elements'",
+		level=3,
+		width=74];
+	326 -- 372;
+	1920	 [fontsize=6,
+		height=65,
+		label="b'pharmacogenomics'",
+		level=3,
+		width=65];
+	347 -- 1920;
+	1786	 [fontsize=6,
+		height=39,
+		label="b'complexity'",
+		level=3,
+		width=39];
+	846	 [fontsize=8,
+		height=42,
+		label="b'algorithms'",
+		level=1,
+		width=42];
+	1786 -- 846;
+	1781	 [fontsize=6,
+		height=52,
+		label="b'data structures'",
+		level=3,
+		width=52];
+	846 -- 1781;
+	1783	 [fontsize=6,
+		height=82,
+		label="b'computational complexity'",
+		level=3,
+		width=82];
+	846 -- 1783;
+	1782	 [fontsize=6,
+		height=79,
+		label="b'algorithmic game theory'",
+		level=3,
+		width=79];
+	846 -- 1782;
+	1785	 [fontsize=6,
+		height=26,
+		label="b'theory'",
+		level=3,
+		width=26];
+	846 -- 1785;
+	3593	 [fontsize=6,
+		height=57,
+		label="b'graph algorithms'",
+		level=3,
+		width=57];
+	1781 -- 3593;
+	4034	 [fontsize=6,
+		height=82,
+		label="b'approximation algorithms'",
+		level=3,
+		width=82];
+	1782 -- 4034;
+	332	 [fontsize=6,
+		height=38,
+		label="b'c. elegans'",
+		level=3,
+		width=38];
+	313	 [fontsize=8,
+		height=35,
+		label="b'genetics'",
+		level=1,
+		width=35];
+	332 -- 313;
+	336	 [fontsize=6,
+		height=50,
+		label="b'plant breeding'",
+		level=3,
+		width=50];
+	313 -- 336;
+	342	 [fontsize=6,
+		height=76,
+		label="b'plant molecular biology'",
+		level=3,
+		width=76];
+	313 -- 342;
+	334	 [fontsize=6,
+		height=55,
+		label="b'animal breeding'",
+		level=3,
+		width=55];
+	313 -- 334;
+	333	 [fontsize=6,
+		height=23,
+		label="b'yeast'",
+		level=3,
+		width=23];
+	313 -- 333;
+	339	 [fontsize=6,
+		height=38,
+		label="b'drosophila'",
+		level=3,
+		width=38];
+	313 -- 339;
+	5707	 [fontsize=6,
+		height=49,
+		label="b'plant genetics'",
+		level=3,
+		width=49];
+	336 -- 5707;
+	3351	 [fontsize=6,
+		height=63,
+		label="b'political geography'",
+		level=3,
+		width=63];
+	2807	 [fontsize=8,
+		height=38,
+		label="b'migration'",
+		level=1,
+		width=38];
+	3351 -- 2807;
+	3352	 [fontsize=6,
+		height=39,
+		label="b'citizenship'",
+		level=3,
+		width=39];
+	2807 -- 3352;
+	3353	 [fontsize=6,
+		height=56,
+		label="b'transnationalism'",
+		level=3,
+		width=56];
+	2807 -- 3353;
+	4325	 [fontsize=6,
+		height=26,
+		label="b'oxides'",
+		level=3,
+		width=26];
+	76	 [fontsize=8,
+		height=37,
+		label="b'thin films'",
+		level=1,
+		width=37];
+	4325 -- 76;
+	1892	 [fontsize=6,
+		height=44,
+		label="b'e-commerce'",
+		level=3,
+		width=44];
+	1402	 [fontsize=8,
+		height=74,
+		label="b'information systems'",
+		level=1,
+		width=74];
+	1892 -- 1402;
+	1887	 [fontsize=6,
+		height=48,
+		label="b'e-government'",
+		level=3,
+		width=48];
+	1402 -- 1887;
+	1885	 [fontsize=6,
+		height=99,
+		label="b'business process management'",
+		level=3,
+		width=99];
+	1402 -- 1885;
+	1889	 [fontsize=6,
+		height=75,
+		label="b'information technology'",
+		level=3,
+		width=75];
+	1402 -- 1889;
+	1455	 [fontsize=6,
+		height=80,
+		label="b'behavioral neuroscience'",
+		level=3,
+		width=80];
+	471	 [fontsize=8,
+		height=37,
+		label="b'addiction'",
+		level=1,
+		width=37];
+	1455 -- 471;
+	1451	 [fontsize=6,
+		height=27,
+		label="b'reward'",
+		level=3,
+		width=27];
+	471 -- 1451;
+	1453	 [fontsize=6,
+		height=38,
+		label="b'impulsivity'",
+		level=3,
+		width=38];
+	471 -- 1453;
+	2520	 [fontsize=6,
+		height=54,
+		label="b'sports medicine'",
+		level=3,
+		width=54];
+	2376	 [fontsize=8,
+		height=54,
+		label="b'biomechanics'",
+		level=1,
+		width=54];
+	2520 -- 2376;
+	2522	 [fontsize=6,
+		height=73,
+		label="b'functional morphology'",
+		level=3,
+		width=73];
+	2376 -- 2522;
+	2521	 [fontsize=6,
+		height=22,
+		label="b'bone'",
+		level=3,
+		width=22];
+	2376 -- 2521;
+	2506	 [fontsize=6,
+		height=39,
+		label="b'locomotion'",
+		level=3,
+		width=39];
+	2376 -- 2506;
+	2533	 [fontsize=6,
+		height=46,
+		label="b'osteoarthritis'",
+		level=3,
+		width=46];
+	2376 -- 2533;
+	5698	 [fontsize=6,
+		height=45,
+		label="b'osteoporosis'",
+		level=3,
+		width=45];
+	2521 -- 5698;
+	475	 [fontsize=6,
+		height=46,
+		label="b'motor control'",
+		level=2,
+		width=46];
+	2295	 [fontsize=6,
+		height=50,
+		label="b'motor learning'",
+		level=3,
+		width=50];
+	475 -- 2295;
+	1575	 [fontsize=6,
+		height=73,
+		label="b'computed tomography'",
+		level=3,
+		width=73];
+	1517	 [fontsize=8,
+		height=62,
+		label="b'medical imaging'",
+		level=1,
+		width=62];
+	1575 -- 1517;
+	2963	 [fontsize=6,
+		height=72,
+		label="b'communication theory'",
+		level=3,
+		width=72];
+	2933	 [fontsize=8,
+		height=67,
+		label="b'information theory'",
+		level=1,
+		width=67];
+	2963 -- 2933;
+	2959	 [fontsize=6,
+		height=52,
+		label="b'network coding'",
+		level=3,
+		width=52];
+	2933 -- 2959;
+	2964	 [fontsize=6,
+		height=80,
+		label="b'communication networks'",
+		level=3,
+		width=80];
+	2933 -- 2964;
+	73	 [fontsize=6,
+		height=38,
+		label="b'metallurgy'",
+		level=2,
+		width=38];
+	2286	 [fontsize=6,
+		height=30,
+		label="b'welding'",
+		level=3,
+		width=30];
+	73 -- 2286;
+	2284	 [fontsize=6,
+		height=21,
+		label="b'steel'",
+		level=3,
+		width=21];
+	73 -- 2284;
+	250	 [fontsize=6,
+		height=44,
+		label="b'dermatology'",
+		level=3,
+		width=44];
+	205	 [fontsize=8,
+		height=48,
+		label="b'immunology'",
+		level=1,
+		width=48];
+	250 -- 205;
+	245	 [fontsize=6,
+		height=51,
+		label="b'transplantation'",
+		level=3,
+		width=51];
+	205 -- 245;
+	270	 [fontsize=6,
+		height=47,
+		label="b'autoimmunity'",
+		level=3,
+		width=47];
+	205 -- 270;
+	262	 [fontsize=6,
+		height=53,
+		label="b'immunotherapy'",
+		level=3,
+		width=53];
+	205 -- 262;
+	253	 [fontsize=6,
+		height=57,
+		label="b'gastroenterology'",
+		level=3,
+		width=57];
+	205 -- 253;
+	244	 [fontsize=6,
+		height=27,
+		label="b'allergy'",
+		level=3,
+		width=27];
+	205 -- 244;
+	269	 [fontsize=6,
+		height=47,
+		label="b'rheumatology'",
+		level=3,
+		width=47];
+	205 -- 269;
+	3581	 [fontsize=6,
+		height=40,
+		label="b'nephrology'",
+		level=3,
+		width=40];
+	245 -- 3581;
+	5071	 [fontsize=6,
+		height=40,
+		label="b'hepatology'",
+		level=3,
+		width=40];
+	253 -- 5071;
+	2986	 [fontsize=6,
+		height=29,
+		label="b'asthma'",
+		level=3,
+		width=29];
+	244 -- 2986;
+	938	 [fontsize=6,
+		height=61,
+		label="b'statistical learning'",
+		level=3,
+		width=61];
+	659	 [fontsize=8,
+		height=65,
+		label="b'machine learning'",
+		level=1,
+		width=65];
+	938 -- 659;
+	940	 [fontsize=6,
+		height=80,
+		label="b'brain computer interface'",
+		level=3,
+		width=80];
+	659 -- 940;
+	955	 [fontsize=6,
+		height=57,
+		label="b'neuroinformatics'",
+		level=3,
+		width=57];
+	659 -- 955;
+	849	 [fontsize=6,
+		height=46,
+		label="b'classification'",
+		level=3,
+		width=46];
+	659 -- 849;
+	949	 [fontsize=6,
+		height=63,
+		label="b'activity recognition'",
+		level=3,
+		width=63];
+	659 -- 949;
+	906	 [fontsize=6,
+		height=66,
+		label="b'time series analysis'",
+		level=3,
+		width=66];
+	659 -- 906;
+	869	 [fontsize=6,
+		height=62,
+		label="b'intelligent systems'",
+		level=3,
+		width=62];
+	659 -- 869;
+	905	 [fontsize=6,
+		height=57,
+		label="b'network analysis'",
+		level=3,
+		width=57];
+	659 -- 905;
+	899	 [fontsize=6,
+		height=63,
+		label="b'bayesian inference'",
+		level=3,
+		width=63];
+	659 -- 899;
+	977	 [fontsize=6,
+		height=81,
+		label="b'brain-machine interfaces'",
+		level=3,
+		width=81];
+	659 -- 977;
+	839	 [fontsize=6,
+		height=77,
+		label="b'audio signal processing'",
+		level=3,
+		width=77];
+	659 -- 839;
+	884	 [fontsize=6,
+		height=47,
+		label="b'segmentation'",
+		level=3,
+		width=47];
+	659 -- 884;
+	964	 [fontsize=6,
+		height=66,
+		label="b'convex optimization'",
+		level=3,
+		width=66];
+	659 -- 964;
+	919	 [fontsize=6,
+		height=59,
+		label="b'big data analytics'",
+		level=3,
+		width=59];
+	659 -- 919;
+	936	 [fontsize=6,
+		height=77,
+		label="b'computational statistics'",
+		level=3,
+		width=77];
+	659 -- 936;
+	907	 [fontsize=6,
+		height=52,
+		label="b'learning theory'",
+		level=3,
+		width=52];
+	659 -- 907;
+	947	 [fontsize=6,
+		height=64,
+		label="b'statistical modeling'",
+		level=3,
+		width=64];
+	659 -- 947;
+	969	 [fontsize=6,
+		height=67,
+		label="b'image segmentation'",
+		level=3,
+		width=67];
+	659 -- 969;
+	890	 [fontsize=6,
+		height=89,
+		label="b'statistical signal processing'",
+		level=3,
+		width=89];
+	659 -- 890;
+	970	 [fontsize=6,
+		height=12,
+		label="b'ai'",
+		level=3,
+		width=12];
+	659 -- 970;
+	891	 [fontsize=6,
+		height=63,
+		label="b'speech processing'",
+		level=3,
+		width=63];
+	659 -- 891;
+	889	 [fontsize=6,
+		height=86,
+		label="b'music information retrieval'",
+		level=3,
+		width=86];
+	659 -- 889;
+	900	 [fontsize=6,
+		height=93,
+		label="b'biomedical signal processing'",
+		level=3,
+		width=93];
+	659 -- 900;
+	3067	 [fontsize=8,
+		height=65,
+		label="b'statistical physics'",
+		level=1,
+		width=65];
+	3079	 [fontsize=6,
+		height=60,
+		label="b'biological physics'",
+		level=3,
+		width=60];
+	3067 -- 3079;
+	3554	 [fontsize=6,
+		height=57,
+		label="b'american politics'",
+		level=2,
+		width=57];
+	5557	 [fontsize=6,
+		height=34,
+		label="b'congress'",
+		level=3,
+		width=34];
+	3554 -- 5557;
+	5553	 [fontsize=6,
+		height=50,
+		label="b'representation'",
+		level=3,
+		width=50];
+	3554 -- 5553;
+	3632	 [fontsize=6,
+		height=60,
+		label="b'structural geology'",
+		level=2,
+		width=60];
+	3981	 [fontsize=6,
+		height=53,
+		label="b'active tectonics'",
+		level=3,
+		width=53];
+	3632 -- 3981;
+	4531	 [fontsize=6,
+		height=72,
+		label="b'environmental politics'",
+		level=3,
+		width=72];
+	564	 [fontsize=8,
+		height=26,
+		label="b'policy'",
+		level=1,
+		width=26];
+	4531 -- 564;
+	3300	 [fontsize=6,
+		height=51,
+		label="b'optical physics'",
+		level=3,
+		width=51];
+	3297	 [fontsize=6,
+		height=27,
+		label="b'atomic'",
+		level=3,
+		width=27];
+	3300 -- 3297;
+	3224	 [fontsize=6,
+		height=36,
+		label="b'molecular'",
+		level=2,
+		width=36];
+	3297 -- 3224;
+	3301	 [fontsize=6,
+		height=60,
+		label="b'molecular physics'",
+		level=3,
+		width=60];
+	3297 -- 3301;
+	3299	 [fontsize=6,
+		height=52,
+		label="b'cellular biology'",
+		level=3,
+		width=52];
+	3224 -- 3299;
+	1281	 [fontsize=6,
+		height=45,
+		label="b'food security'",
+		level=3,
+		width=45];
+	727	 [fontsize=8,
+		height=58,
+		label="b'climate change'",
+		level=1,
+		width=58];
+	1281 -- 727;
+	1265	 [fontsize=6,
+		height=59,
+		label="b'climate variability'",
+		level=3,
+		width=59];
+	727 -- 1265;
+	1296	 [fontsize=6,
+		height=30,
+		label="b'drought'",
+		level=3,
+		width=30];
+	727 -- 1296;
+	1284	 [fontsize=6,
+		height=58,
+		label="b'climate dynamics'",
+		level=3,
+		width=58];
+	727 -- 1284;
+	1292	 [fontsize=6,
+		height=57,
+		label="b'climate modeling'",
+		level=3,
+		width=57];
+	727 -- 1292;
+	1297	 [fontsize=6,
+		height=63,
+		label="b'ocean acidification'",
+		level=3,
+		width=63];
+	727 -- 1297;
+	1269	 [fontsize=6,
+		height=66,
+		label="b'plant ecophysiology'",
+		level=3,
+		width=66];
+	727 -- 1269;
+	1285	 [fontsize=6,
+		height=23,
+		label="b'arctic'",
+		level=3,
+		width=23];
+	727 -- 1285;
+	2670	 [fontsize=6,
+		height=29,
+		label="b'change'",
+		level=3,
+		width=29];
+	1265 -- 2670;
+	5842	 [fontsize=6,
+		height=62,
+		label="b'language variation'",
+		level=3,
+		width=62];
+	2670 -- 5842;
+	69	 [fontsize=8,
+		height=61,
+		label="b'nanotechnology'",
+		level=1,
+		width=61];
+	132	 [fontsize=6,
+		height=71,
+		label="b'materials engineering'",
+		level=3,
+		width=71];
+	69 -- 132;
+	130	 [fontsize=6,
+		height=37,
+		label="b'nanowires'",
+		level=3,
+		width=37];
+	69 -- 130;
+	118	 [fontsize=6,
+		height=30,
+		label="b'devices'",
+		level=3,
+		width=30];
+	69 -- 118;
+	5481	 [fontsize=6,
+		height=65,
+		label="b'electronic materials'",
+		level=3,
+		width=65];
+	118 -- 5481;
+	672	 [fontsize=6,
+		height=17,
+		label="b'rna'",
+		level=3,
+		width=17];
+	346	 [fontsize=8,
+		height=54,
+		label="b'bioinformatics'",
+		level=1,
+		width=54];
+	672 -- 346;
+	710	 [fontsize=6,
+		height=51,
+		label="b'phylogenomics'",
+		level=3,
+		width=51];
+	346 -- 710;
+	665	 [fontsize=6,
+		height=60,
+		label="b'genome evolution'",
+		level=3,
+		width=60];
+	346 -- 665;
+	677	 [fontsize=6,
+		height=64,
+		label="b'microbial genomics'",
+		level=3,
+		width=64];
+	346 -- 677;
+	675	 [fontsize=6,
+		height=74,
+		label="b'evolutionary genomics'",
+		level=3,
+		width=74];
+	346 -- 675;
+	693	 [fontsize=6,
+		height=56,
+		label="b'protein structure'",
+		level=3,
+		width=56];
+	346 -- 693;
+	682	 [fontsize=6,
+		height=90,
+		label="b'next generation sequencing'",
+		level=3,
+		width=90];
+	346 -- 682;
+	695	 [fontsize=6,
+		height=18,
+		label="b'ngs'",
+		level=3,
+		width=18];
+	346 -- 695;
+	683	 [fontsize=6,
+		height=76,
+		label="b'molecular microbiology'",
+		level=3,
+		width=76];
+	346 -- 683;
+	702	 [fontsize=6,
+		height=57,
+		label="b'cancer genomics'",
+		level=3,
+		width=57];
+	346 -- 702;
+	701	 [fontsize=6,
+		height=66,
+		label="b'functional genomics'",
+		level=3,
+		width=66];
+	346 -- 701;
+	713	 [fontsize=6,
+		height=56,
+		label="b'cheminformatics'",
+		level=3,
+		width=56];
+	346 -- 713;
+	676	 [fontsize=6,
+		height=63,
+		label="b'precision medicine'",
+		level=3,
+		width=63];
+	346 -- 676;
+	2626	 [fontsize=6,
+		height=67,
+		label="b'reproductive biology'",
+		level=3,
+		width=67];
+	330	 [fontsize=8,
+		height=82,
+		label="b'developmental biology'",
+		level=1,
+		width=82];
+	2626 -- 330;
+	4956	 [fontsize=6,
+		height=33,
+		label="b'pyrolysis'",
+		level=3,
+		width=33];
+	2159	 [fontsize=6,
+		height=41,
+		label="b'gasification'",
+		level=3,
+		width=41];
+	4956 -- 2159;
+	13	 [fontsize=8,
+		height=46,
+		label="b'combustion'",
+		level=1,
+		width=46];
+	2159 -- 13;
+	2158	 [fontsize=6,
+		height=91,
+		label="b'internal combustion engines'",
+		level=3,
+		width=91];
+	13 -- 2158;
+	2164	 [fontsize=6,
+		height=28,
+		label="b'plasma'",
+		level=3,
+		width=28];
+	13 -- 2164;
+	1547	 [fontsize=6,
+		height=85,
+		label="b'biomedical image analysis'",
+		level=3,
+		width=85];
+	841	 [fontsize=8,
+		height=60,
+		label="b'computer vision'",
+		level=1,
+		width=60];
+	1547 -- 841;
+	1558	 [fontsize=6,
+		height=74,
+		label="b'computational imaging'",
+		level=3,
+		width=74];
+	841 -- 1558;
+	1567	 [fontsize=6,
+		height=32,
+		label="b'graphics'",
+		level=3,
+		width=32];
+	841 -- 1567;
+	1560	 [fontsize=6,
+		height=31,
+		label="b'tracking'",
+		level=3,
+		width=31];
+	841 -- 1560;
+	1534	 [fontsize=6,
+		height=60,
+		label="b'object recognition'",
+		level=3,
+		width=60];
+	841 -- 1534;
+	1520	 [fontsize=6,
+		height=55,
+		label="b'face recognition'",
+		level=3,
+		width=55];
+	841 -- 1520;
+	1521	 [fontsize=6,
+		height=52,
+		label="b'mobile robotics'",
+		level=3,
+		width=52];
+	841 -- 1521;
+	1550	 [fontsize=6,
+		height=88,
+		label="b'computational photography'",
+		level=3,
+		width=88];
+	841 -- 1550;
+	2931	 [fontsize=6,
+		height=53,
+		label="b'face perception'",
+		level=3,
+		width=53];
+	1520 -- 2931;
+	5742	 [fontsize=6,
+		height=52,
+		label="b'quantum gases'",
+		level=3,
+		width=52];
+	3266	 [fontsize=6,
+		height=53,
+		label="b'ultracold atoms'",
+		level=3,
+		width=53];
+	5742 -- 3266;
+	5743	 [fontsize=6,
+		height=89,
+		label="b'bose-einstein condensation'",
+		level=3,
+		width=89];
+	5742 -- 5743;
+	3250	 [fontsize=8,
+		height=58,
+		label="b'quantum optics'",
+		level=1,
+		width=58];
+	3266 -- 3250;
+	3269	 [fontsize=6,
+		height=89,
+		label="b'quantum information theory'",
+		level=3,
+		width=89];
+	3250 -- 3269;
+	3279	 [fontsize=6,
+		height=39,
+		label="b'cold atoms'",
+		level=3,
+		width=39];
+	3250 -- 3279;
+	3273	 [fontsize=6,
+		height=52,
+		label="b'optomechanics'",
+		level=3,
+		width=52];
+	3250 -- 3273;
+	1596	 [fontsize=6,
+		height=18,
+		label="b'hpc'",
+		level=3,
+		width=18];
+	1591	 [fontsize=8,
+		height=62,
+		label="b'cloud computing'",
+		level=1,
+		width=62];
+	1596 -- 1591;
+	1614	 [fontsize=6,
+		height=46,
+		label="b'web services'",
+		level=3,
+		width=46];
+	1591 -- 1614;
+	1617	 [fontsize=6,
+		height=61,
+		label="b'service computing'",
+		level=3,
+		width=61];
+	1591 -- 1617;
+	1622	 [fontsize=6,
+		height=51,
+		label="b'grid computing'",
+		level=3,
+		width=51];
+	1591 -- 1622;
+	1605	 [fontsize=6,
+		height=18,
+		label="b'sdn'",
+		level=3,
+		width=18];
+	1591 -- 1605;
+	4279	 [fontsize=6,
+		height=45,
+		label="b'digital media'",
+		level=3,
+		width=45];
+	3961	 [fontsize=8,
+		height=49,
+		label="b'social media'",
+		level=1,
+		width=49];
+	4279 -- 3961;
+	4283	 [fontsize=6,
+		height=30,
+		label="b'internet'",
+		level=3,
+		width=30];
+	3961 -- 4283;
+	4270	 [fontsize=6,
+		height=52,
+		label="b'public relations'",
+		level=3,
+		width=52];
+	3961 -- 4270;
+	2487	 [fontsize=6,
+		height=58,
+		label="b'animal behaviour'",
+		level=2,
+		width=58];
+	5151	 [fontsize=6,
+		height=44,
+		label="b'bioacoustics'",
+		level=3,
+		width=44];
+	2487 -- 5151;
+	5149	 [fontsize=6,
+		height=50,
+		label="b'social learning'",
+		level=3,
+		width=50];
+	2487 -- 5149;
+	5290	 [fontsize=6,
+		height=58,
+		label="b'cultural evolution'",
+		level=3,
+		width=58];
+	5149 -- 5290;
+	5082	 [fontsize=6,
+		height=74,
+		label="b'experimental evolution'",
+		level=3,
+		width=74];
+	384	 [fontsize=8,
+		height=72,
+		label="b'population genetics'",
+		level=1,
+		width=72];
+	5082 -- 384;
+	5083	 [fontsize=6,
+		height=42,
+		label="b'ancient dna'",
+		level=3,
+		width=42];
+	384 -- 5083;
+	2195	 [fontsize=6,
+		height=56,
+		label="b'thermodynamics'",
+		level=2,
+		width=56];
+	5674	 [fontsize=6,
+		height=30,
+		label="b'kinetics'",
+		level=3,
+		width=30];
+	2195 -- 5674;
+	2325	 [fontsize=6,
+		height=61,
+		label="b'organic solar cells'",
+		level=3,
+		width=61];
+	2316	 [fontsize=6,
+		height=63,
+		label="b'organic electronics'",
+		level=2,
+		width=63];
+	2325 -- 2316;
+	3887	 [fontsize=6,
+		height=70,
+		label="b'perovskite solar cells'",
+		level=3,
+		width=70];
+	2325 -- 3887;
+	2327	 [fontsize=6,
+		height=70,
+		label="b'organic photovoltaics'",
+		level=3,
+		width=70];
+	2316 -- 2327;
+	4059	 [fontsize=6,
+		height=59,
+		label="b'industrial ecology'",
+		level=3,
+		width=59];
+	4	 [fontsize=6,
+		height=71,
+		label="b'life cycle assessment'",
+		level=3,
+		width=71];
+	4059 -- 4;
+	1	 [fontsize=8,
+		height=50,
+		label="b'sustainability'",
+		level=1,
+		width=50];
+	4 -- 1;
+	4057	 [fontsize=6,
+		height=65,
+		label="b'waste management'",
+		level=3,
+		width=65];
+	4 -- 4057;
+	6	 [fontsize=6,
+		height=89,
+		label="b'environmental management'",
+		level=3,
+		width=89];
+	1 -- 6;
+	2489	 [fontsize=8,
+		height=51,
+		label="b'cryptography'",
+		level=1,
+		width=51];
+	3112	 [fontsize=6,
+		height=51,
+		label="b'steganography'",
+		level=3,
+		width=51];
+	2489 -- 3112;
+	3119	 [fontsize=6,
+		height=59,
+		label="b'complexity theory'",
+		level=3,
+		width=59];
+	2489 -- 3119;
+	737	 [fontsize=6,
+		height=32,
+		label="b'fisheries'",
+		level=2,
+		width=32];
+	4774	 [fontsize=6,
+		height=43,
+		label="b'fish ecology'",
+		level=3,
+		width=43];
+	737 -- 4774;
+	4775	 [fontsize=6,
+		height=67,
+		label="b'marine conservation'",
+		level=3,
+		width=67];
+	737 -- 4775;
+	4771	 [fontsize=6,
+		height=73,
+		label="b'fisheries management'",
+		level=3,
+		width=73];
+	737 -- 4771;
+	4205	 [fontsize=6,
+		height=52,
+		label="b'phytochemistry'",
+		level=3,
+		width=52];
+	4203	 [fontsize=6,
+		height=55,
+		label="b'natural products'",
+		level=2,
+		width=55];
+	4205 -- 4203;
+	1165	 [fontsize=6,
+		height=49,
+		label="b'vision science'",
+		level=3,
+		width=49];
+	469	 [fontsize=6,
+		height=50,
+		label="b'ophthalmology'",
+		level=2,
+		width=50];
+	1165 -- 469;
+	1164	 [fontsize=6,
+		height=24,
+		label="b'retina'",
+		level=3,
+		width=24];
+	469 -- 1164;
+	778	 [fontsize=6,
+		height=18,
+		label="b'fish'",
+		level=3,
+		width=18];
+	374	 [fontsize=8,
+		height=33,
+		label="b'ecology'",
+		level=1,
+		width=33];
+	778 -- 374;
+	775	 [fontsize=6,
+		height=80,
+		label="b'plant-animal interactions'",
+		level=3,
+		width=80];
+	374 -- 775;
+	771	 [fontsize=6,
+		height=72,
+		label="b'global change biology'",
+		level=3,
+		width=72];
+	374 -- 771;
+	758	 [fontsize=6,
+		height=32,
+		label="b'ethology'",
+		level=3,
+		width=32];
+	374 -- 758;
+	766	 [fontsize=6,
+		height=22,
+		label="b'plant'",
+		level=3,
+		width=22];
+	374 -- 766;
+	757	 [fontsize=6,
+		height=71,
+		label="b'physiological ecology'",
+		level=3,
+		width=71];
+	374 -- 757;
+	738	 [fontsize=6,
+		height=55,
+		label="b'invasion biology'",
+		level=3,
+		width=55];
+	374 -- 738;
+	782	 [fontsize=6,
+		height=43,
+		label="b'agroecology'",
+		level=3,
+		width=43];
+	374 -- 782;
+	753	 [fontsize=6,
+		height=42,
+		label="b'ecosystems'",
+		level=3,
+		width=42];
+	374 -- 753;
+	745	 [fontsize=6,
+		height=37,
+		label="b'food webs'",
+		level=3,
+		width=37];
+	374 -- 745;
+	773	 [fontsize=6,
+		height=61,
+		label="b'population biology'",
+		level=3,
+		width=61];
+	374 -- 773;
+	734	 [fontsize=6,
+		height=96,
+		label="b'natural resource management'",
+		level=3,
+		width=96];
+	374 -- 734;
+	764	 [fontsize=6,
+		height=47,
+		label="b'social insects'",
+		level=3,
+		width=47];
+	374 -- 764;
+	785	 [fontsize=6,
+		height=68,
+		label="b'population dynamics'",
+		level=3,
+		width=68];
+	374 -- 785;
+	747	 [fontsize=6,
+		height=38,
+		label="b'pollination'",
+		level=3,
+		width=38];
+	374 -- 747;
+	1481	 [fontsize=8,
+		height=67,
+		label="b'renewable energy'",
+		level=1,
+		width=67];
+	1492	 [fontsize=6,
+		height=38,
+		label="b'microgrids'",
+		level=3,
+		width=38];
+	1481 -- 1492;
+	1034	 [fontsize=6,
+		height=62,
+		label="b'genetic algorithms'",
+		level=3,
+		width=62];
+	838	 [fontsize=8,
+		height=72,
+		label="b'artificial intelligence'",
+		level=1,
+		width=72];
+	1034 -- 838;
+	1018	 [fontsize=6,
+		height=59,
+		label="b'cognitive robotics'",
+		level=3,
+		width=59];
+	838 -- 1018;
+	1064	 [fontsize=6,
+		height=62,
+		label="b'logic programming'",
+		level=3,
+		width=62];
+	838 -- 1064;
+	1011	 [fontsize=6,
+		height=77,
+		label="b'constraint programming'",
+		level=3,
+		width=77];
+	838 -- 1011;
+	1071	 [fontsize=6,
+		height=51,
+		label="b'machine vision'",
+		level=3,
+		width=51];
+	838 -- 1071;
+	1043	 [fontsize=6,
+		height=42,
+		label="b'artificial life'",
+		level=3,
+		width=42];
+	838 -- 1043;
+	1029	 [fontsize=6,
+		height=43,
+		label="b'optimisation'",
+		level=3,
+		width=43];
+	838 -- 1029;
+	1045	 [fontsize=6,
+		height=51,
+		label="b'soft computing'",
+		level=3,
+		width=51];
+	838 -- 1045;
+	1016	 [fontsize=6,
+		height=62,
+		label="b'swarm intelligence'",
+		level=3,
+		width=62];
+	838 -- 1016;
+	1062	 [fontsize=6,
+		height=39,
+		label="b'fuzzy logic'",
+		level=3,
+		width=39];
+	838 -- 1062;
+	1022	 [fontsize=6,
+		height=70,
+		label="b'automated reasoning'",
+		level=3,
+		width=70];
+	838 -- 1022;
+	1058	 [fontsize=6,
+		height=76,
+		label="b'evolutionary algorithms'",
+		level=3,
+		width=76];
+	838 -- 1058;
+	1024	 [fontsize=6,
+		height=67,
+		label="b'ambient intelligence'",
+		level=3,
+		width=67];
+	838 -- 1024;
+	1013	 [fontsize=6,
+		height=87,
+		label="b'intelligent tutoring systems'",
+		level=3,
+		width=87];
+	838 -- 1013;
+	1066	 [fontsize=6,
+		height=63,
+		label="b'cognitive modeling'",
+		level=3,
+		width=63];
+	838 -- 1066;
+	4669	 [fontsize=6,
+		height=17,
+		label="b'erp'",
+		level=3,
+		width=17];
+	4234	 [fontsize=8,
+		height=20,
+		label="b'eeg'",
+		level=1,
+		width=20];
+	4669 -- 4234;
+	4670	 [fontsize=6,
+		height=20,
+		label="b'meg'",
+		level=3,
+		width=20];
+	4234 -- 4670;
+	2801	 [fontsize=6,
+		height=46,
+		label="b'hippocampus'",
+		level=3,
+		width=46];
+	2775	 [fontsize=8,
+		height=35,
+		label="b'memory'",
+		level=1,
+		width=35];
+	2801 -- 2775;
+	2794	 [fontsize=6,
+		height=52,
+		label="b'cognitive aging'",
+		level=3,
+		width=52];
+	2775 -- 2794;
+	2798	 [fontsize=6,
+		height=49,
+		label="b'metacognition'",
+		level=3,
+		width=49];
+	2775 -- 2798;
+	2375	 [fontsize=6,
+		height=21,
+		label="b'slam'",
+		level=3,
+		width=21];
+	1519	 [fontsize=8,
+		height=34,
+		label="b'robotics'",
+		level=1,
+		width=34];
+	2375 -- 1519;
+	2383	 [fontsize=6,
+		height=18,
+		label="b'uav'",
+		level=3,
+		width=18];
+	1519 -- 2383;
+	2406	 [fontsize=6,
+		height=61,
+		label="b'distributed control'",
+		level=3,
+		width=61];
+	1519 -- 2406;
+	2411	 [fontsize=6,
+		height=42,
+		label="b'biomimetics'",
+		level=3,
+		width=42];
+	1519 -- 2411;
+	2420	 [fontsize=6,
+		height=54,
+		label="b'motion planning'",
+		level=3,
+		width=54];
+	1519 -- 2420;
+	2409	 [fontsize=6,
+		height=70,
+		label="b'autonomous vehicles'",
+		level=3,
+		width=70];
+	1519 -- 2409;
+	2433	 [fontsize=6,
+		height=47,
+		label="b'path planning'",
+		level=3,
+		width=47];
+	1519 -- 2433;
+	2408	 [fontsize=6,
+		height=56,
+		label="b'medical robotics'",
+		level=3,
+		width=56];
+	1519 -- 2408;
+	2407	 [fontsize=6,
+		height=48,
+		label="b'robust control'",
+		level=3,
+		width=48];
+	1519 -- 2407;
+	2427	 [fontsize=6,
+		height=58,
+		label="b'automatic control'",
+		level=3,
+		width=58];
+	1519 -- 2427;
+	2390	 [fontsize=6,
+		height=41,
+		label="b'localization'",
+		level=3,
+		width=41];
+	1519 -- 2390;
+	2418	 [fontsize=6,
+		height=78,
+		label="b'human-robot interaction'",
+		level=3,
+		width=78];
+	1519 -- 2418;
+	4258	 [fontsize=6,
+		height=50,
+		label="b'opinion mining'",
+		level=3,
+		width=50];
+	1983	 [fontsize=6,
+		height=62,
+		label="b'sentiment analysis'",
+		level=2,
+		width=62];
+	4258 -- 1983;
+	5906	 [fontsize=6,
+		height=29,
+		label="b'surface'",
+		level=3,
+		width=29];
+	4881	 [fontsize=6,
+		height=36,
+		label="b'interfaces'",
+		level=2,
+		width=36];
+	5906 -- 4881;
+	552	 [fontsize=6,
+		height=70,
+		label="b'traumatic brain injury'",
+		level=3,
+		width=70];
+	327	 [fontsize=8,
+		height=52,
+		label="b'neuroscience'",
+		level=1,
+		width=52];
+	552 -- 327;
+	542	 [fontsize=6,
+		height=66,
+		label="b'neuroendocrinology'",
+		level=3,
+		width=66];
+	327 -- 542;
+	496	 [fontsize=6,
+		height=29,
+		label="b'hearing'",
+		level=3,
+		width=29];
+	327 -- 496;
+	517	 [fontsize=6,
+		height=60,
+		label="b'neuroimmunology'",
+		level=3,
+		width=60];
+	327 -- 517;
+	479	 [fontsize=6,
+		height=70,
+		label="b'psychopharmacology'",
+		level=3,
+		width=70];
+	327 -- 479;
+	514	 [fontsize=6,
+		height=48,
+		label="b'bioelectronics'",
+		level=3,
+		width=48];
+	327 -- 514;
+	503	 [fontsize=6,
+		height=22,
+		label="b'brain'",
+		level=3,
+		width=22];
+	327 -- 503;
+	498	 [fontsize=6,
+		height=36,
+		label="b'dopamine'",
+		level=3,
+		width=36];
+	327 -- 498;
+	513	 [fontsize=6,
+		height=59,
+		label="b'neuroengineering'",
+		level=3,
+		width=59];
+	327 -- 513;
+	534	 [fontsize=6,
+		height=49,
+		label="b'neuroethology'",
+		level=3,
+		width=49];
+	327 -- 534;
+	482	 [fontsize=6,
+		height=52,
+		label="b'anesthesiology'",
+		level=3,
+		width=52];
+	327 -- 482;
+	483	 [fontsize=6,
+		height=49,
+		label="b'neurogenetics'",
+		level=3,
+		width=49];
+	327 -- 483;
+	520	 [fontsize=6,
+		height=45,
+		label="b'optogenetics'",
+		level=3,
+		width=45];
+	327 -- 520;
+	554	 [fontsize=6,
+		height=47,
+		label="b'brain imaging'",
+		level=3,
+		width=47];
+	327 -- 554;
+	512	 [fontsize=6,
+		height=32,
+		label="b'anatomy'",
+		level=3,
+		width=32];
+	327 -- 512;
+	486	 [fontsize=6,
+		height=56,
+		label="b'brain stimulation'",
+		level=3,
+		width=56];
+	327 -- 486;
+	508	 [fontsize=6,
+		height=58,
+		label="b'spinal cord injury'",
+		level=3,
+		width=58];
+	327 -- 508;
+	4855	 [fontsize=6,
+		height=59,
+		label="b'cochlear implants'",
+		level=3,
+		width=59];
+	496 -- 4855;
+	3569	 [fontsize=6,
+		height=42,
+		label="b'critical care'",
+		level=3,
+		width=42];
+	482 -- 3569;
+	506	 [fontsize=8,
+		height=30,
+		label="b'autism'",
+		level=1,
+		width=30];
+	5259	 [fontsize=6,
+		height=22,
+		label="b'adhd'",
+		level=3,
+		width=22];
+	506 -- 5259;
+	5258	 [fontsize=6,
+		height=59,
+		label="b'special education'",
+		level=3,
+		width=59];
+	506 -- 5258;
+	5261	 [fontsize=6,
+		height=84,
+		label="b'developmental disabilities'",
+		level=3,
+		width=84];
+	506 -- 5261;
+	3700	 [fontsize=6,
+		height=44,
+		label="b'earthquakes'",
+		level=3,
+		width=44];
+	2586	 [fontsize=8,
+		height=45,
+		label="b'geophysics'",
+		level=1,
+		width=45];
+	3700 -- 2586;
+	3708	 [fontsize=6,
+		height=53,
+		label="b'mineral physics'",
+		level=3,
+		width=53];
+	2586 -- 3708;
+	994	 [fontsize=6,
+		height=36,
+		label="b'clustering'",
+		level=3,
+		width=36];
+	837	 [fontsize=8,
+		height=46,
+		label="b'data mining'",
+		level=1,
+		width=46];
+	994 -- 837;
+	978	 [fontsize=6,
+		height=69,
+		label="b'knowledge discovery'",
+		level=3,
+		width=69];
+	837 -- 978;
+	986	 [fontsize=6,
+		height=62,
+		label="b'business analytics'",
+		level=3,
+		width=62];
+	837 -- 986;
+	989	 [fontsize=6,
+		height=82,
+		label="b'decision support systems'",
+		level=3,
+		width=82];
+	837 -- 989;
+	1000	 [fontsize=6,
+		height=41,
+		label="b'web mining'",
+		level=3,
+		width=41];
+	837 -- 1000;
+	999	 [fontsize=6,
+		height=61,
+		label="b'database systems'",
+		level=3,
+		width=61];
+	837 -- 999;
+	3791	 [fontsize=6,
+		height=62,
+		label="b'radiation oncology'",
+		level=3,
+		width=62];
+	1573	 [fontsize=6,
+		height=54,
+		label="b'medical physics'",
+		level=2,
+		width=54];
+	3791 -- 1573;
+	3885	 [fontsize=6,
+		height=49,
+		label="b'water splitting'",
+		level=3,
+		width=49];
+	4797	 [fontsize=6,
+		height=77,
+		label="b'artificial photosynthesis'",
+		level=3,
+		width=77];
+	3885 -- 4797;
+	3874	 [fontsize=6,
+		height=50,
+		label="b'photocatalysis'",
+		level=2,
+		width=50];
+	3885 -- 3874;
+	3886	 [fontsize=6,
+		height=78,
+		label="b'solar energy conversion'",
+		level=3,
+		width=78];
+	3874 -- 3886;
+	1118	 [fontsize=6,
+		height=42,
+		label="b'soil ecology'",
+		level=3,
+		width=42];
+	1085	 [fontsize=8,
+		height=62,
+		label="b'biogeochemistry'",
+		level=1,
+		width=62];
+	1118 -- 1085;
+	1116	 [fontsize=6,
+		height=52,
+		label="b'stable isotopes'",
+		level=3,
+		width=52];
+	1085 -- 1116;
+	1107	 [fontsize=6,
+		height=33,
+		label="b'wetlands'",
+		level=3,
+		width=33];
+	1085 -- 1107;
+	1114	 [fontsize=6,
+		height=56,
+		label="b'geomicrobiology'",
+		level=3,
+		width=56];
+	1085 -- 1114;
+	1104	 [fontsize=6,
+		height=71,
+		label="b'organic geochemistry'",
+		level=3,
+		width=71];
+	1085 -- 1104;
+	4524	 [fontsize=8,
+		height=61,
+		label="b'decision making'",
+		level=1,
+		width=61];
+	4581	 [fontsize=6,
+		height=56,
+		label="b'neuroeconomics'",
+		level=3,
+		width=56];
+	4524 -- 4581;
+	59	 [fontsize=6,
+		height=73,
+		label="b'photoelectrochemistry'",
+		level=3,
+		width=73];
+	28	 [fontsize=8,
+		height=62,
+		label="b'electrochemistry'",
+		level=1,
+		width=62];
+	59 -- 28;
+	63	 [fontsize=6,
+		height=57,
+		label="b'energy materials'",
+		level=3,
+		width=57];
+	28 -- 63;
+	57	 [fontsize=6,
+		height=68,
+		label="b'conducting polymers'",
+		level=3,
+		width=68];
+	28 -- 57;
+	828	 [fontsize=6,
+		height=83,
+		label="b'cardiac electrophysiology'",
+		level=3,
+		width=83];
+	826	 [fontsize=6,
+		height=38,
+		label="b'cardiology'",
+		level=2,
+		width=38];
+	828 -- 826;
+	832	 [fontsize=6,
+		height=43,
+		label="b'heart failure'",
+		level=3,
+		width=43];
+	826 -- 832;
+	651	 [fontsize=6,
+		height=39,
+		label="b'biosensing'",
+		level=3,
+		width=39];
+	633	 [fontsize=8,
+		height=45,
+		label="b'plasmonics'",
+		level=1,
+		width=45];
+	651 -- 633;
+	652	 [fontsize=6,
+		height=30,
+		label="b'sensing'",
+		level=3,
+		width=30];
+	633 -- 652;
+	642	 [fontsize=6,
+		height=19,
+		label="b'eels'",
+		level=3,
+		width=19];
+	633 -- 642;
+	654	 [fontsize=6,
+		height=21,
+		label="b'stem'",
+		level=3,
+		width=21];
+	642 -- 654;
+	655	 [fontsize=6,
+		height=18,
+		label="b'tem'",
+		level=3,
+		width=18];
+	654 -- 655;
+	806	 [fontsize=6,
+		height=68,
+		label="b'ecological modelling'",
+		level=3,
+		width=68];
+	726	 [fontsize=8,
+		height=76,
+		label="b'conservation biology'",
+		level=1,
+		width=76];
+	806 -- 726;
+	795	 [fontsize=6,
+		height=42,
+		label="b'primatology'",
+		level=3,
+		width=42];
+	726 -- 795;
+	794	 [fontsize=6,
+		height=64,
+		label="b'landscape genetics'",
+		level=3,
+		width=64];
+	726 -- 794;
+	790	 [fontsize=6,
+		height=63,
+		label="b'movement ecology'",
+		level=3,
+		width=63];
+	726 -- 790;
+	813	 [fontsize=6,
+		height=58,
+		label="b'marine mammals'",
+		level=3,
+		width=58];
+	726 -- 813;
+	824	 [fontsize=6,
+		height=68,
+		label="b'wildlife management'",
+		level=3,
+		width=68];
+	726 -- 824;
+	792	 [fontsize=6,
+		height=54,
+		label="b'tropical ecology'",
+		level=3,
+		width=54];
+	726 -- 792;
+	821	 [fontsize=6,
+		height=64,
+		label="b'restoration ecology'",
+		level=3,
+		width=64];
+	726 -- 821;
+	796	 [fontsize=6,
+		height=43,
+		label="b'mammalogy'",
+		level=3,
+		width=43];
+	726 -- 796;
+	793	 [fontsize=6,
+		height=63,
+		label="b'freshwater ecology'",
+		level=3,
+		width=63];
+	726 -- 793;
+	797	 [fontsize=6,
+		height=53,
+		label="b'wildlife ecology'",
+		level=3,
+		width=53];
+	726 -- 797;
+	4449	 [fontsize=6,
+		height=76,
+		label="b'biological anthropology'",
+		level=3,
+		width=76];
+	795 -- 4449;
+	4450	 [fontsize=6,
+		height=52,
+		label="b'bioarchaeology'",
+		level=3,
+		width=52];
+	4449 -- 4450;
+	110	 [fontsize=8,
+		height=40,
+		label="b'solar cells'",
+		level=1,
+		width=40];
+	2319	 [fontsize=6,
+		height=16,
+		label="b'led'",
+		level=3,
+		width=16];
+	110 -- 2319;
+	4359	 [fontsize=6,
+		height=53,
+		label="b'climate science'",
+		level=3,
+		width=53];
+	4356	 [fontsize=6,
+		height=68,
+		label="b'atmospheric science'",
+		level=2,
+		width=68];
+	4359 -- 4356;
+	4125	 [fontsize=6,
+		height=27,
+		label="b'racism'",
+		level=3,
+		width=27];
+	2809	 [fontsize=8,
+		height=22,
+		label="b'race'",
+		level=1,
+		width=22];
+	4125 -- 2809;
+	4123	 [fontsize=6,
+		height=55,
+		label="b'social inequality'",
+		level=3,
+		width=55];
+	2809 -- 4123;
+	1981	 [fontsize=6,
+		height=45,
+		label="b'child welfare'",
+		level=3,
+		width=45];
+	1973	 [fontsize=6,
+		height=40,
+		label="b'social work'",
+		level=3,
+		width=40];
+	1981 -- 1973;
+	1971	 [fontsize=8,
+		height=52,
+		label="b'mental health'",
+		level=1,
+		width=52];
+	1973 -- 1971;
+	1975	 [fontsize=6,
+		height=21,
+		label="b'child'",
+		level=3,
+		width=21];
+	1971 -- 1975;
+	3898	 [fontsize=6,
+		height=79,
+		label="b'numerical linear algebra'",
+		level=3,
+		width=79];
+	3893	 [fontsize=8,
+		height=69,
+		label="b'numerical analysis'",
+		level=1,
+		width=69];
+	3898 -- 3893;
+	3071	 [fontsize=8,
+		height=72,
+		label="b'nonlinear dynamics'",
+		level=1,
+		width=72];
+	5325	 [fontsize=6,
+		height=25,
+		label="b'chaos'",
+		level=3,
+		width=25];
+	3071 -- 5325;
+	634	 [fontsize=8,
+		height=58,
+		label="b'optoelectronics'",
+		level=1,
+		width=58];
+	1202	 [fontsize=6,
+		height=75,
+		label="b'semiconductor physics'",
+		level=3,
+		width=75];
+	634 -- 1202;
+	1204	 [fontsize=6,
+		height=75,
+		label="b'semiconductor devices'",
+		level=3,
+		width=75];
+	634 -- 1204;
+	1667	 [fontsize=6,
+		height=71,
+		label="b'network management'",
+		level=3,
+		width=71];
+	1624	 [fontsize=8,
+		height=71,
+		label="b'computer networks'",
+		level=1,
+		width=71];
+	1667 -- 1624;
+	1661	 [fontsize=6,
+		height=91,
+		label="b'software defined networking'",
+		level=3,
+		width=91];
+	1624 -- 1661;
+	1662	 [fontsize=6,
+		height=77,
+		label="b'performance evaluation'",
+		level=3,
+		width=77];
+	1624 -- 1662;
+	5468	 [fontsize=6,
+		height=73,
+		label="b'animal communication'",
+		level=3,
+		width=73];
+	390	 [fontsize=6,
+		height=54,
+		label="b'animal behavior'",
+		level=2,
+		width=54];
+	5468 -- 390;
+	4573	 [fontsize=6,
+		height=44,
+		label="b'adolescence'",
+		level=2,
+		width=44];
+	4575	 [fontsize=6,
+		height=38,
+		label="b'prevention'",
+		level=3,
+		width=38];
+	4573 -- 4575;
+	4199	 [fontsize=6,
+		height=54,
+		label="b'urban sociology'",
+		level=3,
+		width=54];
+	4120	 [fontsize=8,
+		height=46,
+		label="b'immigration'",
+		level=1,
+		width=46];
+	4199 -- 4120;
+	580	 [fontsize=8,
+		height=33,
+		label="b'science'",
+		level=1,
+		width=33];
+	4664	 [fontsize=6,
+		height=63,
+		label="b'technology studies'",
+		level=3,
+		width=63];
+	580 -- 4664;
+	4167	 [fontsize=6,
+		height=82,
+		label="b'computational biophysics'",
+		level=3,
+		width=82];
+	4156	 [fontsize=8,
+		height=88,
+		label="b'computational chemistry'",
+		level=1,
+		width=88];
+	4167 -- 4156;
+	4169	 [fontsize=6,
+		height=64,
+		label="b'electronic structure'",
+		level=3,
+		width=64];
+	4156 -- 4169;
+	4172	 [fontsize=6,
+		height=86,
+		label="b'physical organic chemistry'",
+		level=3,
+		width=86];
+	4156 -- 4172;
+	3924	 [fontsize=6,
+		height=54,
+		label="b'eye movements'",
+		level=3,
+		width=54];
+	5808	 [fontsize=6,
+		height=52,
+		label="b'visual attention'",
+		level=3,
+		width=52];
+	3924 -- 5808;
+	2778	 [fontsize=8,
+		height=36,
+		label="b'attention'",
+		level=1,
+		width=36];
+	3924 -- 2778;
+	3922	 [fontsize=6,
+		height=51,
+		label="b'consciousness'",
+		level=3,
+		width=51];
+	2778 -- 3922;
+	1830	 [fontsize=6,
+		height=55,
+		label="b'microeconomics'",
+		level=3,
+		width=55];
+	1461	 [fontsize=8,
+		height=49,
+		label="b'game theory'",
+		level=1,
+		width=49];
+	1830 -- 1461;
+	1836	 [fontsize=6,
+		height=72,
+		label="b'microeconomic theory'",
+		level=3,
+		width=72];
+	1461 -- 1836;
+	1839	 [fontsize=6,
+		height=56,
+		label="b'economic theory'",
+		level=3,
+		width=56];
+	1461 -- 1839;
+	1840	 [fontsize=6,
+		height=52,
+		label="b'decision theory'",
+		level=3,
+		width=52];
+	1461 -- 1840;
+	1832	 [fontsize=6,
+		height=52,
+		label="b'contract theory'",
+		level=3,
+		width=52];
+	1461 -- 1832;
+	5525	 [fontsize=6,
+		height=29,
+		label="b'storage'",
+		level=2,
+		width=29];
+	5776	 [fontsize=6,
+		height=52,
+		label="b'carbon capture'",
+		level=3,
+		width=52];
+	5525 -- 5776;
+	2898	 [fontsize=6,
+		height=67,
+		label="b'condition monitoring'",
+		level=3,
+		width=67];
+	2111	 [fontsize=6,
+		height=50,
+		label="b'fault diagnosis'",
+		level=3,
+		width=50];
+	2898 -- 2111;
+	848	 [fontsize=8,
+		height=65,
+		label="b'signal processing'",
+		level=1,
+		width=65];
+	2111 -- 848;
+	2127	 [fontsize=6,
+		height=23,
+		label="b'radar'",
+		level=3,
+		width=23];
+	848 -- 2127;
+	2113	 [fontsize=6,
+		height=78,
+		label="b'communication systems'",
+		level=3,
+		width=78];
+	848 -- 2113;
+	3806	 [fontsize=6,
+		height=35,
+		label="b'acoustics'",
+		level=2,
+		width=35];
+	4530	 [fontsize=6,
+		height=23,
+		label="b'audio'",
+		level=3,
+		width=23];
+	3806 -- 4530;
+	4566	 [fontsize=6,
+		height=64,
+		label="b'digital preservation'",
+		level=3,
+		width=64];
+	4542	 [fontsize=6,
+		height=51,
+		label="b'digital libraries'",
+		level=2,
+		width=51];
+	4566 -- 4542;
+	4567	 [fontsize=6,
+		height=35,
+		label="b'metadata'",
+		level=3,
+		width=35];
+	4542 -- 4567;
+	2466	 [fontsize=6,
+		height=63,
+		label="b'geometric analysis'",
+		level=3,
+		width=63];
+	2459	 [fontsize=6,
+		height=68,
+		label="b'differential geometry'",
+		level=2,
+		width=68];
+	2466 -- 2459;
+	4242	 [fontsize=6,
+		height=25,
+		label="b'stroke'",
+		level=2,
+		width=25];
+	4720	 [fontsize=6,
+		height=63,
+		label="b'neurorehabilitation'",
+		level=3,
+		width=63];
+	4242 -- 4720;
+	589	 [fontsize=8,
+		height=64,
+		label="b'entrepreneurship'",
+		level=1,
+		width=64];
+	4183	 [fontsize=6,
+		height=51,
+		label="b'venture capital'",
+		level=3,
+		width=51];
+	589 -- 4183;
+	4188	 [fontsize=6,
+		height=64,
+		label="b'organization theory'",
+		level=3,
+		width=64];
+	589 -- 4188;
+	579	 [fontsize=6,
+		height=59,
+		label="b'history of science'",
+		level=3,
+		width=59];
+	559	 [fontsize=8,
+		height=44,
+		label="b'technology'",
+		level=1,
+		width=44];
+	579 -- 559;
+	51	 [fontsize=8,
+		height=65,
+		label="b'materials science'",
+		level=1,
+		width=65];
+	106	 [fontsize=6,
+		height=67,
+		label="b'computer simulation'",
+		level=3,
+		width=67];
+	51 -- 106;
+	87	 [fontsize=6,
+		height=68,
+		label="b'solid state chemistry'",
+		level=3,
+		width=68];
+	51 -- 87;
+	100	 [fontsize=6,
+		height=84,
+		label="b'materials characterization'",
+		level=3,
+		width=84];
+	51 -- 100;
+	91	 [fontsize=6,
+		height=55,
+		label="b'characterization'",
+		level=3,
+		width=55];
+	51 -- 91;
+	90	 [fontsize=6,
+		height=53,
+		label="b'applied physics'",
+		level=3,
+		width=53];
+	51 -- 90;
+	74	 [fontsize=6,
+		height=50,
+		label="b'microstructure'",
+		level=3,
+		width=50];
+	51 -- 74;
+	5626	 [fontsize=6,
+		height=61,
+		label="b'polymer synthesis'",
+		level=3,
+		width=61];
+	91 -- 5626;
+	2307	 [fontsize=6,
+		height=73,
+		label="b'mechanical properties'",
+		level=3,
+		width=73];
+	74 -- 2307;
+	3841	 [fontsize=6,
+		height=43,
+		label="b'geotechnics'",
+		level=3,
+		width=43];
+	3830	 [fontsize=6,
+		height=56,
+		label="b'civil engineering'",
+		level=2,
+		width=56];
+	3841 -- 3830;
+	4473	 [fontsize=6,
+		height=42,
+		label="b'criminal law'",
+		level=3,
+		width=42];
+	1766	 [fontsize=8,
+		height=19,
+		label="b'law'",
+		level=1,
+		width=19];
+	4473 -- 1766;
+	4482	 [fontsize=6,
+		height=28,
+		label="b'society'",
+		level=3,
+		width=28];
+	1766 -- 4482;
+	3141	 [fontsize=6,
+		height=11,
+		label="b'rf'",
+		level=2,
+		width=11];
+	3145	 [fontsize=6,
+		height=27,
+		label="b'analog'",
+		level=3,
+		width=27];
+	3141 -- 3145;
+	2922	 [fontsize=6,
+		height=95,
+		label="b'human resource management'",
+		level=3,
+		width=95];
+	4112	 [fontsize=6,
+		height=71,
+		label="b'employment relations'",
+		level=3,
+		width=71];
+	2922 -- 4112;
+	2912	 [fontsize=6,
+		height=77,
+		label="b'organizational behavior'",
+		level=2,
+		width=77];
+	2922 -- 2912;
+	2379	 [fontsize=6,
+		height=57,
+		label="b'nonlinear control'",
+		level=2,
+		width=57];
+	3545	 [fontsize=6,
+		height=55,
+		label="b'adaptive control'",
+		level=3,
+		width=55];
+	2379 -- 3545;
+	3538	 [fontsize=6,
+		height=50,
+		label="b'space weather'",
+		level=3,
+		width=50];
+	3524	 [fontsize=6,
+		height=49,
+		label="b'space physics'",
+		level=3,
+		width=49];
+	3538 -- 3524;
+	3541	 [fontsize=6,
+		height=40,
+		label="b'ionosphere'",
+		level=3,
+		width=40];
+	3538 -- 3541;
+	3539	 [fontsize=6,
+		height=46,
+		label="b'solar physics'",
+		level=3,
+		width=46];
+	3524 -- 3539;
+	1146	 [fontsize=6,
+		height=53,
+		label="b'plasma physics'",
+		level=2,
+		width=53];
+	3524 -- 1146;
+	3525	 [fontsize=6,
+		height=77,
+		label="b'magnetohydrodynamics'",
+		level=3,
+		width=77];
+	1146 -- 3525;
+	237	 [fontsize=6,
+		height=36,
+		label="b'apoptosis'",
+		level=3,
+		width=36];
+	192	 [fontsize=8,
+		height=30,
+		label="b'cancer'",
+		level=1,
+		width=30];
+	237 -- 192;
+	211	 [fontsize=6,
+		height=37,
+		label="b'exosomes'",
+		level=3,
+		width=37];
+	192 -- 211;
+	216	 [fontsize=6,
+		height=49,
+		label="b'palliative care'",
+		level=3,
+		width=49];
+	192 -- 216;
+	235	 [fontsize=6,
+		height=46,
+		label="b'angiogenesis'",
+		level=3,
+		width=46];
+	192 -- 235;
+	233	 [fontsize=6,
+		height=39,
+		label="b'metastasis'",
+		level=3,
+		width=39];
+	192 -- 233;
+	213	 [fontsize=6,
+		height=47,
+		label="b'cell migration'",
+		level=3,
+		width=47];
+	192 -- 213;
+	227	 [fontsize=6,
+		height=60,
+		label="b'drug development'",
+		level=3,
+		width=60];
+	192 -- 227;
+	225	 [fontsize=6,
+		height=24,
+		label="b'mirna'",
+		level=3,
+		width=24];
+	192 -- 225;
+	4873	 [fontsize=6,
+		height=59,
+		label="b'probability theory'",
+		level=2,
+		width=59];
+	4874	 [fontsize=6,
+		height=70,
+		label="b'mathematical finance'",
+		level=3,
+		width=70];
+	4873 -- 4874;
+	5864	 [fontsize=6,
+		height=79,
+		label="b'clinical decision support'",
+		level=3,
+		width=79];
+	1001	 [fontsize=6,
+		height=65,
+		label="b'medical informatics'",
+		level=2,
+		width=65];
+	5864 -- 1001;
+	3187	 [fontsize=6,
+		height=63,
+		label="b'soft matter physics'",
+		level=3,
+		width=63];
+	3012	 [fontsize=8,
+		height=42,
+		label="b'biophysics'",
+		level=1,
+		width=42];
+	3187 -- 3012;
+	3181	 [fontsize=6,
+		height=73,
+		label="b'soft condensed matter'",
+		level=3,
+		width=73];
+	3012 -- 3181;
+	3178	 [fontsize=6,
+		height=51,
+		label="b'cell mechanics'",
+		level=3,
+		width=51];
+	3012 -- 3178;
+	133	 [fontsize=8,
+		height=48,
+		label="b'biomaterials'",
+		level=1,
+		width=48];
+	150	 [fontsize=6,
+		height=67,
+		label="b'surface modification'",
+		level=3,
+		width=67];
+	133 -- 150;
+	166	 [fontsize=6,
+		height=36,
+		label="b'hydrogels'",
+		level=3,
+		width=36];
+	133 -- 166;
+	161	 [fontsize=6,
+		height=47,
+		label="b'gene delivery'",
+		level=3,
+		width=47];
+	133 -- 161;
+	5798	 [fontsize=6,
+		height=20,
+		label="b'drug'",
+		level=3,
+		width=20];
+	161 -- 5798;
+	1864	 [fontsize=8,
+		height=27,
+		label="b'ethics'",
+		level=1,
+		width=27];
+	1872	 [fontsize=6,
+		height=59,
+		label="b'moral psychology'",
+		level=3,
+		width=59];
+	1864 -- 1872;
+	2951	 [fontsize=6,
+		height=64,
+		label="b'resource allocation'",
+		level=3,
+		width=64];
+	2112	 [fontsize=8,
+		height=91,
+		label="b'wireless communications'",
+		level=1,
+		width=91];
+	2951 -- 2112;
+	2939	 [fontsize=6,
+		height=23,
+		label="b'mimo'",
+		level=3,
+		width=23];
+	2112 -- 2939;
+	5418	 [fontsize=6,
+		height=31,
+		label="b'dyslexia'",
+		level=3,
+		width=31];
+	4863	 [fontsize=6,
+		height=29,
+		label="b'reading'",
+		level=2,
+		width=29];
+	5418 -- 4863;
+	1812	 [fontsize=6,
+		height=76,
+		label="b'pharmacoepidemiology'",
+		level=3,
+		width=76];
+	716	 [fontsize=8,
+		height=52,
+		label="b'epidemiology'",
+		level=1,
+		width=52];
+	1812 -- 716;
+	1821	 [fontsize=6,
+		height=54,
+		label="b'chronic disease'",
+		level=3,
+		width=54];
+	716 -- 1821;
+	1810	 [fontsize=6,
+		height=69,
+		label="b'environmental health'",
+		level=3,
+		width=69];
+	716 -- 1810;
+	1815	 [fontsize=6,
+		height=41,
+		label="b'child health'",
+		level=3,
+		width=41];
+	716 -- 1815;
+	1826	 [fontsize=6,
+		height=35,
+		label="b'zoonoses'",
+		level=3,
+		width=35];
+	716 -- 1826;
+	1817	 [fontsize=6,
+		height=58,
+		label="b'population health'",
+		level=3,
+		width=58];
+	716 -- 1817;
+	5183	 [fontsize=6,
+		height=33,
+		label="b'maternal'",
+		level=3,
+		width=33];
+	1815 -- 5183;
+	2559	 [fontsize=6,
+		height=71,
+		label="b'continuum mechanics'",
+		level=3,
+		width=71];
+	2499	 [fontsize=8,
+		height=92,
+		label="b'computational mechanics'",
+		level=1,
+		width=92];
+	2559 -- 2499;
+	2551	 [fontsize=6,
+		height=66,
+		label="b'multiscale modeling'",
+		level=3,
+		width=66];
+	2499 -- 2551;
+	2558	 [fontsize=6,
+		height=70,
+		label="b'constitutive modeling'",
+		level=3,
+		width=70];
+	2499 -- 2558;
+	2557	 [fontsize=6,
+		height=51,
+		label="b'finite elements'",
+		level=3,
+		width=51];
+	2499 -- 2557;
+	2737	 [fontsize=6,
+		height=66,
+		label="b'financial accounting'",
+		level=3,
+		width=66];
+	2731	 [fontsize=8,
+		height=34,
+		label="b'auditing'",
+		level=1,
+		width=34];
+	2737 -- 2731;
+	3233	 [fontsize=6,
+		height=56,
+		label="b'international law'",
+		level=2,
+		width=56];
+	3246	 [fontsize=6,
+		height=61,
+		label="b'environmental law'",
+		level=3,
+		width=61];
+	3233 -- 3246;
+	4416	 [fontsize=6,
+		height=39,
+		label="b'metaethics'",
+		level=3,
+		width=39];
+	1857	 [fontsize=6,
+		height=76,
+		label="b'philosophy of language'",
+		level=2,
+		width=76];
+	4416 -- 1857;
+	4015	 [fontsize=6,
+		height=78,
+		label="b'molecular beam epitaxy'",
+		level=3,
+		width=78];
+	112	 [fontsize=8,
+		height=60,
+		label="b'semiconductors'",
+		level=1,
+		width=60];
+	4015 -- 112;
+	4008	 [fontsize=6,
+		height=67,
+		label="b'dna nanotechnology'",
+		level=3,
+		width=67];
+	3998	 [fontsize=8,
+		height=63,
+		label="b'synthetic biology'",
+		level=1,
+		width=63];
+	4008 -- 3998;
+	856	 [fontsize=6,
+		height=76,
+		label="b'medical image analysis'",
+		level=2,
+		width=76];
+	4458	 [fontsize=6,
+		height=83,
+		label="b'medical image computing'",
+		level=3,
+		width=83];
+	856 -- 4458;
+	4457	 [fontsize=6,
+		height=61,
+		label="b'image registration'",
+		level=3,
+		width=61];
+	856 -- 4457;
+	2588	 [fontsize=6,
+		height=50,
+		label="b'sedimentology'",
+		level=2,
+		width=50];
+	4409	 [fontsize=6,
+		height=49,
+		label="b'basin analysis'",
+		level=3,
+		width=49];
+	2588 -- 4409;
+	4410	 [fontsize=6,
+		height=53,
+		label="b'marine geology'",
+		level=3,
+		width=53];
+	2588 -- 4410;
+	4412	 [fontsize=6,
+		height=62,
+		label="b'petroleum geology'",
+		level=3,
+		width=62];
+	2588 -- 4412;
+	1954	 [fontsize=6,
+		height=34,
+		label="b'prejudice'",
+		level=3,
+		width=34];
+	5829	 [fontsize=6,
+		height=44,
+		label="b'stereotyping'",
+		level=3,
+		width=44];
+	1954 -- 5829;
+	1922	 [fontsize=8,
+		height=66,
+		label="b'social psychology'",
+		level=1,
+		width=66];
+	1954 -- 1922;
+	5828	 [fontsize=6,
+		height=48,
+		label="b'discrimination'",
+		level=3,
+		width=48];
+	1954 -- 5828;
+	1949	 [fontsize=6,
+		height=31,
+		label="b'morality'",
+		level=3,
+		width=31];
+	1922 -- 1949;
+	1950	 [fontsize=6,
+		height=65,
+		label="b'intergroup relations'",
+		level=3,
+		width=65];
+	1922 -- 1950;
+	1958	 [fontsize=6,
+		height=33,
+		label="b'attitudes'",
+		level=3,
+		width=33];
+	1922 -- 1958;
+	1940	 [fontsize=6,
+		height=79,
+		label="b'evolutionary psychology'",
+		level=3,
+		width=79];
+	1922 -- 1940;
+	1951	 [fontsize=6,
+		height=66,
+		label="b'social neuroscience'",
+		level=3,
+		width=66];
+	1922 -- 1951;
+	1943	 [fontsize=6,
+		height=65,
+		label="b'positive psychology'",
+		level=3,
+		width=65];
+	1922 -- 1943;
+	2718	 [fontsize=6,
+		height=44,
+		label="b'supply chain'",
+		level=3,
+		width=44];
+	2700	 [fontsize=8,
+		height=34,
+		label="b'logistics'",
+		level=1,
+		width=34];
+	2718 -- 2700;
+	2993	 [fontsize=6,
+		height=66,
+		label="b'historical linguistics'",
+		level=3,
+		width=66];
+	2206	 [fontsize=6,
+		height=38,
+		label="b'phonology'",
+		level=2,
+		width=38];
+	2993 -- 2206;
+	2382	 [fontsize=6,
+		height=38,
+		label="b'navigation'",
+		level=2,
+		width=38];
+	4030	 [fontsize=6,
+		height=21,
+		label="b'gnss'",
+		level=3,
+		width=21];
+	2382 -- 4030;
+	4031	 [fontsize=6,
+		height=56,
+		label="b'spatial cognition'",
+		level=3,
+		width=56];
+	2382 -- 4031;
+	4033	 [fontsize=6,
+		height=18,
+		label="b'gps'",
+		level=3,
+		width=18];
+	4030 -- 4033;
+	206	 [fontsize=6,
+		height=48,
+		label="b'breast cancer'",
+		level=2,
+		width=48];
+	1263	 [fontsize=6,
+		height=53,
+		label="b'prostate cancer'",
+		level=3,
+		width=53];
+	206 -- 1263;
+	2030	 [fontsize=8,
+		height=80,
+		label="b'computer architecture'",
+		level=1,
+		width=80];
+	2059	 [fontsize=6,
+		height=60,
+		label="b'hardware security'",
+		level=3,
+		width=60];
+	2030 -- 2059;
+	2052	 [fontsize=6,
+		height=61,
+		label="b'computer systems'",
+		level=3,
+		width=61];
+	2030 -- 2052;
+	2039	 [fontsize=6,
+		height=70,
+		label="b'parallel programming'",
+		level=3,
+		width=70];
+	2030 -- 2039;
+	2050	 [fontsize=6,
+		height=39,
+		label="b'vlsi design'",
+		level=3,
+		width=39];
+	2030 -- 2050;
+	2058	 [fontsize=6,
+		height=82,
+		label="b'reconfigurable computing'",
+		level=3,
+		width=82];
+	2030 -- 2058;
+	3758	 [fontsize=6,
+		height=48,
+		label="b'aerodynamics'",
+		level=2,
+		width=48];
+	4599	 [fontsize=6,
+		height=53,
+		label="b'turbomachinery'",
+		level=3,
+		width=53];
+	3758 -- 4599;
+	1091	 [fontsize=6,
+		height=54,
+		label="b'nitrogen cycling'",
+		level=3,
+		width=54];
+	283	 [fontsize=8,
+		height=65,
+		label="b'microbial ecology'",
+		level=1,
+		width=65];
+	1091 -- 283;
+	2342	 [fontsize=6,
+		height=24,
+		label="b'urban'",
+		level=2,
+		width=24];
+	4696	 [fontsize=6,
+		height=65,
+		label="b'regional economics'",
+		level=3,
+		width=65];
+	2342 -- 4696;
+	4692	 [fontsize=6,
+		height=54,
+		label="b'spatial planning'",
+		level=3,
+		width=54];
+	2342 -- 4692;
+	2269	 [fontsize=6,
+		height=54,
+		label="b'water treatment'",
+		level=2,
+		width=54];
+	2278	 [fontsize=6,
+		height=43,
+		label="b'desalination'",
+		level=3,
+		width=43];
+	2269 -- 2278;
+	840	 [fontsize=8,
+		height=47,
+		label="b'optimization'",
+		level=1,
+		width=47];
+	1479	 [fontsize=6,
+		height=78,
+		label="b'model predictive control'",
+		level=3,
+		width=78];
+	840 -- 1479;
+	1463	 [fontsize=6,
+		height=53,
+		label="b'process control'",
+		level=3,
+		width=53];
+	840 -- 1463;
+	1148	 [fontsize=6,
+		height=48,
+		label="b'star formation'",
+		level=3,
+		width=48];
+	618	 [fontsize=8,
+		height=49,
+		label="b'astrophysics'",
+		level=1,
+		width=49];
+	1148 -- 618;
+	1152	 [fontsize=6,
+		height=46,
+		label="b'neutron stars'",
+		level=3,
+		width=46];
+	618 -- 1152;
+	1155	 [fontsize=6,
+		height=64,
+		label="b'gravitational waves'",
+		level=3,
+		width=64];
+	618 -- 1155;
+	1150	 [fontsize=6,
+		height=41,
+		label="b'black holes'",
+		level=3,
+		width=41];
+	618 -- 1150;
+	4835	 [fontsize=6,
+		height=40,
+		label="b'uncertainty'",
+		level=3,
+		width=40];
+	4830	 [fontsize=6,
+		height=18,
+		label="b'risk'",
+		level=2,
+		width=18];
+	4835 -- 4830;
+	5229	 [fontsize=6,
+		height=54,
+		label="b'digital forensics'",
+		level=3,
+		width=54];
+	3114	 [fontsize=6,
+		height=66,
+		label="b'information security'",
+		level=2,
+		width=66];
+	5229 -- 3114;
+	4423	 [fontsize=6,
+		height=65,
+		label="b'public management'",
+		level=3,
+		width=65];
+	4417	 [fontsize=8,
+		height=76,
+		label="b'public administration'",
+		level=1,
+		width=76];
+	4423 -- 4417;
+	3205	 [fontsize=6,
+		height=46,
+		label="b'lab-on-a-chip'",
+		level=3,
+		width=46];
+	1243	 [fontsize=8,
+		height=48,
+		label="b'microfluidics'",
+		level=1,
+		width=48];
+	3205 -- 1243;
+	3202	 [fontsize=6,
+		height=41,
+		label="b'diagnostics'",
+		level=3,
+		width=41];
+	1243 -- 3202;
+	3203	 [fontsize=6,
+		height=34,
+		label="b'biomems'",
+		level=3,
+		width=34];
+	1243 -- 3203;
+	5641	 [fontsize=6,
+		height=41,
+		label="b'prognostics'",
+		level=3,
+		width=41];
+	3202 -- 5641;
+	1628	 [fontsize=6,
+		height=50,
+		label="b'fault tolerance'",
+		level=3,
+		width=50];
+	1594	 [fontsize=8,
+		height=72,
+		label="b'distributed systems'",
+		level=1,
+		width=72];
+	1628 -- 1594;
+	1626	 [fontsize=6,
+		height=41,
+		label="b'middleware'",
+		level=3,
+		width=41];
+	1594 -- 1626;
+	1625	 [fontsize=6,
+		height=44,
+		label="b'performance'",
+		level=3,
+		width=44];
+	1594 -- 1625;
+	1634	 [fontsize=6,
+		height=47,
+		label="b'dependability'",
+		level=3,
+		width=47];
+	1594 -- 1634;
+	1230	 [fontsize=6,
+		height=65,
+		label="b'instructional design'",
+		level=3,
+		width=65];
+	4202	 [fontsize=6,
+		height=78,
+		label="b'instructional technology'",
+		level=3,
+		width=78];
+	1230 -- 4202;
+	560	 [fontsize=8,
+		height=84,
+		label="b'educational technology'",
+		level=1,
+		width=84];
+	1230 -- 560;
+	1236	 [fontsize=6,
+		height=77,
+		label="b'educational psychology'",
+		level=3,
+		width=77];
+	560 -- 1236;
+	3756	 [fontsize=8,
+		height=76,
+		label="b'applied mathematics'",
+		level=1,
+		width=76];
+	3894	 [fontsize=6,
+		height=55,
+		label="b'nonlinear waves'",
+		level=3,
+		width=55];
+	3756 -- 3894;
+	5022	 [fontsize=6,
+		height=34,
+		label="b'inorganic'",
+		level=3,
+		width=34];
+	36	 [fontsize=6,
+		height=81,
+		label="b'organometallic chemistry'",
+		level=3,
+		width=81];
+	5022 -- 36;
+	12	 [fontsize=8,
+		height=36,
+		label="b'catalysis'",
+		level=1,
+		width=36];
+	36 -- 12;
+	45	 [fontsize=6,
+		height=84,
+		label="b'metal-organic frameworks'",
+		level=3,
+		width=84];
+	12 -- 45;
+	41	 [fontsize=6,
+		height=15,
+		label="b'dft'",
+		level=3,
+		width=15];
+	12 -- 41;
+	44	 [fontsize=6,
+		height=42,
+		label="b'ionic liquids'",
+		level=3,
+		width=42];
+	12 -- 44;
+	31	 [fontsize=6,
+		height=54,
+		label="b'organometallics'",
+		level=3,
+		width=54];
+	12 -- 31;
+	43	 [fontsize=6,
+		height=30,
+		label="b'zeolites'",
+		level=3,
+		width=30];
+	12 -- 43;
+	32	 [fontsize=6,
+		height=55,
+		label="b'green chemistry'",
+		level=3,
+		width=55];
+	12 -- 32;
+	34	 [fontsize=6,
+		height=57,
+		label="b'porous materials'",
+		level=3,
+		width=57];
+	12 -- 34;
+	2606	 [fontsize=6,
+		height=35,
+		label="b'petrology'",
+		level=3,
+		width=35];
+	2584	 [fontsize=8,
+		height=52,
+		label="b'geochemistry'",
+		level=1,
+		width=52];
+	2606 -- 2584;
+	2595	 [fontsize=6,
+		height=39,
+		label="b'geobiology'",
+		level=3,
+		width=39];
+	2584 -- 2595;
+	2600	 [fontsize=6,
+		height=44,
+		label="b'ore deposits'",
+		level=3,
+		width=44];
+	2584 -- 2600;
+	2602	 [fontsize=6,
+		height=60,
+		label="b'igneous petrology'",
+		level=3,
+		width=60];
+	2584 -- 2602;
+	1576	 [fontsize=6,
+		height=74,
+		label="b'photoacoustic imaging'",
+		level=3,
+		width=74];
+	1571	 [fontsize=6,
+		height=38,
+		label="b'ultrasound'",
+		level=2,
+		width=38];
+	1576 -- 1571;
+	3979	 [fontsize=6,
+		height=44,
+		label="b'dna damage'",
+		level=3,
+		width=44];
+	3978	 [fontsize=6,
+		height=24,
+		label="b'repair'",
+		level=3,
+		width=24];
+	3979 -- 3978;
+	3211	 [fontsize=6,
+		height=51,
+		label="b'dna replication'",
+		level=3,
+		width=51];
+	3978 -- 3211;
+	208	 [fontsize=6,
+		height=37,
+		label="b'dna repair'",
+		level=2,
+		width=37];
+	3211 -- 208;
+	5236	 [fontsize=6,
+		height=34,
+		label="b'influenza'",
+		level=3,
+		width=34];
+	254	 [fontsize=8,
+		height=33,
+		label="b'virology'",
+		level=1,
+		width=33];
+	5236 -- 254;
+	5390	 [fontsize=6,
+		height=56,
+		label="b'social marketing'",
+		level=3,
+		width=56];
+	4509	 [fontsize=6,
+		height=67,
+		label="b'consumer behaviour'",
+		level=3,
+		width=67];
+	5390 -- 4509;
+	2915	 [fontsize=8,
+		height=40,
+		label="b'marketing'",
+		level=1,
+		width=40];
+	4509 -- 2915;
+	4502	 [fontsize=6,
+		height=71,
+		label="b'consumer psychology'",
+		level=3,
+		width=71];
+	2915 -- 4502;
+	4501	 [fontsize=6,
+		height=75,
+		label="b'international marketing'",
+		level=3,
+		width=75];
+	2915 -- 4501;
+	4510	 [fontsize=6,
+		height=27,
+		label="b'pricing'",
+		level=3,
+		width=27];
+	2915 -- 4510;
+	4709	 [fontsize=6,
+		height=62,
+		label="b'marketing strategy'",
+		level=3,
+		width=62];
+	4501 -- 4709;
+	1139	 [fontsize=6,
+		height=44,
+		label="b'librarianship'",
+		level=3,
+		width=44];
+	1134	 [fontsize=6,
+		height=65,
+		label="b'information science'",
+		level=2,
+		width=65];
+	1139 -- 1134;
+	1142	 [fontsize=6,
+		height=50,
+		label="b'library science'",
+		level=3,
+		width=50];
+	1134 -- 1142;
+	1006	 [fontsize=8,
+		height=66,
+		label="b'computer science'",
+		level=1,
+		width=66];
+	1398	 [fontsize=6,
+		height=40,
+		label="b'informatics'",
+		level=3,
+		width=40];
+	1006 -- 1398;
+	1399	 [fontsize=6,
+		height=46,
+		label="b'programming'",
+		level=3,
+		width=46];
+	1006 -- 1399;
+	4042	 [fontsize=6,
+		height=46,
+		label="b'data curation'",
+		level=3,
+		width=46];
+	3455	 [fontsize=6,
+		height=60,
+		label="b'data management'",
+		level=2,
+		width=60];
+	4042 -- 3455;
+	4297	 [fontsize=6,
+		height=68,
+		label="b'numerical simulation'",
+		level=3,
+		width=68];
+	3757	 [fontsize=8,
+		height=42,
+		label="b'turbulence'",
+		level=1,
+		width=42];
+	4297 -- 3757;
+	1314	 [fontsize=6,
+		height=47,
+		label="b'hydrogeology'",
+		level=2,
+		width=47];
+	5370	 [fontsize=6,
+		height=44,
+		label="b'groundwater'",
+		level=3,
+		width=44];
+	1314 -- 5370;
+	5374	 [fontsize=6,
+		height=44,
+		label="b'geostatistics'",
+		level=3,
+		width=44];
+	1314 -- 5374;
+	2317	 [fontsize=8,
+		height=51,
+		label="b'photovoltaics'",
+		level=1,
+		width=51];
+	2454	 [fontsize=6,
+		height=51,
+		label="b'device physics'",
+		level=3,
+		width=51];
+	2317 -- 2454;
+	2455	 [fontsize=6,
+		height=78,
+		label="b'organic semiconductors'",
+		level=3,
+		width=78];
+	2317 -- 2455;
+	578	 [fontsize=6,
+		height=45,
+		label="b'food science'",
+		level=2,
+		width=45];
+	3505	 [fontsize=6,
+		height=51,
+		label="b'food chemistry'",
+		level=3,
+		width=51];
+	578 -- 3505;
+	3506	 [fontsize=6,
+		height=57,
+		label="b'food engineering'",
+		level=3,
+		width=57];
+	578 -- 3506;
+	1387	 [fontsize=6,
+		height=42,
+		label="b'cartography'",
+		level=3,
+		width=42];
+	1338	 [fontsize=8,
+		height=17,
+		label="b'gis'",
+		level=1,
+		width=17];
+	1387 -- 1338;
+	1383	 [fontsize=6,
+		height=55,
+		label="b'spatial statistics'",
+		level=3,
+		width=55];
+	1338 -- 1383;
+	1394	 [fontsize=6,
+		height=57,
+		label="b'urban geography'",
+		level=3,
+		width=57];
+	1338 -- 1394;
+	658	 [fontsize=8,
+		height=46,
+		label="b'biostatistics'",
+		level=1,
+		width=46];
+	715	 [fontsize=6,
+		height=56,
+		label="b'survival analysis'",
+		level=3,
+		width=56];
+	658 -- 715;
+	722	 [fontsize=6,
+		height=56,
+		label="b'causal inference'",
+		level=3,
+		width=56];
+	658 -- 722;
+	718	 [fontsize=6,
+		height=48,
+		label="b'meta-analysis'",
+		level=3,
+		width=48];
+	658 -- 718;
+	4554	 [fontsize=6,
+		height=63,
+		label="b'systematic reviews'",
+		level=3,
+		width=63];
+	718 -- 4554;
+	147	 [fontsize=8,
+		height=38,
+		label="b'polymers'",
+		level=1,
+		width=38];
+	2925	 [fontsize=6,
+		height=34,
+		label="b'adhesion'",
+		level=3,
+		width=34];
+	147 -- 2925;
+	2930	 [fontsize=6,
+		height=43,
+		label="b'biopolymers'",
+		level=3,
+		width=43];
+	147 -- 2930;
+	1316	 [fontsize=6,
+		height=37,
+		label="b'hydraulics'",
+		level=3,
+		width=37];
+	1264	 [fontsize=8,
+		height=40,
+		label="b'hydrology'",
+		level=1,
+		width=40];
+	1316 -- 1264;
+	1320	 [fontsize=6,
+		height=72,
+		label="b'hydrological modeling'",
+		level=3,
+		width=72];
+	1264 -- 1320;
+	1303	 [fontsize=6,
+		height=95,
+		label="b'water resources management'",
+		level=3,
+		width=95];
+	1264 -- 1303;
+	1308	 [fontsize=6,
+		height=33,
+		label="b'irrigation'",
+		level=3,
+		width=33];
+	1264 -- 1308;
+	3320	 [fontsize=6,
+		height=86,
+		label="b'natural products chemistry'",
+		level=3,
+		width=86];
+	3303	 [fontsize=8,
+		height=73,
+		label="b'medicinal chemistry'",
+		level=1,
+		width=73];
+	3320 -- 3303;
+	2	 [fontsize=8,
+		height=30,
+		label="b'energy'",
+		level=1,
+		width=30];
+	21	 [fontsize=6,
+		height=25,
+		label="b'power'",
+		level=3,
+		width=25];
+	2 -- 21;
+	3939	 [fontsize=6,
+		height=31,
+		label="b'analysis'",
+		level=2,
+		width=31];
+	5176	 [fontsize=6,
+		height=18,
+		label="b'pde'",
+		level=3,
+		width=18];
+	3939 -- 5176;
+	176	 [fontsize=6,
+		height=50,
+		label="b'wound healing'",
+		level=3,
+		width=50];
+	146	 [fontsize=8,
+		height=68,
+		label="b'tissue engineering'",
+		level=1,
+		width=68];
+	176 -- 146;
+	188	 [fontsize=6,
+		height=71,
+		label="b'mechanotransduction'",
+		level=3,
+		width=71];
+	146 -- 188;
+	177	 [fontsize=6,
+		height=52,
+		label="b'electrospinning'",
+		level=3,
+		width=52];
+	146 -- 177;
+	190	 [fontsize=6,
+		height=33,
+		label="b'cartilage'",
+		level=3,
+		width=33];
+	146 -- 190;
+	2968	 [fontsize=6,
+		height=42,
+		label="b'provenance'",
+		level=3,
+		width=42];
+	1010	 [fontsize=8,
+		height=54,
+		label="b'semantic web'",
+		level=1,
+		width=54];
+	2968 -- 1010;
+	2447	 [fontsize=6,
+		height=29,
+		label="b'urology'",
+		level=3,
+		width=29];
+	243	 [fontsize=8,
+		height=38,
+		label="b'oncology'",
+		level=1,
+		width=38];
+	2447 -- 243;
+	1831	 [fontsize=6,
+		height=62,
+		label="b'mechanism design'",
+		level=2,
+		width=62];
+	3355	 [fontsize=6,
+		height=49,
+		label="b'market design'",
+		level=3,
+		width=49];
+	1831 -- 3355;
+	1246	 [fontsize=6,
+		height=55,
+		label="b'microfabrication'",
+		level=3,
+		width=55];
+	109	 [fontsize=8,
+		height=28,
+		label="b'mems'",
+		level=1,
+		width=28];
+	1246 -- 109;
+	1244	 [fontsize=6,
+		height=48,
+		label="b'microsystems'",
+		level=3,
+		width=48];
+	109 -- 1244;
+	1254	 [fontsize=6,
+		height=23,
+		label="b'micro'",
+		level=3,
+		width=23];
+	109 -- 1254;
+	232	 [fontsize=6,
+		height=55,
+		label="b'vascular biology'",
+		level=2,
+		width=55];
+	5763	 [fontsize=6,
+		height=52,
+		label="b'atherosclerosis'",
+		level=3,
+		width=52];
+	232 -- 5763;
+	3018	 [fontsize=6,
+		height=58,
+		label="b'protein chemistry'",
+		level=3,
+		width=58];
+	315	 [fontsize=8,
+		height=50,
+		label="b'biochemistry'",
+		level=1,
+		width=50];
+	3018 -- 315;
+	3015	 [fontsize=6,
+		height=44,
+		label="b'glycobiology'",
+		level=3,
+		width=44];
+	315 -- 3015;
+	2689	 [fontsize=6,
+		height=69,
+		label="b'integer programming'",
+		level=3,
+		width=69];
+	1462	 [fontsize=8,
+		height=74,
+		label="b'operations research'",
+		level=1,
+		width=74];
+	2689 -- 1462;
+	2678	 [fontsize=6,
+		height=36,
+		label="b'heuristics'",
+		level=3,
+		width=36];
+	1462 -- 2678;
+	2675	 [fontsize=6,
+		height=71,
+		label="b'industrial engineering'",
+		level=3,
+		width=71];
+	1462 -- 2675;
+	2690	 [fontsize=6,
+		height=88,
+		label="b'mathematical programming'",
+		level=3,
+		width=88];
+	1462 -- 2690;
+	429	 [fontsize=6,
+		height=97,
+		label="b'comparative political economy'",
+		level=3,
+		width=97];
+	405	 [fontsize=8,
+		height=73,
+		label="b'comparative politics'",
+		level=1,
+		width=73];
+	429 -- 405;
+	423	 [fontsize=6,
+		height=53,
+		label="b'european union'",
+		level=3,
+		width=53];
+	405 -- 423;
+	418	 [fontsize=6,
+		height=54,
+		label="b'democratization'",
+		level=3,
+		width=54];
+	405 -- 418;
+	428	 [fontsize=6,
+		height=70,
+		label="b'political methodology'",
+		level=3,
+		width=70];
+	405 -- 428;
+	417	 [fontsize=6,
+		height=58,
+		label="b'european politics'",
+		level=3,
+		width=58];
+	405 -- 417;
+	4888	 [fontsize=6,
+		height=32,
+		label="b'topology'",
+		level=3,
+		width=32];
+	4886	 [fontsize=6,
+		height=35,
+		label="b'geometry'",
+		level=2,
+		width=35];
+	4888 -- 4886;
+	3309	 [fontsize=6,
+		height=35,
+		label="b'synthesis'",
+		level=3,
+		width=35];
+	29	 [fontsize=8,
+		height=66,
+		label="b'organic chemistry'",
+		level=1,
+		width=66];
+	3309 -- 29;
+	2829	 [fontsize=6,
+		height=33,
+		label="b'sexuality'",
+		level=2,
+		width=33];
+	5571	 [fontsize=6,
+		height=64,
+		label="b'reproductive health'",
+		level=3,
+		width=64];
+	2829 -- 5571;
+	5862	 [fontsize=6,
+		height=54,
+		label="b'women s health'",
+		level=3,
+		width=54];
+	5571 -- 5862;
+	1435	 [fontsize=6,
+		height=58,
+		label="b'program analysis'",
+		level=3,
+		width=58];
+	1397	 [fontsize=8,
+		height=77,
+		label="b'software engineering'",
+		level=1,
+		width=77];
+	1435 -- 1397;
+	1427	 [fontsize=6,
+		height=83,
+		label="b'requirements engineering'",
+		level=3,
+		width=83];
+	1397 -- 1427;
+	1424	 [fontsize=6,
+		height=27,
+		label="b'testing'",
+		level=3,
+		width=27];
+	1397 -- 1424;
+	1445	 [fontsize=6,
+		height=70,
+		label="b'software architecture'",
+		level=3,
+		width=70];
+	1397 -- 1445;
+	1413	 [fontsize=6,
+		height=58,
+		label="b'software security'",
+		level=3,
+		width=58];
+	1397 -- 1413;
+	1432	 [fontsize=6,
+		height=54,
+		label="b'software testing'",
+		level=3,
+		width=54];
+	1397 -- 1432;
+	1414	 [fontsize=6,
+		height=72,
+		label="b'software maintenance'",
+		level=3,
+		width=72];
+	1397 -- 1414;
+	1405	 [fontsize=6,
+		height=90,
+		label="b'computer science education'",
+		level=3,
+		width=90];
+	1397 -- 1405;
+	1429	 [fontsize=6,
+		height=68,
+		label="b'systems engineering'",
+		level=3,
+		width=68];
+	1397 -- 1429;
+	1401	 [fontsize=6,
+		height=98,
+		label="b'empirical software engineering'",
+		level=3,
+		width=98];
+	1397 -- 1401;
+	1406	 [fontsize=6,
+		height=61,
+		label="b'software evolution'",
+		level=3,
+		width=61];
+	1397 -- 1406;
+	2636	 [fontsize=6,
+		height=16,
+		label="b'pet'",
+		level=2,
+		width=16];
+	4679	 [fontsize=6,
+		height=12,
+		label="b'ct'",
+		level=3,
+		width=12];
+	2636 -- 4679;
+	1760	 [fontsize=8,
+		height=44,
+		label="b'economics'",
+		level=1,
+		width=44];
+	1769	 [fontsize=6,
+		height=49,
+		label="b'social science'",
+		level=3,
+		width=49];
+	1760 -- 1769;
+	1770	 [fontsize=6,
+		height=59,
+		label="b'natural resources'",
+		level=3,
+		width=59];
+	1760 -- 1770;
+	3585	 [fontsize=6,
+		height=51,
+		label="b'political theory'",
+		level=2,
+		width=51];
+	3627	 [fontsize=6,
+		height=39,
+		label="b'democracy'",
+		level=3,
+		width=39];
+	3585 -- 3627;
+	3759	 [fontsize=6,
+		height=48,
+		label="b'aeroacoustics'",
+		level=3,
+		width=48];
+	2187	 [fontsize=8,
+		height=59,
+		label="b'fluid mechanics'",
+		level=1,
+		width=59];
+	3759 -- 2187;
+	3767	 [fontsize=6,
+		height=70,
+		label="b'transport phenomena'",
+		level=3,
+		width=70];
+	2187 -- 3767;
+	3761	 [fontsize=6,
+		height=41,
+		label="b'flow control'",
+		level=3,
+		width=41];
+	2187 -- 3761;
+	4385	 [fontsize=6,
+		height=46,
+		label="b'laser physics'",
+		level=3,
+		width=46];
+	3257	 [fontsize=6,
+		height=54,
+		label="b'nonlinear optics'",
+		level=2,
+		width=54];
+	4385 -- 3257;
+	3022	 [fontsize=6,
+		height=69,
+		label="b'x-ray crystallography'",
+		level=3,
+		width=69];
+	3011	 [fontsize=8,
+		height=64,
+		label="b'structural biology'",
+		level=1,
+		width=64];
+	3022 -- 3011;
+	3023	 [fontsize=6,
+		height=64,
+		label="b'membrane proteins'",
+		level=3,
+		width=64];
+	3011 -- 3023;
+	3021	 [fontsize=6,
+		height=60,
+		label="b'nmr spectroscopy'",
+		level=3,
+		width=60];
+	3011 -- 3021;
+	556	 [fontsize=8,
+		height=84,
+		label="b'cognitive neuroscience'",
+		level=1,
+		width=84];
+	2780	 [fontsize=6,
+		height=53,
+		label="b'music cognition'",
+		level=3,
+		width=53];
+	556 -- 2780;
+	2779	 [fontsize=6,
+		height=81,
+		label="b'experimental psychology'",
+		level=3,
+		width=81];
+	556 -- 2779;
+	3873	 [fontsize=6,
+		height=46,
+		label="b'social capital'",
+		level=3,
+		width=46];
+	981	 [fontsize=8,
+		height=59,
+		label="b'social networks'",
+		level=1,
+		width=59];
+	3873 -- 981;
+	4363	 [fontsize=6,
+		height=71,
+		label="b'conversation analysis'",
+		level=3,
+		width=71];
+	3658	 [fontsize=6,
+		height=58,
+		label="b'social interaction'",
+		level=3,
+		width=58];
+	4363 -- 3658;
+	1170	 [fontsize=8,
+		height=38,
+		label="b'language'",
+		level=1,
+		width=38];
+	3658 -- 1170;
+	3660	 [fontsize=6,
+		height=30,
+		label="b'aphasia'",
+		level=3,
+		width=30];
+	1170 -- 3660;
+	3485	 [fontsize=6,
+		height=36,
+		label="b'air quality'",
+		level=3,
+		width=36];
+	3475	 [fontsize=6,
+		height=74,
+		label="b'atmospheric chemistry'",
+		level=2,
+		width=74];
+	3485 -- 3475;
+	3088	 [fontsize=8,
+		height=71,
+		label="b'mass spectrometry'",
+		level=1,
+		width=71];
+	3100	 [fontsize=6,
+		height=75,
+		label="b'bioanalytical chemistry'",
+		level=3,
+		width=75];
+	3088 -- 3100;
+	2590	 [fontsize=6,
+		height=41,
+		label="b'geoscience'",
+		level=3,
+		width=41];
+	2571	 [fontsize=8,
+		height=34,
+		label="b'geology'",
+		level=1,
+		width=34];
+	2590 -- 2571;
+	296	 [fontsize=6,
+		height=30,
+		label="b'biofilms'",
+		level=3,
+		width=30];
+	241	 [fontsize=8,
+		height=50,
+		label="b'microbiology'",
+		level=1,
+		width=50];
+	296 -- 241;
+	301	 [fontsize=6,
+		height=86,
+		label="b'host-pathogen interactions'",
+		level=3,
+		width=86];
+	241 -- 301;
+	302	 [fontsize=6,
+		height=67,
+		label="b'antibiotic resistance'",
+		level=3,
+		width=67];
+	241 -- 302;
+	294	 [fontsize=6,
+		height=37,
+		label="b'antibiotics'",
+		level=3,
+		width=37];
+	241 -- 294;
+	308	 [fontsize=6,
+		height=43,
+		label="b'bacteriology'",
+		level=3,
+		width=43];
+	241 -- 308;
+	5056	 [fontsize=6,
+		height=23,
+		label="b'lc-ms'",
+		level=3,
+		width=23];
+	3097	 [fontsize=8,
+		height=54,
+		label="b'metabolomics'",
+		level=1,
+		width=54];
+	5056 -- 3097;
+	4370	 [fontsize=6,
+		height=44,
+		label="b'stratification'",
+		level=3,
+		width=44];
+	2810	 [fontsize=8,
+		height=39,
+		label="b'inequality'",
+		level=1,
+		width=39];
+	4370 -- 2810;
+	4369	 [fontsize=6,
+		height=48,
+		label="b'labor markets'",
+		level=3,
+		width=48];
+	2810 -- 4369;
+	3844	 [fontsize=6,
+		height=51,
+		label="b'soil mechanics'",
+		level=3,
+		width=51];
+	3839	 [fontsize=6,
+		height=82,
+		label="b'geotechnical engineering'",
+		level=2,
+		width=82];
+	3844 -- 3839;
+	4702	 [fontsize=6,
+		height=25,
+		label="b'teams'",
+		level=3,
+		width=25];
+	2916	 [fontsize=8,
+		height=42,
+		label="b'leadership'",
+		level=1,
+		width=42];
+	4702 -- 2916;
+	2756	 [fontsize=6,
+		height=42,
+		label="b'assessment'",
+		level=2,
+		width=42];
+	2768	 [fontsize=6,
+		height=42,
+		label="b'intervention'",
+		level=3,
+		width=42];
+	2756 -- 2768;
+	4673	 [fontsize=6,
+		height=29,
+		label="b'ehealth'",
+		level=3,
+		width=29];
+	985	 [fontsize=6,
+		height=60,
+		label="b'health informatics'",
+		level=2,
+		width=60];
+	4673 -- 985;
+	4674	 [fontsize=6,
+		height=31,
+		label="b'mhealth'",
+		level=3,
+		width=31];
+	4673 -- 4674;
+	5314	 [fontsize=6,
+		height=51,
+		label="b'multilingualism'",
+		level=3,
+		width=51];
+	1691	 [fontsize=6,
+		height=42,
+		label="b'bilingualism'",
+		level=2,
+		width=42];
+	5314 -- 1691;
+	3548	 [fontsize=8,
+		height=53,
+		label="b'public opinion'",
+		level=1,
+		width=53];
+	3556	 [fontsize=6,
+		height=53,
+		label="b'voting behavior'",
+		level=3,
+		width=53];
+	3548 -- 3556;
+	3550	 [fontsize=6,
+		height=76,
+		label="b'science communication'",
+		level=3,
+		width=76];
+	3548 -- 3550;
+	1706	 [fontsize=8,
+		height=51,
+		label="b'anthropology'",
+		level=1,
+		width=51];
+	1716	 [fontsize=6,
+		height=44,
+		label="b'ethnography'",
+		level=3,
+		width=44];
+	1706 -- 1716;
+	1238	 [fontsize=6,
+		height=78,
+		label="b'educational data mining'",
+		level=3,
+		width=78];
+	1227	 [fontsize=6,
+		height=59,
+		label="b'learning analytics'",
+		level=2,
+		width=59];
+	1238 -- 1227;
+	1237	 [fontsize=6,
+		height=71,
+		label="b'learning technologies'",
+		level=3,
+		width=71];
+	1227 -- 1237;
+	1239	 [fontsize=6,
+		height=97,
+		label="b'technology enhanced learning'",
+		level=3,
+		width=97];
+	1227 -- 1239;
+	1191	 [fontsize=6,
+		height=58,
+		label="b'built environment'",
+		level=3,
+		width=58];
+	1172	 [fontsize=8,
+		height=28,
+		label="b'health'",
+		level=1,
+		width=28];
+	1191 -- 1172;
+	1192	 [fontsize=6,
+		height=25,
+		label="b'safety'",
+		level=3,
+		width=25];
+	1172 -- 1192;
+	1194	 [fontsize=6,
+		height=62,
+		label="b'physical education'",
+		level=3,
+		width=62];
+	1172 -- 1194;
+	2308	 [fontsize=6,
+		height=27,
+		label="b'quality'",
+		level=3,
+		width=27];
+	1192 -- 2308;
+	2310	 [fontsize=6,
+		height=47,
+		label="b'patient safety'",
+		level=3,
+		width=47];
+	2308 -- 2310;
+	1220	 [fontsize=6,
+		height=61,
+		label="b'molecular imaging'",
+		level=2,
+		width=61];
+	1223	 [fontsize=6,
+		height=58,
+		label="b'nuclear medicine'",
+		level=3,
+		width=58];
+	1220 -- 1223;
+	4635	 [fontsize=6,
+		height=79,
+		label="b'economics of innovation'",
+		level=3,
+		width=79];
+	1767	 [fontsize=8,
+		height=80,
+		label="b'industrial organization'",
+		level=1,
+		width=80];
+	4635 -- 1767;
+	4642	 [fontsize=6,
+		height=83,
+		label="b'organizational economics'",
+		level=3,
+		width=83];
+	1767 -- 4642;
+	4638	 [fontsize=6,
+		height=67,
+		label="b'transport economics'",
+		level=3,
+		width=67];
+	1767 -- 4638;
+	1009	 [fontsize=8,
+		height=101,
+		label="b'human-computer interaction'",
+		level=1,
+		width=101];
+	2855	 [fontsize=6,
+		height=67,
+		label="b'assistive technology'",
+		level=3,
+		width=67];
+	1009 -- 2855;
+	2871	 [fontsize=6,
+		height=43,
+		label="b'accessibility'",
+		level=3,
+		width=43];
+	1009 -- 2871;
+	2853	 [fontsize=6,
+		height=50,
+		label="b'serious games'",
+		level=3,
+		width=50];
+	1009 -- 2853;
+	4798	 [fontsize=6,
+		height=70,
+		label="b'molecular electronics'",
+		level=3,
+		width=70];
+	115	 [fontsize=8,
+		height=50,
+		label="b'nanoscience'",
+		level=1,
+		width=50];
+	4798 -- 115;
+	2982	 [fontsize=6,
+		height=50,
+		label="b'scientometrics'",
+		level=3,
+		width=50];
+	1140	 [fontsize=6,
+		height=45,
+		label="b'bibliometrics'",
+		level=2,
+		width=45];
+	2982 -- 1140;
+	3358	 [fontsize=6,
+		height=18,
+		label="b'diet'",
+		level=3,
+		width=18];
+	1809	 [fontsize=8,
+		height=34,
+		label="b'nutrition'",
+		level=1,
+		width=34];
+	3358 -- 1809;
+	3360	 [fontsize=6,
+		height=23,
+		label="b'lipids'",
+		level=3,
+		width=23];
+	1809 -- 3360;
+	2460	 [fontsize=6,
+		height=68,
+		label="b'quantum field theory'",
+		level=2,
+		width=68];
+	4144	 [fontsize=6,
+		height=55,
+		label="b'quantum gravity'",
+		level=3,
+		width=55];
+	2460 -- 4144;
+	5207	 [fontsize=6,
+		height=70,
+		label="b'genetic epidemiology'",
+		level=3,
+		width=70];
+	670	 [fontsize=6,
+		height=62,
+		label="b'statistical genetics'",
+		level=2,
+		width=62];
+	5207 -- 670;
+	2183	 [fontsize=6,
+		height=48,
+		label="b'mass transfer'",
+		level=2,
+		width=48];
+	5902	 [fontsize=6,
+		height=20,
+		label="b'heat'",
+		level=3,
+		width=20];
+	2183 -- 5902;
+	4245	 [fontsize=6,
+		height=59,
+		label="b'multiple sclerosis'",
+		level=3,
+		width=59];
+	489	 [fontsize=8,
+		height=40,
+		label="b'neurology'",
+		level=1,
+		width=40];
+	4245 -- 489;
+	4241	 [fontsize=6,
+		height=67,
+		label="b'movement disorders'",
+		level=3,
+		width=67];
+	489 -- 4241;
+	1144	 [fontsize=6,
+		height=38,
+		label="b'astronomy'",
+		level=2,
+		width=38];
+	1157	 [fontsize=6,
+		height=39,
+		label="b'exoplanets'",
+		level=3,
+		width=39];
+	1144 -- 1157;
+	1899	 [fontsize=6,
+		height=61,
+		label="b'quantum transport'",
+		level=3,
+		width=61];
+	71	 [fontsize=8,
+		height=95,
+		label="b'condensed matter physics'",
+		level=1,
+		width=95];
+	1899 -- 71;
+	1903	 [fontsize=6,
+		height=70,
+		label="b'topological insulators'",
+		level=3,
+		width=70];
+	71 -- 1903;
+	1905	 [fontsize=6,
+		height=66,
+		label="b'mesoscopic physics'",
+		level=3,
+		width=66];
+	71 -- 1905;
+	2924	 [fontsize=6,
+		height=42,
+		label="b'membranes'",
+		level=2,
+		width=42];
+	3647	 [fontsize=6,
+		height=38,
+		label="b'separation'",
+		level=3,
+		width=38];
+	2924 -- 3647;
+	4358	 [fontsize=6,
+		height=41,
+		label="b'climatology'",
+		level=3,
+		width=41];
+	2225	 [fontsize=6,
+		height=44,
+		label="b'meteorology'",
+		level=2,
+		width=44];
+	4358 -- 2225;
+	5691	 [fontsize=6,
+		height=85,
+		label="b'electronic structure theory'",
+		level=3,
+		width=85];
+	4168	 [fontsize=6,
+		height=63,
+		label="b'quantum chemistry'",
+		level=2,
+		width=63];
+	5691 -- 4168;
+	1508	 [fontsize=6,
+		height=55,
+		label="b'electric vehicles'",
+		level=3,
+		width=55];
+	1484	 [fontsize=8,
+		height=66,
+		label="b'power electronics'",
+		level=1,
+		width=66];
+	1508 -- 1484;
+	1499	 [fontsize=6,
+		height=47,
+		label="b'power quality'",
+		level=3,
+		width=47];
+	1484 -- 1499;
+	1497	 [fontsize=6,
+		height=64,
+		label="b'electrical machines'",
+		level=3,
+		width=64];
+	1484 -- 1497;
+	4310	 [fontsize=6,
+		height=25,
+		label="b'drives'",
+		level=3,
+		width=25];
+	1497 -- 4310;
+	641	 [fontsize=6,
+		height=40,
+		label="b'fiber optics'",
+		level=3,
+		width=40];
+	622	 [fontsize=8,
+		height=40,
+		label="b'photonics'",
+		level=1,
+		width=40];
+	641 -- 622;
+	3009	 [fontsize=6,
+		height=79,
+		label="b'environmental sociology'",
+		level=3,
+		width=79];
+	2804	 [fontsize=8,
+		height=68,
+		label="b'social movements'",
+		level=1,
+		width=68];
+	3009 -- 2804;
+	2472	 [fontsize=6,
+		height=59,
+		label="b'brain connectivity'",
+		level=3,
+		width=59];
+	476	 [fontsize=8,
+		height=53,
+		label="b'neuroimaging'",
+		level=1,
+		width=53];
+	2472 -- 476;
+	2471	 [fontsize=6,
+		height=53,
+		label="b'mood disorders'",
+		level=3,
+		width=53];
+	476 -- 2471;
+	2469	 [fontsize=6,
+		height=57,
+		label="b'neuromodulation'",
+		level=3,
+		width=57];
+	476 -- 2469;
+	4492	 [fontsize=6,
+		height=41,
+		label="b'middle east'",
+		level=3,
+		width=41];
+	2812	 [fontsize=6,
+		height=23,
+		label="b'islam'",
+		level=3,
+		width=23];
+	4492 -- 2812;
+	562	 [fontsize=8,
+		height=31,
+		label="b'gender'",
+		level=1,
+		width=31];
+	2812 -- 562;
+	2831	 [fontsize=6,
+		height=52,
+		label="b'popular culture'",
+		level=3,
+		width=52];
+	562 -- 2831;
+	2842	 [fontsize=6,
+		height=60,
+		label="b'medical sociology'",
+		level=3,
+		width=60];
+	562 -- 2842;
+	2819	 [fontsize=6,
+		height=45,
+		label="b'queer theory'",
+		level=3,
+		width=45];
+	562 -- 2819;
+	2817	 [fontsize=6,
+		height=66,
+		label="b'qualitative research'",
+		level=3,
+		width=66];
+	562 -- 2817;
+	2837	 [fontsize=6,
+		height=84,
+		label="b'international development'",
+		level=3,
+		width=84];
+	562 -- 2837;
+	2808	 [fontsize=6,
+		height=34,
+		label="b'feminism'",
+		level=3,
+		width=34];
+	562 -- 2808;
+	3617	 [fontsize=6,
+		height=70,
+		label="b'differential equations'",
+		level=3,
+		width=70];
+	3123	 [fontsize=8,
+		height=71,
+		label="b'dynamical systems'",
+		level=1,
+		width=71];
+	3617 -- 3123;
+	3338	 [fontsize=6,
+		height=58,
+		label="b'chemical ecology'",
+		level=2,
+		width=58];
+	4760	 [fontsize=6,
+		height=78,
+		label="b'plant-insect interactions'",
+		level=3,
+		width=78];
+	3338 -- 4760;
+	5487	 [fontsize=6,
+		height=33,
+		label="b'marriage'",
+		level=3,
+		width=33];
+	2826	 [fontsize=6,
+		height=25,
+		label="b'family'",
+		level=2,
+		width=25];
+	5487 -- 2826;
+	3811	 [fontsize=6,
+		height=89,
+		label="b'structural health monitoring'",
+		level=2,
+		width=89];
+	4054	 [fontsize=6,
+		height=55,
+		label="b'smart structures'",
+		level=3,
+		width=55];
+	3811 -- 4054;
+	4862	 [fontsize=6,
+		height=27,
+		label="b'writing'",
+		level=3,
+		width=27];
+	3659	 [fontsize=6,
+		height=29,
+		label="b'literacy'",
+		level=2,
+		width=29];
+	4862 -- 3659;
+	4962	 [fontsize=6,
+		height=52,
+		label="b'hybrid systems'",
+		level=3,
+		width=52];
+	2389	 [fontsize=8,
+		height=53,
+		label="b'control theory'",
+		level=1,
+		width=53];
+	4962 -- 2389;
+	3611	 [fontsize=6,
+		height=44,
+		label="b'traffic safety'",
+		level=3,
+		width=44];
+	3604	 [fontsize=6,
+		height=85,
+		label="b'transportation engineering'",
+		level=3,
+		width=85];
+	3611 -- 3604;
+	851	 [fontsize=6,
+		height=106,
+		label="b'intelligent transportation systems'",
+		level=2,
+		width=106];
+	3604 -- 851;
+	4127	 [fontsize=6,
+		height=41,
+		label="b'nationalism'",
+		level=3,
+		width=41];
+	4119	 [fontsize=6,
+		height=32,
+		label="b'ethnicity'",
+		level=2,
+		width=32];
+	4127 -- 4119;
+	3653	 [fontsize=6,
+		height=39,
+		label="b'restoration'",
+		level=3,
+		width=39];
+	733	 [fontsize=8,
+		height=50,
+		label="b'conservation'",
+		level=1,
+		width=50];
+	3653 -- 733;
+	1180	 [fontsize=6,
+		height=38,
+		label="b'life course'",
+		level=3,
+		width=38];
+	1168	 [fontsize=8,
+		height=26,
+		label="b'aging'",
+		level=1,
+		width=26];
+	1180 -- 1168;
+	1175	 [fontsize=6,
+		height=42,
+		label="b'gerontology'",
+		level=3,
+		width=42];
+	1168 -- 1175;
+	1183	 [fontsize=6,
+		height=50,
+		label="b'cardiovascular'",
+		level=3,
+		width=50];
+	1168 -- 1183;
+	4821	 [fontsize=8,
+		height=29,
+		label="b'history'",
+		level=1,
+		width=29];
+	4824	 [fontsize=6,
+		height=37,
+		label="b'art history'",
+		level=3,
+		width=37];
+	4821 -- 4824;
+	3040	 [fontsize=6,
+		height=84,
+		label="b'organizational psychology'",
+		level=3,
+		width=84];
+	2805	 [fontsize=6,
+		height=21,
+		label="b'work'",
+		level=2,
+		width=21];
+	3040 -- 2805;
+	2903	 [fontsize=6,
+		height=72,
+		label="b'international business'",
+		level=2,
+		width=72];
+	2905	 [fontsize=6,
+		height=60,
+		label="b'emerging markets'",
+		level=3,
+		width=60];
+	2903 -- 2905;
+	4263	 [fontsize=6,
+		height=55,
+		label="b'comparative law'",
+		level=3,
+		width=55];
+	3234	 [fontsize=6,
+		height=59,
+		label="b'constitutional law'",
+		level=2,
+		width=59];
+	4263 -- 3234;
+	4266	 [fontsize=6,
+		height=37,
+		label="b'public law'",
+		level=3,
+		width=37];
+	3234 -- 4266;
+	4261	 [fontsize=6,
+		height=42,
+		label="b'legal theory'",
+		level=3,
+		width=42];
+	3234 -- 4261;
+	4260	 [fontsize=6,
+		height=61,
+		label="b'administrative law'",
+		level=3,
+		width=61];
+	3234 -- 4260;
+	2892	 [fontsize=6,
+		height=39,
+		label="b'derivatives'",
+		level=3,
+		width=39];
+	1773	 [fontsize=6,
+		height=58,
+		label="b'risk management'",
+		level=2,
+		width=58];
+	2892 -- 1773;
+	2894	 [fontsize=6,
+		height=36,
+		label="b'insurance'",
+		level=3,
+		width=36];
+	1773 -- 2894;
+	5416	 [fontsize=6,
+		height=73,
+		label="b'systems neuroscience'",
+		level=3,
+		width=73];
+	888	 [fontsize=8,
+		height=101,
+		label="b'computational neuroscience'",
+		level=1,
+		width=101];
+	5416 -- 888;
+	5417	 [fontsize=6,
+		height=66,
+		label="b'visual neuroscience'",
+		level=3,
+		width=66];
+	888 -- 5417;
+	5276	 [fontsize=6,
+		height=18,
+		label="b'film'",
+		level=2,
+		width=18];
+	5712	 [fontsize=6,
+		height=28,
+		label="b'cinema'",
+		level=3,
+		width=28];
+	5276 -- 5712;
+	5713	 [fontsize=6,
+		height=35,
+		label="b'television'",
+		level=3,
+		width=35];
+	5276 -- 5713;
+	2074	 [fontsize=6,
+		height=66,
+		label="b'lithium ion batteries'",
+		level=3,
+		width=66];
+	53	 [fontsize=8,
+		height=58,
+		label="b'energy storage'",
+		level=1,
+		width=58];
+	2074 -- 53;
+	3754	 [fontsize=6,
+		height=67,
+		label="b'wearable computing'",
+		level=3,
+		width=67];
+	1523	 [fontsize=6,
+		height=60,
+		label="b'augmented reality'",
+		level=2,
+		width=60];
+	3754 -- 1523;
+	3946	 [fontsize=6,
+		height=62,
+		label="b'functional analysis'",
+		level=3,
+		width=62];
+	3948	 [fontsize=6,
+		height=60,
+		label="b'operator algebras'",
+		level=3,
+		width=60];
+	3946 -- 3948;
+	3937	 [fontsize=6,
+		height=61,
+		label="b'harmonic analysis'",
+		level=3,
+		width=61];
+	3946 -- 3937;
+	3897	 [fontsize=6,
+		height=90,
+		label="b'partial differential equations'",
+		level=2,
+		width=90];
+	3937 -- 3897;
+	1268	 [fontsize=6,
+		height=42,
+		label="b'air pollution'",
+		level=2,
+		width=42];
+	3476	 [fontsize=6,
+		height=72,
+		label="b'exposure assessment'",
+		level=3,
+		width=72];
+	1268 -- 3476;
+	3480	 [fontsize=6,
+		height=90,
+		label="b'environmental epidemiology'",
+		level=3,
+		width=90];
+	1268 -- 3480;
+	635	 [fontsize=6,
+		height=77,
+		label="b'optical communications'",
+		level=2,
+		width=77];
+	3927	 [fontsize=6,
+		height=55,
+		label="b'optical networks'",
+		level=3,
+		width=55];
+	635 -- 3927;
+	4866	 [fontsize=6,
+		height=78,
+		label="b'multisensory integration'",
+		level=3,
+		width=78];
+	3921	 [fontsize=8,
+		height=42,
+		label="b'perception'",
+		level=1,
+		width=42];
+	4866 -- 3921;
+	729	 [fontsize=8,
+		height=74,
+		label="b'evolutionary biology'",
+		level=1,
+		width=74];
+	2479	 [fontsize=6,
+		height=53,
+		label="b'social evolution'",
+		level=3,
+		width=53];
+	729 -- 2479;
+	2482	 [fontsize=6,
+		height=68,
+		label="b'population genomics'",
+		level=3,
+		width=68];
+	729 -- 2482;
+	787	 [fontsize=8,
+		height=72,
+		label="b'community ecology'",
+		level=1,
+		width=72];
+	1651	 [fontsize=6,
+		height=38,
+		label="b'population'",
+		level=3,
+		width=38];
+	787 -- 1651;
+	3664	 [fontsize=6,
+		height=27,
+		label="b'gravity'",
+		level=3,
+		width=27];
+	1147	 [fontsize=8,
+		height=44,
+		label="b'cosmology'",
+		level=1,
+		width=44];
+	3664 -- 1147;
+	3672	 [fontsize=6,
+		height=68,
+		label="b'astroparticle physics'",
+		level=3,
+		width=68];
+	1147 -- 3672;
+	3669	 [fontsize=6,
+		height=41,
+		label="b'dark matter'",
+		level=3,
+		width=41];
+	1147 -- 3669;
+	3667	 [fontsize=6,
+		height=38,
+		label="b'gravitation'",
+		level=3,
+		width=38];
+	1147 -- 3667;
+	3781	 [fontsize=6,
+		height=25,
+		label="b'gpgpu'",
+		level=3,
+		width=25];
+	2038	 [fontsize=8,
+		height=103,
+		label="b'high performance computing'",
+		level=1,
+		width=103];
+	3781 -- 2038;
+	5879	 [fontsize=6,
+		height=57,
+		label="b'integrated optics'",
+		level=3,
+		width=57];
+	4386	 [fontsize=6,
+		height=57,
+		label="b'silicon photonics'",
+		level=2,
+		width=57];
+	5879 -- 4386;
+	3389	 [fontsize=8,
+		height=46,
+		label="b'metabolism'",
+		level=1,
+		width=46];
+	3798	 [fontsize=6,
+		height=53,
+		label="b'skeletal muscle'",
+		level=3,
+		width=53];
+	3389 -- 3798;
+	2619	 [fontsize=6,
+		height=41,
+		label="b'ichthyology'",
+		level=3,
+		width=41];
+	375	 [fontsize=6,
+		height=42,
+		label="b'systematics'",
+		level=2,
+		width=42];
+	2619 -- 375;
+	242	 [fontsize=8,
+		height=71,
+		label="b'infectious diseases'",
+		level=1,
+		width=71];
+	2080	 [fontsize=6,
+		height=77,
+		label="b'molecular epidemiology'",
+		level=3,
+		width=77];
+	242 -- 2080;
+	2077	 [fontsize=6,
+		height=43,
+		label="b'tuberculosis'",
+		level=3,
+		width=43];
+	242 -- 2077;
+	4927	 [fontsize=6,
+		height=66,
+		label="b'participatory design'",
+		level=3,
+		width=66];
+	2854	 [fontsize=6,
+		height=60,
+		label="b'interaction design'",
+		level=2,
+		width=60];
+	4927 -- 2854;
+	4928	 [fontsize=6,
+		height=55,
+		label="b'design research'",
+		level=3,
+		width=55];
+	2854 -- 4928;
+	345	 [fontsize=8,
+		height=37,
+		label="b'evolution'",
+		level=1,
+		width=37];
+	383	 [fontsize=6,
+		height=22,
+		label="b'fungi'",
+		level=3,
+		width=22];
+	345 -- 383;
+	392	 [fontsize=6,
+		height=37,
+		label="b'phylogeny'",
+		level=3,
+		width=37];
+	345 -- 392;
+	378	 [fontsize=6,
+		height=62,
+		label="b'theoretical biology'",
+		level=3,
+		width=62];
+	345 -- 378;
+	5010	 [fontsize=6,
+		height=35,
+		label="b'actuators'",
+		level=3,
+		width=35];
+	1249	 [fontsize=8,
+		height=34,
+		label="b'sensors'",
+		level=1,
+		width=34];
+	5010 -- 1249;
+	876	 [fontsize=6,
+		height=74,
+		label="b'recommender systems'",
+		level=2,
+		width=74];
+	5201	 [fontsize=6,
+		height=49,
+		label="b'user modeling'",
+		level=3,
+		width=49];
+	876 -- 5201;
+	555	 [fontsize=8,
+		height=40,
+		label="b'education'",
+		level=1,
+		width=40];
+	565	 [fontsize=6,
+		height=36,
+		label="b'pedagogy'",
+		level=3,
+		width=36];
+	555 -- 565;
+	573	 [fontsize=6,
+		height=14,
+		label="b'ict'",
+		level=3,
+		width=14];
+	555 -- 573;
+	571	 [fontsize=6,
+		height=46,
+		label="b'social justice'",
+		level=3,
+		width=46];
+	555 -- 571;
+	4783	 [fontsize=6,
+		height=38,
+		label="b'curriculum'",
+		level=3,
+		width=38];
+	565 -- 4783;
+	4432	 [fontsize=6,
+		height=88,
+		label="b'scanning probe microscopy'",
+		level=3,
+		width=88];
+	33	 [fontsize=6,
+		height=54,
+		label="b'surface science'",
+		level=2,
+		width=54];
+	4432 -- 33;
+	4431	 [fontsize=6,
+		height=18,
+		label="b'stm'",
+		level=3,
+		width=18];
+	33 -- 4431;
+	4428	 [fontsize=6,
+		height=99,
+		label="b'scanning tunneling microscopy'",
+		level=3,
+		width=99];
+	33 -- 4428;
+	2896	 [fontsize=6,
+		height=43,
+		label="b'construction'",
+		level=3,
+		width=43];
+	2891	 [fontsize=6,
+		height=68,
+		label="b'project management'",
+		level=2,
+		width=68];
+	2896 -- 2891;
+	2897	 [fontsize=6,
+		height=84,
+		label="b'construction management'",
+		level=3,
+		width=84];
+	2891 -- 2897;
+	5496	 [fontsize=6,
+		height=95,
+		label="b'building information modeling'",
+		level=3,
+		width=95];
+	2897 -- 5496;
+	623	 [fontsize=6,
+		height=45,
+		label="b'biophotonics'",
+		level=2,
+		width=45];
+	3597	 [fontsize=6,
+		height=52,
+		label="b'optical imaging'",
+		level=3,
+		width=52];
+	623 -- 3597;
+	2659	 [fontsize=6,
+		height=101,
+		label="b'computational electromagnetics'",
+		level=3,
+		width=101];
+	2648	 [fontsize=6,
+		height=34,
+		label="b'antennas'",
+		level=2,
+		width=34];
+	2659 -- 2648;
+	2656	 [fontsize=6,
+		height=42,
+		label="b'propagation'",
+		level=3,
+		width=42];
+	2648 -- 2656;
+	2658	 [fontsize=6,
+		height=17,
+		label="b'rfid'",
+		level=3,
+		width=17];
+	2648 -- 2658;
+	4726	 [fontsize=6,
+		height=40,
+		label="b'taphonomy'",
+		level=3,
+		width=40];
+	4316	 [fontsize=6,
+		height=46,
+		label="b'paleoecology'",
+		level=2,
+		width=46];
+	4726 -- 4316;
+	597	 [fontsize=6,
+		height=45,
+		label="b'collaboration'",
+		level=3,
+		width=45];
+	577	 [fontsize=8,
+		height=42,
+		label="b'innovation'",
+		level=1,
+		width=42];
+	597 -- 577;
+	587	 [fontsize=6,
+		height=80,
+		label="b'technology management'",
+		level=3,
+		width=80];
+	577 -- 587;
+	2549	 [fontsize=6,
+		height=55,
+		label="b'solid mechanics'",
+		level=2,
+		width=55];
+	5280	 [fontsize=6,
+		height=79,
+		label="b'experimental mechanics'",
+		level=3,
+		width=79];
+	2549 -- 5280;
+	317	 [fontsize=8,
+		height=56,
+		label="b'cancer biology'",
+		level=1,
+		width=56];
+	3333	 [fontsize=6,
+		height=59,
+		label="b'cancer stem cells'",
+		level=3,
+		width=59];
+	317 -- 3333;
+	1659	 [fontsize=8,
+		height=62,
+		label="b'network security'",
+		level=1,
+		width=62];
+	5045	 [fontsize=6,
+		height=49,
+		label="b'cyber security'",
+		level=3,
+		width=49];
+	1659 -- 5045;
+	3392	 [fontsize=6,
+		height=49,
+		label="b'endocrinology'",
+		level=2,
+		width=49];
+	5366	 [fontsize=6,
+		height=44,
+		label="b'reproduction'",
+		level=3,
+		width=44];
+	3392 -- 5366;
+	1725	 [fontsize=6,
+		height=31,
+		label="b'heritage'",
+		level=3,
+		width=31];
+	1714	 [fontsize=8,
+		height=48,
+		label="b'archaeology'",
+		level=1,
+		width=48];
+	1725 -- 1714;
+	1739	 [fontsize=6,
+		height=37,
+		label="b'landscape'",
+		level=3,
+		width=37];
+	1714 -- 1739;
+	2882	 [fontsize=6,
+		height=44,
+		label="b'primary care'",
+		level=3,
+		width=44];
+	1808	 [fontsize=8,
+		height=49,
+		label="b'public health'",
+		level=1,
+		width=49];
+	2882 -- 1808;
+	2880	 [fontsize=6,
+		height=61,
+		label="b'health inequalities'",
+		level=3,
+		width=61];
+	1808 -- 2880;
+	2881	 [fontsize=6,
+		height=30,
+		label="b'tobacco'",
+		level=3,
+		width=30];
+	1808 -- 2881;
+	2877	 [fontsize=6,
+		height=53,
+		label="b'health behavior'",
+		level=3,
+		width=53];
+	1808 -- 2877;
+	2876	 [fontsize=6,
+		height=57,
+		label="b'health promotion'",
+		level=3,
+		width=57];
+	1808 -- 2876;
+	2357	 [fontsize=6,
+		height=51,
+		label="b'urban planning'",
+		level=2,
+		width=51];
+	2361	 [fontsize=6,
+		height=76,
+		label="b'transportation planning'",
+		level=3,
+		width=76];
+	2357 -- 2361;
+	5721	 [fontsize=6,
+		height=60,
+		label="b'formal verification'",
+		level=3,
+		width=60];
+	5158	 [fontsize=6,
+		height=53,
+		label="b'model checking'",
+		level=3,
+		width=53];
+	5721 -- 5158;
+	1417	 [fontsize=8,
+		height=59,
+		label="b'formal methods'",
+		level=1,
+		width=59];
+	5158 -- 1417;
+	96	 [fontsize=6,
+		height=34,
+		label="b'ceramics'",
+		level=2,
+		width=34];
+	5819	 [fontsize=6,
+		height=23,
+		label="b'glass'",
+		level=3,
+		width=23];
+	96 -- 5819;
+	3513	 [fontsize=6,
+		height=73,
+		label="b'membrane technology'",
+		level=3,
+		width=73];
+	2271	 [fontsize=6,
+		height=71,
+		label="b'wastewater treatment'",
+		level=2,
+		width=71];
+	3513 -- 2271;
+	3521	 [fontsize=6,
+		height=65,
+		label="b'anaerobic digestion'",
+		level=3,
+		width=65];
+	2271 -- 3521;
+	3970	 [fontsize=6,
+		height=96,
+		label="b'organizational communication'",
+		level=3,
+		width=96];
+	3964	 [fontsize=6,
+		height=72,
+		label="b'health communication'",
+		level=2,
+		width=72];
+	3970 -- 3964;
+	3969	 [fontsize=6,
+		height=40,
+		label="b'persuasion'",
+		level=3,
+		width=40];
+	3964 -- 3969;
+	3968	 [fontsize=6,
+		height=93,
+		label="b'interpersonal communication'",
+		level=3,
+		width=93];
+	3964 -- 3968;
+	1672	 [fontsize=6,
+		height=53,
+		label="b'mobile systems'",
+		level=3,
+		width=53];
+	1656	 [fontsize=8,
+		height=67,
+		label="b'wireless networks'",
+		level=1,
+		width=67];
+	1672 -- 1656;
+	1677	 [fontsize=6,
+		height=63,
+		label="b'vehicular networks'",
+		level=3,
+		width=63];
+	1656 -- 1677;
+	1574	 [fontsize=6,
+		height=92,
+		label="b'magnetic resonance imaging'",
+		level=2,
+		width=92];
+	5040	 [fontsize=6,
+		height=69,
+		label="b'image reconstruction'",
+		level=3,
+		width=69];
+	1574 -- 5040;
+	3282	 [fontsize=6,
+		height=66,
+		label="b'quantum mechanics'",
+		level=3,
+		width=66];
+	3256	 [fontsize=8,
+		height=76,
+		label="b'quantum information'",
+		level=1,
+		width=76];
+	3282 -- 3256;
+	3291	 [fontsize=6,
+		height=76,
+		label="b'open quantum systems'",
+		level=3,
+		width=76];
+	3256 -- 3291;
+	2151	 [fontsize=6,
+		height=63,
+		label="b'american literature'",
+		level=3,
+		width=63];
+	2141	 [fontsize=6,
+		height=58,
+		label="b'american studies'",
+		level=3,
+		width=58];
+	2151 -- 2141;
+	2137	 [fontsize=6,
+		height=52,
+		label="b'cultural studies'",
+		level=2,
+		width=52];
+	2141 -- 2137;
+	2142	 [fontsize=6,
+		height=51,
+		label="b'gender studies'",
+		level=3,
+		width=51];
+	2137 -- 2142;
+	2150	 [fontsize=6,
+		height=72,
+		label="b'comparative literature'",
+		level=3,
+		width=72];
+	2137 -- 2150;
+	2763	 [fontsize=6,
+		height=44,
+		label="b'psychopathy'",
+		level=3,
+		width=44];
+	1937	 [fontsize=8,
+		height=44,
+		label="b'personality'",
+		level=1,
+		width=44];
+	2763 -- 1937;
+	2762	 [fontsize=6,
+		height=41,
+		label="b'intelligence'",
+		level=3,
+		width=41];
+	1937 -- 2762;
+	3853	 [fontsize=6,
+		height=53,
+		label="b'rock mechanics'",
+		level=2,
+		width=53];
+	3915	 [fontsize=6,
+		height=67,
+		label="b'engineering geology'",
+		level=3,
+		width=67];
+	3853 -- 3915;
+	1522	 [fontsize=8,
+		height=34,
+		label="b'imaging'",
+		level=1,
+		width=34];
+	3724	 [fontsize=6,
+		height=57,
+		label="b'video processing'",
+		level=3,
+		width=57];
+	1522 -- 3724;
+	2239	 [fontsize=8,
+		height=44,
+		label="b'depression'",
+		level=1,
+		width=44];
+	3975	 [fontsize=6,
+		height=28,
+		label="b'suicide'",
+		level=3,
+		width=28];
+	2239 -- 3975;
+	3976	 [fontsize=6,
+		height=103,
+		label="b'developmental psychopathology'",
+		level=3,
+		width=103];
+	2239 -- 3976;
+	788	 [fontsize=6,
+		height=62,
+		label="b'landscape ecology'",
+		level=2,
+		width=62];
+	2848	 [fontsize=6,
+		height=49,
+		label="b'urban ecology'",
+		level=3,
+		width=49];
+	788 -- 2848;
+	1482	 [fontsize=8,
+		height=41,
+		label="b'smart grid'",
+		level=1,
+		width=41];
+	4093	 [fontsize=6,
+		height=78,
+		label="b'power system operation'",
+		level=3,
+		width=78];
+	1482 -- 4093;
+	4091	 [fontsize=6,
+		height=60,
+		label="b'demand response'",
+		level=3,
+		width=60];
+	1482 -- 4091;
+	4104	 [fontsize=6,
+		height=61,
+		label="b'electricity markets'",
+		level=3,
+		width=61];
+	1482 -- 4104;
+	4096	 [fontsize=6,
+		height=72,
+		label="b'distributed generation'",
+		level=3,
+		width=72];
+	1482 -- 4096;
+	1639	 [fontsize=8,
+		height=35,
+		label="b'systems'",
+		level=1,
+		width=35];
+	4175	 [fontsize=6,
+		height=60,
+		label="b'integrated circuits'",
+		level=3,
+		width=60];
+	1639 -- 4175;
+	847	 [fontsize=8,
+		height=102,
+		label="b'natural language processing'",
+		level=1,
+		width=102];
+	1989	 [fontsize=6,
+		height=65,
+		label="b'machine translation'",
+		level=3,
+		width=65];
+	847 -- 1989;
+	1992	 [fontsize=6,
+		height=69,
+		label="b'language technology'",
+		level=3,
+		width=69];
+	847 -- 1992;
+	1708	 [fontsize=8,
+		height=50,
+		label="b'demography'",
+		level=1,
+		width=50];
+	4625	 [fontsize=6,
+		height=63,
+		label="b'social stratification'",
+		level=3,
+		width=63];
+	1708 -- 4625;
+	4626	 [fontsize=6,
+		height=27,
+		label="b'fertility'",
+		level=3,
+		width=27];
+	1708 -- 4626;
+	4526	 [fontsize=6,
+		height=63,
+		label="b'services marketing'",
+		level=3,
+		width=63];
+	4500	 [fontsize=8,
+		height=72,
+		label="b'consumer behavior'",
+		level=1,
+		width=72];
+	4526 -- 4500;
+	1690	 [fontsize=8,
+		height=40,
+		label="b'linguistics'",
+		level=1,
+		width=40];
+	2208	 [fontsize=6,
+		height=38,
+		label="b'translation'",
+		level=3,
+		width=38];
+	1690 -- 2208;
+	643	 [fontsize=8,
+		height=55,
+		label="b'metamaterials'",
+		level=1,
+		width=55];
+	2649	 [fontsize=6,
+		height=34,
+		label="b'terahertz'",
+		level=3,
+		width=34];
+	643 -- 2649;
+	2494	 [fontsize=8,
+		height=31,
+		label="b'privacy'",
+		level=1,
+		width=31];
+	5334	 [fontsize=6,
+		height=73,
+		label="b'online social networks'",
+		level=3,
+		width=73];
+	2494 -- 5334;
+	5503	 [fontsize=6,
+		height=70,
+		label="b'philosophy of biology'",
+		level=3,
+		width=70];
+	1858	 [fontsize=6,
+		height=71,
+		label="b'philosophy of science'",
+		level=2,
+		width=71];
+	5503 -- 1858;
+	397	 [fontsize=8,
+		height=65,
+		label="b'political economy'",
+		level=1,
+		width=65];
+	412	 [fontsize=6,
+		height=39,
+		label="b'institutions'",
+		level=3,
+		width=39];
+	397 -- 412;
+	415	 [fontsize=8,
+		height=60,
+		label="b'political science'",
+		level=1,
+		width=60];
+	432	 [fontsize=6,
+		height=45,
+		label="b'methodology'",
+		level=3,
+		width=45];
+	415 -- 432;
+	5	 [fontsize=6,
+		height=36,
+		label="b'resilience'",
+		level=2,
+		width=36];
+	4832	 [fontsize=6,
+		height=34,
+		label="b'disasters'",
+		level=3,
+		width=34];
+	5 -- 4832;
+	3412	 [fontsize=6,
+		height=20,
+		label="b'food'",
+		level=3,
+		width=20];
+	1267	 [fontsize=8,
+		height=42,
+		label="b'agriculture'",
+		level=1,
+		width=42];
+	3412 -- 1267;
+	2229	 [fontsize=6,
+		height=44,
+		label="b'precipitation'",
+		level=3,
+		width=44];
+	1304	 [fontsize=8,
+		height=31,
+		label="b'climate'",
+		level=1,
+		width=31];
+	2229 -- 1304;
+	1005	 [fontsize=8,
+		height=23,
+		label="b'logic'",
+		level=1,
+		width=23];
+	1073	 [fontsize=6,
+		height=55,
+		label="b'automata theory'",
+		level=3,
+		width=55];
+	1005 -- 1073;
+	1077	 [fontsize=6,
+		height=53,
+		label="b'category theory'",
+		level=3,
+		width=53];
+	1005 -- 1077;
+	4894	 [fontsize=6,
+		height=52,
+		label="b'macroevolution'",
+		level=3,
+		width=52];
+	382	 [fontsize=8,
+		height=53,
+		label="b'phylogenetics'",
+		level=1,
+		width=53];
+	4894 -- 382;
+	5432	 [fontsize=6,
+		height=18,
+		label="b'gpu'",
+		level=3,
+		width=18];
+	3779	 [fontsize=8,
+		height=68,
+		label="b'parallel computing'",
+		level=1,
+		width=68];
+	5432 -- 3779;
+	4978	 [fontsize=6,
+		height=61,
+		label="b'household finance'",
+		level=3,
+		width=61];
+	4766	 [fontsize=8,
+		height=80,
+		label="b'behavioral economics'",
+		level=1,
+		width=80];
+	4978 -- 4766;
+	2110	 [fontsize=8,
+		height=58,
+		label="b'communication'",
+		level=1,
+		width=58];
+	2134	 [fontsize=6,
+		height=40,
+		label="b'information'",
+		level=3,
+		width=40];
+	2110 -- 2134;
+	1302	 [fontsize=8,
+		height=59,
+		label="b'remote sensing'",
+		level=1,
+		width=59];
+	1343	 [fontsize=6,
+		height=55,
+		label="b'photogrammetry'",
+		level=3,
+		width=55];
+	1302 -- 1343;
+	1368	 [fontsize=6,
+		height=35,
+		label="b'giscience'",
+		level=3,
+		width=35];
+	1302 -- 1368;
+	1369	 [fontsize=6,
+		height=102,
+		label="b'geographic information systems'",
+		level=3,
+		width=102];
+	1302 -- 1369;
+	1340	 [fontsize=6,
+		height=40,
+		label="b'cryosphere'",
+		level=3,
+		width=40];
+	1302 -- 1340;
+	1358	 [fontsize=6,
+		height=22,
+		label="b'insar'",
+		level=3,
+		width=22];
+	1302 -- 1358;
+	4724	 [fontsize=6,
+		height=37,
+		label="b'geomatics'",
+		level=3,
+		width=37];
+	1343 -- 4724;
+	451	 [fontsize=6,
+		height=31,
+		label="b'civil war'",
+		level=3,
+		width=31];
+	430	 [fontsize=8,
+		height=78,
+		label="b'international relations'",
+		level=1,
+		width=78];
+	451 -- 430;
+	437	 [fontsize=6,
+		height=34,
+		label="b'terrorism'",
+		level=3,
+		width=34];
+	430 -- 437;
+	446	 [fontsize=6,
+		height=69,
+		label="b'international security'",
+		level=3,
+		width=69];
+	430 -- 446;
+	465	 [fontsize=6,
+		height=57,
+		label="b'political violence'",
+		level=3,
+		width=57];
+	437 -- 465;
+	4764	 [fontsize=6,
+		height=59,
+		label="b'corpus linguistics'",
+		level=2,
+		width=59];
+	5214	 [fontsize=6,
+		height=62,
+		label="b'translation studies'",
+		level=3,
+		width=62];
+	4764 -- 5214;
+	5186	 [fontsize=6,
+		height=25,
+		label="b'equity'",
+		level=3,
+		width=25];
+	2820	 [fontsize=6,
+		height=32,
+		label="b'diversity'",
+		level=2,
+		width=32];
+	5186 -- 2820;
+	1923	 [fontsize=8,
+		height=42,
+		label="b'motivation'",
+		level=1,
+		width=42];
+	4077	 [fontsize=6,
+		height=50,
+		label="b'self-regulation'",
+		level=3,
+		width=50];
+	1923 -- 4077;
+	2191	 [fontsize=6,
+		height=53,
+		label="b'thermoelectrics'",
+		level=2,
+		width=53];
+	5069	 [fontsize=6,
+		height=77,
+		label="b'nanoscale heat transfer'",
+		level=3,
+		width=77];
+	2191 -- 5069;
+	3573	 [fontsize=6,
+		height=50,
+		label="b'palaeoecology'",
+		level=3,
+		width=50];
+	377	 [fontsize=6,
+		height=49,
+		label="b'palaeontology'",
+		level=2,
+		width=49];
+	3573 -- 377;
+	4685	 [fontsize=6,
+		height=59,
+		label="b'pharmacokinetics'",
+		level=2,
+		width=59];
+	5425	 [fontsize=6,
+		height=56,
+		label="b'drug metabolism'",
+		level=3,
+		width=56];
+	4685 -- 5425;
+	2814	 [fontsize=8,
+		height=31,
+		label="b'identity'",
+		level=1,
+		width=31];
+	4742	 [fontsize=6,
+		height=18,
+		label="b'self'",
+		level=3,
+		width=18];
+	2814 -- 4742;
+	1779	 [fontsize=8,
+		height=50,
+		label="b'graph theory'",
+		level=1,
+		width=50];
+	1793	 [fontsize=6,
+		height=70,
+		label="b'discrete mathematics'",
+		level=3,
+		width=70];
+	1779 -- 1793;
+	5382	 [fontsize=6,
+		height=66,
+		label="b'surface engineering'",
+		level=3,
+		width=66];
+	4959	 [fontsize=6,
+		height=33,
+		label="b'tribology'",
+		level=2,
+		width=33];
+	5382 -- 4959;
+	5384	 [fontsize=6,
+		height=27,
+		label="b'friction'",
+		level=3,
+		width=27];
+	4959 -- 5384;
+	5385	 [fontsize=6,
+		height=62,
+		label="b'contact mechanics'",
+		level=3,
+		width=62];
+	4959 -- 5385;
+	1763	 [fontsize=6,
+		height=62,
+		label="b'applied economics'",
+		level=3,
+		width=62];
+	1741	 [fontsize=8,
+		height=52,
+		label="b'econometrics'",
+		level=1,
+		width=52];
+	1763 -- 1741;
+	1761	 [fontsize=6,
+		height=40,
+		label="b'time series'",
+		level=3,
+		width=40];
+	1741 -- 1761;
+	5239	 [fontsize=6,
+		height=40,
+		label="b'forecasting'",
+		level=3,
+		width=40];
+	1761 -- 5239;
+	1233	 [fontsize=6,
+		height=51,
+		label="b'online learning'",
+		level=2,
+		width=51];
+	5057	 [fontsize=6,
+		height=63,
+		label="b'distance education'",
+		level=3,
+		width=63];
+	1233 -- 5057;
+	4317	 [fontsize=6,
+		height=45,
+		label="b'paleobiology'",
+		level=2,
+		width=45];
+	5810	 [fontsize=6,
+		height=77,
+		label="b'vertebrate paleontology'",
+		level=3,
+		width=77];
+	4317 -- 5810;
+	5091	 [fontsize=6,
+		height=63,
+		label="b'clinical psychology'",
+		level=2,
+		width=63];
+	5099	 [fontsize=6,
+		height=58,
+		label="b'anxiety disorders'",
+		level=3,
+		width=58];
+	5091 -- 5099;
+	5096	 [fontsize=6,
+		height=50,
+		label="b'psychotherapy'",
+		level=3,
+		width=50];
+	5091 -- 5096;
+	4311	 [fontsize=6,
+		height=36,
+		label="b'cell death'",
+		level=3,
+		width=36];
+	212	 [fontsize=6,
+		height=38,
+		label="b'autophagy'",
+		level=2,
+		width=38];
+	4311 -- 212;
+	139	 [fontsize=6,
+		height=50,
+		label="b'pharmaceutics'",
+		level=3,
+		width=50];
+	108	 [fontsize=8,
+		height=50,
+		label="b'drug delivery'",
+		level=1,
+		width=50];
+	139 -- 108;
+	4285	 [fontsize=8,
+		height=104,
+		label="b'computational fluid dynamics'",
+		level=1,
+		width=104];
+	4303	 [fontsize=6,
+		height=82,
+		label="b'fluid-structure interaction'",
+		level=3,
+		width=82];
+	4285 -- 4303;
+	1629	 [fontsize=6,
+		height=61,
+		label="b'operating systems'",
+		level=2,
+		width=61];
+	5797	 [fontsize=6,
+		height=56,
+		label="b'storage systems'",
+		level=3,
+		width=56];
+	1629 -- 5797;
+	3686	 [fontsize=6,
+		height=66,
+		label="b'high energy physics'",
+		level=3,
+		width=66];
+	3662	 [fontsize=6,
+		height=53,
+		label="b'particle physics'",
+		level=2,
+		width=53];
+	3686 -- 3662;
+	3852	 [fontsize=6,
+		height=74,
+		label="b'petroleum engineering'",
+		level=3,
+		width=74];
+	3842	 [fontsize=6,
+		height=50,
+		label="b'geomechanics'",
+		level=2,
+		width=50];
+	3852 -- 3842;
+	3858	 [fontsize=6,
+		height=70,
+		label="b'reservoir engineering'",
+		level=3,
+		width=70];
+	3852 -- 3858;
+	5153	 [fontsize=6,
+		height=66,
+		label="b'reservoir simulation'",
+		level=3,
+		width=66];
+	3858 -- 5153;
+	5038	 [fontsize=6,
+		height=55,
+		label="b'risk assessment'",
+		level=3,
+		width=55];
+	4684	 [fontsize=6,
+		height=37,
+		label="b'toxicology'",
+		level=2,
+		width=37];
+	5038 -- 4684;
+	1623	 [fontsize=8,
+		height=38,
+		label="b'networks'",
+		level=1,
+		width=38];
+	1643	 [fontsize=6,
+		height=66,
+		label="b'telecommunications'",
+		level=3,
+		width=66];
+	1623 -- 1643;
+	1640	 [fontsize=6,
+		height=53,
+		label="b'system security'",
+		level=3,
+		width=53];
+	1623 -- 1640;
+	2643	 [fontsize=6,
+		height=22,
+		label="b'head'",
+		level=3,
+		width=22];
+	2641	 [fontsize=6,
+		height=51,
+		label="b'neuroradiology'",
+		level=3,
+		width=51];
+	2643 -- 2641;
+	2635	 [fontsize=6,
+		height=34,
+		label="b'radiology'",
+		level=2,
+		width=34];
+	2641 -- 2635;
+	3750	 [fontsize=6,
+		height=48,
+		label="b'liquid crystals'",
+		level=3,
+		width=48];
+	3159	 [fontsize=8,
+		height=43,
+		label="b'soft matter'",
+		level=1,
+		width=43];
+	3750 -- 3159;
+	4351	 [fontsize=6,
+		height=77,
+		label="b'chemical oceanography'",
+		level=3,
+		width=77];
+	3096	 [fontsize=8,
+		height=73,
+		label="b'analytical chemistry'",
+		level=1,
+		width=73];
+	4351 -- 3096;
+	4344	 [fontsize=6,
+		height=48,
+		label="b'chemometrics'",
+		level=3,
+		width=48];
+	3096 -- 4344;
+	1485	 [fontsize=8,
+		height=33,
+		label="b'biofuels'",
+		level=1,
+		width=33];
+	3444	 [fontsize=6,
+		height=44,
+		label="b'fermentation'",
+		level=3,
+		width=44];
+	1485 -- 3444;
+	4632	 [fontsize=6,
+		height=71,
+		label="b'medical anthropology'",
+		level=3,
+		width=71];
+	1813	 [fontsize=8,
+		height=50,
+		label="b'global health'",
+		level=1,
+		width=50];
+	4632 -- 1813;
+	113	 [fontsize=8,
+		height=44,
+		label="b'biosensors'",
+		level=1,
+		width=44];
+	4136	 [fontsize=6,
+		height=63,
+		label="b'bionanotechnology'",
+		level=3,
+		width=63];
+	113 -- 4136;
+	4135	 [fontsize=6,
+		height=63,
+		label="b'nanobiotechnology'",
+		level=3,
+		width=63];
+	113 -- 4135;
+	662	 [fontsize=8,
+		height=61,
+		label="b'systems biology'",
+		level=1,
+		width=61];
+	4003	 [fontsize=6,
+		height=35,
+		label="b'cell cycle'",
+		level=3,
+		width=35];
+	662 -- 4003;
+	4004	 [fontsize=6,
+		height=65,
+		label="b'quantitative biology'",
+		level=3,
+		width=65];
+	662 -- 4004;
+	2929	 [fontsize=6,
+		height=55,
+		label="b'nanocomposites'",
+		level=2,
+		width=55];
+	5616	 [fontsize=6,
+		height=66,
+		label="b'polymer composites'",
+		level=3,
+		width=66];
+	2929 -- 5616;
+	3372	 [fontsize=6,
+		height=38,
+		label="b'pregnancy'",
+		level=3,
+		width=38];
+	3356	 [fontsize=8,
+		height=31,
+		label="b'obesity'",
+		level=1,
+		width=31];
+	3372 -- 3356;
+	3374	 [fontsize=6,
+		height=55,
+		label="b'eating disorders'",
+		level=3,
+		width=55];
+	3356 -- 3374;
+	3816	 [fontsize=6,
+		height=60,
+		label="b'wave propagation'",
+		level=3,
+		width=60];
+	3805	 [fontsize=6,
+		height=65,
+		label="b'structural dynamics'",
+		level=2,
+		width=65];
+	3816 -- 3805;
+	3954	 [fontsize=6,
+		height=71,
+		label="b'representation theory'",
+		level=3,
+		width=71];
+	1802	 [fontsize=6,
+		height=64,
+		label="b'algebraic geometry'",
+		level=2,
+		width=64];
+	3954 -- 1802;
+	1102	 [fontsize=6,
+		height=42,
+		label="b'soil science'",
+		level=2,
+		width=42];
+	3106	 [fontsize=6,
+		height=36,
+		label="b'agronomy'",
+		level=3,
+		width=36];
+	1102 -- 3106;
+	4901	 [fontsize=6,
+		height=74,
+		label="b'cognitive development'",
+		level=2,
+		width=74];
+	4903	 [fontsize=6,
+		height=61,
+		label="b'executive function'",
+		level=3,
+		width=61];
+	4901 -- 4903;
+	4905	 [fontsize=6,
+		height=75,
+		label="b'language development'",
+		level=3,
+		width=75];
+	4901 -- 4905;
+	3453	 [fontsize=6,
+		height=65,
+		label="b'protein aggregation'",
+		level=3,
+		width=65];
+	481	 [fontsize=8,
+		height=71,
+		label="b'neurodegeneration'",
+		level=1,
+		width=71];
+	3453 -- 481;
+	2262	 [fontsize=6,
+		height=74,
+		label="b'sociology of education'",
+		level=3,
+		width=74];
+	2255	 [fontsize=6,
+		height=55,
+		label="b'education policy'",
+		level=2,
+		width=55];
+	2262 -- 2255;
+	316	 [fontsize=6,
+		height=65,
+		label="b'plant biotechnology'",
+		level=3,
+		width=65];
+	282	 [fontsize=8,
+		height=66,
+		label="b'molecular biology'",
+		level=1,
+		width=66];
+	316 -- 282;
+	4010	 [fontsize=6,
+		height=65,
+		label="b'protein engineering'",
+		level=2,
+		width=65];
+	5169	 [fontsize=6,
+		height=42,
+		label="b'biocatalysis'",
+		level=3,
+		width=42];
+	4010 -- 5169;
+	54	 [fontsize=8,
+		height=55,
+		label="b'nanomaterials'",
+		level=1,
+		width=55];
+	3884	 [fontsize=6,
+		height=30,
+		label="b'catalyst'",
+		level=3,
+		width=30];
+	54 -- 3884;
+	1305	 [fontsize=8,
+		height=60,
+		label="b'geomorphology'",
+		level=1,
+		width=60];
+	2573	 [fontsize=6,
+		height=65,
+		label="b'physical geography'",
+		level=3,
+		width=65];
+	1305 -- 2573;
+	2577	 [fontsize=6,
+		height=64,
+		label="b'quaternary geology'",
+		level=3,
+		width=64];
+	1305 -- 2577;
+	2574	 [fontsize=6,
+		height=53,
+		label="b'natural hazards'",
+		level=3,
+		width=53];
+	1305 -- 2574;
+	5485	 [fontsize=6,
+		height=37,
+		label="b'landslides'",
+		level=3,
+		width=37];
+	2574 -- 5485;
+	247	 [fontsize=8,
+		height=50,
+		label="b'inflammation'",
+		level=1,
+		width=50];
+	4249	 [fontsize=6,
+		height=40,
+		label="b'thrombosis'",
+		level=3,
+		width=40];
+	247 -- 4249;
+	4252	 [fontsize=6,
+		height=47,
+		label="b'macrophages'",
+		level=3,
+		width=47];
+	247 -- 4252;
+	3491	 [fontsize=6,
+		height=32,
+		label="b'violence'",
+		level=2,
+		width=32];
+	5034	 [fontsize=6,
+		height=40,
+		label="b'aggression'",
+		level=3,
+		width=40];
+	3491 -- 5034;
+	3803	 [fontsize=6,
+		height=53,
+		label="b'mobile learning'",
+		level=3,
+		width=53];
+	1229	 [fontsize=6,
+		height=37,
+		label="b'e-learning'",
+		level=2,
+		width=37];
+	3803 -- 1229;
+	3158	 [fontsize=6,
+		height=31,
+		label="b'proteins'",
+		level=2,
+		width=31];
+	3189	 [fontsize=6,
+		height=32,
+		label="b'peptides'",
+		level=3,
+		width=32];
+	3158 -- 3189;
+	1524	 [fontsize=8,
+		height=66,
+		label="b'image processing'",
+		level=1,
+		width=66];
+	4209	 [fontsize=6,
+		height=45,
+		label="b'video coding'",
+		level=3,
+		width=45];
+	1524 -- 4209;
+	2179	 [fontsize=6,
+		height=52,
+		label="b'hydrodynamics'",
+		level=3,
+		width=52];
+	2152	 [fontsize=8,
+		height=17,
+		label="b'cfd'",
+		level=1,
+		width=17];
+	2179 -- 2152;
+	2185	 [fontsize=6,
+		height=18,
+		label="b'fem'",
+		level=3,
+		width=18];
+	2152 -- 2185;
+	4688	 [fontsize=6,
+		height=71,
+		label="b'regional development'",
+		level=3,
+		width=71];
+	591	 [fontsize=6,
+		height=69,
+		label="b'economic geography'",
+		level=2,
+		width=69];
+	4688 -- 591;
+	5193	 [fontsize=6,
+		height=42,
+		label="b'fire ecology'",
+		level=3,
+		width=42];
+	1276	 [fontsize=6,
+		height=49,
+		label="b'forest ecology'",
+		level=2,
+		width=49];
+	5193 -- 1276;
+	3053	 [fontsize=6,
+		height=67,
+		label="b'raman spectroscopy'",
+		level=3,
+		width=67];
+	111	 [fontsize=8,
+		height=39,
+		label="b'graphene'",
+		level=1,
+		width=39];
+	3053 -- 111;
+	2736	 [fontsize=8,
+		height=81,
+		label="b'corporate governance'",
+		level=1,
+		width=81];
+	2747	 [fontsize=6,
+		height=80,
+		label="b'management accounting'",
+		level=3,
+		width=80];
+	2736 -- 2747;
+	1868	 [fontsize=6,
+		height=37,
+		label="b'aesthetics'",
+		level=3,
+		width=37];
+	1856	 [fontsize=8,
+		height=43,
+		label="b'philosophy'",
+		level=1,
+		width=43];
+	1868 -- 1856;
+	1867	 [fontsize=6,
+		height=54,
+		label="b'phenomenology'",
+		level=3,
+		width=54];
+	1856 -- 1867;
+	3466	 [fontsize=6,
+		height=73,
+		label="b'agent-based modeling'",
+		level=3,
+		width=73];
+	1464	 [fontsize=8,
+		height=41,
+		label="b'simulation'",
+		level=1,
+		width=41];
+	3466 -- 1464;
+	3465	 [fontsize=6,
+		height=59,
+		label="b'process modeling'",
+		level=3,
+		width=59];
+	1464 -- 3465;
+	5225	 [fontsize=6,
+		height=18,
+		label="b'cad'",
+		level=3,
+		width=18];
+	5222	 [fontsize=6,
+		height=75,
+		label="b'additive manufacturing'",
+		level=2,
+		width=75];
+	5225 -- 5222;
+	4406	 [fontsize=6,
+		height=69,
+		label="b'language processing'",
+		level=3,
+		width=69];
+	855	 [fontsize=6,
+		height=28,
+		label="b'speech'",
+		level=2,
+		width=28];
+	4406 -- 855;
+	505	 [fontsize=6,
+		height=23,
+		label="b'sleep'",
+		level=2,
+		width=23];
+	5246	 [fontsize=6,
+		height=60,
+		label="b'circadian rhythms'",
+		level=3,
+		width=60];
+	505 -- 5246;
+	4398	 [fontsize=6,
+		height=54,
+		label="b'supercapacitors'",
+		level=2,
+		width=54];
+	4400	 [fontsize=6,
+		height=50,
+		label="b'li-ion batteries'",
+		level=3,
+		width=50];
+	4398 -- 4400;
+	168	 [fontsize=8,
+		height=41,
+		label="b'stem cells'",
+		level=1,
+		width=41];
+	194	 [fontsize=6,
+		height=45,
+		label="b'regeneration'",
+		level=3,
+		width=45];
+	168 -- 194;
+	5726	 [fontsize=6,
+		height=68,
+		label="b'environmental policy'",
+		level=3,
+		width=68];
+	5725	 [fontsize=6,
+		height=47,
+		label="b'energy policy'",
+		level=2,
+		width=47];
+	5726 -- 5725;
+	1931	 [fontsize=6,
+		height=53,
+		label="b'social influence'",
+		level=3,
+		width=53];
+	1169	 [fontsize=8,
+		height=34,
+		label="b'emotion'",
+		level=1,
+		width=34];
+	1931 -- 1169;
+	1924	 [fontsize=6,
+		height=24,
+		label="b'affect'",
+		level=3,
+		width=24];
+	1169 -- 1924;
+	30	 [fontsize=8,
+		height=72,
+		label="b'inorganic chemistry'",
+		level=1,
+		width=72];
+	3432	 [fontsize=6,
+		height=74,
+		label="b'coordination chemistry'",
+		level=3,
+		width=74];
+	30 -- 3432;
+	3434	 [fontsize=6,
+		height=74,
+		label="b'bioinorganic chemistry'",
+		level=3,
+		width=74];
+	30 -- 3434;
+	2377	 [fontsize=8,
+		height=30,
+		label="b'control'",
+		level=1,
+		width=30];
+	3124	 [fontsize=6,
+		height=61,
+		label="b'nonlinear systems'",
+		level=3,
+		width=61];
+	2377 -- 3124;
+	3139	 [fontsize=6,
+		height=38,
+		label="b'aerospace'",
+		level=3,
+		width=38];
+	2377 -- 3139;
+	3126	 [fontsize=6,
+		height=58,
+		label="b'system dynamics'",
+		level=3,
+		width=58];
+	2377 -- 3126;
+	447	 [fontsize=6,
+		height=28,
+		label="b'conflict'",
+		level=2,
+		width=28];
+	5177	 [fontsize=6,
+		height=25,
+		label="b'peace'",
+		level=3,
+		width=25];
+	447 -- 5177;
+	5178	 [fontsize=6,
+		height=40,
+		label="b'negotiation'",
+		level=3,
+		width=40];
+	447 -- 5178;
+	2715	 [fontsize=8,
+		height=53,
+		label="b'transportation'",
+		level=1,
+		width=53];
+	2726	 [fontsize=6,
+		height=51,
+		label="b'travel behavior'",
+		level=3,
+		width=51];
+	2715 -- 2726;
+	5754	 [fontsize=6,
+		height=18,
+		label="b'dsp'",
+		level=3,
+		width=18];
+	2071	 [fontsize=6,
+		height=20,
+		label="b'fpga'",
+		level=2,
+		width=20];
+	5754 -- 2071;
+	2769	 [fontsize=6,
+		height=68,
+		label="b'emergency medicine'",
+		level=3,
+		width=68];
+	2764	 [fontsize=6,
+		height=61,
+		label="b'medical education'",
+		level=2,
+		width=61];
+	2769 -- 2764;
+	5724	 [fontsize=6,
+		height=97,
+		label="b'optical coherence tomography'",
+		level=3,
+		width=97];
+	3596	 [fontsize=6,
+		height=59,
+		label="b'biomedical optics'",
+		level=2,
+		width=59];
+	5724 -- 3596;
+	1915	 [fontsize=6,
+		height=54,
+		label="b'nanomagnetism'",
+		level=3,
+		width=54];
+	1910	 [fontsize=6,
+		height=39,
+		label="b'spintronics'",
+		level=2,
+		width=39];
+	1915 -- 1910;
+	2097	 [fontsize=6,
+		height=65,
+		label="b'geometric modeling'",
+		level=3,
+		width=65];
+	1518	 [fontsize=8,
+		height=69,
+		label="b'computer graphics'",
+		level=1,
+		width=69];
+	2097 -- 1518;
+	3657	 [fontsize=6,
+		height=24,
+		label="b'music'",
+		level=2,
+		width=24];
+	4081	 [fontsize=6,
+		height=55,
+		label="b'music education'",
+		level=3,
+		width=55];
+	3657 -- 4081;
+	1216	 [fontsize=6,
+		height=71,
+		label="b'ecological economics'",
+		level=3,
+		width=71];
+	1205	 [fontsize=8,
+		height=93,
+		label="b'environmental economics'",
+		level=1,
+		width=93];
+	1216 -- 1205;
+	2175	 [fontsize=8,
+		height=49,
+		label="b'heat transfer'",
+		level=1,
+		width=49];
+	2186	 [fontsize=6,
+		height=43,
+		label="b'refrigeration'",
+		level=3,
+		width=43];
+	2175 -- 2186;
+	2201	 [fontsize=6,
+		height=47,
+		label="b'porous media'",
+		level=3,
+		width=47];
+	2175 -- 2201;
+	1682	 [fontsize=8,
+		height=64,
+		label="b'psycholinguistics'",
+		level=1,
+		width=64];
+	1692	 [fontsize=6,
+		height=68,
+		label="b'language acquisition'",
+		level=3,
+		width=68];
+	1682 -- 1692;
+	3936	 [fontsize=6,
+		height=36,
+		label="b'reasoning'",
+		level=3,
+		width=36];
+	1015	 [fontsize=6,
+		height=84,
+		label="b'knowledge representation'",
+		level=2,
+		width=84];
+	3936 -- 1015;
+	681	 [fontsize=6,
+		height=50,
+		label="b'metagenomics'",
+		level=2,
+		width=50];
+	5580	 [fontsize=6,
+		height=63,
+		label="b'human microbiome'",
+		level=3,
+		width=63];
+	681 -- 5580;
+	2026	 [fontsize=6,
+		height=66,
+		label="b'program verification'",
+		level=3,
+		width=66];
+	1403	 [fontsize=8,
+		height=89,
+		label="b'programming languages'",
+		level=1,
+		width=89];
+	2026 -- 1403;
+	2023	 [fontsize=6,
+		height=43,
+		label="b'concurrency'",
+		level=3,
+		width=43];
+	1403 -- 2023;
+	2021	 [fontsize=6,
+		height=77,
+		label="b'functional programming'",
+		level=3,
+		width=77];
+	1403 -- 2021;
+	2029	 [fontsize=6,
+		height=49,
+		label="b'static analysis'",
+		level=3,
+		width=49];
+	1403 -- 2029;
+	403	 [fontsize=6,
+		height=22,
+		label="b'trade'",
+		level=3,
+		width=22];
+	373	 [fontsize=8,
+		height=51,
+		label="b'development'",
+		level=1,
+		width=51];
+	403 -- 373;
+	400	 [fontsize=6,
+		height=24,
+		label="b'africa'",
+		level=3,
+		width=24];
+	373 -- 400;
+	401	 [fontsize=6,
+		height=27,
+		label="b'growth'",
+		level=3,
+		width=27];
+	373 -- 401;
+	398	 [fontsize=6,
+		height=21,
+		label="b'ict4d'",
+		level=3,
+		width=21];
+	373 -- 398;
+	4194	 [fontsize=6,
+		height=78,
+		label="b'innovation management'",
+		level=2,
+		width=78];
+	5815	 [fontsize=6,
+		height=54,
+		label="b'open innovation'",
+		level=3,
+		width=54];
+	4194 -- 5815;
+	2003	 [fontsize=6,
+		height=77,
+		label="b'implementation science'",
+		level=3,
+		width=77];
+	1807	 [fontsize=8,
+		height=17,
+		label="b'hiv'",
+		level=1,
+		width=17];
+	2003 -- 1807;
+	2019	 [fontsize=6,
+		height=27,
+		label="b'stigma'",
+		level=3,
+		width=27];
+	1807 -- 2019;
+	1849	 [fontsize=8,
+		height=49,
+		label="b'metaphysics'",
+		level=1,
+		width=49];
+	1861	 [fontsize=6,
+		height=71,
+		label="b'philosophy of religion'",
+		level=3,
+		width=71];
+	1849 -- 1861;
+	3334	 [fontsize=6,
+		height=58,
+		label="b'biological control'",
+		level=3,
+		width=58];
+	732	 [fontsize=8,
+		height=46,
+		label="b'entomology'",
+		level=1,
+		width=46];
+	3334 -- 732;
+	4313	 [fontsize=6,
+		height=36,
+		label="b'psychosis'",
+		level=3,
+		width=36];
+	2470	 [fontsize=6,
+		height=48,
+		label="b'schizophrenia'",
+		level=2,
+		width=48];
+	4313 -- 2470;
+	5131	 [fontsize=6,
+		height=49,
+		label="b'digital literacy'",
+		level=3,
+		width=49];
+	1135	 [fontsize=6,
+		height=64,
+		label="b'information literacy'",
+		level=2,
+		width=64];
+	5131 -- 1135;
+	1259	 [fontsize=6,
+		height=44,
+		label="b'multiferroics'",
+		level=3,
+		width=44];
+	1258	 [fontsize=6,
+		height=46,
+		label="b'ferroelectrics'",
+		level=3,
+		width=46];
+	1259 -- 1258;
+	1255	 [fontsize=6,
+		height=45,
+		label="b'piezoelectric'",
+		level=3,
+		width=45];
+	1258 -- 1255;
+	1241	 [fontsize=6,
+		height=60,
+		label="b'energy harvesting'",
+		level=2,
+		width=60];
+	1255 -- 1241;
+	3920	 [fontsize=6,
+		height=56,
+		label="b'cognitive control'",
+		level=2,
+		width=56];
+	4339	 [fontsize=6,
+		height=56,
+		label="b'prefrontal cortex'",
+		level=3,
+		width=56];
+	3920 -- 4339;
+	4024	 [fontsize=6,
+		height=41,
+		label="b'smart cities'",
+		level=3,
+		width=41];
+	1598	 [fontsize=8,
+		height=62,
+		label="b'internet of things'",
+		level=1,
+		width=62];
+	4024 -- 1598;
+	4109	 [fontsize=6,
+		height=66,
+		label="b'social epidemiology'",
+		level=3,
+		width=66];
+	2002	 [fontsize=6,
+		height=58,
+		label="b'health disparities'",
+		level=2,
+		width=58];
+	4109 -- 2002;
+	4107	 [fontsize=6,
+		height=93,
+		label="b'social determinants of health'",
+		level=3,
+		width=93];
+	2002 -- 4107;
+	388	 [fontsize=6,
+		height=37,
+		label="b'speciation'",
+		level=2,
+		width=37];
+	5272	 [fontsize=6,
+		height=45,
+		label="b'hybridization'",
+		level=3,
+		width=45];
+	388 -- 5272;
+	2585	 [fontsize=6,
+		height=34,
+		label="b'tectonics'",
+		level=2,
+		width=34];
+	3631	 [fontsize=6,
+		height=56,
+		label="b'paleomagnetism'",
+		level=3,
+		width=56];
+	2585 -- 3631;
+	3496	 [fontsize=6,
+		height=52,
+		label="b'criminal justice'",
+		level=3,
+		width=52];
+	1707	 [fontsize=8,
+		height=45,
+		label="b'criminology'",
+		level=1,
+		width=45];
+	3496 -- 1707;
+	3490	 [fontsize=6,
+		height=30,
+		label="b'policing'",
+		level=3,
+		width=30];
+	1707 -- 3490;
+	2996	 [fontsize=6,
+		height=62,
+		label="b'speech perception'",
+		level=3,
+		width=62];
+	2992	 [fontsize=6,
+		height=36,
+		label="b'phonetics'",
+		level=2,
+		width=36];
+	2996 -- 2992;
+	2999	 [fontsize=6,
+		height=31,
+		label="b'prosody'",
+		level=3,
+		width=31];
+	2992 -- 2999;
+	1087	 [fontsize=6,
+		height=89,
+		label="b'environmental microbiology'",
+		level=2,
+		width=89];
+	3742	 [fontsize=6,
+		height=51,
+		label="b'bioremediation'",
+		level=3,
+		width=51];
+	1087 -- 3742;
+	4535	 [fontsize=6,
+		height=72,
+		label="b'market microstructure'",
+		level=3,
+		width=72];
+	3730	 [fontsize=6,
+		height=45,
+		label="b'asset pricing'",
+		level=2,
+		width=45];
+	4535 -- 3730;
+	2617	 [fontsize=6,
+		height=61,
+		label="b'micropaleontology'",
+		level=3,
+		width=61];
+	2612	 [fontsize=6,
+		height=62,
+		label="b'paleoceanography'",
+		level=2,
+		width=62];
+	2617 -- 2612;
+	2674	 [fontsize=8,
+		height=96,
+		label="b'supply chain management'",
+		level=1,
+		width=96];
+	2712	 [fontsize=6,
+		height=66,
+		label="b'production planning'",
+		level=3,
+		width=66];
+	2674 -- 2712;
+	1746	 [fontsize=6,
+		height=62,
+		label="b'applied probability'",
+		level=3,
+		width=62];
+	5644	 [fontsize=6,
+		height=66,
+		label="b'stochastic modeling'",
+		level=3,
+		width=66];
+	1746 -- 5644;
+	844	 [fontsize=8,
+		height=36,
+		label="b'statistics'",
+		level=1,
+		width=36];
+	1746 -- 844;
+	5643	 [fontsize=6,
+		height=55,
+		label="b'queueing theory'",
+		level=3,
+		width=55];
+	1746 -- 5643;
+	1756	 [fontsize=6,
+		height=57,
+		label="b'actuarial science'",
+		level=3,
+		width=57];
+	844 -- 1756;
+	4441	 [fontsize=6,
+		height=68,
+		label="b'monetary economics'",
+		level=3,
+		width=68];
+	2246	 [fontsize=8,
+		height=65,
+		label="b'macroeconomics'",
+		level=1,
+		width=65];
+	4441 -- 2246;
+	1913	 [fontsize=6,
+		height=63,
+		label="b'magnetic materials'",
+		level=3,
+		width=63];
+	1897	 [fontsize=6,
+		height=39,
+		label="b'magnetism'",
+		level=2,
+		width=39];
+	1913 -- 1897;
+	5472	 [fontsize=6,
+		height=45,
+		label="b'mutual funds'",
+		level=3,
+		width=45];
+	1777	 [fontsize=6,
+		height=43,
+		label="b'investments'",
+		level=2,
+		width=43];
+	5472 -- 1777;
+	5118	 [fontsize=6,
+		height=41,
+		label="b'fish biology'",
+		level=3,
+		width=41];
+	4772	 [fontsize=6,
+		height=42,
+		label="b'aquaculture'",
+		level=2,
+		width=42];
+	5118 -- 4772;
+}
