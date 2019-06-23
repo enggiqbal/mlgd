@@ -1,0 +1,2828 @@
+strict graph "" {
+	node [label="\N"];
+	5094	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="human-computer interaction",
+		level=1,
+		pos="92007.72640224965,70575.9789128244",
+		weight=1333,
+		width=418];
+	3259	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="artificial intelligence",
+		level=1,
+		pos="99039.46546572367,72504.22136574335",
+		weight=5844,
+		width=292];
+	5094 -- 3259;
+	1925	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="ubiquitous computing",
+		level=1,
+		pos="93657.86684425226,69961.22213753083",
+		weight=412,
+		width=319];
+	5094 -- 1925;
+	4762	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=design,
+		level=1,
+		pos="129764.77705838883,135334.59102579064",
+		weight=956,
+		width=104];
+	4481	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=innovation,
+		level=1,
+		pos="133548.76241091345,131320.29653851458",
+		weight=1414,
+		width=158];
+	4762 -- 4481;
+	1987	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=architecture,
+		level=1,
+		pos="127897.8987544726,134062.00740436665",
+		weight=577,
+		width=179];
+	4762 -- 1987;
+	1513	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=technology,
+		level=1,
+		pos="131304.76899955157,124792.36061608208",
+		weight=1153,
+		width=166];
+	4481 -- 1513;
+	4658	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=entrepreneurship,
+		level=1,
+		pos="136028.27012924026,135017.08361237383",
+		weight=1015,
+		width=257];
+	4481 -- 4658;
+	2975	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=strategy,
+		level=1,
+		pos="131111.68791357317,129378.99497920103",
+		weight=587,
+		width=124];
+	4481 -- 2975;
+	1671	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=photonics,
+		level=1,
+		pos="42634.97269127468,38303.81355828183",
+		weight=1310,
+		width=147];
+	4963	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=plasmonics,
+		level=1,
+		pos="39871.91581167234,34180.911882759414",
+		weight=1034,
+		width=172];
+	1671 -- 4963;
+	469	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=optics,
+		level=1,
+		pos="48077.88301177946,36321.490230942516",
+		weight=1380,
+		width=93];
+	1671 -- 469;
+	3500	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=optoelectronics,
+		level=1,
+		pos="43239.160356186636,38964.65331993196",
+		weight=534,
+		width=229];
+	1671 -- 3500;
+	2103	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=nanophotonics,
+		level=1,
+		pos="41604.55622539184,32706.768753436765",
+		weight=812,
+		width=221];
+	4963 -- 2103;
+	2162	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=metamaterials,
+		level=1,
+		pos="39129.2258590022,33152.453138499426",
+		weight=673,
+		width=213];
+	4963 -- 2162;
+	2560	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=physics,
+		level=1,
+		pos="47418.532378881675,29136.549808341828",
+		weight=2647,
+		width=116];
+	469 -- 2560;
+	255	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=transportation,
+		level=1,
+		pos="150893.87582878672,68533.29058969453",
+		weight=863,
+		width=208];
+	4672	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=logistics,
+		level=1,
+		pos="150778.95910040397,67898.34782056166",
+		weight=365,
+		width=124];
+	255 -- 4672;
+	4080	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="supply chain management",
+		level=1,
+		pos="149881.40576164387,67406.5602843829",
+		weight=697,
+		width=391];
+	4672 -- 4080;
+	893	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=control,
+		level=1,
+		pos="117683.31420234492,78762.47831833661",
+		weight=1694,
+		width=105];
+	4608	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=robotics,
+		level=1,
+		pos="107127.40573247941,82226.81827051853",
+		weight=3442,
+		width=122];
+	893 -- 4608;
+	5228	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="dynamical systems",
+		level=1,
+		pos="119315.76327219095,79613.44737833187",
+		weight=781,
+		width=285];
+	893 -- 5228;
+	4636	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=dynamics,
+		level=1,
+		pos="117295.85855357337,79928.85062686716",
+		weight=476,
+		width=147];
+	893 -- 4636;
+	1963	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computer vision",
+		level=1,
+		pos="117881.95718296588,91358.46572089054",
+		weight=5478,
+		width=238];
+	4608 -- 1963;
+	2128	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=biomechanics,
+		level=1,
+		pos="110294.4496181285,74931.62378677995",
+		weight=1657,
+		width=208];
+	4608 -- 2128;
+	83	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="control theory",
+		level=1,
+		pos="105793.61003208472,78880.3743832433",
+		weight=654,
+		width=207];
+	4608 -- 83;
+	981	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=vibration,
+		level=1,
+		pos="118435.78268231533,82962.49901222711",
+		weight=347,
+		width=131];
+	4636 -- 981;
+	3314	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="climate change",
+		level=1,
+		pos="77233.40410617783,78733.1980733204",
+		weight=2181,
+		width=229];
+	5226	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=ecology,
+		level=1,
+		pos="61655.028832655626,75346.09080103971",
+		weight=3351,
+		width=120];
+	3314 -- 5226;
+	3944	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=hydrology,
+		level=1,
+		pos="72970.09313688953,87994.34250846643",
+		weight=1221,
+		width=150];
+	3314 -- 3944;
+	716	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=agriculture,
+		level=1,
+		pos="79601.00867774163,79447.45937742243",
+		weight=612,
+		width=161];
+	3314 -- 716;
+	1245	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=gender,
+		level=1,
+		pos="129472.64932922485,118851.14332648779",
+		weight=1615,
+		width=109];
+	5138	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=politics,
+		level=1,
+		pos="128426.22572973941,121690.80415463043",
+		weight=644,
+		width=108];
+	1245 -- 5138;
+	3763	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=education,
+		level=1,
+		pos="124738.71141315794,123416.22786757161",
+		weight=2017,
+		width=150];
+	1245 -- 3763;
+	1347	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=race,
+		level=1,
+		pos="132817.72941659729,119392.10111536211",
+		weight=555,
+		width=70];
+	1245 -- 1347;
+	208	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=culture,
+		level=1,
+		pos="130691.7900866735,116085.60953743235",
+		weight=700,
+		width=105];
+	1245 -- 208;
+	2390	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=migration,
+		level=1,
+		pos="132667.48886592398,118349.18505953331",
+		weight=758,
+		width=142];
+	1245 -- 2390;
+	1041	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=history,
+		level=1,
+		pos="128850.05297694242,122281.54817972193",
+		weight=735,
+		width=104];
+	5138 -- 1041;
+	2927	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=religion,
+		level=1,
+		pos="127907.09676830079,121911.1688157426",
+		weight=521,
+		width=113];
+	5138 -- 2927;
+	727	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=psychology,
+		level=1,
+		pos="124264.78973342862,136601.8931290603",
+		weight=2022,
+		width=172];
+	3763 -- 727;
+	5292	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=sociology,
+		level=1,
+		pos="120145.87064947946,122238.78364516536",
+		weight=1079,
+		width=144];
+	3763 -- 5292;
+	3763 -- 1513;
+	1070	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="educational technology",
+		level=1,
+		pos="122121.80480737178,118388.4937027418",
+		weight=544,
+		width=345];
+	3763 -- 1070;
+	4219	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=policy,
+		level=1,
+		pos="121962.28778735174,124576.46147234854",
+		weight=563,
+		width=91];
+	3763 -- 4219;
+	943	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=nanotechnology,
+		level=1,
+		pos="18944.25036687835,25954.30367749719",
+		weight=3024,
+		width=240];
+	2630	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=semiconductors,
+		level=1,
+		pos="15956.514024739805,25356.28584552995",
+		weight=716,
+		width=238];
+	943 -- 2630;
+	3787	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=graphene,
+		level=1,
+		pos="17172.1168408439,23283.33964214904",
+		weight=900,
+		width=147];
+	943 -- 3787;
+	5606	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=mems,
+		level=1,
+		pos="21363.76540563293,22735.273752766887",
+		weight=872,
+		width=97];
+	943 -- 5606;
+	1891	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="materials science",
+		level=1,
+		pos="38173.95729216674,23830.758412233983",
+		weight=3272,
+		width=262];
+	943 -- 1891;
+	3112	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=nanoscience,
+		level=1,
+		pos="17408.378550426325,28062.912750774696",
+		weight=644,
+		width=192];
+	943 -- 3112;
+	3596	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="drug delivery",
+		level=1,
+		pos="20843.23995349486,44698.33262600024",
+		weight=1120,
+		width=196];
+	943 -- 3596;
+	5335	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="solar cells",
+		level=1,
+		pos="18557.669359830543,22482.622124523965",
+		weight=632,
+		width=153];
+	943 -- 5335;
+	1873	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="materials chemistry",
+		level=1,
+		pos="17069.464227794033,27837.519098410725",
+		weight=528,
+		width=291];
+	943 -- 1873;
+	5885	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=biosensors,
+		level=1,
+		pos="18226.656304372922,28613.604560720203",
+		weight=750,
+		width=166];
+	943 -- 5885;
+	770	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=microfluidics,
+		level=1,
+		pos="21998.345218938884,23889.6708400438",
+		weight=1372,
+		width=188];
+	5606 -- 770;
+	996	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=sensors,
+		level=1,
+		pos="22123.21973943325,22767.992832530486",
+		weight=807,
+		width=122];
+	5606 -- 996;
+	2406	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=electrochemistry,
+		level=1,
+		pos="36570.96096976084,39756.95255620477",
+		weight=1283,
+		width=246];
+	1891 -- 2406;
+	1394	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="condensed matter physics",
+		level=1,
+		pos="43657.89766983651,23222.831575277196",
+		weight=1631,
+		width=390];
+	1891 -- 1394;
+	1891 -- 2560;
+	2934	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="chemical engineering",
+		level=1,
+		pos="42097.55724265015,21397.19115482721",
+		weight=899,
+		width=319];
+	1891 -- 2934;
+	5306	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="mechanical engineering",
+		level=1,
+		pos="33774.06659245038,23134.050307391553",
+		weight=577,
+		width=356];
+	1891 -- 5306;
+	204	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=engineering,
+		level=1,
+		pos="37219.02190917467,19568.696540700003",
+		weight=1025,
+		width=179];
+	1891 -- 204;
+	2682	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=chemistry,
+		level=1,
+		pos="33925.916685717515,22883.143427524155",
+		weight=2206,
+		width=147];
+	1891 -- 2682;
+	3819	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="thin films",
+		level=1,
+		pos="36271.337922515966,19810.556659919785",
+		weight=542,
+		width=136];
+	1891 -- 3819;
+	5403	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=biomaterials,
+		level=1,
+		pos="50433.42533685373,48239.479811572346",
+		weight=2072,
+		width=185];
+	3596 -- 5403;
+	3709	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=nanomedicine,
+		level=1,
+		pos="20167.6618721172,44135.910301259944",
+		weight=619,
+		width=212];
+	3596 -- 3709;
+	5339	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=nanoparticles,
+		level=1,
+		pos="20484.259669509553,45284.87977031533",
+		weight=595,
+		width=203];
+	3596 -- 5339;
+	5803	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=photovoltaics,
+		level=1,
+		pos="18203.673895257984,22087.805313468467",
+		weight=722,
+		width=199];
+	5335 -- 5803;
+	5825	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=geophysics,
+		level=1,
+		pos="71764.8432660772,79513.18003926928",
+		weight=933,
+		width=172];
+	4388	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=geology,
+		level=1,
+		pos="71791.35391410004,81332.48642660333",
+		weight=1135,
+		width=122];
+	5825 -- 4388;
+	4825	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=geomorphology,
+		level=1,
+		pos="69624.50552475058,83048.96762292838",
+		weight=579,
+		width=234];
+	4388 -- 4825;
+	2187	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=tectonics,
+		level=1,
+		pos="73509.92930635504,80944.80174124971",
+		weight=566,
+		width=136];
+	4388 -- 2187;
+	40	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=geochemistry,
+		level=1,
+		pos="72621.87627976132,83455.16851137171",
+		weight=1076,
+		width=203];
+	4388 -- 40;
+	1021	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="environmental science",
+		level=1,
+		pos="58688.111327161794,79851.79475826622",
+		weight=612,
+		width=334];
+	5226 -- 1021;
+	3938	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="conservation biology",
+		level=1,
+		pos="69672.8928614189,72652.16360695224",
+		weight=1902,
+		width=308];
+	5226 -- 3938;
+	4813	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=evolution,
+		level=1,
+		pos="61746.18047014577,93959.61980526758",
+		weight=2669,
+		width=139];
+	5226 -- 4813;
+	2478	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="evolutionary biology",
+		level=1,
+		pos="66354.75328570661,69897.50618702934",
+		weight=1456,
+		width=298];
+	5226 -- 2478;
+	1221	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=biodiversity,
+		level=1,
+		pos="59286.92827333359,70397.54865171884",
+		weight=710,
+		width=172];
+	5226 -- 1221;
+	4449	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=biogeography,
+		level=1,
+		pos="57873.5626614585,71587.08769489822",
+		weight=608,
+		width=207];
+	5226 -- 4449;
+	2576	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=conservation,
+		level=1,
+		pos="56507.09412569449,73487.74527812446",
+		weight=902,
+		width=193];
+	5226 -- 2576;
+	291	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=biology,
+		level=1,
+		pos="62198.92859977394,70035.63906144045",
+		weight=1336,
+		width=111];
+	5226 -- 291;
+	1931	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=entomology,
+		level=1,
+		pos="63830.50321639406,69633.186056844",
+		weight=600,
+		width=177];
+	5226 -- 1931;
+	2409	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computer graphics",
+		level=1,
+		pos="116031.55726752145,95688.08044041044",
+		weight=1251,
+		width=278];
+	2409 -- 1963;
+	1411	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="virtual reality",
+		level=1,
+		pos="115635.93098721419,94588.97090701063",
+		weight=524,
+		width=192];
+	2409 -- 1411;
+	4336	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=visualization,
+		level=1,
+		pos="115136.53192174833,95180.58699584597",
+		weight=533,
+		width=186];
+	2409 -- 4336;
+	5607	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="machine learning",
+		level=1,
+		pos="130797.55210073023,59290.68999641743",
+		weight=11046,
+		width=257];
+	1963 -- 5607;
+	5873	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="medical imaging",
+		level=1,
+		pos="114052.64186580833,93269.9103375513",
+		weight=1007,
+		width=246];
+	1963 -- 5873;
+	1128	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=imaging,
+		level=1,
+		pos="120479.34741039727,93894.45629671079",
+		weight=953,
+		width=122];
+	1963 -- 1128;
+	2168	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="image processing",
+		level=1,
+		pos="112644.29631908766,90592.70458289253",
+		weight=2648,
+		width=265];
+	1963 -- 2168;
+	3049	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="cognitive neuroscience",
+		level=1,
+		pos="124022.15680526399,138501.57499067654",
+		weight=1431,
+		width=342];
+	5480	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=memory,
+		level=1,
+		pos="122790.06560641968,140081.68406431892",
+		weight=996,
+		width=125];
+	3049 -- 5480;
+	904	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=attention,
+		level=1,
+		pos="122997.9694721217,137610.43809042903",
+		weight=608,
+		width=133];
+	3049 -- 904;
+	3049 -- 727;
+	2645	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="cognitive psychology",
+		level=1,
+		pos="124718.64303667285,137895.20174589966",
+		weight=574,
+		width=311];
+	3049 -- 2645;
+	1029	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=learning,
+		level=1,
+		pos="122375.68370752955,139267.72094890862",
+		weight=1191,
+		width=124];
+	5480 -- 1029;
+	2556	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=neuroscience,
+		level=1,
+		pos="134458.74025370463,149403.76563675306",
+		weight=5781,
+		width=203];
+	727 -- 2556;
+	3804	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="chemical biology",
+		level=1,
+		pos="24976.76320743621,36660.5263538488",
+		weight=723,
+		width=251];
+	2116	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="medicinal chemistry",
+		level=1,
+		pos="24980.691301955238,35943.796304716896",
+		weight=713,
+		width=296];
+	3804 -- 2116;
+	4377	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="mass spectrometry",
+		level=1,
+		pos="85924.20090771957,39114.648491222",
+		weight=780,
+		width=285];
+	787	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=proteomics,
+		level=1,
+		pos="84956.06146896812,40149.57567533498",
+		weight=1039,
+		width=168];
+	4377 -- 787;
+	3776	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="analytical chemistry",
+		level=1,
+		pos="86656.76419579262,39947.0750968446",
+		weight=960,
+		width=295];
+	4377 -- 3776;
+	896	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="fuel cells",
+		level=1,
+		pos="37241.613367227095,41659.64402190755",
+		weight=576,
+		width=135];
+	896 -- 2406;
+	4860	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=catalysis,
+		level=1,
+		pos="25875.273333997735,39718.79652422459",
+		weight=1272,
+		width=133];
+	2406 -- 4860;
+	1097	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=nanomaterials,
+		level=1,
+		pos="35062.00651259033,41832.374537569725",
+		weight=1632,
+		width=213];
+	2406 -- 1097;
+	1410	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="energy storage",
+		level=1,
+		pos="37850.813726087894,41053.42218751189",
+		weight=676,
+		width=227];
+	2406 -- 1410;
+	2089	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="wireless communications",
+		level=1,
+		pos="151905.9465674599,62169.74911478563",
+		weight=1437,
+		width=373];
+	1853	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="signal processing",
+		level=1,
+		pos="153389.49416932533,59909.52252885863",
+		weight=2402,
+		width=262];
+	2089 -- 1853;
+	1748	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="information theory",
+		level=1,
+		pos="151494.84441494293,60846.518094493884",
+		weight=927,
+		width=271];
+	2089 -- 1748;
+	1853 -- 5607;
+	4565	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=communication,
+		level=1,
+		pos="155131.5299960923,61505.677863338824",
+		weight=1267,
+		width=229];
+	1853 -- 4565;
+	1485	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="international relations",
+		level=1,
+		pos="135628.33145732852,90645.97123019435",
+		weight=838,
+		width=320];
+	5178	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="political science",
+		level=1,
+		pos="134567.68326061487,87520.3642343782",
+		weight=825,
+		width=238];
+	1485 -- 5178;
+	1884	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=bioinformatics,
+		level=1,
+		pos="88406.51162156778,46656.4411306059",
+		weight=5075,
+		width=210];
+	1884 -- 5607;
+	5121	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=genomics,
+		level=1,
+		pos="81099.96230072515,94426.88667634025",
+		weight=2984,
+		width=147];
+	1884 -- 5121;
+	2199	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="systems biology",
+		level=1,
+		pos="89522.3615374921,39273.26133784171",
+		weight=1798,
+		width=241];
+	1884 -- 2199;
+	1739	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=biostatistics,
+		level=1,
+		pos="93882.07105934282,38591.56041199367",
+		weight=1173,
+		width=177];
+	1884 -- 1739;
+	1884 -- 787;
+	5118	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computational biology",
+		level=1,
+		pos="88121.84961368842,39946.60703834419",
+		weight=2567,
+		width=326];
+	1884 -- 5118;
+	3900	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=algorithms,
+		level=1,
+		pos="153234.4452307123,55628.63050741923",
+		weight=1235,
+		width=158];
+	5607 -- 3900;
+	5607 -- 3259;
+	140	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computational neuroscience",
+		level=1,
+		pos="139419.22859188542,41099.83821141207",
+		weight=930,
+		width=418];
+	5607 -- 140;
+	773	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=statistics,
+		level=1,
+		pos="149683.0977563422,93455.81001655507",
+		weight=2580,
+		width=133];
+	5607 -- 773;
+	1165	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="data science",
+		level=1,
+		pos="119579.9355645783,43011.09788577415",
+		weight=798,
+		width=192];
+	5607 -- 1165;
+	3139	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="big data",
+		level=1,
+		pos="145298.21603262462,72809.59489811512",
+		weight=1120,
+		width=124];
+	5607 -- 3139;
+	4236	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="data mining",
+		level=1,
+		pos="149803.84612739694,49233.797137113164",
+		weight=3417,
+		width=177];
+	5607 -- 4236;
+	2948	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="natural language processing",
+		level=1,
+		pos="151161.52018045526,52332.750518357854",
+		weight=1898,
+		width=421];
+	5607 -- 2948;
+	2092	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=optimization,
+		level=1,
+		pos="153822.68835013697,66959.7221646919",
+		weight=2557,
+		width=183];
+	5607 -- 2092;
+	3618	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="pattern recognition",
+		level=1,
+		pos="143472.89785689814,43629.79934388605",
+		weight=1743,
+		width=280];
+	5607 -- 3618;
+	5397	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="information retrieval",
+		level=1,
+		pos="145362.5232850858,45520.83915440298",
+		weight=1077,
+		width=296];
+	5607 -- 5397;
+	620	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="deep learning",
+		level=1,
+		pos="116518.70910432131,45606.205445776075",
+		weight=679,
+		width=207];
+	5607 -- 620;
+	5367	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="neural networks",
+		level=1,
+		pos="116684.81077792117,45411.695546299416",
+		weight=619,
+		width=240];
+	5607 -- 5367;
+	5121 -- 4813;
+	1109	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=genetics,
+		level=1,
+		pos="146112.31214855483,118275.11580832783",
+		weight=3043,
+		width=130];
+	5121 -- 1109;
+	3956	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="synthetic biology",
+		level=1,
+		pos="90815.81834932415,39520.34878012729",
+		weight=920,
+		width=251];
+	2199 -- 3956;
+	5775	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=epidemiology,
+		level=1,
+		pos="99254.99669748964,40449.320246279814",
+		weight=1984,
+		width=201];
+	1739 -- 5775;
+	5245	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=biophysics,
+		level=1,
+		pos="179099.80418713213,64806.955131049",
+		weight=2308,
+		width=161];
+	4368	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=biochemistry,
+		level=1,
+		pos="180966.12806525506,59679.101025036834",
+		weight=2460,
+		width=192];
+	5245 -- 4368;
+	150	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="soft matter",
+		level=1,
+		pos="176502.30560733992,64150.51979314541",
+		weight=571,
+		width=163];
+	5245 -- 150;
+	159	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="molecular dynamics",
+		level=1,
+		pos="177816.74129111003,66624.63697965941",
+		weight=552,
+		width=298];
+	5245 -- 159;
+	657	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="physical chemistry",
+		level=1,
+		pos="176670.58120636127,61299.65949148418",
+		weight=825,
+		width=276];
+	5245 -- 657;
+	3363	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="molecular biology",
+		level=1,
+		pos="176385.38426313602,56485.61755148203",
+		weight=2880,
+		width=263];
+	4368 -- 3363;
+	2333	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="structural biology",
+		level=1,
+		pos="182681.81321111548,60318.114077094906",
+		weight=1299,
+		width=257];
+	4368 -- 2333;
+	2770	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="cell biology",
+		level=1,
+		pos="181166.00235206066,57941.122056049826",
+		weight=1749,
+		width=169];
+	4368 -- 2770;
+	2386	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computational chemistry",
+		level=1,
+		pos="178111.51360120327,60522.59914707923",
+		weight=1056,
+		width=362];
+	657 -- 2386;
+	3008	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=spectroscopy,
+		level=1,
+		pos="175819.98612268167,61143.696645977",
+		weight=792,
+		width=201];
+	657 -- 3008;
+	2388	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="tissue engineering",
+		level=1,
+		pos="58063.83240402872,23146.901210792646",
+		weight=1425,
+		width=275];
+	5403 -- 2388;
+	5087	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=polymers,
+		level=1,
+		pos="48812.043812918164,49239.774301314545",
+		weight=1115,
+		width=141];
+	5403 -- 5087;
+	3333	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=bioengineering,
+		level=1,
+		pos="51626.73919513299,47983.1695662889",
+		weight=693,
+		width=223];
+	5403 -- 3333;
+	3942	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="stem cells",
+		level=1,
+		pos="25390.558453428283,5475.148563694028",
+		weight=1176,
+		width=153];
+	2388 -- 3942;
+	3056	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="regenerative medicine",
+		level=1,
+		pos="58592.138410960324,21984.147755923237",
+		weight=573,
+		width=331];
+	2388 -- 3056;
+	2098	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=composites,
+		level=1,
+		pos="48293.01489550846,49602.833985226454",
+		weight=687,
+		width=173];
+	5087 -- 2098;
+	1627	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="community ecology",
+		level=1,
+		pos="69663.3311085347,74823.43148521184",
+		weight=593,
+		width=289];
+	3938 -- 1627;
+	3711	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="marine ecology",
+		level=1,
+		pos="71633.71104713262,73267.02394805495",
+		weight=590,
+		width=230];
+	3938 -- 3711;
+	527	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=development,
+		level=1,
+		pos="60537.91325725158,96261.39678693043",
+		weight=1423,
+		width=196];
+	4813 -- 527;
+	2285	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=phylogenetics,
+		level=1,
+		pos="59784.42873508347,95520.74434307199",
+		weight=563,
+		width=208];
+	4813 -- 2285;
+	4829	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="population genetics",
+		level=1,
+		pos="59800.07987486255,91994.49004840724",
+		weight=958,
+		width=291];
+	4813 -- 4829;
+	1618	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=medicine,
+		level=1,
+		pos="62218.3167590911,69801.67933193546",
+		weight=960,
+		width=139];
+	291 -- 1618;
+	1079	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="graph theory",
+		level=1,
+		pos="152554.15466332523,56245.649664325996",
+		weight=566,
+		width=192];
+	3900 -- 1079;
+	2851	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computer science",
+		level=1,
+		pos="99891.68153805696,64324.74846307825",
+		weight=2121,
+		width=265];
+	3259 -- 2851;
+	1095	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="cognitive science",
+		level=1,
+		pos="93223.30054936184,65920.22917983364",
+		weight=904,
+		width=257];
+	3259 -- 1095;
+	5657	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="semantic web",
+		level=1,
+		pos="96913.2953566279,78039.77467298978",
+		weight=774,
+		width=208];
+	3259 -- 5657;
+	352	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=econometrics,
+		level=1,
+		pos="145613.461141878,96361.32783920619",
+		weight=725,
+		width=203];
+	773 -- 352;
+	4448	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="cloud computing",
+		level=1,
+		pos="151203.1770903246,75538.62874712177",
+		weight=1501,
+		width=246];
+	3139 -- 4448;
+	3905	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=databases,
+		level=1,
+		pos="150627.7345105649,50491.88099621742",
+		weight=832,
+		width=158];
+	4236 -- 3905;
+	2605	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="social networks",
+		level=1,
+		pos="148631.4083293697,48805.76254188691",
+		weight=1144,
+		width=232];
+	4236 -- 2605;
+	4969	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="social network analysis",
+		level=1,
+		pos="148859.66528998048,48334.84878302446",
+		weight=546,
+		width=345];
+	4236 -- 4969;
+	2266	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computational linguistics",
+		level=1,
+		pos="150634.71247725794,53352.185586635496",
+		weight=603,
+		width=364];
+	2948 -- 2266;
+	4593	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="power systems",
+		level=1,
+		pos="154669.02023578004,70321.3757690816",
+		weight=591,
+		width=227];
+	2092 -- 4593;
+	4708	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="operations research",
+		level=1,
+		pos="150230.99949502852,70400.90363884106",
+		weight=1120,
+		width=298];
+	2092 -- 4708;
+	2916	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="game theory",
+		level=1,
+		pos="156749.09266830148,65632.64310520753",
+		weight=1138,
+		width=190];
+	2092 -- 2916;
+	4732	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=simulation,
+		level=1,
+		pos="156735.89482912634,67938.58439854436",
+		weight=1276,
+		width=155];
+	2092 -- 4732;
+	303	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="parallel computing",
+		level=1,
+		pos="105747.52698909957,65205.88021948783",
+		weight=601,
+		width=274];
+	2151	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="high performance computing",
+		level=1,
+		pos="105433.87845893334,64515.81601992045",
+		weight=883,
+		width=425];
+	303 -- 2151;
+	3170	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computer architecture",
+		level=1,
+		pos="103783.28851676242,65863.71539286914",
+		weight=1187,
+		width=326];
+	2151 -- 3170;
+	677	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="quantum optics",
+		level=1,
+		pos="44456.906007189114,33555.05305451294",
+		weight=864,
+		width=230];
+	4375	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="quantum information",
+		level=1,
+		pos="42271.54216079757,34785.041579597506",
+		weight=763,
+		width=307];
+	677 -- 4375;
+	806	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="nonlinear optics",
+		level=1,
+		pos="44552.25174988333,35597.553106040745",
+		weight=581,
+		width=238];
+	677 -- 806;
+	677 -- 2103;
+	1828	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=microbiology,
+		level=1,
+		pos="107880.24051557222,2876.894150760629",
+		weight=2355,
+		width=192];
+	1268	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=immunology,
+		level=1,
+		pos="30880.782984345107,69894.3076546774",
+		weight=2783,
+		width=185];
+	1828 -- 1268;
+	1828 -- 3363;
+	3303	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="microbial ecology",
+		level=1,
+		pos="111554.56192442856,3028.203744557359",
+		weight=872,
+		width=262];
+	1828 -- 3303;
+	3628	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=biotechnology,
+		level=1,
+		pos="109868.8043836878,1008.5936432338718",
+		weight=1182,
+		width=210];
+	1828 -- 3628;
+	4505	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=cancer,
+		level=1,
+		pos="1851.278711262736,28922.640711290027",
+		weight=2228,
+		width=105];
+	1268 -- 4505;
+	1075	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=oncology,
+		level=1,
+		pos="26007.72409210163,70047.99108367306",
+		weight=711,
+		width=139];
+	1268 -- 1075;
+	2511	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=virology,
+		level=1,
+		pos="26161.4259848169,70989.3836624312",
+		weight=1004,
+		width=120];
+	1268 -- 2511;
+	2592	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=inflammation,
+		level=1,
+		pos="27215.33723019416,66523.90505399849",
+		weight=611,
+		width=193];
+	1268 -- 2592;
+	2969	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="infectious diseases",
+		level=1,
+		pos="26161.541551512713,67762.70958183016",
+		weight=1025,
+		width=285];
+	1268 -- 2969;
+	3363 -- 1109;
+	3492	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="cancer biology",
+		level=1,
+		pos="178765.20805483483,55623.77888604286",
+		weight=1299,
+		width=219];
+	3363 -- 3492;
+	2760	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=biogeochemistry,
+		level=1,
+		pos="112795.45172854826,4420.437313926429",
+		weight=861,
+		width=246];
+	3303 -- 2760;
+	5166	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="software engineering",
+		level=1,
+		pos="106109.19902555009,59680.38068317256",
+		weight=2055,
+		width=314];
+	3744	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="formal methods",
+		level=1,
+		pos="109318.84990097504,61115.45711095594",
+		weight=581,
+		width=234];
+	5166 -- 3744;
+	2832	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="information systems",
+		level=1,
+		pos="108196.55527166094,62516.541267481174",
+		weight=800,
+		width=300];
+	5166 -- 2832;
+	325	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="programming languages",
+		level=1,
+		pos="107304.6952933767,65797.25770289099",
+		weight=816,
+		width=363];
+	5166 -- 325;
+	5166 -- 2851;
+	2002	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=compilers,
+		level=1,
+		pos="106415.5283494342,66180.4911451357",
+		weight=365,
+		width=147];
+	325 -- 2002;
+	921	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="higher education",
+		level=1,
+		pos="122754.57906962148,138986.97683338358",
+		weight=738,
+		width=251];
+	1029 -- 921;
+	1300	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="distributed computing",
+		level=1,
+		pos="151207.15833638975,77348.62436857497",
+		weight=516,
+		width=320];
+	1300 -- 4448;
+	1657	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="distributed systems",
+		level=1,
+		pos="148354.0089121771,79991.19293911406",
+		weight=1415,
+		width=289];
+	4448 -- 1657;
+	3345	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="internet of things",
+		level=1,
+		pos="152126.0834645183,77032.43783301904",
+		weight=551,
+		width=251];
+	4448 -- 3345;
+	4250	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="political communication",
+		level=1,
+		pos="119490.78902921484,148241.83191967104",
+		weight=397,
+		width=348];
+	5636	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="public opinion",
+		level=1,
+		pos="121276.68163823125,147295.05103771258",
+		weight=322,
+		width=208];
+	4250 -- 5636;
+	1142	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="social media",
+		level=1,
+		pos="118665.32975451193,146746.69217722616",
+		weight=1109,
+		width=190];
+	4250 -- 1142;
+	3944 -- 4825;
+	2691	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="remote sensing",
+		level=1,
+		pos="66417.72519156463,88325.26381614855",
+		weight=1953,
+		width=232];
+	3944 -- 2691;
+	1331	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=climate,
+		level=1,
+		pos="70070.84491042205,90426.00612103059",
+		weight=566,
+		width=111];
+	3944 -- 1331;
+	2061	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=gis,
+		level=1,
+		pos="68772.98924752313,85341.36104341385",
+		weight=1284,
+		width=48];
+	2691 -- 2061;
+	1581	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="comparative politics",
+		level=1,
+		pos="131256.317286012,88070.47941985606",
+		weight=597,
+		width=296];
+	5178 -- 1581;
+	539	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="public policy",
+		level=1,
+		pos="135129.1797164356,86921.14484924731",
+		weight=727,
+		width=186];
+	5178 -- 539;
+	3834	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=anthropology,
+		level=1,
+		pos="120318.79402425328,121278.58921660822",
+		weight=715,
+		width=197];
+	5292 -- 3834;
+	1040	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="inorganic chemistry",
+		level=1,
+		pos="23829.348241748685,38952.190739986596",
+		weight=551,
+		width=291];
+	1040 -- 4860;
+	3633	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=energy,
+		level=1,
+		pos="27954.998637665965,29593.611153555008",
+		weight=1626,
+		width=108];
+	4860 -- 3633;
+	906	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="organic chemistry",
+		level=1,
+		pos="23616.64768214426,36775.11393247847",
+		weight=1028,
+		width=265];
+	4860 -- 906;
+	106	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=sustainability,
+		level=1,
+		pos="28328.952208076353,28083.165057595346",
+		weight=1357,
+		width=196];
+	3633 -- 106;
+	3688	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=combustion,
+		level=1,
+		pos="33871.59111526437,29910.83551696431",
+		weight=648,
+		width=175];
+	3633 -- 3688;
+	2717	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=environment,
+		level=1,
+		pos="27233.720478490075,29592.15668058933",
+		weight=828,
+		width=188];
+	3633 -- 2717;
+	906 -- 2116;
+	5391	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computational mechanics",
+		level=1,
+		pos="111445.03035166986,78556.43709931953",
+		weight=721,
+		width=379];
+	2128 -- 5391;
+	3267	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=astrophysics,
+		level=1,
+		pos="49730.58698764288,27689.58310186542",
+		weight=988,
+		width=190];
+	2387	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="plasma physics",
+		level=1,
+		pos="51090.93334497467,28043.508101504987",
+		weight=539,
+		width=232];
+	3267 -- 2387;
+	3267 -- 2560;
+	4927	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=cosmology,
+		level=1,
+		pos="49946.13552922094,29849.305102643026",
+		weight=643,
+		width=164];
+	3267 -- 4927;
+	1871	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=astronomy,
+		level=1,
+		pos="50384.586730958334,27226.490712864957",
+		weight=609,
+		width=161];
+	3267 -- 1871;
+	2825	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=physiology,
+		level=1,
+		pos="143013.76174810203,145722.41079232257",
+		weight=796,
+		width=163];
+	2556 -- 2825;
+	2556 -- 1109;
+	4456	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=fmri,
+		level=1,
+		pos="140697.74613974852,156600.62078885923",
+		weight=537,
+		width=62];
+	2556 -- 4456;
+	1123	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=neurobiology,
+		level=1,
+		pos="140002.62277495497,157028.23186498365",
+		weight=618,
+		width=196];
+	2556 -- 1123;
+	2800	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=psychiatry,
+		level=1,
+		pos="125937.18222427533,153152.46868780526",
+		weight=657,
+		width=155];
+	2556 -- 2800;
+	1220	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=electrophysiology,
+		level=1,
+		pos="127044.07763445438,155119.31216588782",
+		weight=348,
+		width=262];
+	2556 -- 1220;
+	5162	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=neuroimaging,
+		level=1,
+		pos="127954.3352721785,156746.61705220173",
+		weight=1041,
+		width=207];
+	2556 -- 5162;
+	1696	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=pharmacology,
+		level=1,
+		pos="129320.3526137379,157688.84953807923",
+		weight=846,
+		width=213];
+	2556 -- 1696;
+	1899	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=cognition,
+		level=1,
+		pos="118155.13909772901,152477.80425969814",
+		weight=941,
+		width=139];
+	2556 -- 1899;
+	3936	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=autism,
+		level=1,
+		pos="132413.30897962057,159210.88438462422",
+		weight=560,
+		width=104];
+	2556 -- 3936;
+	554	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="biomedical engineering",
+		level=1,
+		pos="142750.25114225998,154038.2175278054",
+		weight=1263,
+		width=347];
+	2556 -- 554;
+	3627	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=neurology,
+		level=1,
+		pos="131142.22112303323,158717.32181984652",
+		weight=610,
+		width=152];
+	2556 -- 3627;
+	3068	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=epigenetics,
+		level=1,
+		pos="148545.02456498632,120466.92170469188",
+		weight=1269,
+		width=173];
+	1109 -- 3068;
+	3767	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="developmental biology",
+		level=1,
+		pos="147317.00472114398,121154.38300605967",
+		weight=916,
+		width=336];
+	1109 -- 3767;
+	4955	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="plant biology",
+		level=1,
+		pos="148839.93070347857,119339.72422706643",
+		weight=604,
+		width=192];
+	1109 -- 4955;
+	2683	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="mental health",
+		level=1,
+		pos="125464.97029230001,154249.90615064872",
+		weight=762,
+		width=204];
+	2800 -- 2683;
+	593	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=cardiology,
+		level=1,
+		pos="126477.56583124414,155864.2476503398",
+		weight=552,
+		width=158];
+	1220 -- 593;
+	2230	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=emotion,
+		level=1,
+		pos="114511.23470200929,147674.0228549463",
+		weight=951,
+		width=124];
+	1899 -- 2230;
+	808	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=language,
+		level=1,
+		pos="117066.52547505172,152974.02271442255",
+		weight=594,
+		width=142];
+	1899 -- 808;
+	4190	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=aging,
+		level=1,
+		pos="119688.73517976771,153314.88400632128",
+		weight=1482,
+		width=87];
+	1899 -- 4190;
+	2613	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computer networks",
+		level=1,
+		pos="146494.78769392223,81566.47614993263",
+		weight=920,
+		width=285];
+	1657 -- 2613;
+	3218	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=networks,
+		level=1,
+		pos="145988.27736575954,77338.94094475766",
+		weight=1679,
+		width=139];
+	1657 -- 3218;
+	2079	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="wireless sensor networks",
+		level=1,
+		pos="152437.6883729427,77565.10462330216",
+		weight=697,
+		width=375];
+	3345 -- 2079;
+	1296	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=geography,
+		level=1,
+		pos="68721.39390519027,86012.3535763309",
+		weight=614,
+		width=163];
+	2061 -- 1296;
+	4505 -- 3942;
+	145	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=cfd,
+		level=1,
+		pos="34030.33693903709,36289.90429095853",
+		weight=798,
+		width=51];
+	3688 -- 145;
+	741	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=obesity,
+		level=1,
+		pos="94472.97154843411,42040.24333887945",
+		weight=929,
+		width=111];
+	1589	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=diabetes,
+		level=1,
+		pos="96134.00825129081,41078.33471122223",
+		weight=989,
+		width=131];
+	741 -- 1589;
+	2729	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=nutrition,
+		level=1,
+		pos="96390.05149620117,43320.51214761359",
+		weight=1015,
+		width=124];
+	741 -- 2729;
+	5536	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=metabolism,
+		level=1,
+		pos="95919.4362392673,41907.07395906597",
+		weight=779,
+		width=175];
+	1589 -- 5536;
+	2729 -- 5775;
+	2535	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="renewable energy",
+		level=1,
+		pos="153828.11499101142,71773.50323975031",
+		weight=1373,
+		width=268];
+	2535 -- 4593;
+	2371	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="power electronics",
+		level=1,
+		pos="152583.39863118363,72115.74960241604",
+		weight=1023,
+		width=263];
+	2535 -- 2371;
+	2375	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=hiv,
+		level=1,
+		pos="101515.54966718964,42272.5711969514",
+		weight=909,
+		width=48];
+	2375 -- 5775;
+	2355	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="public health",
+		level=1,
+		pos="99200.81157737876,43256.67524695122",
+		weight=1469,
+		width=192];
+	5775 -- 2355;
+	1668	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="mathematical modeling",
+		level=1,
+		pos="101365.63519133719,40728.29214620304",
+		weight=681,
+		width=345];
+	5775 -- 1668;
+	2659	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=science,
+		level=1,
+		pos="131762.76013872237,124461.7559232873",
+		weight=576,
+		width=119];
+	1513 -- 2659;
+	5318	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=management,
+		level=1,
+		pos="128645.05032929812,130340.3879388479",
+		weight=976,
+		width=199];
+	2975 -- 5318;
+	3703	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="learning sciences",
+		level=1,
+		pos="123024.18126886402,118049.1504725395",
+		weight=189,
+		width=262];
+	1070 -- 3703;
+	4225	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="science education",
+		level=1,
+		pos="124388.04954489743,117740.70358468966",
+		weight=544,
+		width=271];
+	3703 -- 4225;
+	1482	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=law,
+		level=1,
+		pos="136418.01904619957,99662.62396737156",
+		weight=946,
+		width=56];
+	5213	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=economics,
+		level=1,
+		pos="135580.47504638668,99332.8658601355",
+		weight=2155,
+		width=164];
+	1482 -- 5213;
+	5213 -- 352;
+	2435	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=finance,
+		level=1,
+		pos="126322.58722664259,91559.80679938666",
+		weight=1130,
+		width=113];
+	5213 -- 2435;
+	2740	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="industrial organization",
+		level=1,
+		pos="134765.73031030904,100540.11649056115",
+		weight=577,
+		width=328];
+	5213 -- 2740;
+	4441	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="wireless networks",
+		level=1,
+		pos="145841.20199472638,80021.2305535176",
+		weight=884,
+		width=268];
+	4441 -- 2613;
+	2888	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="mobile computing",
+		level=1,
+		pos="146551.67476049895,80173.85609036966",
+		weight=623,
+		width=265];
+	4441 -- 2888;
+	5261	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="network security",
+		level=1,
+		pos="145855.44531755202,82581.56385897096",
+		weight=534,
+		width=246];
+	2613 -- 5261;
+	1078	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="political economy",
+		level=1,
+		pos="133012.20180116282,93784.43502108613",
+		weight=922,
+		width=260];
+	1078 -- 1581;
+	5495	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="development economics",
+		level=1,
+		pos="137769.2237913018,93685.33135561623",
+		weight=604,
+		width=363];
+	1078 -- 5495;
+	3568	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="labor economics",
+		level=1,
+		pos="139903.86946749428,86871.75923194995",
+		weight=650,
+		width=246];
+	5495 -- 3568;
+	3143	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="environmental economics",
+		level=1,
+		pos="138073.37638150214,94586.84424422953",
+		weight=597,
+		width=381];
+	5495 -- 3143;
+	364	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="health economics",
+		level=1,
+		pos="141240.66755426425,88359.98236236104",
+		weight=977,
+		width=263];
+	3568 -- 364;
+	5444	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=macroeconomics,
+		level=1,
+		pos="131389.22225879238,82801.02668935014",
+		weight=847,
+		width=257];
+	3568 -- 5444;
+	1167	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="nonlinear dynamics",
+		level=1,
+		pos="145426.13779746712,74861.45836076516",
+		weight=527,
+		width=291];
+	1236	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="complex systems",
+		level=1,
+		pos="145428.49489172574,75738.71284448126",
+		weight=776,
+		width=260];
+	1167 -- 1236;
+	2063	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=mri,
+		level=1,
+		pos="114210.27611333264,94594.35767234651",
+		weight=637,
+		width=53];
+	2063 -- 5873;
+	391	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="political psychology",
+		level=1,
+		pos="120074.96980606852,144615.6403203182",
+		weight=243,
+		width=291];
+	4068	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="social psychology",
+		level=1,
+		pos="120125.96545576572,142444.34452124484",
+		weight=954,
+		width=265];
+	391 -- 4068;
+	391 -- 5636;
+	4068 -- 2230;
+	2006	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=psycholinguistics,
+		level=1,
+		pos="91320.9149953835,65728.57375747935",
+		weight=435,
+		width=254];
+	1095 -- 2006;
+	4421	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="philosophy of mind",
+		level=1,
+		pos="95097.74829803698,62802.87012494148",
+		weight=242,
+		width=282];
+	1095 -- 4421;
+	3434	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=linguistics,
+		level=1,
+		pos="91372.41695857304,63819.30412921514",
+		weight=872,
+		width=150];
+	2006 -- 3434;
+	782	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=metaphysics,
+		level=1,
+		pos="97119.74558622003,63108.702488056784",
+		weight=222,
+		width=190];
+	4421 -- 782;
+	3651	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=philosophy,
+		level=1,
+		pos="97430.27042621224,65585.08983195541",
+		weight=758,
+		width=164];
+	782 -- 3651;
+	5928	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="smart grid",
+		level=1,
+		pos="155420.60955476167,69749.67790303877",
+		weight=770,
+		width=153];
+	5928 -- 4593;
+	3872	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="heat transfer",
+		level=1,
+		pos="30260.724299689788,37650.88948474143",
+		weight=897,
+		width=192];
+	145 -- 3872;
+	3300	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=oceanography,
+		level=1,
+		pos="111848.24302666867,4346.170859034371",
+		weight=532,
+		width=215];
+	2760 -- 3300;
+	5467	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=motivation,
+		level=1,
+		pos="113665.20637164271,147150.12589132134",
+		weight=538,
+		width=158];
+	2230 -- 5467;
+	3963	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=cryptography,
+		level=1,
+		pos="148255.8065557151,77725.08956119296",
+		weight=734,
+		width=197];
+	1137	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computer security",
+		level=1,
+		pos="148295.51911421464,77147.5799614932",
+		weight=527,
+		width=268];
+	3963 -- 1137;
+	197	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=security,
+		level=1,
+		pos="147712.06077373787,76591.01370830249",
+		weight=1538,
+		width=120];
+	3963 -- 197;
+	3864	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="embedded systems",
+		level=1,
+		pos="103892.0526775059,63708.34555754632",
+		weight=913,
+		width=292];
+	3864 -- 3170;
+	3170 -- 2002;
+	197 -- 3218;
+	5088	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=privacy,
+		level=1,
+		pos="148417.5411071231,76121.15466116603",
+		weight=862,
+		width=111];
+	197 -- 5088;
+	217	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=archaeology,
+		level=1,
+		pos="121509.4977662998,121246.72983513435",
+		weight=714,
+		width=186];
+	3834 -- 217;
+	116	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=marketing,
+		level=1,
+		pos="128102.95820414166,127681.87574405316",
+		weight=1190,
+		width=152];
+	2328	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="consumer behavior",
+		level=1,
+		pos="129313.28744757747,128513.53854939155",
+		weight=532,
+		width=287];
+	116 -- 2328;
+	116 -- 5318;
+	1520	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="decision making",
+		level=1,
+		pos="129192.20892536633,128952.12876757194",
+		weight=841,
+		width=243];
+	2328 -- 1520;
+	5781	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=leadership,
+		level=1,
+		pos="128489.6075687206,131421.6953316369",
+		weight=740,
+		width=158];
+	5318 -- 5781;
+	1236 -- 3218;
+	3557	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="statistical physics",
+		level=1,
+		pos="144607.5037663493,75383.73329646383",
+		weight=520,
+		width=262];
+	1236 -- 3557;
+	3649	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=systems,
+		level=1,
+		pos="145085.01359877555,77758.16638065944",
+		weight=694,
+		width=128];
+	3218 -- 3649;
+	5511	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="environmental engineering",
+		level=1,
+		pos="42988.14472110395,20905.19358762254",
+		weight=766,
+		width=396];
+	5511 -- 2934;
+	1241	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=media,
+		level=1,
+		pos="155282.96411118947,61246.10410875928",
+		weight=568,
+		width=97];
+	4565 -- 1241;
+	4028	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=mathematics,
+		level=1,
+		pos="47262.042055475315,28405.211321816714",
+		weight=1238,
+		width=193];
+	4028 -- 2560;
+	2233	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=magnetism,
+		level=1,
+		pos="44027.12052020975,24254.940952006196",
+		weight=560,
+		width=168];
+	1394 -- 2233;
+	4101	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="structural dynamics",
+		level=1,
+		pos="117163.28420534192,85416.3416267127",
+		weight=336,
+		width=291];
+	981 -- 4101;
+	99	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="civil engineering",
+		level=1,
+		pos="114100.96774244125,82585.1925878565",
+		weight=518,
+		width=243];
+	4417	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="structural engineering",
+		level=1,
+		pos="113438.66953774673,82176.21336505374",
+		weight=543,
+		width=325];
+	99 -- 4417;
+	3424	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="earthquake engineering",
+		level=1,
+		pos="112755.58750511131,84259.12278796016",
+		weight=482,
+		width=353];
+	4417 -- 3424;
+	4820	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=hci,
+		level=1,
+		pos="93159.85373667885,69729.24696196083",
+		weight=862,
+		width=48];
+	1925 -- 4820;
+	3926	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=ethics,
+		level=1,
+		pos="96228.80484500382,65907.4192801224",
+		weight=744,
+		width=93];
+	3926 -- 3651;
+	378	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=health,
+		level=1,
+		pos="118764.87249828706,154441.6542700127",
+		weight=1282,
+		width=97];
+	4190 -- 378;
+	1231	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="fluid mechanics",
+		level=1,
+		pos="29548.457533980836,34603.24737448204",
+		weight=1144,
+		width=234];
+	1231 -- 3872;
+	5399	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=turbulence,
+		level=1,
+		pos="31842.74545467183,34304.26330238167",
+		weight=607,
+		width=161];
+	1231 -- 5399;
+	940	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="applied mathematics",
+		level=1,
+		pos="29998.757867027594,33944.83699334764",
+		weight=852,
+		width=309];
+	1231 -- 940;
+	3781	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="computational fluid dynamics",
+		level=1,
+		pos="31371.326613548947,35887.240088536426",
+		weight=887,
+		width=430];
+	5399 -- 3781;
+	3959	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="fluid dynamics",
+		level=1,
+		pos="32705.9443572687,34359.32725793355",
+		weight=725,
+		width=215];
+	5399 -- 3959;
+	575	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="numerical analysis",
+		level=1,
+		pos="29703.35821146649,32068.094495666584",
+		weight=815,
+		width=278];
+	940 -- 575;
+	3113	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="scientific computing",
+		level=1,
+		pos="30436.766908500413,31385.988572416965",
+		weight=591,
+		width=295];
+	575 -- 3113;
+	4708 -- 4080;
+	3257	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=accounting,
+		level=1,
+		pos="124529.49629938471,90627.53988505382",
+		weight=627,
+		width=166];
+	3257 -- 2435;
+	3822	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=auditing,
+		level=1,
+		pos="123606.1237892072,88676.44028939091",
+		weight=247,
+		width=122];
+	3257 -- 3822;
+	2435 -- 5444;
+	423	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="corporate governance",
+		level=1,
+		pos="125261.65158195139,87227.38883767952",
+		weight=623,
+		width=328];
+	3822 -- 423;
+	3718	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="experimental economics",
+		level=1,
+		pos="156562.03762760558,66293.0645761795",
+		weight=448,
+		width=362];
+	2916 -- 3718;
+	880	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="behavioral economics",
+		level=1,
+		pos="156668.48177094103,66708.32250132968",
+		weight=589,
+		width=326];
+	3718 -- 880;
+	3262	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="corporate finance",
+		level=1,
+		pos="126186.51318582371,88827.12027402247",
+		weight=610,
+		width=262];
+	3262 -- 423;
+	3424 -- 4101;
+	5175	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label="drug discovery",
+		level=1,
+		pos="24763.204979565406,35276.38544742815",
+		weight=595,
+		width=221];
+	2116 -- 5175;
+	5716	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=materials,
+		level=1,
+		pos="33729.91801705139,22839.421793806912",
+		weight=935,
+		width=141];
+	2682 -- 5716;
+	804	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=computational,
+		level=1,
+		pos="145512.24351793397,82398.98048635286",
+		weight=585,
+		width=212];
+	5261 -- 804;
+	4295	 [fontname=Arial,
+		fontsize=30,
+		height=44,
+		label=modeling,
+		level=1,
+		pos="156468.39467944775,67663.93065209188",
+		weight=1570,
+		width=141];
+	4732 -- 4295;
+}
