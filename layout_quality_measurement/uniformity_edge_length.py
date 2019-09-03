@@ -1,3 +1,7 @@
+#Author
+#Felice De Luca
+#https://github.com/felicedeluca
+
 ##
 # EU corresponds to the normalized standard deviation of the edge length.
 ##

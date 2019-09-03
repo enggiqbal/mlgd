@@ -1,3 +1,7 @@
+#Author
+#Felice De Luca
+#https://github.com/felicedeluca
+
 import pygraphviz as pgv
 import networkx as nx
 import math

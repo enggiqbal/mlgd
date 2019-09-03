@@ -1,3 +1,6 @@
+#Author
+#Felice De Luca
+#https://github.com/felicedeluca
 import math
 import networkx as nx
 
