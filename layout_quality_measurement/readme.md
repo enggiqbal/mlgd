@@ -1,3 +1,8 @@
+#Author
+#Felice De Luca
+#https://github.com/felicedeluca
+
+
 # Intro
 Compute the most popular aestethic criteria for a graph drawing.
 
