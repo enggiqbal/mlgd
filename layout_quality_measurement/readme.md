@@ -2,6 +2,10 @@
 # Felice De Luca
 # https://github.com/felicedeluca
 
+# Info
+For the latest version of the measurement project for graph drawing refer to: 
+https://github.com/felicedeluca/graphmetrics
+
 
 # Intro
 Compute the most popular aestethic criteria for a graph drawing.
