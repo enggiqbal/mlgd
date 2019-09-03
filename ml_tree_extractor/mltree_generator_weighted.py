@@ -29,7 +29,7 @@ def fixEdgeWeightAndRemoveNonEngNode(G):
 
 
     for x in G.edges():
-        G[x[0]][x[1]]['weight']=int(G[x[0]][x[1]]['weight'])
+        G[x[0]][x[1]]['weight']=float(G[x[0]][x[1]]['weight'])
 
     return G
 
@@ -75,7 +75,7 @@ def extract2(paths,selectednodes):
 
 
 
-G=nx.Graph(pgv.AGraph("../../datasets/topics/orginal/Topics_Graph_Connected.dot"))
+G=nx.Graph(pgv.AGraph("/Users/felicedeluca/Downloads/yeastwcopy.dot"))
 G=fixEdgeWeightAndRemoveNonEngNode(G)
 H=nx.connected_component_subgraphs(G)
 G=list(H)[0]
@@ -107,7 +107,7 @@ for i in range(0, len(nodecountinlevels)):
     print(len(selectednodes))
 
     T=extract2(paths,selectednodes)
-    print("Layer", i+1, "nodes:", len(T.nodes()))
-    write_dot(T,'Layer_'+str(i+1)+'_topics_v2.dot')
+    print("FeliceLayer", i+1, "nodes:", len(T.nodes()))
+    write_dot(T,'FeliceLayer_'+str(i+1)+'_topics_v2.dot')
 
-write_dot(G,'topics_v2.dot')
+write_dot(G,'Felicetopics_v2.dot')
