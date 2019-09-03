@@ -9,6 +9,6 @@ This project is licensed under the Apache License, Version 2.0 - see the license
 
 ## Team
 Iqbal Hossain,
-Felice De Luca, and
+Felice De Luca https://github.com/felicedeluca, and
 Stephen Kobourov
 University of Arizona
