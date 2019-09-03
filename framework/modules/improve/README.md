@@ -14,3 +14,13 @@ The jar file takes as input:
 example:
 
 java -jar ImPred.jar --inputgraph='Tn.dot' --edgerepulsion=10 --nodenodeattraction=10 --edgenoderepulsion=10 --iterations=300
+
+
+## Authors
+Felice De Luca, University of Arizona
+https://github.com/felicedeluca
+
+See also the list of contributors who participated in this project.
+
+## License
+This project is licensed under the Apache License, Version 2.0 - see the license.txt file for details

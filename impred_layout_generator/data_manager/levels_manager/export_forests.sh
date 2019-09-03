@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#Author
+#Felice De Luca
+#https://github.com/felicedeluca
+
 input_layer_folder="../../tmp_workspace/topics/set1/input/" 
 output_forest_folder="../../tmp_workspace/topics/set1/forests/"
 

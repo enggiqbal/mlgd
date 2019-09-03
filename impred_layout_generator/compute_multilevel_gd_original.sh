@@ -1,4 +1,7 @@
 #!/bin/bash
+#Author
+#Felice De Luca
+#https://github.com/felicedeluca
 
 
 layerprefix="Topics_Layer_"

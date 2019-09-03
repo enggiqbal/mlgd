@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Author Felice De Luca
+# https://github.com/felicedeluca
+
 
 # File Names
 layerprefix="Topics_Layer_"

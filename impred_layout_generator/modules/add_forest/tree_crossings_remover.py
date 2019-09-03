@@ -1,3 +1,7 @@
+#Author
+#Felice De Luca
+#https://github.com/felicedeluca
+
 # This script removes the crossings from the given tree
 # it searches for a crossing, splits the graph in 3 components removing
 # the crossing edges and then scales the smaller component till there is no more

@@ -1,3 +1,7 @@
+#Author
+#Felice De Luca
+#https://github.com/felicedeluca
+
 import networkx as nx
 from networkx.drawing.nx_agraph import read_dot as nx_read_dot
 
