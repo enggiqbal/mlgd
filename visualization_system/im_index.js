@@ -46,8 +46,8 @@ var edgeStyleFunction = function(feature, resolution) {
   //else w=l/resolution
   var edgeStyle = new Style({  stroke: new Stroke({      color: feature.get("stroke"),    width: w  })  });
 
-  var empytStyle=new Style({});
-  var stlye=empytStyle;
+  var emptyStyle=new Style({});
+  var stlye=emptyStyle;
   if (getVisible(l,resolution))   stlye= edgeStyle;
   return stlye;
   };
@@ -55,21 +55,24 @@ var edgeStyleFunction = function(feature, resolution) {
 
 
 var nodeStyleFunction = function(feature, resolution) {
-  var nodestyle = new Style({  stroke: new Stroke({  color: 'rgba(0,0,0,0.5)',  width: 1  }),
-    fill: new Fill({    color: 'rgba(255,255,255,0.5)'  }),
-    text: createTextStyle(feature.get("label"), feature.get("fontsize"), feature.get("level"), feature.get("height"),feature.get("weight") ,resolution)
+  var nodestyle = new Style({  //stroke: new Stroke({  color: 'rgba(0,0,0,0.5)',  width: 1  }),
+    //fill: new Fill({    color: 'rgba(255,255,255,0.5)'  }),
+    text: createTextStyle(feature.get("label"), feature.get("fontsize"), feature.get("level"), feature.get("height"),feature.get("weight") ,resolution),
     });
   var stlye=new Style({});
   var l=parseInt(feature.get("level"))
 
-  if (getVisible(l,resolution))  stlye= nodestyle;
+  if (getVisible(l,resolution))  {
+    stlye= nodestyle;
+  }
   return stlye;
 };
 
 var selectStyleFunction=function(feature, resolution) {
   var nodestyle = new Style({
     stroke: new Stroke({    color: 'rgba(0,0,0,0.5)',    width: 1  }) ,
-    fill: new Fill({    color: 'rgba(255,255,255,0.5)'  })
+    fill: new Fill({    color: 'rgba(255,255,255,0.5)'  }),
+
   });
 };
 
@@ -80,7 +83,8 @@ var selectStyleFunctionForNode=function(feature, resolution) {
   var style=nodeStyleFunction(feature, resolution);
   if (style.getFill()){
   style.setFill(new Fill({    color: 'rgba(255,255,255,1)'  }));
-  style.setStroke( new Stroke({ color: 'rgba(255,0,0,0.5)',  width: 2 }))
+  style.setStroke( new Stroke({ color: 'rgba(255,0,0,0.5)',  width: 2 }));
+  //style.setWidth(feature.get("width")*resolution);
 }
   return style;
 
@@ -105,7 +109,7 @@ var selectStyleFunctionForEdge=function(feature, resolution) {
 function getVisible(l,resolution)
 {
   var visiable=false
-  if (l == 1 && resolution< 30)  visiable= true;
+  if (l == 1)  visiable= true;
   if (l == 2 && resolution< 20) visiable= true;
   if (l == 3 && resolution< 15)  visiable= true;
   if (l == 4 && resolution< 10)   visiable= true;
@@ -119,18 +123,14 @@ function getVisible(l,resolution)
 
 
 var createTextStyle = function(lbl, fontsize, level, boxheight,weight,resolution) {
-  var fsize=  parseFloat(fontsize) /resolution;
-
-  if (level==1 && resolution> 20){
-fsize=fontsize * resolution ;
-console.log(fsize)
-  }
+  var fsize=  parseFloat(fontsize) //resolution;
   var nodetext=
      new Text({  font:  fsize + 'px arial',  text: lbl,
       fill: new Fill({      color: 'rgba(0,0,0,0.5)'    }),
       stroke: new Stroke({  color: 'rgba(0,0,0,0.5)', width: 1  }),
       offsetX: 0,
       offsetY: 0,//boxheight/2,
+      overflow: true,
     });
     return nodetext;
   };

@@ -55,8 +55,8 @@ var edgeStyleFunction = function(feature, resolution) {
 
 
 var nodeStyleFunction = function(feature, resolution) {
-  var nodestyle = new Style({  stroke: new Stroke({  color: 'rgba(0,0,0,0.5)',  width: 1  }),
-    fill: new Fill({    color: 'rgba(255,255,255,0.5)'  }),
+  var nodestyle = new Style({ // stroke: new Stroke({  color: 'rgba(0,0,0,0.5)',  width: 1  }),
+    //fill: new Fill({    color: 'rgba(255,255,255,0.5)'  }),
     text: createTextStyle(feature.get("label"), feature.get("fontsize"), feature.get("level"), feature.get("height"),feature.get("weight") ,resolution)
     });
   var stlye=new Style({});
@@ -105,32 +105,52 @@ var selectStyleFunctionForEdge=function(feature, resolution) {
 function getVisible(l,resolution)
 {
   var visiable=false
-  if (l == 1 && resolution< 30)  visiable= true;
-  if (l == 2 && resolution< 20) visiable= true;
-  if (l == 3 && resolution< 15)  visiable= true;
-  if (l == 4 && resolution< 10)   visiable= true;
-  if (l == 5 && resolution< 8)  visiable= true;
-  if (l == 6 && resolution< 6)  visiable= true;
-  if (l == 7 && resolution< 5)  visiable= true;
-  if (l == 8 && resolution< 4)  visiable= true;
+  //Original:
+    // 30, 20, 15, 10, 8, 6, 5, 4
+  if (l == 1 )  visiable= true;
+  if (l == 2 && resolution< 15) visiable= true;
+  if (l == 3 && resolution< 8)  visiable= true;
+  if (l == 4 && resolution< 6)   visiable= true;
+  if (l == 5 && resolution< 5)  visiable= true;
+  if (l == 6 && resolution< 4)  visiable= true;
+  if (l == 7 && resolution< 3)  visiable= true;
+  if (l == 8 && resolution< 2)  visiable= true;
   return visiable
 }
 
 
 
 var createTextStyle = function(lbl, fontsize, level, boxheight,weight,resolution) {
-  var fsize=  parseFloat(fontsize) /resolution;
+  var fsize=  parseFloat(fontsize)*2/resolution;
 
-  if (level==1 && resolution> 20){
-fsize=fontsize * resolution ;
-console.log(fsize)
+  //fixing very small resolutions
+  if(resolution < 2){
+    fsize = fontsize;
   }
+  //Here the resolution gets too large to divide by
+  if(resolution>5){
+    fsize = fontsize/2;
+  }
+
+  //Overlap seems to occur more on the second level at these resolutions
+  if(level == 2 && resolution > 10){
+    fsize = fsize/1.5;
+  }
+
+  // if(resolution > 20){
+  //   fsize = fontsize;
+  // }
+
+  // if (level==1 && resolution> 20){
+  //   fsize=fontsize;
+  // }
   var nodetext=
      new Text({  font:  fsize + 'px arial',  text: lbl,
       fill: new Fill({      color: 'rgba(0,0,0,0.5)'    }),
       stroke: new Stroke({  color: 'rgba(0,0,0,0.5)', width: 1  }),
       offsetX: 0,
       offsetY: 0,//boxheight/2,
+      overflow: true
     });
     return nodetext;
   };
