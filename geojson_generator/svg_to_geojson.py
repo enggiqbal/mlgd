@@ -4,6 +4,8 @@ import numpy as np
 import json
 import networkx as nx
 import pygraphviz as pgv
+#direct/impred
+layout="direct"
 
 def getLayer0(t1):
     numberofnodes=30
@@ -25,11 +27,25 @@ def getLayer0(t1):
     return H
 
 
-
+if layout=="direct":
 #for direct approach
-#mappath="../direct_approach_output/direct2/map/T8.dotmap.svg"
-mappath="../impred_output/map/map.svg"
-inputdir="../datasets/topics/set2/input/"
+    mappath="../direct_approach_output/map/T8.dotmap.svg"
+    clusteroutput="../visualization_system/cluster.geojson"
+    polylineoutput="../visualization_system/cluster_boundary.geojson"
+    edgesoutput="../visualization_system/edges.geojson"
+    nodesoutput="../visualization_system/nodes.geojson"
+    alledges="../visualization_system/alledges.geojson"
+
+else:
+    mappath="../impred_output/map/map.svg"
+    clusteroutput="../visualization_system/im_cluster.geojson"
+    polylineoutput="../visualization_system/im_cluster_boundary.geojson"
+    edgesoutput="../visualization_system/im_edges.geojson"
+    nodesoutput="../visualization_system/im_nodes.geojson"
+    alledges="../visualization_system/im_alledges.geojson"
+
+
+inputdir="../data/datasets/topics/set2/input/"
 
 input_graph="Topics_Graph.dot"
 layer_file_format="Topics_layer_{0}.dot"
@@ -45,6 +61,38 @@ T.append(t)
 for i in range(0,L):
     R=nx.Graph(pgv.AGraph(inputdir+layer_file_format.format(i+1)))
     T.append(R)
+
+
+
+
+def process_alledges(G,alledges):
+    global inputdir
+    global input_graph
+    G=nx.Graph(pgv.AGraph(inputdir+ input_graph))
+    id=0
+    txt=""
+    for e in G.edges():
+        edge=n.copy()
+        edge["id"]= id
+        id =id +1
+
+        edge["geometry"]["type"]="LineString"
+        edge["properties"]=G.edges[e]
+        n1=e[0]
+        n2=e[1]
+        edge["properties"]["src"]=int(n1)
+        edge["properties"]["dest"]=int(n2)
+        #print(n1, n2)
+        edge["properties"]["weight"]=G.edges[e]['weight']
+        edge["geometry"]["coordinates"]=[]
+        #import pdb; pdb.set_trace()
+#            edge["properties"]["level"]=str(max(  int(G.nodes[e1]['level']),  int(G.nodes[e2]['level'])))
+
+        txt=txt+ json.dumps(edge, indent=2)+ ", \n"
+        #import pdb; pdb.set_trace()
+    write_to_file(txt,alledges)
+
+
 
 
 
@@ -67,16 +115,6 @@ def getLevel(x):
 
 
 #for direct approach
-#clusteroutput="../visualization_system/cluster.geojson"
-#polylineoutput="../visualization_system/cluster_boundary.geojson"
-#edgesoutput="../visualization_system/edges.geojson"
-#nodesoutput="../visualization_system/nodes.geojson"
-
-
-clusteroutput="../visualization_system/im_cluster.geojson"
-polylineoutput="../visualization_system/im_cluster_boundary.geojson"
-edgesoutput="../visualization_system/im_edges.geojson"
-nodesoutput="../visualization_system/im_nodes.geojson"
 
 
 root = ET.parse(mappath).getroot()
@@ -155,6 +193,7 @@ def process_node(xml,G):
     node["geometry"]["type"]="Polygon" #"Point"
     node["id"]="node" + node_g
     node["properties"]=G.node[node_g]
+    import pdb; pdb.set_trace()
     x=float(xml[1].attrib.pop('x'))
     y=float(xml[1].attrib.pop('y'))
     h= float(node["properties"]["height"]) * 1.10 * 72  # inch to pixel conversion
@@ -204,6 +243,7 @@ for child in root.findall('*[@id="graph0"]/*'):
             edges=edges+ process_edge(child,G)+ ", \n"
             edgeCount=edgeCount+1
 
+process_alledges(G,alledges)
 
 print(polygonCount,polylindCount,nodeCount)
 

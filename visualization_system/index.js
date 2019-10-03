@@ -44,6 +44,7 @@ var edgeStyleFunction = function(feature, resolution) {
   var w=5*l/resolution
   if (resolution<5 ) w=l/2;
   //else w=l/resolution
+  w=(10-l)/2
   var edgeStyle = new Style({  stroke: new Stroke({      color: feature.get("stroke"),    width: w  })  });
 
   var empytStyle=new Style({});
@@ -180,7 +181,7 @@ var map = new Map({
   view: new View({center:  [17759.391499406964, -10439.758404798833],
       zoom: 17,//12, //17
       maxZoom: 18,
-      minZoom: 12  })
+      minZoom: 13  })
 });
 
 global.map = map
