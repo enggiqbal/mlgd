@@ -44,6 +44,7 @@ var edgeStyleFunction = function(feature, resolution) {
   var w=5*l/resolution
   if (resolution<5 ) w=l/2;
   //else w=l/resolution
+  w=(10-l)/2
   var edgeStyle = new Style({  stroke: new Stroke({      color: feature.get("stroke"),    width: w  })  });
 
   var emptyStyle=new Style({});
