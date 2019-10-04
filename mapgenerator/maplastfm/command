@@ -1,0 +1,4 @@
+#sfdp -Goverlap=prism -Goutputorder=edgesfirst -Gstart=123   T8.dot >out1
+../eba/kmeans -action=clustering -C=modularity $1>out2
+gvmap -e  -c 1 out2 > out3
+neato -Nshape=rectangle -GforcelabelsX=false -Ecolor=grey -Gstart=123  -n2 -Tsvg out3 > $1map.svg

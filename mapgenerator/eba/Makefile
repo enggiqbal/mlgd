@@ -1,6 +1,6 @@
 # Variables
 
-CXX = g++-4.8
+CXX = g++
 CXXFLAGS = -Isrc -Wall -Wno-unknown-pragmas -pipe -O3 -std=c++11
 
 HEADERS = $(wildcard **/*.h)

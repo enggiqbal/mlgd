@@ -4,8 +4,8 @@ import numpy as np
 import json
 import networkx as nx
 import pygraphviz as pgv
-#direct/impred
-layout="direct"
+#direct_topics/impred_topics/impred_lastfm
+layout="impred_lastfm"
 
 def getLayer0(t1):
     numberofnodes=30
@@ -26,29 +26,50 @@ def getLayer0(t1):
     print(len(H.nodes()))
     return H
 
+globaldatapath="../visualization_system/geojson/"
 
-if layout=="direct":
+if layout=="direct_topics":
 #for direct approach
     mappath="../direct_approach_output/map/T8.dotmap.svg"
-    clusteroutput="../visualization_system/cluster.geojson"
-    polylineoutput="../visualization_system/cluster_boundary.geojson"
-    edgesoutput="../visualization_system/edges.geojson"
-    nodesoutput="../visualization_system/nodes.geojson"
-    alledges="../visualization_system/alledges.geojson"
+    clusteroutput=globaldatapath + layout+ "/cluster.geojson"
+    polylineoutput=globaldatapath + layout+"/cluster_boundary.geojson"
+    edgesoutput=globaldatapath + layout+"/edges.geojson"
+    nodesoutput=globaldatapath + layout+"/nodes.geojson"
+    alledges=globaldatapath + layout+"/alledges.geojson"
 
-else:
+    inputdir="../data/datasets/topics/set2/input/"
+    input_graph="Topics_Graph.dot"
+    layer_file_format="Topics_layer_{0}.dot"
+
+
+if layout=="impred_topics":
     mappath="../impred_output/map/map.svg"
-    clusteroutput="../visualization_system/im_cluster.geojson"
-    polylineoutput="../visualization_system/im_cluster_boundary.geojson"
-    edgesoutput="../visualization_system/im_edges.geojson"
-    nodesoutput="../visualization_system/im_nodes.geojson"
-    alledges="../visualization_system/im_alledges.geojson"
+    clusteroutput=globaldatapath + layout+"/im_cluster.geojson"
+    polylineoutput=globaldatapath + layout+"/im_cluster_boundary.geojson"
+    edgesoutput=globaldatapath + layout+"/im_edges.geojson"
+    nodesoutput=globaldatapath + layout+"/im_nodes.geojson"
+    alledges=globaldatapath + layout+"/im_alledges.geojson"
+
+    inputdir="../data/datasets/topics/set2/input/"
+    input_graph="Topics_Graph.dot"
+    layer_file_format="Topics_layer_{0}.dot"
 
 
-inputdir="../data/datasets/topics/set2/input/"
 
-input_graph="Topics_Graph.dot"
-layer_file_format="Topics_layer_{0}.dot"
+if layout=="impred_lastfm":
+    mappath="../mapgenerator/maplastfm/lastfmw_8.dotmap.svg"
+    clusteroutput=globaldatapath + layout+"/im_cluster.geojson"
+    polylineoutput=globaldatapath + layout+"/im_cluster_boundary.geojson"
+    edgesoutput=globaldatapath + layout+"/im_edges.geojson"
+    nodesoutput=globaldatapath + layout+"/im_nodes.geojson"
+    alledges=globaldatapath + layout+"/im_alledges.geojson"
+
+    inputdir="../data/datasets/lastfm/finalcopy/"
+    input_graph="lastfmw_original.dot"
+    layer_file_format="lastfmw_{0}.dot"
+
+
+
 G=nx.Graph(pgv.AGraph(inputdir+input_graph))
 
 T=[]
@@ -177,7 +198,8 @@ def process_edge(xml,G):
     edge["properties"]["src"]=n1
     edge["properties"]["dest"]=n2
     edge["properties"]["label"]=G.node[n1]["label"] + " -- " +  G.node[n2]["label"]
-    edge["properties"]["weight"]=G.edges[(n1,n2)]["weight"]
+    #edge["properties"]["weight"]=G.edges[(n1,n2)]["weight"] 
+    #todo: ignoring edge weights for lastfm data
     edge["geometry"]["coordinates"]=points_array
     edge["properties"]["level"]=getLayer((n1,n2))
     return json.dumps(edge, indent=2)
@@ -193,7 +215,7 @@ def process_node(xml,G):
     node["geometry"]["type"]="Polygon" #"Point"
     node["id"]="node" + node_g
     node["properties"]=G.node[node_g]
-    import pdb; pdb.set_trace()
+    #import pdb; pdb.set_trace()
     x=float(xml[1].attrib.pop('x'))
     y=float(xml[1].attrib.pop('y'))
     h= float(node["properties"]["height"]) * 1.10 * 72  # inch to pixel conversion
