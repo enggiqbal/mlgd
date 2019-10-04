@@ -6,7 +6,8 @@ import networkx as nx
 import pygraphviz as pgv
 #direct_topics/impred_topics/impred_lastfm
 layout="impred_lastfm"
-
+layout="direct_topics"
+layout="impred_topics"
 def getLayer0(t1):
     numberofnodes=30
     paths=nx.shortest_path(t1)
@@ -30,7 +31,7 @@ globaldatapath="../visualization_system/geojson/"
 
 if layout=="direct_topics":
 #for direct approach
-    mappath="../direct_approach_output/map/T8.dotmap.svg"
+    mappath="../direct_approach_output/mapDirect_modularity.svg"
     clusteroutput=globaldatapath + layout+ "/cluster.geojson"
     polylineoutput=globaldatapath + layout+"/cluster_boundary.geojson"
     edgesoutput=globaldatapath + layout+"/edges.geojson"
@@ -43,7 +44,7 @@ if layout=="direct_topics":
 
 
 if layout=="impred_topics":
-    mappath="../impred_output/map/map.svg"
+    mappath="../impred_output/mapImpred_modularity.svg"
     clusteroutput=globaldatapath + layout+"/im_cluster.geojson"
     polylineoutput=globaldatapath + layout+"/im_cluster_boundary.geojson"
     edgesoutput=globaldatapath + layout+"/im_edges.geojson"
@@ -104,7 +105,7 @@ def process_alledges(G,alledges):
         edge["properties"]["src"]=int(n1)
         edge["properties"]["dest"]=int(n2)
         #print(n1, n2)
-#        edge["properties"]["weight"]=G.edges[e]['weight']
+        edge["properties"]["weight"]=G.edges[e]['weight']
         edge["geometry"]["coordinates"]=[]
         #import pdb; pdb.set_trace()
 #            edge["properties"]["level"]=str(max(  int(G.nodes[e1]['level']),  int(G.nodes[e2]['level'])))
