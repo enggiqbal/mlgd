@@ -104,7 +104,7 @@ def process_alledges(G,alledges):
         edge["properties"]["src"]=int(n1)
         edge["properties"]["dest"]=int(n2)
         #print(n1, n2)
-        edge["properties"]["weight"]=G.edges[e]['weight']
+#        edge["properties"]["weight"]=G.edges[e]['weight']
         edge["geometry"]["coordinates"]=[]
         #import pdb; pdb.set_trace()
 #            edge["properties"]["level"]=str(max(  int(G.nodes[e1]['level']),  int(G.nodes[e2]['level'])))
@@ -207,8 +207,10 @@ def process_edge(xml,G):
 
 
 
-
+ 
 def process_node(xml,G):
+   
+ 
     #import pdb; pdb.set_trace()
     node_g=xml[0].text
     node=n.copy()
@@ -216,8 +218,9 @@ def process_node(xml,G):
     node["id"]="node" + node_g
     node["properties"]=G.node[node_g]
     #import pdb; pdb.set_trace()
-    x=float(xml[1].attrib.pop('x'))
-    y=float(xml[1].attrib.pop('y'))
+
+    x=float(xml[2].attrib.pop('x')) #for lastfm we use index 2
+    y=float(xml[2].attrib.pop('y'))
     h= float(node["properties"]["height"]) * 1.10 * 72  # inch to pixel conversion
     w=float(node["properties"]["width"]) * 1.10 * 72 # inch to pixel conversion
     points_array=[[x-w/2,y-h/2], [x+w/2,y-h/2], [x+w/2,y+h/2], [x-w/2,y+h/2], [x-w/2,y-h/2]]
