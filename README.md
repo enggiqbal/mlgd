@@ -7,7 +7,7 @@ paper: (https://arxiv.org/pdf/1906.05996.pdf)
 
 look `ml_tree_extractor/readme.md`
 
-# Step2: ZMLT drawing 
+# Step2: ZMLT layout 
 
 Source `impred_source`
 
@@ -20,7 +20,7 @@ Please look the instruction in  `geojson_generator/readme.md`
 # Step5: Visualization system 
 visualization system  uses nodejs and openlayers to visualize multi layer trees. see source in `visualization_system`
 
-# Step7: Quality matrix 
+# Step6: layout quality measurement 
 look the instruction in `layout_quality_measurement/readme.md`
 
 ## License
@@ -30,7 +30,7 @@ This project is licensed under the Apache License, Version 2.0 - see the license
 
 ## Team
 Iqbal Hossain,
-Felice De Luca https://github.com/felicedeluca, and
-Stephen Kobourov
+Felice De Luca https://github.com/felicedeluca, 
+Stephen Kobourov, and
 Kathryn Gray
 University of Arizona
