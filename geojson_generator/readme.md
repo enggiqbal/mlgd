@@ -1,7 +1,9 @@
-The module extracts multi layers from a node-edge weighted graph. See examples: `data/datasets/topics/orginal/Topics_Graph_Connected.dot`
+The module generates    `cluster.geojson`,    `cluster_boundary.geojson`,     `edges.geojson`,   `nodes.geojson`,  and   `alledges.geojson` from `map.svg`.
+
+update input map path and output directory then run 
+
 ```
-python3 mltree_generator_weighted.py #for node weighted graph 
-python3 fix_node_att_add_font_box.py
+$ python3  svg_to_geojson.py
 ```
 
 

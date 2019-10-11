@@ -1,7 +1,6 @@
-The module extracts multi layers from a node-edge weighted graph. See examples: `data/datasets/topics/orginal/Topics_Graph_Connected.dot`
+The module generates dot to svg with clustering. See input and format: `data/datasets/lastfm/dot/lastfm_8.dot`
 ```
-python3 mltree_generator_weighted.py #for node weighted graph 
-python3 fix_node_att_add_font_box.py
+./mapgenerator.sh ../data/datasets/lastfm/dot/lastfm_8.dot 
 ```
 
 

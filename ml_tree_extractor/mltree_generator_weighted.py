@@ -6,7 +6,7 @@ from networkx.readwrite import json_graph
 from networkx.drawing.nx_agraph import write_dot
 #EU-core nodecountinlevels=[0.10,0.25,0.30,0.40,0.70,0.80,0.95,1.0]
 nodecountinlevels=[0.05,0.15,0.30,0.40,0.60,0.70,0.85,1.0]
-
+filepath=sys.argv[1]
 def isEnglish(s):
     try:
         s.encode(encoding='utf-8').decode('ascii')
@@ -24,13 +24,8 @@ def fixEdgeWeightAndRemoveNonEngNode(G):
             print("droping",c)
             c=c+1
             G.remove_node(x)
-
-
-
-
     for x in G.edges():
         G[x[0]][x[1]]['weight']=float(G[x[0]][x[1]]['weight'])
-
     return G
 
 
@@ -75,7 +70,7 @@ def extract2(paths,selectednodes):
 
 
 
-G=nx.Graph(pgv.AGraph("/Users/felicedeluca/Downloads/yeastwcopy.dot"))
+G=nx.Graph(pgv.AGraph(filepath))
 G=fixEdgeWeightAndRemoveNonEngNode(G)
 H=nx.connected_component_subgraphs(G)
 G=list(H)[0]
@@ -107,7 +102,7 @@ for i in range(0, len(nodecountinlevels)):
     print(len(selectednodes))
 
     T=extract2(paths,selectednodes)
-    print("FeliceLayer", i+1, "nodes:", len(T.nodes()))
-    write_dot(T,'FeliceLayer_'+str(i+1)+'_topics_v2.dot')
+    print("Layer", i+1, "nodes:", len(T.nodes()))
+    write_dot(T,'Layer_'+str(i+1)+'.dot')
 
-write_dot(G,'Felicetopics_v2.dot')
+write_dot(G,'graph_connected.dot')
