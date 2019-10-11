@@ -9,7 +9,7 @@ look `ml_tree_extractor/readme.md`
 
 # Step2: ZMLT layout 
 
-Source `impred_source`
+See `layout_generator`
 
 # Step3:  Create map
 Please look the instruction in  `mapgenerator/readme.md`
