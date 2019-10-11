@@ -17,7 +17,7 @@ Please look the instruction in  `mapgenerator/readme.md`
 # Step4:  Create geojson
 Please look the instruction in  `geojson_generator/readme.md`
 
-# Step5: visualization system 
+# Step5: Visualization system 
 visualization system  uses nodejs and openlayers to visualize multi layer trees. see source in `visualization_system`
 
 # Step7: Quality matrix 
@@ -32,4 +32,5 @@ This project is licensed under the Apache License, Version 2.0 - see the license
 Iqbal Hossain,
 Felice De Luca https://github.com/felicedeluca, and
 Stephen Kobourov
+Kathryn Gray
 University of Arizona
