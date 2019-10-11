@@ -1,6 +1,6 @@
 The module extracts multi layers from a node-edge weighted graph. See examples in /datasets/topics/ for `dot` format.
 ```
-python3 mltree_generator_weighted.py
+python3 mltree_generator_weighted.py #for node weighted graph 
 python3 fix_node_att_add_font_box.py
 ```
 

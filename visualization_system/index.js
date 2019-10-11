@@ -25,6 +25,8 @@ import clusterData from './geojson/direct_topics/cluster.geojson'
 import clusterBoundaryData from './geojson/direct_topics/cluster_boundary.geojson'
 import edgeyData from './geojson/direct_topics/edges.geojson'
 import nodeData from './geojson/direct_topics/nodes.geojson'
+import allEdges from './geojson/direct_topics/alledges.geojson'
+
 
 var clusterStyleFunction = function(feature, resolution) {
   var clusterStyle = new Style({
@@ -40,6 +42,7 @@ var clusterBoundaryStyleFunction = function(feature, resolution) {
   return clusterStyle; };
 
 var edgeStyleFunction = function(feature, resolution) {
+
   var l=feature.get("level")
   var w=5*l/resolution
   if (resolution<5 ) w=l/2;
@@ -51,6 +54,15 @@ var edgeStyleFunction = function(feature, resolution) {
   var stlye=empytStyle;
   if (getVisible(l,resolution))   stlye= edgeStyle;
   return stlye;
+  };
+
+  var allEdgeStyleFunction= function(feature, resolution) {
+    console.log("xx")
+  var edgeStyle = new Style({  stroke: new Stroke({      color: 'black',    width: 1  })  });
+
+  var empytStyle=new Style({});
+  return edgeStyle;
+
   };
 
 
@@ -124,7 +136,7 @@ var createTextStyle = function(lbl, fontsize, level, boxheight,weight,resolution
 
   if (level==1 && resolution> 20){
 fsize=fontsize * resolution ;
-console.log(fsize)
+ 
   }
   var nodetext=
      new Text({  font:  fsize + 'px arial',  text: lbl,
@@ -151,12 +163,16 @@ var edgesLayer = new VectorLayer({  source: edgeSource,  style: edgeStyleFunctio
 var nodeSource = new Vector({  url: nodeData,  format: new GeoJSON()});
 var nodesLayer = new VectorLayer({  source: nodeSource,  style: nodeStyleFunction});
 
+var allEdgesSource= new Vector({  url: allEdges,  format: new GeoJSON()});
+var allEdgesLayer = new VectorLayer({  source: allEdgesSource,  style: allEdgeStyleFunction});
+
+ 
 
 //var geolayer = new TileLayer({  source: new OSM()});
 // ClusterLayer,clusterBoundayLayer,
 var map = new Map({
   controls: defaultControls().extend([new OverviewMap()]),
-  layers: [clusterLayer,clusterBoundayLayer,  edgesLayer, nodesLayer],
+  layers: [clusterLayer,clusterBoundayLayer,  edgesLayer, nodesLayer, allEdgesLayer],
   target: 'map',
   view: new View({center:  [17759.391499406964, -10439.758404798833],
       zoom: 17,//12, //17

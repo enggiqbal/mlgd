@@ -84,8 +84,8 @@ G=list(H)[0]
 #mst=nx.minimum_spanning_tree(G)
 mst=nx.maximum_spanning_tree(G)
 paths=nx.shortest_path(mst)
-c=nx.algorithms.degree_centrality(G)
-#c=nx.get_node_attributes(G,'weight')
+#c=nx.algorithms.degree_centrality(G)
+c=nx.get_node_attributes(G,'weight')
 c={k:int(v) for k, v in c.items()}
 
 s=sorted(c.items(), key=lambda x: x[1], reverse=True)

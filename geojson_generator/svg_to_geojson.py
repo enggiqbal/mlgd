@@ -5,9 +5,10 @@ import json
 import networkx as nx
 import pygraphviz as pgv
 #direct_topics/impred_topics/impred_lastfm
-layout="impred_lastfm"
+
 layout="direct_topics"
 layout="impred_topics"
+layout="impred_lastfm"
 def getLayer0(t1):
     numberofnodes=30
     paths=nx.shortest_path(t1)
@@ -58,16 +59,16 @@ if layout=="impred_topics":
 
 
 if layout=="impred_lastfm":
-    mappath="../mapgenerator/maplastfm/lastfmw_8.dotmap.svg"
+    mappath="../mapgenerator/maplastfm/lastfm_8.dotmap.svg"
     clusteroutput=globaldatapath + layout+"/im_cluster.geojson"
     polylineoutput=globaldatapath + layout+"/im_cluster_boundary.geojson"
     edgesoutput=globaldatapath + layout+"/im_edges.geojson"
     nodesoutput=globaldatapath + layout+"/im_nodes.geojson"
     alledges=globaldatapath + layout+"/im_alledges.geojson"
 
-    inputdir="../data/datasets/lastfm/finalcopy/"
+    inputdir="../data/datasets/lastfm/dot/"
     input_graph="lastfmw_original.dot"
-    layer_file_format="lastfmw_{0}.dot"
+    layer_file_format="lastfm_{0}.dot"
 
 
 
@@ -105,7 +106,11 @@ def process_alledges(G,alledges):
         edge["properties"]["src"]=int(n1)
         edge["properties"]["dest"]=int(n2)
         #print(n1, n2)
-        edge["properties"]["weight"]=G.edges[e]['weight']
+        if "weight" in G.edges[e]:
+            edge["properties"]["weight"]=G.edges[e]['weight']
+        #import pdb; pdb.set_trace()
+ 
+
         edge["geometry"]["coordinates"]=[]
         #import pdb; pdb.set_trace()
 #            edge["properties"]["level"]=str(max(  int(G.nodes[e1]['level']),  int(G.nodes[e2]['level'])))
