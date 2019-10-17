@@ -175,7 +175,7 @@ var map = new Map({
   layers: [clusterLayer,clusterBoundayLayer,  edgesLayer, nodesLayer, allEdgesLayer],
   target: 'map',
   view: new View({center:  [17759.391499406964, -10439.758404798833],
-      zoom: 17,//12, //17
+      zoom: 12,//12, //17
       maxZoom: 18,
       minZoom: 13  })
 });
