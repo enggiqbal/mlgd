@@ -39,22 +39,23 @@ T=[]
 L=8
 #
 #folderpath="EU/"
-folderpath="topics/"
+input_folderpath="tmp/"
+output_folder='outputs/'
 #fileformat="Layer_{0}_EU_core.dot"
-fileformat="Layer_{0}_topics_v2.dot"
-outformat="Topics_Layer_{0}.dot"
+input_file_format="Layer_{0}.dot"
+outformat="output_Layer_{0}.dot"
 
-G_file_name="Topics_Graph_Connected.dot"
+G_file_name="graph_connected.dot"
 #G_file_name="EU_core_orginal.dot"
 
 #G_out="G_EU_core_id.dot"
 
-G_out="Topics_Graph.dot"
+G_out="output_graph.dot"
 
-G=nx.Graph(pgv.AGraph(folderpath+G_file_name))
+G=nx.Graph(pgv.AGraph(input_folderpath+G_file_name))
 
 for i in range(0,L):
-    R=nx.Graph(pgv.AGraph(folderpath+fileformat.format(i+1)))
+    R=nx.Graph(pgv.AGraph(input_folderpath+input_file_format.format(i+1)))
     T.append(R)
 
 def getLayer(x):
@@ -76,7 +77,7 @@ def writeG(T,G,allboxatt):
     for x in G.edges():
         w=G[x[0]][x[1]]['weight']
         edges=edges + x[0] + " -- " + x[1] + "[weight=\""+ str(w)+"\"];\n"
-    write_to_file(folderpath,G_out, nodes, edges )
+    write_to_file(output_folder,G_out, nodes, edges )
 
 def writeLayer(T,l,allboxatt):
     nodes=""
@@ -87,7 +88,7 @@ def writeLayer(T,l,allboxatt):
         w=G[x[0]][x[1]]['weight']
         edges=edges + x[0] + " -- " + x[1] + "[weight=\""+ str(w)+"\"];\n"
 
-    write_to_file(folderpath,outformat.format(l), nodes, edges )
+    write_to_file(output_folder,outformat.format(l), nodes, edges )
 
 allboxsizes=get_all_node_att(T[L-1],G)
 

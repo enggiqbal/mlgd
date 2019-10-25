@@ -7,6 +7,7 @@ from networkx.drawing.nx_agraph import write_dot
 #EU-core nodecountinlevels=[0.10,0.25,0.30,0.40,0.70,0.80,0.95,1.0]
 nodecountinlevels=[0.05,0.15,0.30,0.40,0.60,0.70,0.85,1.0]
 filepath=sys.argv[1]
+output_dir='tmp/'
 def isEnglish(s):
     try:
         s.encode(encoding='utf-8').decode('ascii')
@@ -103,6 +104,6 @@ for i in range(0, len(nodecountinlevels)):
 
     T=extract2(paths,selectednodes)
     print("Layer", i+1, "nodes:", len(T.nodes()))
-    write_dot(T,'Layer_'+str(i+1)+'.dot')
+    write_dot(T,output_dir+'Layer_'+str(i+1)+'.dot')
 
-write_dot(G,'graph_connected.dot')
+write_dot(G,output_dir+'graph_connected.dot')
