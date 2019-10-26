@@ -9,7 +9,7 @@ look `ml_tree_extractor/readme.md`
 
 # Step2: ZMLT layout
 
-Please look the instructions in layout_generator/ZMLTPipeline/Readme.md'
+Please look the instructions in `layout_generator/ZMLTPipeline/Readme.md`
 
 # Step3:  Create map
 Please look the instruction in  `mapgenerator/readme.md`
