@@ -1,0 +1,200 @@
+#!/bin/bash
+
+# Bash script to run ZMLT
+# Author
+# Felice De Luca
+# github.com/felicedeluca
+
+
+# Set the info of the graph to be drawn.
+layerprefix="Medline_Layer_"
+data_main_folder="tmp_workspace/medline"
+complete_graph_path="$data_main_folder/Medline_Graph.dot"
+complete_graph_inch_path="$data_main_folder/Medline_Graph.dot"
+complete_graph_pixel_path="$data_main_folder/Medline_Graph.dot"
+numberoflayers=8
+
+
+
+# This is the default name format used in this script
+forestsuffix="_forest"
+drawingsuffix="_drawing"
+impredsuffix="_improved"
+
+
+# This is the default folder structure of the project
+inputfolder="$data_main_folder/input"
+forestsfolder="$data_main_folder/forests"
+drawingfolder="$data_main_folder/layers"
+finalfolder="$data_main_folder/final"
+
+# Where to write the computed metrics.
+metrics_output_file="$data_main_folder/metrics.csv"
+
+# where to find the scripts files
+addsubcomponent_scriptfile="modules/add_forest/addsubcomponentmodule.py"
+planar_augmentation_scriptfile="modules/planar_augmentation/planar_augmentation.py"
+property_fetcher_scriptfile="modules/propertyfetcher.py"
+impred_jar="modules/drawing_improvement/ImPred.jar"
+impredoverlapremoval_jar="modules/drawing_improvement/ImPredoverlapremoval.jar"
+
+leaves_uniformer="modules/uniform_leaves_edges/uniform_leaves_edges_main.py"
+impred_scriptfile="modules/drawing_improvement/impred.py"
+extract_sublevel_scriptfile="modules/planar_augmentation/subgraph_extractor.py"
+extract_subgraphs_scriptfile="modules/sublevel_extractor/sublevel_extractor.py"
+scale_to_remove_overlap_scriptfile="modules/labelsoverlapremoval/labelsoverlapremoval.py"
+leaves_shortener_scriptfile="modules/refinement/uniform_leaves_edges/uniform_leaves_edges_main.py"
+remove_crossings_scriptfile="modules/add_forest/remove_crossings_main.py"
+setup_boxsizes_scriptfile="modules/preprocessing/labelproperties.py"
+extractforest_scriptfile="modules/preprocessing/forest_extractor.py"
+
+metrics_computer_scriptfile="../../measurement/metricscomputer.py"
+
+
+edgeattraction=30
+nodenoderepulsion=20
+edgenoderepulsion=20
+iterations=130
+
+# Setup the box sizes for the layer
+python3 $setup_boxsizes_scriptfile $complete_graph_path
+
+
+for i in {1..7}
+do
+
+  next=$(( ${i}+1))
+  
+  tcurr="$inputfolder/${layerprefix}${i}.dot"
+  tnext="$inputfolder/${layerprefix}${next}.dot"
+  output_folder="${forestsfolder}/"
+
+  python3 $extractforest_scriptfile $tcurr $tnext $output_folder
+  
+done
+
+
+#Draw the first layer.
+sfdp "$inputfolder/${layerprefix}1.dot" -Tdot > "$drawingfolder/${layerprefix}1${drawingsuffix}.dot"
+
+
+# ## Apply impred to first layer
+i=1
+lo="$drawingfolder/${layerprefix}${i}${drawingsuffix}.dot"
+li="$drawingfolder/${layerprefix}${i}${drawingsuffix}${impredsuffix}.dot"
+
+# Fetch the properties from the original graph.
+# Some of them may go lost during the process.
+python3 $property_fetcher_scriptfile $complete_graph_inch_path $lo
+
+
+# Remove the crossings of the input tree, if any.
+python3 $remove_crossings_scriptfile $lo
+
+# Fetch the properties from the original graph.
+# Some of them may go lost during the process.
+python3 $property_fetcher_scriptfile $complete_graph_inch_path $lo
+
+# Improve the drawing given at the first level.
+java -jar $impred_jar --inputgraph=$lo --edgeattraction=$edgeattraction --nodenoderepulsion=$nodenoderepulsion --edgenoderepulsion=$edgenoderepulsion --iterations=$iterations --outputfile=$li
+
+# Fetch the properties from the original graph.
+# Some of them may go lost during the process.
+python3 $property_fetcher_scriptfile $complete_graph_pixel_path $li
+
+# Remove the overlap of the labels
+java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
+
+
+# Shorten Edges
+#python3 $leaves_shortener_scriptfile $li
+
+# Remove the overlap of the labels
+#java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
+
+
+# Fetch the properties from the original graph.
+# Some of them may go lost during the process.
+python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
+
+
+for i in {2..8}
+do
+
+  prev=$(( ${i}-1 ))
+
+  lprev="$drawingfolder/${layerprefix}$(( ${i}-1 ))${drawingsuffix}${impredsuffix}.dot"
+  lo="$drawingfolder/${layerprefix}${i}${drawingsuffix}.dot"
+  le="$drawingfolder/${layerprefix}${i}${drawingsuffix}_edges.dot"
+  li="$drawingfolder/${layerprefix}${i}${drawingsuffix}${impredsuffix}.dot"
+  fl="$forestsfolder/${layerprefix}${i}${forestsuffix}.dot"
+
+  # Add the forest to the improved drawing of the previous level
+  # To get the new level
+  # This drawing will be planar
+  python3 $addsubcomponent_scriptfile $lprev $fl $lo
+
+  # Fetch the properties from the original graph.
+  # Some of them may go lost during the process.
+  python3 $property_fetcher_scriptfile $complete_graph_pixel_path $lo
+
+  # Improve the drawing
+  java -jar $impred_jar --inputgraph=$lo --edgeattraction=$edgeattraction --nodenoderepulsion=$nodenoderepulsion --edgenoderepulsion=$edgenoderepulsion --iterations=$iterations --outputfile=$li
+
+  # Fetch the properties from the original graph.
+  # Some of them may go lost during the process.
+  python3 $property_fetcher_scriptfile $complete_graph_pixel_path $li
+
+  # Remove the overlap of the labels
+  java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
+
+  # Shorten Edges
+#  python3 $leaves_shortener_scriptfile $li
+
+  # Remove the overlap of the labels
+#  java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
+
+  # Fetch the properties from the original graph.
+  # Some of them may go lost during the process.
+  python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
+
+
+
+done
+
+# Fetch the properties from the original graph.
+# Some of them may go lost during the process.
+python3 $property_fetcher_scriptfile $complete_graph_pixel_path $li
+
+# At this stage there shouldn't be any label overlap but we try it again.
+# Remove the overlap of the labels
+java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
+
+# Fetch the properties from the original graph.
+# Some of them may go lost during the process.
+python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
+
+#
+#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}1.dot" "label,weight,fontsize,level,width,height,pos"
+#neato  -n2 "${finalfolder}/${layerprefix}1.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}1.pdf"
+#
+#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}2.dot" "label,weight,fontsize,level,width,height,pos"
+#neato  -n2 "${finalfolder}/${layerprefix}2.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}2.pdf"
+#
+#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}3.dot" "label,weight,fontsize,level,width,height,pos"
+#neato  -n2 "${finalfolder}/${layerprefix}3.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}3.pdf"
+#
+#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}4.dot" "label,weight,fontsize,level,width,height,pos"
+#neato  -n2 "${finalfolder}/${layerprefix}4.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}4.pdf"
+#
+#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}5.dot" "label,weight,fontsize,level,width,height,pos"
+#neato  -n2 "${finalfolder}/${layerprefix}5.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}5.pdf"
+#
+#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}6.dot" "label,weight,fontsize,level,width,height,pos"
+#neato  -n2 "${finalfolder}/${layerprefix}6.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}6.pdf"
+#
+#python3 $property_fetcher_scriptfile  $li  "${finalfolder}/${layerprefix}7.dot" "label,weight,fontsize,level,width,height,pos"
+#neato  -n2 "${finalfolder}/${layerprefix}7.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}7.pdf"
+#
+#python3 $property_fetcher_scriptfile  $li  "${finalfolder}/${layerprefix}8.dot" "label,weight,fontsize,level,width,height,pos"
+#neato  -n2 "${finalfolder}/${layerprefix}8.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}8.pdf"
