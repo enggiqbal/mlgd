@@ -64,13 +64,13 @@ for i in {1..7}
 do
 
   next=$(( ${i}+1))
-  
+
   tcurr="$inputfolder/${layerprefix}${i}.dot"
   tnext="$inputfolder/${layerprefix}${next}.dot"
   output_folder="${forestsfolder}/"
 
   python3 $extractforest_scriptfile $tcurr $tnext $output_folder
-  
+
 done
 
 
@@ -174,27 +174,18 @@ java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --noden
 # Some of them may go lost during the process.
 python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
 
-#
-#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}1.dot" "label,weight,fontsize,level,width,height,pos"
-#neato  -n2 "${finalfolder}/${layerprefix}1.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}1.pdf"
-#
-#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}2.dot" "label,weight,fontsize,level,width,height,pos"
-#neato  -n2 "${finalfolder}/${layerprefix}2.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}2.pdf"
-#
-#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}3.dot" "label,weight,fontsize,level,width,height,pos"
-#neato  -n2 "${finalfolder}/${layerprefix}3.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}3.pdf"
-#
-#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}4.dot" "label,weight,fontsize,level,width,height,pos"
-#neato  -n2 "${finalfolder}/${layerprefix}4.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}4.pdf"
-#
-#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}5.dot" "label,weight,fontsize,level,width,height,pos"
-#neato  -n2 "${finalfolder}/${layerprefix}5.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}5.pdf"
-#
-#python3 $property_fetcher_scriptfile  $li "${finalfolder}/${layerprefix}6.dot" "label,weight,fontsize,level,width,height,pos"
-#neato  -n2 "${finalfolder}/${layerprefix}6.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}6.pdf"
-#
-#python3 $property_fetcher_scriptfile  $li  "${finalfolder}/${layerprefix}7.dot" "label,weight,fontsize,level,width,height,pos"
-#neato  -n2 "${finalfolder}/${layerprefix}7.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}7.pdf"
-#
-#python3 $property_fetcher_scriptfile  $li  "${finalfolder}/${layerprefix}8.dot" "label,weight,fontsize,level,width,height,pos"
-#neato  -n2 "${finalfolder}/${layerprefix}8.dot" -Nshape=rectangle -Tpdf > "${finalfolder}/${layerprefix}8.pdf"
+
+
+for i in {1..8}
+do
+
+  tcurr="$inputfolder/${layerprefix}${i}.dot"
+  tout="$finalfolder/${layerprefix}${i}.dot"
+
+  cp $tcurr $tout
+
+  python3 $property_fetcher_scriptfile  $li $tout "label,weight,fontsize,level,width,height,pos"
+  neato  -n2 $tout -Nshape=rectangle -Tpdf > "${tout}.pdf"
+
+
+done
