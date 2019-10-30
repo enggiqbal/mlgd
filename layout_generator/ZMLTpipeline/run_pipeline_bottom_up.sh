@@ -57,13 +57,13 @@ edgenoderepulsion=20
 iterations=130
 layers=4
 
-font_sizes=(20 20 20 20 20 20 20 20)
+font_sizes=(30 30 30 30 30 30 30 30)
 
 # Setup the box sizes for the layer
 python3 $setup_boxsizes_scriptfile $complete_graph_path ${font_sizes[1]}
 
 
-for i in {1..7}
+for i in {1..3}
 do
 
   next=$(( ${i}+1))
@@ -124,7 +124,7 @@ java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --noden
 python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
 
 
-for i in {2..8}
+for i in {2..4}
 do
 
   prev=$(( ${i}-1 ))
@@ -185,7 +185,7 @@ python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
 
 
 
-for i in {1..8}
+for i in {1..4}
 do
 
   tcurr="$inputfolder/${layerprefix}${i}.dot"
@@ -196,10 +196,10 @@ do
   python3 $property_fetcher_scriptfile  $li $tout "label,weight,fontsize,level,width,height,pos"
 
   # Setup the box sizes for the layer
-  # python3 $setup_boxsizes_scriptfile $complete_graph_path ${font_sizes[${i}]}
+  python3 $setup_boxsizes_scriptfile $complete_graph_path ${font_sizes[${i}]}
 
   # Remove the overlap of the labels
-  # java -jar $impredoverlapremoval_jar --inputgraph=$tout --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$tout
+  java -jar $impredoverlapremoval_jar --inputgraph=$tout --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$tout
 
   neato  -n2 $tout -Nshape=rectangle -Tpdf > "${tout}.pdf"
 

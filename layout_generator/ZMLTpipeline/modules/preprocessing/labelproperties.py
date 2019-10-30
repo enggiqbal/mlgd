@@ -17,6 +17,14 @@ tkinter.Frame().destroy()  # Enough to initialize resources
 graph_path = sys.argv[1]
 outputpath = graph_path
 
+font_size = 30
+
+if len(sys.argv)==3:
+    font_size=int(sys.argv[2])
+
+
+print(font_size)
+
 input_graph_name = os.path.basename(graph_path)
 graph_name = input_graph_name.split(".")[1]
 
@@ -25,17 +33,17 @@ G=nx.Graph(G)
 
 v_labels = nx.get_node_attributes(G, "label")
 v_levels = nx.get_node_attributes(G, "level")
-font_sizes=[30,25,20,15,12,10,9,8]
+# font_sizes=[30,25,20,15,12,10,9,8]
 # use font size array
 
 for v in v_labels.keys():
 
     v_label = v_labels[v]
-    v_level = 0
-    if  v in v_levels.keys():
-        v_level = int(v_levels[v])-1
-
-    font_size = font_sizes[v_level]
+    # v_level = 0
+    # if  v in v_levels.keys():
+    #     v_level = int(v_levels[v])-1
+    #
+    # font_size = font_sizes[v_level]
 
     arial36b = tkFont.Font(family='Arial', size=font_size, weight='normal')
 
