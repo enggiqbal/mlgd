@@ -47,8 +47,11 @@ leaves_shortener_scriptfile="modules/refinement/uniform_leaves_edges/uniform_lea
 remove_crossings_scriptfile="modules/add_forest/remove_crossings_main.py"
 setup_boxsizes_scriptfile="modules/preprocessing/labelproperties.py"
 extractforest_scriptfile="modules/preprocessing/forest_extractor.py"
+scalegraph_scriptfile="modules/resizegraph.py"
+remove_labels_scriptfile="modules/removelabelsize.py"
 
 metrics_computer_scriptfile="../../measurement/metricscomputer.py"
+
 
 
 edgeattraction=30
@@ -57,13 +60,13 @@ edgenoderepulsion=20
 iterations=130
 layers=4
 
-font_sizes=(30 30 30 30 30 30 30 30)
+font_sizes=(12 12 12 12 12 12 12 12)
 
 # Setup the box sizes for the layer
 python3 $setup_boxsizes_scriptfile $complete_graph_path ${font_sizes[1]}
 
 
-for i in {1..3}
+for i in {1..7}
 do
 
   next=$(( ${i}+1))
@@ -101,6 +104,8 @@ python3 $remove_crossings_scriptfile $lo
 # Some of them may go lost during the process.
 python3 $property_fetcher_scriptfile $complete_graph_inch_path $lo
 
+python3 $remove_labels_scriptfile $lo
+
 # Improve the drawing given at the first level.
 java -jar $impred_jar --inputgraph=$lo --edgeattraction=$edgeattraction --nodenoderepulsion=$nodenoderepulsion --edgenoderepulsion=$edgenoderepulsion --iterations=$iterations --outputfile=$li
 
@@ -111,6 +116,13 @@ python3 $property_fetcher_scriptfile $complete_graph_pixel_path $li
 # Remove the overlap of the labels
 java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
 
+
+
+python3 $property_fetcher_scriptfile $complete_graph_pixel_path $li
+python3 $scalegraph_scriptfile $li $(( ${i}*2000 ))
+python3 $setup_boxsizes_scriptfile $li 12
+java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
+python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
 
 # Shorten Edges
 #python3 $leaves_shortener_scriptfile $li
@@ -123,8 +135,12 @@ java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --noden
 # Some of them may go lost during the process.
 python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
 
+topdownoutput="$finalfolder/${layerprefix}${i}_topdown.dot"
+cp $li $topdownoutput
+neato  -n2 $topdownoutput -Nshape=rectangle -Tpdf > "${topdownoutput}.pdf"
 
-for i in {2..4}
+
+for i in {2..8}
 do
 
   prev=$(( ${i}-1 ))
@@ -147,16 +163,16 @@ do
   # Setup the box sizes for the layer
   python3 $setup_boxsizes_scriptfile $complete_graph_path ${font_sizes[${i}]}
 
+  python3 $remove_labels_scriptfile $lo
   # Improve the drawing
   java -jar $impred_jar --inputgraph=$lo --edgeattraction=$edgeattraction --nodenoderepulsion=$nodenoderepulsion --edgenoderepulsion=$edgenoderepulsion --iterations=$iterations --outputfile=$li
-
   # Fetch the properties from the original graph.
   # Some of them may go lost during the process.
   python3 $property_fetcher_scriptfile $complete_graph_pixel_path $li
 
   # Remove the overlap of the labels
   java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
-
+  python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
   # Shorten Edges
 #  python3 $leaves_shortener_scriptfile $li
 
@@ -165,43 +181,51 @@ do
 
   # Fetch the properties from the original graph.
   # Some of them may go lost during the process.
+
+  python3 $scalegraph_scriptfile $li $(( ${i}*2000 ))
+  python3 $setup_boxsizes_scriptfile $li 12
+  java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
   python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
 
 
-
-done
-
-# Fetch the properties from the original graph.
-# Some of them may go lost during the process.
-python3 $property_fetcher_scriptfile $complete_graph_pixel_path $li
-
-# At this stage there shouldn't be any label overlap but we try it again.
-# Remove the overlap of the labels
-java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
-
-# Fetch the properties from the original graph.
-# Some of them may go lost during the process.
-python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
-
-
-
-for i in {1..4}
-do
-
-  tcurr="$inputfolder/${layerprefix}${i}.dot"
-  tout="$finalfolder/${layerprefix}${i}.dot"
-
-  cp $tcurr $tout
-
-  python3 $property_fetcher_scriptfile  $li $tout "label,weight,fontsize,level,width,height,pos"
-
-  # Setup the box sizes for the layer
-  python3 $setup_boxsizes_scriptfile $complete_graph_path ${font_sizes[${i}]}
-
-  # Remove the overlap of the labels
-  java -jar $impredoverlapremoval_jar --inputgraph=$tout --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$tout
-
-  neato  -n2 $tout -Nshape=rectangle -Tpdf > "${tout}.pdf"
+  topdownoutput="$finalfolder/${layerprefix}${i}_topdown.dot"
+  cp $li $topdownoutput
+  neato  -n2 $topdownoutput -Nshape=rectangle -Tpdf > "${topdownoutput}.pdf"
 
 
 done
+#
+# # Fetch the properties from the original graph.
+# # Some of them may go lost during the process.
+# python3 $property_fetcher_scriptfile $complete_graph_pixel_path $li
+#
+# # At this stage there shouldn't be any label overlap but we try it again.
+# # Remove the overlap of the labels
+# java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
+#
+# # Fetch the properties from the original graph.
+# # Some of them may go lost during the process.
+# python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
+#
+#
+#
+# for i in {1..8}
+# do
+#
+#   tcurr="$inputfolder/${layerprefix}${i}.dot"
+#   tout="$finalfolder/${layerprefix}${i}.dot"
+#
+#   cp $tcurr $tout
+#
+#   python3 $property_fetcher_scriptfile  $li $tout "label,weight,fontsize,level,width,height,pos"
+#
+#   # Setup the box sizes for the layer
+#   python3 $setup_boxsizes_scriptfile $complete_graph_path ${font_sizes[${i}]}
+#
+#   # Remove the overlap of the labels
+#   java -jar $impredoverlapremoval_jar --inputgraph=$tout --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$tout
+#
+#   neato  -n2 $tout -Nshape=rectangle -Tpdf > "${tout}.pdf"
+#
+#
+# done
