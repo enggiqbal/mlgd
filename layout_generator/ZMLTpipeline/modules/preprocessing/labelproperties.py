@@ -85,8 +85,8 @@ for v in v_labels.keys():
     width = round(round(measure.winfo_width() / 72, 2)  * 72 * 1.10, 2) # get the width
     height= round(round(measure.winfo_height()/72 ,2)   * 72 * 1.10, 2)
 
-    width /= 72
-    height /= 72
+    width /= 1#72
+    height /= 1#72
 
     max_h = max(max_h, height)
     max_w = max(max_w, width)

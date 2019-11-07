@@ -114,14 +114,14 @@ java -jar $impred_jar --inputgraph=$lo --edgeattraction=$edgeattraction --nodeno
 python3 $property_fetcher_scriptfile $complete_graph_pixel_path $li
 
 # Remove the overlap of the labels
-java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
+java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=0 --outputfile=$li
 
 
 
 python3 $property_fetcher_scriptfile $complete_graph_pixel_path $li
-python3 $scalegraph_scriptfile $li $(( ${i}*2000 ))
+python3 $scalegraph_scriptfile $li $(( ${i}*4000 ))
 python3 $setup_boxsizes_scriptfile $li 12
-java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
+java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=70 --outputfile=$li
 python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
 
 # Shorten Edges
@@ -171,7 +171,7 @@ do
   python3 $property_fetcher_scriptfile $complete_graph_pixel_path $li
 
   # Remove the overlap of the labels
-  java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
+  java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=0 --outputfile=$li
   python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
   # Shorten Edges
 #  python3 $leaves_shortener_scriptfile $li
@@ -182,9 +182,9 @@ do
   # Fetch the properties from the original graph.
   # Some of them may go lost during the process.
 
-  python3 $scalegraph_scriptfile $li $(( ${i}*2000 ))
+  python3 $scalegraph_scriptfile $li $(( ${i}*4000 ))
   python3 $setup_boxsizes_scriptfile $li 12
-  java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=20 --outputfile=$li
+  java -jar $impredoverlapremoval_jar --inputgraph=$li --edgeattraction=10 --nodenoderepulsion=10 --edgenoderepulsion=5 --iterations=70 --outputfile=$li
   python3 $property_fetcher_scriptfile $complete_graph_inch_path $li
 
 
