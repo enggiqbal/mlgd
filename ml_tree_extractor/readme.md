@@ -1,8 +1,14 @@
 The module extracts multi layers from a node-edge weighted graph. See examples: `data/datasets/topics/orginal/Topics_Graph_Connected.dot`
+
+Dot file must contain `weight` and `label` attributes for nodes and a `weight` attribute for edges.
+
 ```
 python3 mltree_generator_weighted.py path_of_input_dot_file #for node weighted graph 
 python3 fix_node_att_add_font_box.py
 ```
+
+Output files are located in `outputs` directory.
+
 
 Note: those script use `tmp` directory to store files from intermediate steps. If you want to debug, do empty `tmp` directory.
 
