@@ -1,7 +1,10 @@
 The module generates dot to svg with clustering. See input and format: `data/datasets/lastfm/dot/lastfm_8.dot`
+
 ```
 ./mapgenerator.sh ../data/datasets/lastfm/dot/lastfm_8.dot 
 ```
+
+This step generates `map.svg`
 
 
 ## Authors

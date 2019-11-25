@@ -33,17 +33,16 @@ graph_path = parameters[1]
 tree_path = parameters[2]
 outputpath = tree_path
 
-properties_to_fetch = []
-if len(parameters) <= 3:
-    properties_to_fetch = ["label", "weight", "fontsize", "level","width","height"]
-else:
+properties_to_fetch = ["label", "weight", "fontsize", "level", "width","height","label"]
+if len(parameters) > 3:
     properties_to_fetch = parameters[3].split(",")
 
 # Fetching parameters list
 input_graph_name = os.path.basename(graph_path)
 graph_name = input_graph_name.split(".")[1]
 
-print("fetching: ", properties_to_fetch)
+
+print("fetching labels",graph_path,  tree_path, properties_to_fetch, ": ", end=" ")
 
 
 from_graph=nx_read_dot(graph_path)
@@ -52,12 +51,10 @@ from_graph=nx.Graph(from_graph)
 to_graph=nx_read_dot(tree_path)
 to_graph=nx.Graph(to_graph)
 
-# looping over all properties to be fetched
 for param in properties_to_fetch:
     nx.set_node_attributes(to_graph, nx.get_node_attributes(from_graph, param), param)
+    print(param, end=" ")
 
-    # Uncomment to fetch edges properties as well
-    # nx.set_edge_attributes(to_graph, nx.set_edge_attributes(from_graph, param), param)
+print("")
 
-
-write_dot(to_graph, outputpath)
+write_dot(to_graph, tree_path)
