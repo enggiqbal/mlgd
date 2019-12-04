@@ -6,9 +6,10 @@ import networkx as nx
 import pygraphviz as pgv
 #direct_topics/impred_topics/impred_lastfm
 
-layout="direct_topics"
-layout="impred_topics"
-layout="impred_lastfm"
+#layout_name="direct_topics"
+#layout_name="impred_topics"
+layout_name="impred_lastfm"
+layout_output_dir="impred_lastfm2"
 def getLayer0(t1):
     numberofnodes=30
     paths=nx.shortest_path(t1)
@@ -30,27 +31,27 @@ def getLayer0(t1):
 
 globaldatapath="../visualization_system/geojson/"
 
-if layout=="direct_topics":
+if layout_name=="direct_topics":
 #for direct approach
     mappath="../direct_approach_output/mapDirect_modularity.svg"
-    clusteroutput=globaldatapath + layout+ "/cluster.geojson"
-    polylineoutput=globaldatapath + layout+"/cluster_boundary.geojson"
-    edgesoutput=globaldatapath + layout+"/edges.geojson"
-    nodesoutput=globaldatapath + layout+"/nodes.geojson"
-    alledges=globaldatapath + layout+"/alledges.geojson"
+    clusteroutput=globaldatapath + layout_output_dir+ "/cluster.geojson"
+    polylineoutput=globaldatapath + layout_output_dir+"/cluster_boundary.geojson"
+    edgesoutput=globaldatapath + layout_output_dir+"/edges.geojson"
+    nodesoutput=globaldatapath + layout_output_dir+"/nodes.geojson"
+    alledges=globaldatapath + layout_output_dir+"/alledges.geojson"
 
     inputdir="../data/datasets/topics/set2/input/"
     input_graph="Topics_Graph.dot"
     layer_file_format="Topics_layer_{0}.dot"
 
 
-if layout=="impred_topics":
+if layout_name=="impred_topics":
     mappath="../impred_output/mapImpred_modularity.svg"
-    clusteroutput=globaldatapath + layout+"/im_cluster.geojson"
-    polylineoutput=globaldatapath + layout+"/im_cluster_boundary.geojson"
-    edgesoutput=globaldatapath + layout+"/im_edges.geojson"
-    nodesoutput=globaldatapath + layout+"/im_nodes.geojson"
-    alledges=globaldatapath + layout+"/im_alledges.geojson"
+    clusteroutput=globaldatapath + layout_output_dir+"/im_cluster.geojson"
+    polylineoutput=globaldatapath + layout_output_dir+"/im_cluster_boundary.geojson"
+    edgesoutput=globaldatapath + layout_output_dir+"/im_edges.geojson"
+    nodesoutput=globaldatapath + layout_output_dir+"/im_nodes.geojson"
+    alledges=globaldatapath + layout_output_dir+"/im_alledges.geojson"
 
     inputdir="../data/datasets/topics/set2/input/"
     input_graph="Topics_Graph.dot"
@@ -58,13 +59,13 @@ if layout=="impred_topics":
 
 
 
-if layout=="impred_lastfm":
-    mappath="../mapgenerator/maplastfm/lastfm_8.dotmap.svg"
-    clusteroutput=globaldatapath + layout+"/im_cluster.geojson"
-    polylineoutput=globaldatapath + layout+"/im_cluster_boundary.geojson"
-    edgesoutput=globaldatapath + layout+"/im_edges.geojson"
-    nodesoutput=globaldatapath + layout+"/im_nodes.geojson"
-    alledges=globaldatapath + layout+"/im_alledges.geojson"
+if layout_name=="impred_lastfm":
+    mappath="../map_generator/maplastfm/lastfm_8.dotmap.svg"
+    clusteroutput=globaldatapath + layout_output_dir+"/im_cluster.geojson"
+    polylineoutput=globaldatapath + layout_output_dir+"/im_cluster_boundary.geojson"
+    edgesoutput=globaldatapath + layout_output_dir+"/im_edges.geojson"
+    nodesoutput=globaldatapath + layout_output_dir+"/im_nodes.geojson"
+    alledges=globaldatapath + layout_output_dir+"/im_alledges.geojson"
 
     inputdir="../data/datasets/lastfm/dot/"
     input_graph="lastfmw_original.dot"
@@ -92,9 +93,11 @@ def process_alledges(G,alledges):
     global inputdir
     global input_graph
     G=nx.Graph(pgv.AGraph(inputdir+ input_graph))
+    G_cord=nx.Graph(pgv.AGraph(inputdir+ layer_file_format.format(8)))
     id=0
     txt=""
     for e in G.edges():
+        #import pdb; pdb.set_trace()
         edge=n.copy()
         edge["id"]= id
         id =id +1
@@ -109,9 +112,11 @@ def process_alledges(G,alledges):
         if "weight" in G.edges[e]:
             edge["properties"]["weight"]=G.edges[e]['weight']
         #import pdb; pdb.set_trace()
- 
+        a=G_cord.nodes[n1]["pos"]
+        b=G_cord.nodes[n2]["pos"]
+        points_array=[[ float(a.split(",")[0]), float(a.split(",")[1])  ],  [ float(b.split(",")[0]), float(b.split(",")[1])  ]]
+        edge["geometry"]["coordinates"]=points_array
 
-        edge["geometry"]["coordinates"]=[]
         #import pdb; pdb.set_trace()
 #            edge["properties"]["level"]=str(max(  int(G.nodes[e1]['level']),  int(G.nodes[e2]['level'])))
 
