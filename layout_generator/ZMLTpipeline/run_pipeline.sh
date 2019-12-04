@@ -60,7 +60,7 @@ layers=4
 font_sizes=(20 20 20 20 20 20 20 20)
 
 # Setup the box sizes for the layer
-python3 $setup_boxsizes_scriptfile $complete_graph_path ${font_sizes[1]}
+python3 $setup_boxsizes_scriptfile $complete_graph_inch_path # ${font_sizes[1]}
 
 
 for i in {1..7}
@@ -91,7 +91,7 @@ li="$drawingfolder/${layerprefix}${i}${drawingsuffix}${impredsuffix}.dot"
 python3 $property_fetcher_scriptfile $complete_graph_inch_path $lo
 
 # Setup the box sizes for the layer
-python3 $setup_boxsizes_scriptfile $complete_graph_path ${font_sizes[$i]}
+# python3 $setup_boxsizes_scriptfile $complete_graph_path #${font_sizes[$i]}
 
 
 # Remove the crossings of the input tree, if any.
@@ -145,7 +145,7 @@ do
   python3 $property_fetcher_scriptfile $complete_graph_pixel_path $lo
 
   # Setup the box sizes for the layer
-  python3 $setup_boxsizes_scriptfile $complete_graph_path ${font_sizes[${i}]}
+  # python3 $setup_boxsizes_scriptfile $complete_graph_path ${font_sizes[${i}]}
 
   # Improve the drawing
   java -jar $impred_jar --inputgraph=$lo --edgeattraction=$edgeattraction --nodenoderepulsion=$nodenoderepulsion --edgenoderepulsion=$edgenoderepulsion --iterations=$iterations --outputfile=$li
