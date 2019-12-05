@@ -60,16 +60,17 @@ if layout_name=="impred_topics":
 
 
 if layout_name=="impred_lastfm":
-    mappath="../map_generator/maplastfm/lastfm_8.dotmap.svg"
+    mappath="../map_generator/maplastfm/map.svg"
     clusteroutput=globaldatapath + layout_output_dir+"/im_cluster.geojson"
     polylineoutput=globaldatapath + layout_output_dir+"/im_cluster_boundary.geojson"
     edgesoutput=globaldatapath + layout_output_dir+"/im_edges.geojson"
     nodesoutput=globaldatapath + layout_output_dir+"/im_nodes.geojson"
     alledges=globaldatapath + layout_output_dir+"/im_alledges.geojson"
 
-    inputdir="../data/datasets/lastfm/dot/"
-    input_graph="lastfmw_original.dot"
-    layer_file_format="lastfm_{0}.dot"
+    inputdir="../ml_tree_extractor/outputs/"
+    input_graph="output_graph.dot"
+    layer_file_format="output_Layer_{0}.dot"
+    layout_cordinate_path="../layout_generator/ZMLTpipeline/tmp_workspace/lastfm/final/output_Layer_8.dot"
 
 
 
@@ -92,8 +93,9 @@ for i in range(0,L):
 def process_alledges(G,alledges):
     global inputdir
     global input_graph
+    global layout_cordinate_path
     G=nx.Graph(pgv.AGraph(inputdir+ input_graph))
-    G_cord=nx.Graph(pgv.AGraph(inputdir+ layer_file_format.format(8)))
+    G_cord=nx.Graph(pgv.AGraph(layout_cordinate_path))
     id=0
     txt=""
     for e in G.edges():
@@ -114,7 +116,18 @@ def process_alledges(G,alledges):
         #import pdb; pdb.set_trace()
         a=G_cord.nodes[n1]["pos"]
         b=G_cord.nodes[n2]["pos"]
-        points_array=[[ float(a.split(",")[0]), float(a.split(",")[1])  ],  [ float(b.split(",")[0]), float(b.split(",")[1])  ]]
+
+        x1=float(a.split(",")[0]) #for lastfm we use index 2
+        y1=float(a.split(",")[1])
+        h = float(G_cord.nodes[n1]["height"]) * 1.10 * 72  # inch to pixel conversion
+        w =float(G_cord.nodes[n1]["width"]) * 1.10 * 72 # inch to pixel conversion
+        
+
+        x2=float(b.split(",")[0]) #for lastfm we use index 2
+        y2=float(b.split(",")[1])
+
+        points_array=[[x1-w/2,y1-h/2], [x2+w/2,y2-h/2] ]
+        #points_array=[[ float(a.split(",")[0]), float(a.split(",")[1])  ],  [ float(b.split(",")[0]), float(b.split(",")[1])  ]]
         edge["geometry"]["coordinates"]=points_array
 
         #import pdb; pdb.set_trace()
