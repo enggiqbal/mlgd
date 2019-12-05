@@ -169,12 +169,17 @@ var edgesLayer = new VectorLayer({  source: edgeSource,  style: edgeStyleFunctio
 var nodeSource = new Vector({  url: nodeData,  format: new GeoJSON()});
 var nodesLayer = new VectorLayer({  source: nodeSource,  style: nodeStyleFunction});
 
+var source = new OSM();
+var overviewMapControl = new OverviewMap({collapsed: false});
+
 
 
 //var geolayer = new TileLayer({  source: new OSM()});
 // ClusterLayer,clusterBoundayLayer,
 var map = new Map({
-  controls: defaultControls().extend([new OverviewMap()]),
+  controls: defaultControls().extend([
+    overviewMapControl
+  ]),
   layers: [clusterLayer,clusterBoundayLayer,  edgesLayer, nodesLayer,alledgesLayer],
   target: 'map',
   view: new View({center:  [17759.391499406964, -10439.758404798833],
