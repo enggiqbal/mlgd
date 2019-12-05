@@ -5,7 +5,7 @@ import math
 from networkx.readwrite import json_graph
 from networkx.drawing.nx_agraph import write_dot
 #EU-core nodecountinlevels=[0.10,0.25,0.30,0.40,0.70,0.80,0.95,1.0]
-nodecountinlevels=[0.05,0.15,0.30,0.40,0.60,0.70,0.85,1.0]
+nodecountinlevels=[0.005,0.05,0.10,0.20,0.30,0.50,0.85,1.0]
 filepath=sys.argv[1]
 output_dir='tmp/'
 def isEnglish(s):
