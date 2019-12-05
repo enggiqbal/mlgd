@@ -21,10 +21,10 @@ import {  defaults as defaultControls,  OverviewMap,  LayerSwitcher, FullScreen}
 
 //import data
 
-import clusterData from './geojson/impred_topics/im_cluster.geojson'
-import clusterBoundaryData from './geojson/impred_topics/im_cluster_boundary.geojson'
-import edgeyData from './geojson/impred_topics/im_edges.geojson'
-import nodeData from './geojson/impred_topics/im_nodes.geojson'
+import clusterData from './geojson/lastfm/im_cluster.geojson'
+import clusterBoundaryData from './geojson/lastfm/im_cluster_boundary.geojson'
+import edgeyData from './geojson/lastfm/im_edges.geojson'
+import nodeData from './geojson/lastfm/im_nodes.geojson'
 
 var clusterStyleFunction = function(feature, resolution) {
   var clusterStyle = new Style({
@@ -106,7 +106,7 @@ var selectStyleFunctionForEdge=function(feature, resolution) {
 function getVisible(l,resolution)
 {
   var visiable=false
-  if (l == 1 && resolution< 30)  visiable= true;
+  if (l == 1)  visiable= true;
   if (l == 2 && resolution< 20) visiable= true;
   if (l == 3 && resolution< 15)  visiable= true;
   if (l == 4 && resolution< 10)   visiable= true;
@@ -124,7 +124,7 @@ var createTextStyle = function(lbl, fontsize, level, boxheight,weight,resolution
 
   if (level==1 && resolution> 20){
 fsize=fontsize * resolution ;
-console.log(fsize)
+//console.log(fsize)
   }
   var nodetext=
      new Text({  font:  fsize + 'px arial',  text: lbl,
@@ -161,7 +161,7 @@ var map = new Map({
   view: new View({center:  [17759.391499406964, -10439.758404798833],
       zoom: 17,//12, //17
       maxZoom: 18,
-      minZoom: 11  })
+      minZoom: 10  })
 });
 
 global.map = map

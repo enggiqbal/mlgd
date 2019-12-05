@@ -8,8 +8,8 @@ import pygraphviz as pgv
 
 #layout_name="direct_topics"
 #layout_name="impred_topics"
-layout_name="impred_lastfm"
-layout_output_dir="impred_lastfm2"
+layout_name="impred_topics"
+layout_output_dir="impred_topics2"
 def getLayer0(t1):
     numberofnodes=30
     paths=nx.shortest_path(t1)
@@ -46,7 +46,7 @@ if layout_name=="direct_topics":
 
 
 if layout_name=="impred_topics":
-    mappath="../impred_output/mapImpred_modularity.svg"
+    mappath="../map_generator/impred/map.svg"
     clusteroutput=globaldatapath + layout_output_dir+"/im_cluster.geojson"
     polylineoutput=globaldatapath + layout_output_dir+"/im_cluster_boundary.geojson"
     edgesoutput=globaldatapath + layout_output_dir+"/im_edges.geojson"
@@ -56,6 +56,9 @@ if layout_name=="impred_topics":
     inputdir="../data/datasets/topics/set2/input/"
     input_graph="Topics_Graph.dot"
     layer_file_format="Topics_layer_{0}.dot"
+    layout_cordinate_path="../map_generator/impred/T8_for_map.dot"
+
+
 
 
 
@@ -116,18 +119,19 @@ def process_alledges(G,alledges):
         #import pdb; pdb.set_trace()
         a=G_cord.nodes[n1]["pos"]
         b=G_cord.nodes[n2]["pos"]
-
-        x1=float(a.split(",")[0]) #for lastfm we use index 2
+        '''
+        x1=float(a.split(",")[0])  
         y1=float(a.split(",")[1])
         h = float(G_cord.nodes[n1]["height"]) * 1.10 * 72  # inch to pixel conversion
         w =float(G_cord.nodes[n1]["width"]) * 1.10 * 72 # inch to pixel conversion
         
 
-        x2=float(b.split(",")[0]) #for lastfm we use index 2
+        x2=float(b.split(",")[0])  
         y2=float(b.split(",")[1])
 
         points_array=[[x1-w/2,y1-h/2], [x2+w/2,y2-h/2] ]
-        #points_array=[[ float(a.split(",")[0]), float(a.split(",")[1])  ],  [ float(b.split(",")[0]), float(b.split(",")[1])  ]]
+        '''
+        points_array=[[ float(a.split(",")[0]), float(a.split(",")[1])  ],  [ float(b.split(",")[0]), float(b.split(",")[1])  ]]
         edge["geometry"]["coordinates"]=points_array
 
         #import pdb; pdb.set_trace()
@@ -243,8 +247,8 @@ def process_node(xml,G):
     node["properties"]=G.node[node_g]
     #import pdb; pdb.set_trace()
 
-    x=float(xml[2].attrib.pop('x')) #for lastfm we use index 2
-    y=float(xml[2].attrib.pop('y'))
+    x=float(xml[1].attrib.pop('x')) #for lastfm we use index 2 otherwise 1.
+    y=float(xml[1].attrib.pop('y'))
     h= float(node["properties"]["height"]) * 1.10 * 72  # inch to pixel conversion
     w=float(node["properties"]["width"]) * 1.10 * 72 # inch to pixel conversion
     points_array=[[x-w/2,y-h/2], [x+w/2,y-h/2], [x+w/2,y+h/2], [x-w/2,y+h/2], [x-w/2,y-h/2]]
