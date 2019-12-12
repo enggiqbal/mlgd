@@ -10,6 +10,7 @@ import pygraphviz as pgv
 #layout_name="impred_topics"
 layout_name="impred_topics"
 layout_output_dir="impred_topics2"
+nodecoordinate={}
 def getLayer0(t1):
     numberofnodes=30
     paths=nx.shortest_path(t1)
@@ -131,7 +132,11 @@ def process_alledges(G,alledges):
 
         points_array=[[x1-w/2,y1-h/2], [x2+w/2,y2-h/2] ]
         '''
-        points_array=[[ float(a.split(",")[0]), float(a.split(",")[1])  ],  [ float(b.split(",")[0]), float(b.split(",")[1])  ]]
+        a=nodecoordinate[G.node[n1]["label"]]
+        b=nodecoordinate[G.node[n2]["label"]]
+        points_array=[a, b]
+        #print(points_array)
+        #print(e)
         edge["geometry"]["coordinates"]=points_array
 
         #import pdb; pdb.set_trace()
@@ -223,12 +228,14 @@ def process_edge(xml,G):
     edge["properties"]=xml[1].attrib
     n1=xml[0].text.split("--")[0]
     n2=xml[0].text.split("--")[1]
+    a=nodecoordinate[G.node[n1]["label"]]
+    b=nodecoordinate[G.node[n2]["label"]]
     edge["properties"]["src"]=n1
     edge["properties"]["dest"]=n2
     edge["properties"]["label"]=G.node[n1]["label"] + " -- " +  G.node[n2]["label"]
     #edge["properties"]["weight"]=G.edges[(n1,n2)]["weight"] 
     #todo: ignoring edge weights for lastfm data
-    edge["geometry"]["coordinates"]=points_array
+    edge["geometry"]["coordinates"]=[a,b]
     edge["properties"]["level"]=getLayer((n1,n2))
     return json.dumps(edge, indent=2)
 
@@ -237,18 +244,14 @@ def process_edge(xml,G):
 
  
 def process_node(xml,G):
-   
- 
-    #import pdb; pdb.set_trace()
     node_g=xml[0].text
     node=n.copy()
-    node["geometry"]["type"]="Polygon" #"Point"
+    node["geometry"]["type"]="Point" #"Point"
     node["id"]="node" + node_g
     node["properties"]=G.node[node_g]
-    #import pdb; pdb.set_trace()
-
-    x=float(xml[1].attrib.pop('x')) #for lastfm we use index 2 otherwise 1.
-    y=float(xml[1].attrib.pop('y'))
+    x=float(xml[2].attrib.pop('x'))  
+    y=float(xml[2].attrib.pop('y'))
+    nodecoordinate[G.node[node_g]["label"]]=[x,y]
     h= float(node["properties"]["height"]) * 1.10 * 72  # inch to pixel conversion
     w=float(node["properties"]["width"]) * 1.10 * 72 # inch to pixel conversion
     points_array=[[x-w/2,y-h/2], [x+w/2,y-h/2], [x+w/2,y+h/2], [x-w/2,y+h/2], [x-w/2,y-h/2]]
@@ -256,7 +259,7 @@ def process_node(xml,G):
     node["properties"]["height"]=h
     node["properties"]["width"]= w
 
-    node["geometry"]["coordinates"]= [points_array] #//[x,y]
+    node["geometry"]["coordinates"]= [x,y] #//[x,y]
     node["properties"]["level"]=getLevel(node_g)
     return json.dumps(node, indent=2)
 
@@ -279,6 +282,15 @@ polygons=""
 polylines=""
 edges=""
 nodes=""
+
+
+for child in root.findall('*[@id="graph0"]/*'):
+    if "{http://www.w3.org/2000/svg}g"==child.tag:
+        if child.attrib["class"]=="node":
+            nodeCount=nodeCount+1
+            nodes=nodes+ process_node(child,G)+ ", \n"
+
+
 for child in root.findall('*[@id="graph0"]/*'):
     if "polygon" in child.tag:
         if polygonCount!=0: #scape 1st rectangle
@@ -287,11 +299,6 @@ for child in root.findall('*[@id="graph0"]/*'):
     if "polyline" in child.tag:
         polylines=polylines+ process_polyline(child) + ", \n"
     if "{http://www.w3.org/2000/svg}g"==child.tag:
-        if child.attrib["class"]=="node":
-            #print (child[0].text)
-            #print(child[1].attrib)
-            nodeCount=nodeCount+1
-            nodes=nodes+ process_node(child,G)+ ", \n"
         if child.attrib["class"]=="edge":
             edges=edges+ process_edge(child,G)+ ", \n"
             edgeCount=edgeCount+1

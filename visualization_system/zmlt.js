@@ -27,11 +27,12 @@ import edgeyData from './geojson/impred_topics2/im_edges.geojson'
 import nodeData from './geojson/impred_topics2/im_nodes.geojson'
 
 
+import alledgesData from './geojson/impred_topics2/im_alledges.geojson'
 
-import alledgesData from './geojson/impred_lastfm2/im_alledges.geojson'
+
+
 
 var alledgeStyleFunction = function(feature, resolution) { 
-
   var edgeStyle = new Style({  stroke: new Stroke({      color: 'rgba(0,0,0,0.1)',    width: 1  })  });
  
 if (resolution>2 )
@@ -180,7 +181,7 @@ var map = new Map({
   view: new View({center:  [-829.6902714753744, -5317.652015919027],
       zoom: 15,//12, //17
       maxZoom: 18,
-      minZoom: 11  })
+      minZoom: 12.5  })
 });
 
 global.map = map
