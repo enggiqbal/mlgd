@@ -141,16 +141,14 @@ function getVisible(l,resolution)
 var createTextStyle = function(lbl, fontsize, level, boxheight,weight,resolution) {
   var fsize=  parseFloat(fontsize) /resolution;
 
-  if (level==1 && resolution> 20){
-fsize=fontsize * resolution ;
-console.log(fsize)
-  }
+ 
   var nodetext=
      new Text({  font:  fsize + 'px arial',  text: lbl,
       fill: new Fill({      color: 'rgba(0,0,0,0.5)'    }),
       stroke: new Stroke({  color: 'rgba(0,0,0,0.5)', width: 1  }),
       offsetX: 0,
       offsetY: 0,//boxheight/2,
+    //  backgroundFill: new ol.style.Fill({color: 'black'})
     });
     return nodetext;
   };
