@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://bl.ocks.org/sgcc/raw/7ad094c9acd1877785ee39cde67eb6c7/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+
+.links line {
+  stroke: #76963e;
+  stroke-width: 1.0px;
+  stroke-opacity: 1.5;
+}
+
+.nodes circle {
+  stroke: green;
+  stroke-width: 0.5px;
+}
+
+#ib-d3-graph-div {
+  height: 700px;
+  width: 960px;
+}
+
+#testSvgId {
+  height: 700px;
+  width: 960px;
+}
+
+#backgroundId {
+  height: 700px;
+  width: 960px;
+}
+
+text {
+  font: bold 12px monospace;
+}
+
+</style>
+
+</head><body><div id="ib-d3-graph-div">
+<!-- <svg id="testSvgId" width="960" height="500"></svg> -->
+<script src="./dynamic_update_files/d3.v4.min.js"></script>
+<script src="crossings.js"></script>
+<script>
+
+class D3ForceGraph {
+  constructor(graphDiv, svgId) {
+    let t = this;
+
+    t.graphDiv = graphDiv;
+    t.rect = t.graphDiv.getBoundingClientRect();
+    t.width = t.graphDiv.scrollWidth;
+    t.height = t.graphDiv.scrollHeight;
+    t.center = {x: t.width / 2, y: t.height / 2};
+
+    t.svgId = svgId;
+    t.updateRefCount = 0;
+  }
+
+  init() {
+    let t = this;
+
+    t.graphData = { "nodes": [], "links": [] };
+
+    // graph area
+    let svg = d3.select(t.graphDiv)
+      .append("svg")
+      .attr('id', t.svgId)
+      .attr('width', t.width)
+      .attr('height', t.height);
+
+    // Needs to be second, just after the svg itself.
+    let background = t.initBackground(t, svg);
+    // background
+
+    // Holds child components (nodes, links), i.e. all but the background
+    let svgGroup = svg
+        .append('svg:g')
+          .attr("id", "svgGroup");
+    t.svgGroup = svgGroup;
+
+    let graphLinksGroup =
+      svgGroup
+        .append("g")
+        .attr("id", `links_${t.svgId}`)
+        .attr("class", "links");
+    t.graphLinksGroup = graphLinksGroup;
+
+    let graphNodesGroup =
+      svgGroup
+        .append("g")
+        .attr("id", `nodes_${t.svgId}`)
+        .attr("class", "nodes");
+    t.graphNodesGroup = graphNodesGroup;
+
+    let zoom =
+      d3.zoom()
+        .on("zoom", () => t.handleZoom(svgGroup));
+    background.call(zoom);
+
+
+    let simulation = t.initSimulation();
+    t.simulation = simulation;
+
+    // update();
+    t.update(t, simulation, graphNodesGroup, graphLinksGroup);
+  }
+
+  initBackground(t, svg) {
+    let result = svg
+      .append("rect")
+      .attr("id", "backgroundId")
+      .attr("fill", "#F2F7F0")
+      .attr("class", "view")
+      .attr("x", 0.5)
+      .attr("y", 0.5)
+      .attr("width", t.width - 1)
+      .attr("height", t.height - 1)
+      .on("click", () => t.handleBackgroundClicked());
+
+    return result;
+  }
+
+  initSimulation() {
+    let t = this;
+
+    let result = d3.forceSimulation()
+      .velocityDecay(0.55)
+      .force("link", d3.forceLink()
+                       //.distance(100)
+                       //.distance(0)
+                       //.distance(function(d) {if(d.index>=parseInt(my_edges.length/2)){return 50;}else{return 100;}})
+                       .distance(function(d) {return edge_distance[d.index];})
+                       .id(d => d.id))
+      .force("charge", d3.forceManyBody().strength(-100).distanceMin(10000))
+      //.force("charge", d3.forceManyBody().strength(-50))
+      .force("collide", d3.forceCollide(25))
+      //.force("x", d3.forceX())
+      //.force("y", d3.forceY())
+      .force("center", d3.forceCenter(t.center.x, t.center.y));
+
+    return result;
+  }
+
+  getRadius(d) {
+    const min = 5;
+    const max = 50;
+    let r = Math.trunc(500 / (d.id || 1));
+    if (r < min) r = min;
+    if (r > max) r = max;
+
+    return r;
+  }
+  getColor(d) { return "lightblue"; }
+
+  handleDragStarted(d, simulation) {
+    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+  handleDragged(d) {
+    d.fx = d3.event.x;
+    d.fy = d3.event.y;
+  }
+  handleDragEnded(d, simulation) {
+    if (!d3.event.active) simulation.alphaTarget(0);
+
+    d.fx = undefined;
+    d.fy = undefined;
+  }
+
+  handleBackgroundClicked() {
+    console.log(`background clicked in numero 2`);
+  }
+
+  handleZoom(svgGroup) {
+    svgGroup
+      .attr("transform",
+      `translate(${d3.event.transform.x}, ${d3.event.transform.y})` + " " +
+      `scale(${d3.event.transform.k})`);
+  }
+
+  update(t, simulation, graphNodesGroup, graphLinksGroup) {
+    let nodes = t.graphData.nodes;
+    let links = t.graphData.links;
+
+    let drag =
+      d3.drag()
+        .on("start", d => t.handleDragStarted(d, simulation))
+        .on("drag", d => t.handleDragged(d))
+        .on("end", d => t.handleDragEnded(d, simulation));
+
+    // nodes
+    let graphNodesData =
+      graphNodesGroup
+        .selectAll("g")
+        .data(nodes, d => d.id);
+    let graphNodesEnter =
+      graphNodesData
+        .enter()
+          .append("g")
+          .attr("id", d => d.id || null)
+          .on("contextmenu", (d, i)  => {
+             t.remove(d);
+             d3.event.preventDefault();
+          })
+          .on("mouseover", d => console.log(`d.id: ${d.id}`))
+          .on("click", d => t.handleNodeClicked(d))
+          .call(drag);
+    let graphNodesExit =
+      graphNodesData
+        .exit()
+        // .call((s) => console.log(`selection exiting. s: ${JSON.stringify(s)}`))
+        .remove();
+
+    let graphNodeCircles =
+      graphNodesEnter
+        .append("circle")
+        .classed('node', true)
+        .attr("cursor", "pointer");
+        //.attr("r", d => t.getRadius(d))
+        //.attr("fill", d => t.getColor(d));
+
+    let graphNodeLabels =
+      graphNodesEnter
+        .append("text")
+        .attr("id", d => "label_" + d.id)
+        .attr("font-size", `10px`)
+        .attr("text-anchor", "middle")
+        .text(d => `${d.name}`);
+
+    // merge
+    graphNodesData =
+      graphNodesEnter.merge(graphNodesData);
+
+    // links
+    let graphLinksData =
+      graphLinksGroup
+        .selectAll("line")
+        .data(links);
+    let graphLinksEnter =
+       graphLinksData
+        .enter()
+          .append("line");
+    let graphLinksExit =
+      graphLinksData
+        .exit()
+        .remove();
+    // merge
+    graphLinksData =
+      graphLinksEnter.merge(graphLinksData);
+
+    simulation
+      .nodes(nodes)
+      .on("tick", handleTicked)
+      .on("end", () => t.handleEnd());
+
+    simulation
+      .force("link")
+      .links(links);
+
+    function handleTicked() {
+      graphLinksData
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+
+      // Translate the groups
+      graphNodesData
+          .attr("transform", d => {
+            return 'translate(' + [d.x, d.y] + ')';
+          });
+    }
+  }
+
+  add(nodesToAdd, linksToAdd) {
+    let t = this;
+
+    if (nodesToAdd) {
+      nodesToAdd.forEach(n => t.graphData.nodes.push(n));
+    }
+    if (linksToAdd) {
+      linksToAdd.forEach(l => t.graphData.links.push(l));
+    }
+
+    // update();
+    t.update(t, t.simulation, t.graphNodesGroup, t.graphLinksGroup)
+    t.simulation.restart();
+    t.simulation.alpha(1);
+  }
+
+  remove(dToRemove) {
+    console.log(`dToRemove: ${JSON.stringify(dToRemove)}`)
+
+    let t = this;
+
+    let currentNodes = t.graphData.nodes;
+    let currentLinks = t.graphData.links;
+    let nIndex = currentNodes.indexOf(dToRemove);
+    if (nIndex > -1) {
+      currentNodes.splice(nIndex, 1);
+    }
+
+    let toRemoveLinks = currentLinks.filter(l => {
+      return l.source.id === dToRemove.id || l.target.id === dToRemove.id;
+    });
+    toRemoveLinks.forEach(l => {
+      let lIndex = currentLinks.indexOf(l);
+      currentLinks.splice(lIndex, 1);
+    })
+
+    t.update(t, t.simulation, t.graphNodesGroup, t.graphLinksGroup)
+    t.simulation.restart();
+    t.simulation.alpha(1);
+  }
+
+  handleNodeClicked(d) {
+    console.log(`node clicked: ${JSON.stringify(d)}`);
+
+    let t = this;
+
+    let newId = Math.trunc(Math.random() * 1000);
+    let newNode = {"id": newId, "name": "server 22", x: d.x, y: d.y};
+    let newNodes = [newNode];
+    let newLinks = [{source: d.id, target: newNode.id}]
+
+    t.add(newNodes, newLinks);
+  }
+
+  handleEnd() {
+    this.simulation.force('x', d3.forceX(0));
+    this.simulation.force('y', d3.forceY(0));
+    console.log("end");
+    //initialize();
+  }
+}
+
+let graphDiv = document.querySelector("#ib-d3-graph-div");
+let graph = new D3ForceGraph(graphDiv, "testSvgId");
+graph.init();
+
+/*setTimeout(() => {
+  let initialCount = 10;
+  let nodes = [ {"id": 0, "name": "root node"} ];
+  let links = [];
+  for (var i = 1; i < initialCount; i++) {
+    let randomIndex = Math.trunc(Math.random() * nodes.length);
+    let randomNode = nodes[randomIndex];
+    let newNode = {id: i, name: `node ${i}`};
+    let newLink = {source: randomIndex, target: newNode.id};
+
+    nodes.push(newNode);
+    links.push(newLink);
+  }
+
+  graph.add(nodes, links);
+
+  let count = 0;
+  let interval = setInterval(() => {
+    let randomIndex = Math.trunc(Math.random() * graph.graphData.nodes.length);
+    let randomNode = graph.graphData.nodes[randomIndex];
+    let randomId = Math.trunc(Math.random() * 100000);
+    let newNode = {"id": randomId, "name": "server " + randomId};
+    if (randomNode.x) {
+      newNode.x = randomNode.x;
+      newNode.y = randomNode.y;
+    }
+    let newLink = {source: randomNode.id, target: randomId};
+    graph.add([newNode], [newLink]);
+    count ++;
+    if (count % 100 === 0) {
+      console.log(`count: ${count}`)
+      if (count % 400 === 0) {
+        clearInterval(interval);
+      }
+    }
+
+  }, 10)
+
+}, 500);*/
+
+/*my_edges = [["machine lear", "optimization"], ["machine lear", "data science"], ["machine lear", "nlp"], ["machine lear", "bioinformati"], ["machine lear", "statistics"], ["machine lear", "artificial i"], ["machine lear", "computer vis"], ["computer vis", "image proces"], ["computer vis", "robotics"]];
+label_to_id = {"machine lear":0, "optimization":1, "data science":2, "nlp":3, "bioinformati":4, "statistics":5, "artificial i":6, "computer vis":7, "image proces":8, "robotics":9};
+id_to_label = {0:"machine lear", 1:"optimization", 2:"data science", 3:"nlp", 4:"bioinformati", 5:"statistics", 6:"artificial i", 7:"computer vis", 8:"image proces", 9:"robotics"};*/
+
+/*
+my_edges =  [['Judas Priest', 'W.A.S.P.'], ['Judas Priest', 'Manowar'], ['W.A.S.P.', 'KISS'], ['W.A.S.P.', 'Alice Cooper'], ['Manowar', 'Blind Guardi'], ['KISS', 'Aerosmith'], ['Alice Cooper', 'Ted Nugent'], ['Blind Guardi', 'Kamelot'], ['Ted Nugent', 'Nazareth'], ['Ted Nugent', 'Foghat'], ['Kamelot', 'Epica']]
+label_to_id =  {'Epica': 11, 'KISS': 3, 'Judas Priest': 0, 'Aerosmith': 6, 'Ted Nugent': 7, 'Blind Guardi': 5, 'Foghat': 10, 'Alice Cooper': 4, 'W.A.S.P.': 1, 'Kamelot': 8, 'Manowar': 2, 'Nazareth': 9}
+id_to_label =  {0: 'Judas Priest', 1: 'W.A.S.P.', 2: 'Manowar', 3: 'KISS', 4: 'Alice Cooper', 5: 'Blind Guardi', 6: 'Aerosmith', 7: 'Ted Nugent', 8: 'Kamelot', 9: 'Nazareth', 10: 'Foghat', 11: 'Epica'}
+edge_distance =  {0: 50, 1: 50, 2: 50, 3: 50, 4: 50, 5: 50, 6: 50, 7: 50, 8: 50, 9: 50, 10: 50}
+*/
+
+/*
+my_edges =  [['Manowar', 'Blind Guardi'], ['Manowar', 'Judas Priest'], ['Blind Guardi', 'Kamelot'], ['Judas Priest', 'Black Sabbat'], ['Judas Priest', 'W.A.S.P.'], ['Kamelot', 'Epica'], ['W.A.S.P.', 'KISS'], ['W.A.S.P.', 'Alice Cooper'], ['Epica', 'After Foreve'], ['KISS', 'Aerosmith'], ['Alice Cooper', 'Ted Nugent'], ['After Foreve', 'Lacuna Coil'], ['Ted Nugent', 'Nazareth'], ['Ted Nugent', 'Joe Walsh'], ['Ted Nugent', 'Foghat'], ['Lacuna Coil', 'Evanescence'], ['Nazareth', 'Deep Purple'], ['Joe Walsh', 'Three Dog Ni'], ['Three Dog Ni', 'America']]
+label_to_id =  {'Ted Nugent': 11, 'America': 19, 'W.A.S.P.': 5, 'Judas Priest': 2, 'Blind Guardi': 1, 'Joe Walsh': 14, 'Alice Cooper': 8, 'Epica': 6, 'Deep Purple': 17, 'Three Dog Ni': 18, 'Lacuna Coil': 12, 'Evanescence': 16, 'Manowar': 0, 'Foghat': 15, 'Kamelot': 3, 'KISS': 7, 'After Foreve': 9, 'Nazareth': 13, 'Black Sabbat': 4, 'Aerosmith': 10}
+id_to_label =  {0: 'Manowar', 1: 'Blind Guardi', 2: 'Judas Priest', 3: 'Kamelot', 4: 'Black Sabbat', 5: 'W.A.S.P.', 6: 'Epica', 7: 'KISS', 8: 'Alice Cooper', 9: 'After Foreve', 10: 'Aerosmith', 11: 'Ted Nugent', 12: 'Lacuna Coil', 13: 'Nazareth', 14: 'Joe Walsh', 15: 'Foghat', 16: 'Evanescence', 17: 'Deep Purple', 18: 'Three Dog Ni', 19: 'America'}
+edge_distance =  {0: 100, 1: 100, 2: 100, 3: 50, 4: 100, 5: 100, 6: 100, 7: 100, 8: 50, 9: 100, 10: 100, 11: 50, 12: 100, 13: 50, 14: 100, 15: 50, 16: 50, 17: 50, 18: 50}
+*/
+
+my_edges =  [['Three Dog Ni', 'America'], ['Three Dog Ni', 'Joe Walsh'], ['America', 'Jackson Brow'], ['Joe Walsh', 'Ted Nugent'], ['Jackson Brow', 'Bob Seger'], ['Jackson Brow', 'James Taylor'], ['Jackson Brow', 'Don McLean'], ['Ted Nugent', 'Nazareth'], ['Ted Nugent', 'Alice Cooper'], ['Ted Nugent', 'Foghat'], ['Bob Seger', 'The J. Geils'], ['James Taylor', 'Carole King'], ['Don McLean', 'Donovan'], ['Nazareth', 'Deep Purple'], ['Alice Cooper', 'W.A.S.P.'], ['The J. Geils', 'The Knack'], ['Carole King', 'Joni Mitchel'], ['Donovan', 'Bob Dylan'], ['Donovan', 'The Zombies'], ['Donovan', 'The Hollies'], ['W.A.S.P.', 'KISS'], ['W.A.S.P.', 'Judas Priest'], ['The Knack', 'The Cars'], ['KISS', 'Aerosmith'], ['Judas Priest', 'Manowar'], ['Judas Priest', 'Black Sabbat'], ['The Cars', 'Devo'], ['The Cars', 'The Pretende'], ['Manowar', 'Blind Guardi'], ['Devo', 'The Psychede'], ['Devo', 'Gang of Four'], ['Devo', 'Sparks'], ['The Pretende', 'The Police'], ['Blind Guardi', 'Kamelot'], ['The Psychede', 'Echo and The'], ['Kamelot', 'Epica'], ['Echo and The', 'Joy Division'], ['Epica', 'After Foreve'], ['Joy Division', 'Bauhaus'], ['After Foreve', 'Lacuna Coil'], ['Bauhaus', 'Siouxsie and'], ['Lacuna Coil', 'Evanescence']]
+label_to_id =  {'Joe Walsh': 2, 'Devo': 27, 'James Taylor': 6, 'Ted Nugent': 4, 'Bob Dylan': 18, 'The Knack': 16, 'Gang of Four': 31, 'Three Dog Ni': 0, 'Alice Cooper': 9, 'The Police': 33, 'Bauhaus': 39, 'The Cars': 23, 'Foghat': 10, 'The Psychede': 30, 'After Foreve': 38, 'Kamelot': 34, 'Lacuna Coil': 40, 'Joni Mitchel': 17, 'KISS': 21, 'W.A.S.P.': 15, 'Siouxsie and': 41, 'Blind Guardi': 29, 'Bob Seger': 5, 'Judas Priest': 22, 'Nazareth': 8, 'Carole King': 12, 'Jackson Brow': 3, 'America': 1, 'Evanescence': 42, 'Aerosmith': 24, 'The Pretende': 28, 'Sparks': 32, 'The Zombies': 19, 'Manowar': 25, 'Echo and The': 35, 'Black Sabbat': 26, 'Joy Division': 37, 'Don McLean': 7, 'Epica': 36, 'Deep Purple': 14, 'The J. Geils': 11, 'Donovan': 13, 'The Hollies': 20}
+id_to_label =  {0: 'Three Dog Ni', 1: 'America', 2: 'Joe Walsh', 3: 'Jackson Brow', 4: 'Ted Nugent', 5: 'Bob Seger', 6: 'James Taylor', 7: 'Don McLean', 8: 'Nazareth', 9: 'Alice Cooper', 10: 'Foghat', 11: 'The J. Geils', 12: 'Carole King', 13: 'Donovan', 14: 'Deep Purple', 15: 'W.A.S.P.', 16: 'The Knack', 17: 'Joni Mitchel', 18: 'Bob Dylan', 19: 'The Zombies', 20: 'The Hollies', 21: 'KISS', 22: 'Judas Priest', 23: 'The Cars', 24: 'Aerosmith', 25: 'Manowar', 26: 'Black Sabbat', 27: 'Devo', 28: 'The Pretende', 29: 'Blind Guardi', 30: 'The Psychede', 31: 'Gang of Four', 32: 'Sparks', 33: 'The Police', 34: 'Kamelot', 35: 'Echo and The', 36: 'Epica', 37: 'Joy Division', 38: 'After Foreve', 39: 'Bauhaus', 40: 'Lacuna Coil', 41: 'Siouxsie and', 42: 'Evanescence'}
+edge_distance =  {0: 100, 1: 100, 2: 50, 3: 100, 4: 50, 5: 50, 6: 50, 7: 150, 8: 150, 9: 150, 10: 50, 11: 50, 12: 50, 13: 100, 14: 150, 15: 50, 16: 50, 17: 50, 18: 50, 19: 50, 20: 150, 21: 150, 22: 50, 23: 150, 24: 150, 25: 100, 26: 50, 27: 50, 28: 150, 29: 50, 30: 50, 31: 50, 32: 50, 33: 150, 34: 50, 35: 150, 36: 50, 37: 100, 38: 50, 39: 100, 40: 50, 41: 100}
+
+
+function myInit() {
+  //let nodes = [ {"id": 0, "name": "machine lear"} ];
+  let nodes = [ {"id": 0, "name": my_edges[0][0]} ];
+  let links = [];
+  graph.add(nodes, links);
+}
+
+my_count = 0;
+
+function startAddingEdges() {
+    //if(my_count>=my_edges.length) return;
+    if(my_count>=my_edges.length){
+      stopAddingEdges();
+      return;
+    }
+    //let randomIndex = Math.trunc(Math.random() * graph.graphData.nodes.length);
+    //let randomNode = graph.graphData.nodes[randomIndex];
+    let randomNode = graph.graphData.nodes[label_to_id[my_edges[my_count][0]]];
+    //let randomId = Math.trunc(Math.random() * 100000);
+    let randomId = label_to_id[my_edges[my_count][1]];
+    //let newNode = {"id": randomId, "name": "server " + randomId};
+    let newNode = {"id": randomId, "name": my_edges[my_count][1]};
+    if (randomNode.x) {
+      newNode.x = randomNode.x;
+      newNode.y = randomNode.y;
+    }
+    let newLink = {source: randomNode.id, target: randomId};
+    graph.add([newNode], [newLink]);
+    my_count++;
+}
+
+var addEdgeInterval = setInterval(startAddingEdges, 500);
+
+var crossingForceInterval = null;
+
+function stopAddingEdges() {
+  clearInterval(addEdgeInterval);
+  crossingForceInterval = setInterval(addCrossingForce, 500);
+}
+
+
+function myMove(){
+   //graph.simulation.force('x', d3.forceX([1000]));
+   graph.simulation.force('x', d3.forceX().x(function(d) {
+    //console.log(d);
+    if(d.id>0){
+      //console.log(d);
+      if(d.x>graph.graphData.nodes[0].x){
+        return d.x+10;
+      }
+      else{
+        return d.x-10;
+      }
+    }
+    else
+      return 0;
+   }));
+   graph.simulation.force('y', d3.forceY().y(function(d) {
+    if(d.id>0){
+      if(d.y>graph.graphData.nodes[0].y){
+        return d.y+10;
+      }
+      else{
+        return d.y-10;
+      }
+    }
+    else
+      return 0;
+   }));
+   graph.simulation.alpha(1).restart();
+   //console.log("center", graph.graphData.nodes[0].x, graph.graphData.nodes[0].y)
+}
+
+function moveUp(){
+    var nodeName = document.getElementById("nodeName").value;
+    var nodeId = label_to_id[nodeName];
+    var moveAmount = parseFloat(document.getElementById("moveAmount").value);
+    graph.simulation.force('y', d3.forceY().y(function(d) {
+    if(d.id==nodeId){
+        return d.y-moveAmount;
+    }
+    else
+    {
+        return d.y+moveAmount;
+    }
+   }));
+   graph.simulation.alpha(1).restart();
+}
+
+function moveDown(){
+    console.log("Down");
+    var nodeName = document.getElementById("nodeName").value;
+    var nodeId = label_to_id[nodeName];
+    var moveAmount = parseFloat(document.getElementById("moveAmount").value);
+    graph.simulation.force('y', d3.forceY().y(function(d) {
+    if(d.id==nodeId){
+        console.log(d);
+        return d.y+moveAmount;
+    }
+    else
+    {
+        return d.y-moveAmount;
+    }
+   }));
+   graph.simulation.alpha(1).restart();
+}
+
+function moveRight(){
+    var nodeName = document.getElementById("nodeName").value;
+    var nodeId = label_to_id[nodeName];
+    var moveAmount = parseFloat(document.getElementById("moveAmount").value);
+    graph.simulation.force('x', d3.forceX().x(function(d) {
+    if(d.id==nodeId){
+        return d.x+moveAmount;
+    }
+    else
+    {
+        return d.x-moveAmount;
+    }
+   }));
+   graph.simulation.alpha(1).restart();
+}
+
+function moveLeft(){
+    console.log("Left");
+    var nodeName = document.getElementById("nodeName").value;
+    var nodeId = label_to_id[nodeName];
+    var moveAmount = parseFloat(document.getElementById("moveAmount").value);
+    graph.simulation.force('x', d3.forceX().x(function(d) {
+    if(d.id==nodeId){
+        console.log(d);
+        console.log(d.x-10);
+        return d.x-moveAmount;
+    }
+    else
+    {
+        return d.x+moveAmount;
+    }
+   }));
+   graph.simulation.alpha(1).restart();
+}
+
+function movePar(nodeId, moveAmountUp, moveAmountRight){
+    graph.simulation.force('y', d3.forceY().y(function(d) {
+    if(d.id==nodeId){
+        return d.y-moveAmountUp;
+    }
+    else
+    {
+        return d.y+moveAmountUp;
+    }
+   }));
+    graph.simulation.force('x', d3.forceX().x(function(d) {
+    if(d.id==nodeId){
+        return d.x+moveAmountRight;
+    }
+    else
+    {
+        return d.x-moveAmountRight;
+    }
+   }));
+   graph.simulation.alpha(1).restart();
+}
+
+function moveParRun(){
+    var nodeName = document.getElementById("nodeName").value;
+    var nodeId = label_to_id[nodeName];
+    var moveAmountUp = parseFloat(document.getElementById("moveAmountUp").value);
+    var moveAmountRight = parseFloat(document.getElementById("moveAmountRight").value);
+    movePar(nodeId, moveAmountUp, moveAmountRight);
+}
+
+myInit();
+</script>
+
+<!--
+<input type="button" value="Add" onclick="myAdd()"><br>
+<label for="nodeName">Node:</label> <input type="text" id="nodeName" name="nodeName"><br>
+<label for="moveAmount">Move Amount:</label> <input type="text" id="moveAmount" name="moveAmount"><br>
+<input type="button" value="Up" onclick="moveUp()">
+<input type="button" value="Down" onclick="moveDown()">
+<input type="button" value="Left" onclick="moveLeft()">
+<input type="button" value="Right" onclick="moveRight()"><br>
+<label for="moveAmountUp">Move Amount up:</label> <input type="text" id="moveAmountUp" name="moveAmountUp"><br>
+<label for="moveAmountRight">Move Amount right:</label> <input type="text" id="moveAmountRight" name="moveAmountRight"><br>
+<input type="button" value="Move" onclick="moveParRun()">
+ -->
+
+</body></html>
