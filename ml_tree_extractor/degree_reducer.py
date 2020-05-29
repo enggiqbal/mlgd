@@ -6,8 +6,18 @@ import pygraphviz as pgv
 import argparse
 from networkx.drawing.nx_agraph import write_dot
 
-#reduce degree by using ZTest with cuttoff 50
-def graph_reducer(G):
+ 
+def graph_reducer(G, cuttoff=50):
+    """Reduce degree by using ZTest with cuttoff 50
+    Parameters
+    ----------
+    G : node and edge weighted graph
+
+    Returns
+    -------
+    G: output reduced graph
+    """	
+    
     node_frequency = nx.get_node_attributes(G, 'weight')
     total = sum(int(node_frequency[k]) for k in node_frequency.keys())
     # updating edge weight based on ZTest
