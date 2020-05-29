@@ -27,7 +27,7 @@ def graph_reducer(G, cuttoff=50):
         topicProb_j = int(G.nodes[e[1]]["weight"]) / total
         expected = topicFreq_i * topicProb_j
         ZTest = (int(G.edges[e]["weight"]) - expected)/(expected**0.5)
-        if ZTest < 50:
+        if ZTest < cuttoff:
             G.remove_edge(*e)
         else:
             G.edges[e]["weight"] = ZTest
