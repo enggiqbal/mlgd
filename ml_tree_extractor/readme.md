@@ -2,7 +2,13 @@ The module extracts multi layers from a node-edge weighted graph. See examples: 
 
 Dot file must contain `weight` and `label` attributes for nodes and a `weight` attribute for edges.
 
+high degree reducer (only for node-edge weighted graph)
 ```
+python3 degree_reducer.py -i ../data/datasets/topics/orginal/Topics_Graph_Connected.dot -o Topics_Graph_Reduce_Connected.dot
+```
+
+```
+
 python3 mltree_generator_weighted.py path_of_input_dot_file #for node weighted graph 
 python3 fix_node_att_add_font_box.py
 ```
