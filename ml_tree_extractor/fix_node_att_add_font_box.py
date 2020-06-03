@@ -3,7 +3,7 @@ import networkx as nx
 import pygraphviz as pgv
 from networkx.readwrite import json_graph
 import tkinter
-
+from tqdm import tqdm
 from tkinter import *
 fontsize=[30,25,20,15,12,10,9,8]
 fontname='Arial'
@@ -24,7 +24,7 @@ def getBoxSize(txt,l):
 
 def get_all_node_att(T,G):
     allboxatt={}
-    for x in T.nodes():
+    for x in tqdm(T.nodes()):
         layer=str(getLayer(x))
         h,w,s=getBoxSize(G.nodes[x]["label"],int(layer)-1)
         hw=" height="+str(h) + ", width="+ str( w)+ ", fontsize= "+ s+", fontname=\""+fontname+"\""
