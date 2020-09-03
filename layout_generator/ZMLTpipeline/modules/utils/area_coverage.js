@@ -16,4 +16,6 @@ function area_coverage(coordinates){
   console.log("Area coverage:", (max_x-min_x)*(max_y-min_y)/(coordinates.length*1600));
 }
 
-my_coords = [{x:0, y:0}, {x:1000, y:0}, {x:1000, y:1000}, {x:0, y:1000}]
+my_coords = [{x:0, y:0}, {x:1000, y:0}, {x:1000, y:1000}, {x:0, y:1000}];
+area_coverage(my_coords);
+
