@@ -9,5 +9,6 @@ python3 print_javascript_data.py 1
 Here 1 means we only considering one level. To take 2 or 3 levels you can call:
 
 python3 print_javascript_data.py 2
+
 python3 print_javascript_data.py 3
 
