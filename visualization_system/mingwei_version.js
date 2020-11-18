@@ -111,10 +111,10 @@ function getVisible(l,resolution)
   if (l == 2 && resolution< 20) visiable= true;
   if (l == 3 && resolution< 10)  visiable= true;
   if (l == 4 && resolution< 6)   visiable= true;
-  if (l == 5 && resolution< 4)  visiable= true;
-  if (l == 6 && resolution< 2)  visiable= true;
-  if (l == 7 && resolution< 1.5)  visiable= true;
-  if (l == 8 && resolution< 1)  visiable= true;
+  if (l == 5 && resolution< 5)  visiable= true;
+  if (l == 6 && resolution< 4)  visiable= true;
+  if (l == 7 && resolution< 3)  visiable= true;
+  if (l == 8 && resolution< 2)  visiable= true;
   return visiable
 }
 
@@ -162,7 +162,7 @@ var map = new Map({
   view: new View({center:  [0, 0],
       zoom: 12,//12, //17
       maxZoom: 30,
-      minZoom: 1  })
+      minZoom: 5 })
 });
 
 global.map = map
