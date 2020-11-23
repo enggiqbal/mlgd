@@ -121,7 +121,9 @@ function getVisible(l,resolution)
 
 
 var createTextStyle = function(lbl, fontsize, level, boxheight,weight,resolution) {
-  var fsize=  20*parseFloat(fontsize) /resolution;
+  // var fsize=  20*parseFloat(fontsize) /resolution;
+    var remap = 1+(8-level)*2/7;
+  var fsize=  5*remap;
 
 //   if (level==1 && resolution> 20){
 // fsize=fontsize * resolution ;

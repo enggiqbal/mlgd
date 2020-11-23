@@ -42,7 +42,7 @@ var clusterBoundaryStyleFunction = function(feature, resolution) {
 var edgeStyleFunction = function(feature, resolution) {
   var l=feature.get("level")
   var w=5*l/resolution
-  if (resolution<5 ) w=l/2;
+  // if (resolution<5 ) w=l/2;
   //else w=l/resolution
   w=(10-l)/2
   var edgeStyle = new Style({  stroke: new Stroke({      color: feature.get("stroke"),    width: w  })  });
@@ -56,6 +56,7 @@ var edgeStyleFunction = function(feature, resolution) {
 
 
 var nodeStyleFunction = function(feature, resolution) {
+  // fs = feature.get("level")/feature.get("level");
   var nodestyle = new Style({  stroke: new Stroke({  color: 'rgba(0,0,0,0.5)',  width: 1  }),
     fill: new Fill({    color: 'rgba(255,255,255,0.5)'  }),
     text: createTextStyle(feature.get("label"), feature.get("fontsize"), feature.get("level"), feature.get("height"),feature.get("weight") ,resolution)
@@ -107,21 +108,24 @@ function getVisible(l,resolution)
 {
   console.log("Resolution", resolution)
   var visiable=false
-  if (l == 1)  visiable= true;
+  if (l == 1 && resolution <75) visiable= true;
   if (l == 2 && resolution< 20) visiable= true;
-  if (l == 3 && resolution< 10)  visiable= true;
-  if (l == 4 && resolution< 6)   visiable= true;
-  if (l == 5 && resolution< 5)  visiable= true;
-  if (l == 6 && resolution< 4)  visiable= true;
-  if (l == 7 && resolution< 3)  visiable= true;
-  if (l == 8 && resolution< 2)  visiable= true;
+  if (l == 3 && resolution< 15)  visiable= true;
+  if (l == 4 && resolution< 10)   visiable= true;
+  if (l == 5 && resolution< 9)  visiable= true;
+  if (l == 6 && resolution< 7)  visiable= true;
+  if (l == 7 && resolution< 6)  visiable= true;
+  if (l == 8 && resolution< 5)  visiable= true;
   return visiable
 }
 
 
 
 var createTextStyle = function(lbl, fontsize, level, boxheight,weight,resolution) {
-  var fsize=  20*parseFloat(fontsize) /resolution;
+  // console.log(level);
+   var remap = 2+(8-level)*1.5/7;
+   var fsize=  5*remap;
+  //var fsize = fontsize;
 
 //   if (level==1 && resolution> 20){
 // fsize=fontsize * resolution ;
@@ -160,7 +164,7 @@ var map = new Map({
   layers: [clusterLayer,clusterBoundayLayer,  edgesLayer, nodesLayer],
   target: 'map',
   view: new View({center:  [0, 0],
-      zoom: 12,//12, //17
+      zoom: 11.5,//12, //17
       maxZoom: 30,
       minZoom: 5 })
 });
@@ -203,7 +207,7 @@ map.on('click', function(evt) {
         if ( fid &&  fid.search("cluster")>-1 ) return 0;
 
         $(element)[0].title =feature.get('label')
-       var content =     feature.get('label') + " <br> Weight: " +  feature.get('weight')  ;
+       var content =     feature.get('label') + " <br> Weight: " +  feature.get('weight') +"<br> Level: " + feature.get('level')  ;
 
         $(element).popover('destroy');
         popup.setPosition(evt.coordinate);
