@@ -21,10 +21,10 @@ import {  defaults as defaultControls,  OverviewMap,  LayerSwitcher, FullScreen}
 
 //import data
 
-import clusterData from './geojson/mingwei_topics/im_cluster.geojson'
-import clusterBoundaryData from './geojson/mingwei_topics/im_cluster_boundary.geojson'
-import edgeyData from './geojson/mingwei_topics/im_edges.geojson'
-import nodeData from './geojson/mingwei_topics/im_nodes.geojson'
+import clusterData from './geojson/mingwei_lastfm/im_cluster.geojson'
+import clusterBoundaryData from './geojson/mingwei_lastfm/im_cluster_boundary.geojson'
+import edgeyData from './geojson/mingwei_lastfm/im_edges.geojson'
+import nodeData from './geojson/mingwei_lastfm/im_nodes.geojson'
 
 var clusterStyleFunction = function(feature, resolution) {
   var clusterStyle = new Style({
@@ -108,9 +108,9 @@ function getVisible(l,resolution)
 {
   console.log("Resolution", resolution)
   var visiable=false
-  if (l == 1 ) visiable= true;
-  if (l == 2 && resolution< 30) visiable= true;
-  if (l == 3 && resolution< 20)  visiable= true;
+  if (l == 1 && resolution <75) visiable= true;
+  if (l == 2 && resolution< 20) visiable= true;
+  if (l == 3 && resolution< 15)  visiable= true;
   if (l == 4 && resolution< 10)   visiable= true;
   if (l == 5 && resolution< 9)  visiable= true;
   if (l == 6 && resolution< 7)  visiable= true;
