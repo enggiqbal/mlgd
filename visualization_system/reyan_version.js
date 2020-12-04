@@ -107,9 +107,9 @@ function getVisible(l,resolution)
 {
   console.log("Resolution", resolution)
   var visiable=false
-  if (l == 1)  visiable= true;
-  if (l == 2 && resolution< 20) visiable= true;
-  if (l == 3 && resolution< 10)  visiable= true;
+  if (l == 1 && resolution< 15)  visiable= true;
+  if (l == 2 && resolution< 8) visiable= true;
+  if (l == 3 && resolution< 7)  visiable= true;
   if (l == 4 && resolution< 6)   visiable= true;
   if (l == 5 && resolution< 4)  visiable= true;
   if (l == 6 && resolution< 2)  visiable= true;
@@ -162,9 +162,9 @@ var map = new Map({
   layers: [clusterLayer,clusterBoundayLayer,  edgesLayer, nodesLayer],
   target: 'map',
   view: new View({center:  [0, 0],
-      zoom: 12,//12, //17
+      zoom: 14,//12, //17
       maxZoom: 30,
-      minZoom: 1  })
+      minZoom: 13  })
 });
 
 global.map = map
