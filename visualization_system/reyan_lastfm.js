@@ -107,14 +107,14 @@ function getVisible(l,resolution)
 {
   console.log("Resolution", resolution)
   var visiable=false
-  if (l == 1 && resolution< 7)  visiable= true;
-  if (l == 2 && resolution< 6) visiable= true;
-  if (l == 3 && resolution< 5)  visiable= true;
-  if (l == 4 && resolution< 4)   visiable= true;
-  if (l == 5 && resolution< 3)  visiable= true;
-  if (l == 6 && resolution< 2)  visiable= true;
-  if (l == 7 && resolution< 1.5)  visiable= true;
-  if (l == 8 && resolution< 1)  visiable= true;
+  if (l == 1 && resolution< 4.5)  visiable= true;
+  if (l == 2 && resolution< 4) visiable= true;
+  if (l == 3 && resolution< 3.5)  visiable= true;
+  if (l == 4 && resolution< 3)   visiable= true;
+  if (l == 5 && resolution< 2)  visiable= true;
+  if (l == 6 && resolution< 1.5)  visiable= true;
+  if (l == 7 && resolution< 1)  visiable= true;
+  if (l == 8 && resolution< 0.5)  visiable= true;
   return visiable
 }
 
@@ -122,7 +122,7 @@ function getVisible(l,resolution)
 
 var createTextStyle = function(lbl, fontsize, level, boxheight,weight,resolution) {
   var remap = 2+(8-level)*1.5/7;
-   var fsize=  3*remap;
+   var fsize=  5*remap;
     // var remap = 1+(8-level)*2/7;
   // var fsize=  5*remap;
 
@@ -162,8 +162,8 @@ var map = new Map({
   controls: defaultControls().extend([new OverviewMap()]),
   layers: [clusterLayer,clusterBoundayLayer,  edgesLayer, nodesLayer],
   target: 'map',
-  view: new View({center:  [0, 0],
-      zoom: 15,//12, //17
+  view: new View({center:  [1000, 1000],
+      zoom: 15.5,//12, //17
       maxZoom: 20,
       minZoom: 13  })
 });

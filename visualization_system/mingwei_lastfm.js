@@ -166,7 +166,7 @@ var map = new Map({
   view: new View({center:  [0, 0],
       zoom: 13,//12, //17
       maxZoom: 20,
-      minZoom: 15 })
+      minZoom: 12 })
 });
 
 global.map = map
