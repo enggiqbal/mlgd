@@ -1,91 +1,115 @@
-<!--see license.txt -->
 <!DOCTYPE html>
 <html>
-    <script>window.location.replace("https://tiga1231.github.io/zmlt/demo/overview.html");</script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <head>
-    <link rel="stylesheet" type="text/css" href="overview.css" />
-  </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" type="text/css" href="overview.css"/> -->
+  <style>
+    h1, h2{
+      margin-top: 1em;
+    }
+    .teaser{
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .thumb{
+      max-width: 50vw;
+      max-height: 40vh;
+      width: auto;
+      height: auto;
 
-  <body bgcolor="#F5F5F5">
-    <meta charset="utf-8">
-    <title>Overview of Maps</title>
-    <h1 style="text-align:center; background-color:#C0C0C0; margin:0"> Multi-level tree based approach for interactive graph visualization with semantic zoom</h1>
+      /*center*/
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .demo{
+      text-align: center;
+    }
+    .demo:hover{
+      /*outline: #333 solid 4px;*/
+      box-shadow: 0 0 5px #333;
+    }
+  </style>
+  <title>Multi-level tree based approach for interactive graph visualization with semantic zoom</title>
+  <script>
+    // window.location.replace("https://tiga1231.github.io/zmlt/demo/overview.html");
+  </script>
+</head>
 
-    This webpage gives examples for the paper "Multi-level tree based approach for interactive graph visualization with semantic zoom".  <br>
 
-    <h2 style="text-align:center">Important Links</h2>
+<body>
+<div class="container">
+<h1>
+  Multi-level tree based approach for interactive graph visualization with semantic zoom
+  <a href="https://ryngray.github.io/ZMLT.pdf">[paper]</a>
+  <a href="https://github.com/abureyanahmed/multi_level_tree">[code]</a>
+</h1>
+<a href="https://ryngray.github.io/ZMLT.pdf">
+  <img class='teaser' src='figures/teaser.png'>
+</a>
+<p>
+  This web page gives examples for the paper "Multi-level tree based approach for interactive graph visualization with semantic zoom". 
+</p>
 
-    The full paper can be found here: <a href = "https://ryngray.github.io/ZMLT.pdf">Multi-level tree based approach for interactive graph visualization with semantic zoom</a> <br>
+<!-- <h2>Important Links</h2>
+<p>
+  The full paper can be found here: 
+  <a href="https://ryngray.github.io/ZMLT.pdf">
+    Multi-level tree based approach for interactive graph visualization with semantic zoom
+  </a>
+  <br>
+  The code can be found here:
+  <a href="https://github.com/abureyanahmed/multi_level_tree">
+    Github Page
+  </a>
+</p> -->
 
-    The code can be found here: <a href="https://github.com/abureyanahmed/multi_level_tree">Github Page</a><br>
+<h2>Example with Google Topics Graph</h2>
+<p>
+  The Google Topics Graph (<a href="http://www2.cs.arizona.edu/~kobourov/avi_gram.pdf">Paper Here</a>) captures relations between research topics.  The graph was extracted from Google Scholar academic research profiles and this version contains 5,947 nodes. The nodes of the graph are research topics, with weights corresponding to the number of people reporting to work on them. Edges are placed between pairs of topics that co-occur in the profiles. 
+</p>
 
-<div style="text-align:center;">
-
-
-  <h2>Example with Google Topics Graph</h2>
-
-  The Google Topics Graph (<a href = "http://www2.cs.arizona.edu/~kobourov/avi_gram.pdf">Paper Here</a>) captures relations between research topics.  The graph was extracted from Google Scholar academic research profiles and this version contains 5,947 nodes. The nodes of the graph are research topics, with weights corresponding to the number of people reporting to work on them. Edges are placed between pairs of topics that co-occur in the profiles. 
-
-  <h2><a href = "reyan_version.html">Google Scholar Topics Visualization - Desirable-Edge-Length Guided</a></h2>
-  <h2><a href = "mingwei_version.html">Google Scholar Topics Visualization - Compactness Guided</a></h2>
-  <h2><a href = "DELG_10_Layers.html">Google Scholar Topics Visualization - Desirable-Edge-Length Guided, More Layers</a></h2>
-
-  <h2>Examples with Last.fm graph</h2>
-
-   The LastFM Graph (<a href="https://www2.cs.arizona.edu/~kobourov/pacvis10.pdf">Paper Here</a>) shows relations between musical artists and contains 2588 nodes.  This graph, is based on data from a 2009 web crawl of 
- the last.fm website, an Internet radio and music community website with a recommender system based on user listening habits. The nodes are popular musical artists with weights corresponding to the number of listeners. Edges are placed between pairs of similar artists, based on listening habits.
-
-  <h2><a href = "reyan_lastfm.html">Last.fm Visualization - Desirable-Edge-Length Guided</a></h2>
-  <h2><a href = "mingwei_lastfm.html">Last.fm Visualization - Compactness Guided</a></h2>
-  
-
-    <!-- <h2>  -->
-    <!-- <a href="impred_lastfm2.html">ZMLT Layout of LastFM Graphs </a><br> </h2> -->
-
-    <!-- <h2>  <a href="direct.html">Direct approach layout for Topic Graphs </a><br></h2>  -->
-
-    <!-- <h2> <a href="medline.html">Medline Using ZMLT</h2> -->
-    
+<div class='row'>
+  <div class="col-6 demo">
+    <a href="reyan_version.html">
+      <img class='thumb' src="figures/topics-delg.png">
+      <p>Google Scholar Topics Visualization - Desirable-Edge-Length Guided</p>
+    </a>
   </div>
-<!--
+  <div class="col-6 demo">
+    <a href="mingwei_version.html">
+      <img class='thumb' src="figures/topics-cg.png">
+      <p>Google Scholar Topics Visualization - Compactness Guided</p>
+    </a>
+  </div>
+</div>
 
 
-      <div class="split left">
-        <div class="container">
-          <div class="text">
-            <h2>Topic Graphs</h2>
-          
-            <h4> Labels (readable)</h4>
+<h2>Examples with Last.fm Graph</h2>
+<p>
+  The LastFM Graph (<a href="https://www2.cs.arizona.edu/~kobourov/pacvis10.pdf">Paper Here</a>) shows relations between musical artists and contains 2588 nodes.  This graph, is based on data from a 2009 web crawl of the last.fm website, an Internet radio and music community website with a recommender system based on user listening habits. The nodes are popular musical artists with weights corresponding to the number of listeners. Edges are placed between pairs of similar artists, based on listening habits.
+</p>
 
-            <a href="impred_large_labels.html">ZMLT layout</a><br>
-            <a href="direct_large_labels.html">Direct approach layout</a><br>
-
-            <h4>old version</h4>
-          
-            <a href="impred.html">ZMLT layout</a><br>
-            <a href="direct.html">Direct approach layout</a><br>
-          </div>
-          <img src="T1Impred.png" alt="Graph Overview" height="300" width="300" border = '1' class="center">
-        </div>
-      </div>
-
-
-      <div class="split right">
-        <div class="container">
-          <div class="text">
-            <h2> LastFM Graphs</h2>
-            <h4> Labels (readable)</h4>
-            <a href="impred_lastfm_large_labels.html">ZMLT Layout</a><br>
-
-            <h4>old version</h4>
-            <a href="impred_lastfm.html" >ZMLT Layout</a><br>
-          </div>
-          <img src="lastfmw_1.png" alt="Graph Overview" height="300" width="300" border = '1' class="center">
-        </div>
-      </div>
+<div class='row'>
+  <div class="col-6 demo">
+    <a href = "reyan_lastfm.html">
+      <img class='thumb' src="figures/lastfm-delg.png">
+      <p>Last.fm Visualization - Desirable-Edge-Length Guided</p>
+    </a>
+  </div>
+  <div class="col-6 demo">
+    <a href = "mingwei_lastfm.html">
+      <img class='thumb' src="figures/lastfm-cg.png">
+      <p>Last.fm Visualization - Compactness Guided</p>
+    </a>
+  </div>
+</div>
 
 
--->
-  </body>
+
+
+</body>
 </html>

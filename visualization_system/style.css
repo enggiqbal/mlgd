@@ -1,0 +1,33 @@
+#map{
+  width: 100%; 
+  height: 100%; 
+  position:fixed;
+}
+
+.popover{
+  width: 200px;
+  height: 150px;
+}
+
+
+li{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  cursor: pointer;
+}
+
+
+li:nth-child(odd) {
+  background: #ffffff;
+}
+li:nth-child(even) {
+  background: #f0f0f0;
+}
+li:hover{
+  background: #aaa;
+}
+
