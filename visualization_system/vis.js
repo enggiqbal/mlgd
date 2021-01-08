@@ -100,18 +100,18 @@ function edgeStyleFunction(feature, resolution) {
     });
   }else{//other edges of the graph
     // if(true){
-    if(resolution < graphMinResolution){
-      return new Style({
-        stroke: new Stroke({
-          // color: '#aaaaff20',
-          color: '#aaaaff77',
-          width: 1,
-          // lineDash: [1, 1],
-        })
-      });
-    }else{
+    // if(resolution < graphMinResolution){
+    //   return new Style({
+    //     stroke: new Stroke({
+    //       // color: '#aaaaff20',
+    //       color: '#aaaaff77',
+    //       width: 1,
+    //       // lineDash: [1, 1],
+    //     })
+    //   });
+    // }else{
       return new Style({});
-    }
+    // }
   }
 
 };
