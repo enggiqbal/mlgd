@@ -89,15 +89,29 @@ function clusterBoundaryStyleFunction(feature, resolution) {
   return clusterStyle;
 };
 
-
+let ef = false;
 function edgeStyleFunction(feature, resolution) {
+  if(!ef){
+    console.log(feature);
+    ef=true;
+  }
+
   if (feature.get('level') !== undefined){//edges of the tree
-    return new Style({
-      stroke: new Stroke({
-        color: '#aaa',
-        width: se(+feature.get('level')),
-      })
-    });
+    if(getVisible(feature, resolution)){
+      return new Style({
+        stroke: new Stroke({
+          color: '#aaaaaa',
+          width: se(+feature.get('level')),
+        })
+      });
+    }else{
+      return new Style({
+        // stroke: new Stroke({
+        //   color: '#aaaaaa22',
+        //   width: se(+feature.get('level')),
+        // })
+      });
+    }
   }else{//other edges of the graph
     // if(true){
     // if(resolution < graphMinResolution){
@@ -181,8 +195,8 @@ function selectStyleFunctionForNode(feature, resolution) {
 
 
 function selectStyleFunctionForEdge(feature, resolution) {
-  let style=edgeStyleFunction(feature, resolution);
-  let stk=  style.getStroke()
+  let style = edgeStyleFunction(feature, resolution);
+  let stk = style.getStroke();
   if (stk){
     stk.width_ = stk.width_ + 2;
     stk.color_='red';
@@ -293,10 +307,7 @@ export function draw(clusterData, clusterBoundaryData, edgeData, nodeData){
   let clusterBoundaySource = new Vector({ url: clusterBoundaryData, format: new GeoJSON() });
   let clusterBoundayLayer = new VectorLayer({   source: clusterBoundaySource,   style: clusterBoundaryStyleFunction });
 
-  let edgeSource = new Vector({  url: edgeData,  format: new GeoJSON() });
-  let edgesLayer = new VectorLayer({  source: edgeSource,  style: edgeStyleFunction});
-
-  let features;
+  let nodeFeatures;
   // let nodeSource = new Vector({  url: nodeData,  format: new GeoJSON()});
   let nodeSource = new Vector({
     format: new GeoJSON(),
@@ -312,24 +323,23 @@ export function draw(clusterData, clusterBoundaryData, edgeData, nodeData){
         const maxResolution = 405.7481131407050;
 
         if (xhr.status == 200) {
-          features = nodeSource.getFormat().readFeatures(xhr.responseText);
-          let maxLevel = d3.max(features, d=>+d.get('level'));
+          nodeFeatures = nodeSource.getFormat().readFeatures(xhr.responseText);
+          let maxLevel = d3.max(nodeFeatures, d=>+d.get('level'));
           sl = d3.scaleLinear().domain([1, maxLevel]).range([maxFont, minFont]);
           se = d3.scaleLinear().domain([1, maxLevel]).range([maxEdgeWidth, minEdgeWidth]);
 
           let trunc = 16;
-          features.forEach(d=>{
+          nodeFeatures.forEach(d=>{
             let l = d.get('label');
             d.set('label', l.slice(0,trunc));
             d.set('label-full', l);
           });
-          utils.markBoundingBox(features, sl, FONT);
-          utils.markNonOverlapResolution(features, undefined, minResolution, maxResolution);
-          graphMinResolution = d3.min(features, d=>d.get('resolution'));
+          utils.markBoundingBox(nodeFeatures, sl, FONT);
+          utils.markNonOverlapResolution(nodeFeatures, undefined, minResolution, maxResolution);
+          graphMinResolution = d3.min(nodeFeatures, d=>d.get('resolution'));
           graphMinResolution = Math.max(graphMinResolution, map.getView().minResolution_);
-          nodeSource.addFeatures(features);
+          nodeSource.addFeatures(nodeFeatures);
           // console.log(features);
-
         } else {
           onError();
         }
@@ -337,8 +347,69 @@ export function draw(clusterData, clusterBoundaryData, edgeData, nodeData){
       xhr.send();
     }
   });
-  let nodesLayer = new VectorLayer({  source: nodeSource,  style: nodeStyleFunction});
+  let nodesLayer = new VectorLayer({
+    source: nodeSource,
+    style: nodeStyleFunction
+  });
 
+  let edgeFeatures;
+  let edgeSource = new Vector({
+    // url: edgeData, 
+    format: new GeoJSON(),
+    loader: function(extent, resolution, projection, callee){
+      let url = edgeData;
+      let xhr = new XMLHttpRequest();
+      xhr.open('GET', url);
+      xhr.onerror = function() {
+        edgeSource.removeLoadedExtent(extent);
+      };
+      xhr.onload = function() {
+        if (xhr.status == 200) {
+          edgeFeatures = edgeSource.getFormat().readFeatures(xhr.responseText);
+
+          let intervalId = setInterval(()=>{ // use asynchronous data 'nodeFeatures'
+            if(nodeFeatures !== undefined){
+              let level2resolution = {};
+              nodeFeatures.forEach(d=>{
+                let l = +d.get('level')
+                let r = d.get('resolution');
+                if(level2resolution[l] === undefined){
+                  level2resolution[l] = r;
+                }else{
+                  level2resolution[l] = Math.max(r, level2resolution[l]);
+                }
+              });
+              //force level2resolution to be monochronically decreasing
+              let levels = Object.keys(level2resolution).sort((a,b)=>b-a);
+              let currentResolution = level2resolution[levels[0]];
+              for(let l of levels.slice(1)){
+                level2resolution[l] = Math.max(currentResolution, level2resolution[l]);
+                currentResolution = level2resolution[l];
+              }
+              console.log(level2resolution);
+              edgeFeatures.forEach(d=>{
+                if(d.get('level') !== undefined){
+                  d.set('level', +d.get('level'));
+                  d.set('resolution', level2resolution[d.get('level')]);
+                }
+              })
+              edgeSource.addFeatures(edgeFeatures);
+              clearInterval(intervalId);
+            }
+          }, 100);
+        } else {
+          onError();
+        }
+      };
+      xhr.send();
+    }
+  });
+  let edgesLayer = new VectorLayer({
+    source: edgeSource, 
+    style: edgeStyleFunction
+  });
+
+  
   //let geolayer = new TileLayer({  source: new OSM()});
   // ClusterLayer,clusterBoundayLayer,
   let map = new Map({
@@ -356,8 +427,8 @@ export function draw(clusterData, clusterBoundaryData, edgeData, nodeData){
   });
 
   let intervalId = setInterval(()=>{
-    if(features !== undefined){
-      initSearchBar(map, features);
+    if(nodeFeatures !== undefined){
+      initSearchBar(map, nodeFeatures);
       clearInterval(intervalId);
     }
   }, 100);
