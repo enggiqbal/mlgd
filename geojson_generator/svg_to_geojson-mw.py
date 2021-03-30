@@ -10,7 +10,7 @@ from glob import glob
 import sys
 
 def getLayer0(t1):
-    numberofnodes= min(30, len(t1))
+    numberofnodes = min(30, len(t1))
     paths=nx.shortest_path(t1)
     c=nx.get_node_attributes(t1,'weight')
     c={k:int(v) for k, v in c.items()}

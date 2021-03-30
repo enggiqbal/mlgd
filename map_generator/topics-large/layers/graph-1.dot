@@ -1,0 +1,20 @@
+strict graph "" {
+	node [label="\N"];
+	1	[id=1,
+		label="machine learning",
+		level=1,
+		pos="126.76529220745215,-296.62644706161973",
+		weight=0];
+	2	[id=2,
+		label="artificial intelligence",
+		level=1,
+		pos="507.24324820745187,-271.3479070616195",
+		weight=0];
+	1 -- 2	[level=1];
+	3	[id=3,
+		label=neuroscience,
+		level=1,
+		pos="408.87652220745167,-96.6879320616199",
+		weight=0];
+	1 -- 3	[level=1];
+}

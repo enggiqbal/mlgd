@@ -1,0 +1,20 @@
+strict graph "" {
+	node [label="\N"];
+	29707	[id=29707,
+		label=neuroscience,
+		level=1,
+		pos="4088.7652220745167,-966.879320616199",
+		weight=0];
+	18505	[id=18505,
+		label="machine learning",
+		level=1,
+		pos="1267.6529220745215,-2966.2644706161973",
+		weight=0];
+	29707 -- 18505	[level=1];
+	15539	[id=15539,
+		label="artificial intelligence",
+		level=1,
+		pos="5072.432482074519,-2713.479070616195",
+		weight=0];
+	18505 -- 15539	[level=1];
+}

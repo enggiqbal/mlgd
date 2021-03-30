@@ -8,14 +8,25 @@ export function markNonOverlapResolution(features, levels=undefined, minResoluti
     ).sort((a,b)=>a-b);
   }
   let l0 = 0;
+  let maxResolution_l = maxResolution;
   for (let l of levels){
     console.log(l);
     let nodes_l = features
-    .filter(d=>l0 < +d.get('level') && +d.get('level') <= l)
-    .sort((a,b)=>+a.get('level')-(+b.get('level')));
-    let higher = features.filter(d=>+d.get('level') <= l0)
-    .sort((a,b)=>+a.get('level')-(+b.get('level')));
-    markScale(nodes_l, higher, features, minResolution, maxResolution);
+      .filter(d=>l0 < +d.get('level') && +d.get('level') <= l)
+      .sort((a,b)=>+a.get('level')-(+b.get('level')));
+    let higher = features
+      .filter(d=>+d.get('level') <= l0)
+      .sort((a,b)=>+a.get('level')-(+b.get('level')));
+    
+    if(features.length > 10000){ //for large graphs
+      maxResolution_l = markResolution(
+        nodes_l, higher, features, minResolution, 
+        Math.min(maxResolution,maxResolution_l*64)
+      );
+    }else{
+      markResolution(nodes_l, higher, features, minResolution, maxResolution, true);
+    }
+    console.log(maxResolution_l);
     l0 = l;
   }
 }
@@ -42,25 +53,44 @@ export function markBoundingBox(features, sl, font){
 }
 
 
-function markScale(nodes, higher, all, minResolution, maxResolution, niter=20){
-  let sx = d=>d.get('bbox').x;
-  let sy = d=>d.get('bbox').y;
-  let id = d=>d.get('index');
-  let higherEqual = nodes.concat(higher);
-  // let tree = d3.quadtree(higherEqual, sx, sy);
-  // let rx = maxResolution * d3.max(all, d=>d.get('bbox').width) * 2;//depends on min zoom extent
-  // let ry = maxResolution * d3.max(all, d=>d.get('bbox').height) * 2;
+function markResolution(nodes, higher, all, minResolution, maxResolution, quadTree=true, niter=undefined){
   const min0 = 1/maxResolution;
   const max0 = 1/minResolution;
+  if (niter === undefined){
+    niter = Math.ceil(Math.log2(max0-min0) * 1.5);
+    console.log(niter);
+  }
+
+  let tree, sx, sy, id;
+  if(quadTree){
+    sx = d=>d.get('bbox').x;
+    sy = d=>d.get('bbox').y;
+    id = d=>d.get('index');
+    let higherEqual = nodes.concat(higher);
+    tree = d3.quadtree(higherEqual, sx, sy);
+  }
+  
+  const maxBboxWidth = d3.max(all, d=>d.get('bbox').width);
+  const maxBboxHeight = d3.max(all, d=>d.get('bbox').height);
+  let resMinResolution = maxResolution;
+
   let current = new Set(higher.map(d=>d.get('index')));
   for(let n of nodes){
     let bi = n.get('bbox');
     let [x,y] = [bi.x, bi.y];
-
-    // let neighbors = searchQuadtree(tree, sx, sy, id, x-rx, x+rx, y-ry, y+ry);
-    // neighbors = neighbors.filter(i=>current.has(i));
-    let neighbors = current;
+    
     let scale = min0;
+    let neighbors;
+    n.set('resolution', 1/scale);//init resolution
+    if (quadTree){
+      let rx = maxResolution * maxBboxWidth * 2;//depends current scale
+      let ry = maxResolution * maxBboxHeight * 2;
+      neighbors = searchQuadtree(tree, sx, sy, id, x-rx, x+rx, y-ry, y+ry);
+      neighbors = neighbors.filter(i=>current.has(i));
+    }else{
+      neighbors = current;
+    }
+
     for(let j of neighbors){
       if(n.index === j){
         continue;
@@ -80,8 +110,10 @@ function markScale(nodes, higher, all, minResolution, maxResolution, niter=20){
       scale = Math.max(scale, max);
     }
     n.set('resolution', 1/scale);
+    resMinResolution = Math.min(1/scale, resMinResolution);
     current.add(n.get('index'));
   }
+  return resMinResolution;
 }
 
 

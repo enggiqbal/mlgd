@@ -55,7 +55,7 @@ import './style.css';
 
 //consts
 const FONT = 'arial';
-const [maxFont, minFont] = [20,12];
+const [maxFont, minFont] = [16,12];
 const [maxEdgeWidth, minEdgeWidth] = [3,0.5];
 //globals
 let sl, se;
@@ -106,10 +106,10 @@ function edgeStyleFunction(feature, resolution) {
       });
     }else{
       return new Style({
-        // stroke: new Stroke({
-        //   color: '#aaaaaa22',
-        //   width: se(+feature.get('level')),
-        // })
+        stroke: new Stroke({
+          color: '#bbbbbb77',
+          width: 0.5,
+        })
       });
     }
   }else{//other edges of the graph
@@ -234,7 +234,7 @@ function createTextStyle(feature, resolution, fullText=false, select=false) {
 
 function focus(map, nodeFeature, maxResolution){
   let center = nodeFeature.values_.geometry.flatCoordinates;
-  let resolution = nodeFeature.get('resolution') - 1;
+  let resolution = Math.max(0.01, nodeFeature.get('resolution') - 0.01);
   resolution = Math.min(maxResolution, resolution);
   console.log(resolution);
   // let zoom = map.getView().getZoom() + 1;
@@ -299,7 +299,7 @@ function initSearchBar(map, features){
 
 
 
-export function draw(clusterData, clusterBoundaryData, edgeData, nodeData){
+export function draw(clusterData, clusterBoundaryData, edgeData, nodeData, center, resolution){
   
   let clusterSource = new Vector({  url: clusterData,  format: new GeoJSON() });
   let clusterLayer = new VectorLayer({  source: clusterSource,  style: clusterStyleFunction });
@@ -319,8 +319,11 @@ export function draw(clusterData, clusterBoundaryData, edgeData, nodeData){
         nodeSource.removeLoadedExtent(extent);
       };
       xhr.onload = function() {
-        const minResolution = 1.194328566955879 
-        const maxResolution = 405.7481131407050;
+        // const minResolution = 1.194328566955879;
+        // const maxResolution = 405.7481131407050;
+        const minResolution = map.getView().minResolution_;
+        const maxResolution = map.getView().maxResolution_;
+        console.log(minResolution, maxResolution);
 
         if (xhr.status == 200) {
           nodeFeatures = nodeSource.getFormat().readFeatures(xhr.responseText);
@@ -386,7 +389,6 @@ export function draw(clusterData, clusterBoundaryData, edgeData, nodeData){
                 level2resolution[l] = Math.max(currentResolution, level2resolution[l]);
                 currentResolution = level2resolution[l];
               }
-              console.log(level2resolution);
               edgeFeatures.forEach(d=>{
                 if(d.get('level') !== undefined){
                   d.set('level', +d.get('level'));
@@ -417,12 +419,16 @@ export function draw(clusterData, clusterBoundaryData, edgeData, nodeData){
     layers: [clusterLayer, clusterBoundayLayer, edgesLayer, nodesLayer],
     target: 'map',
     view: new View({
-      center: [0, 0],
+      // center: [0, 0],
       // minResolution,
       // maxResolution,
-      zoom: 11,
-      maxZoom: 17,
-      minZoom: 9,
+      // zoom: 11,
+      // maxZoom: 17,
+      // minZoom: 9,
+      
+      //for topics large 
+      center: center || [0,0],
+      resolution: resolution || 50,
     })
   });
 
