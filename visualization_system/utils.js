@@ -1,5 +1,17 @@
 import * as d3 from 'd3';
 
+export function exportJson(obj, fn='result.json'){
+  let objStr = JSON.stringify(obj, null, 2);
+  let dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(objStr);
+  let anchor = document.getElementById('download-json');
+  if (anchor === null){
+    anchor = document.createElement('a');
+    anchor.setAttribute('id', 'download-json');
+  }
+  anchor.setAttribute('href', dataStr);
+  anchor.setAttribute('download', fn);
+  anchor.click();
+}
 
 export function markNonOverlapResolution(features, levels=undefined, minResolution=1, maxResolution=2000){
   if(levels === undefined){
@@ -26,7 +38,6 @@ export function markNonOverlapResolution(features, levels=undefined, minResoluti
     }else{
       markResolution(nodes_l, higher, features, minResolution, maxResolution, true);
     }
-    console.log(maxResolution_l);
     l0 = l;
   }
 }
@@ -58,7 +69,6 @@ function markResolution(nodes, higher, all, minResolution, maxResolution, quadTr
   const max0 = 1/minResolution;
   if (niter === undefined){
     niter = Math.ceil(Math.log2(max0-min0) * 1.5);
-    console.log(niter);
   }
 
   let tree, sx, sy, id;

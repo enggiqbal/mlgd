@@ -8,13 +8,13 @@ import VectorLayer from 'ol/layer/Vector.js';
 import VectorSource from 'ol/source/Vector.js';
 import Select from 'ol/interaction/Select.js';
 import {click, pointerMove, altKeyOnly} from 'ol/events/condition.js';
-import {  Circle as CircleStyle,  Fill,  Stroke,  Style} from 'ol/style.js';
+import { Circle as CircleStyle, Fill, Stroke, Style} from 'ol/style.js';
 import Text from 'ol/style/Text';
-import {  transform } from 'ol/proj.js';
+import { transform } from 'ol/proj.js';
 import Circle from 'ol/geom/Circle';
 import Feature from 'ol/Feature.js';
 import {Tile as TileLayer,  VectorL} from 'ol/layer.js';
-import {OSM,Vector} from 'ol/source.js';
+import {OSM, Vector} from 'ol/source.js';
 import Overlay from 'ol/Overlay';
 import {  defaults as defaultControls,  OverviewMap,  LayerSwitcher, FullScreen} from 'ol/control.js';
 
@@ -55,7 +55,8 @@ import './style.css';
 
 //consts
 const FONT = 'arial';
-const [maxFont, minFont] = [16,12];
+// const [maxFont, minFont] = [16,12];
+const [maxFont, minFont] = [18,14];
 const [maxEdgeWidth, minEdgeWidth] = [3,0.5];
 //globals
 let sl, se;
@@ -299,8 +300,11 @@ function initSearchBar(map, features){
 
 
 
-export function draw(clusterData, clusterBoundaryData, edgeData, nodeData, center, resolution){
-  
+export function draw(
+  clusterData, clusterBoundaryData, edgeData, nodeData, 
+  center, resolution, nodeZoomLevels
+){
+  console.log(nodeZoomLevels);
   let clusterSource = new Vector({  url: clusterData,  format: new GeoJSON() });
   let clusterLayer = new VectorLayer({  source: clusterSource,  style: clusterStyleFunction });
 
@@ -337,12 +341,24 @@ export function draw(clusterData, clusterBoundaryData, edgeData, nodeData, cente
             d.set('label', l.slice(0,trunc));
             d.set('label-full', l);
           });
-          utils.markBoundingBox(nodeFeatures, sl, FONT);
-          utils.markNonOverlapResolution(nodeFeatures, undefined, minResolution, maxResolution);
+
+          if (nodeZoomLevels !== undefined){
+            //load precomputed resolutions
+            nodeFeatures.forEach((d,i)=>{
+              d.set('resolution', nodeZoomLevels.resolutions[i]);
+            });
+          }else{
+            utils.markBoundingBox(nodeFeatures, sl, FONT);
+            utils.markNonOverlapResolution(nodeFeatures, undefined, minResolution, maxResolution);
+            // dump resolutions to json
+            let resolutions = nodeFeatures.map(d=>d.get('resolution'));
+            utils.exportJson({resolutions:resolutions}, 'node_zoom_levels.json');
+          }
+          
           graphMinResolution = d3.min(nodeFeatures, d=>d.get('resolution'));
           graphMinResolution = Math.max(graphMinResolution, map.getView().minResolution_);
           nodeSource.addFeatures(nodeFeatures);
-          // console.log(features);
+
         } else {
           onError();
         }
@@ -415,7 +431,17 @@ export function draw(clusterData, clusterBoundaryData, edgeData, nodeData, cente
   //let geolayer = new TileLayer({  source: new OSM()});
   // ClusterLayer,clusterBoundayLayer,
   let map = new Map({
-    controls: defaultControls().extend([new OverviewMap()]),
+    controls: defaultControls().extend([
+      new OverviewMap({
+        layers: [clusterLayer, clusterBoundayLayer],
+        view: new View({
+          center: center || [0,0],
+          resolution: resolution || 5,
+          maxResolution: 500,
+          minResolution: 100,
+        })
+      })
+    ]),
     layers: [clusterLayer, clusterBoundayLayer, edgesLayer, nodesLayer],
     target: 'map',
     view: new View({
