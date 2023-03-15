@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "map app",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel overview.html -p 8086 --no-hmr --host localhost",
+    "start": "parcel overview.html -p 8086 --host localhost",
     "build": "parcel build --public-url . *.html "
   },
   "author": "Iqbal Hossain",
@@ -18,6 +17,6 @@
     "vis": "^4.21.0-EOL"
   },
   "devDependencies": {
-    "parcel": "^2.0.0"
+    "parcel": "^2.8.3"
   }
 }
