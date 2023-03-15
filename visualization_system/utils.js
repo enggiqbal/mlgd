@@ -22,13 +22,13 @@ export function markNonOverlapResolution(features, levels=undefined, minResoluti
   let l0 = 0;
   let maxResolution_l = maxResolution;
   for (let l of levels){
-    console.log(l);
     let nodes_l = features
       .filter(d=>l0 < +d.get('level') && +d.get('level') <= l)
       .sort((a,b)=>+a.get('level')-(+b.get('level')));
     let higher = features
       .filter(d=>+d.get('level') <= l0)
       .sort((a,b)=>+a.get('level')-(+b.get('level')));
+    console.log(l, nodes_l.length);
     
     if(features.length > 10000){ //for large graphs
       maxResolution_l = markResolution(
@@ -44,6 +44,7 @@ export function markNonOverlapResolution(features, levels=undefined, minResoluti
 
 
 export function markBoundingBox(features, sl, font){
+  let margin = 0;
   let canvas = document.createElement('canvas');
   let ctx = canvas.getContext('2d');
   ctx.textAlign = 'center';
@@ -57,6 +58,9 @@ export function markBoundingBox(features, sl, font){
     let m = ctx.measureText(d.get('label'));
     let width = m.actualBoundingBoxRight + m.actualBoundingBoxLeft;
     let height = m.actualBoundingBoxDescent + m.actualBoundingBoxAscent;
+    width *= (1+margin);
+    height *= (1+margin);
+    // console.log(d.get('label'), width, height);
     d.set('bbox', {
       x, y, width, height
     });
@@ -67,8 +71,11 @@ export function markBoundingBox(features, sl, font){
 function markResolution(nodes, higher, all, minResolution, maxResolution, quadTree=true, niter=undefined){
   const min0 = 1/maxResolution;
   const max0 = 1/minResolution;
+  const epsilon = 1000;
   if (niter === undefined){
-    niter = Math.ceil(Math.log2(max0-min0) * 1.5);
+    niter = Math.ceil(Math.log2(max0-min0) * 2);
+    niter = 50;
+    // console.log('niter:', niter);
   }
 
   let tree, sx, sy, id;
@@ -102,26 +109,28 @@ function markResolution(nodes, higher, all, minResolution, maxResolution, quadTr
     }
 
     for(let j of neighbors){
-      if(n.index === j){
+      if(n.index === j){//TODO if neighbor is not yet shown at this level
         continue;
       }
       let min = min0;
       let max = max0;    
       let bj = all[j].get('bbox');
-      let mid;// = (min+max)/2;
-      for(let k=0; k<niter; k++){
+      let rj = +all[j].get('resolution');
+      let mid;
+      for(let k=0; k<niter; k++){//binary search for best zoom level
         mid = (min+max)/2;
-        if(isRectCollide2(bi, bj, mid)){
-          [min,max] = [mid, max];
+        if(rj >= 1/mid && isRectCollide2(bi, bj, mid) ){
+          [min, max] = [mid, max]; //zoom in
         }else{
-          [min,max] = [min, mid];
+          [min, max] = [min, mid]; //zoom out
         }
       }
       scale = Math.max(scale, max);
     }
     n.set('resolution', 1/scale);
-    resMinResolution = Math.min(1/scale, resMinResolution);
     current.add(n.get('index'));
+
+    resMinResolution = Math.min(1/scale, resMinResolution);
   }
   return resMinResolution;
 }

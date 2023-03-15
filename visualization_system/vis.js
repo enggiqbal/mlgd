@@ -8,7 +8,7 @@ import VectorLayer from 'ol/layer/Vector.js';
 import VectorSource from 'ol/source/Vector.js';
 import Select from 'ol/interaction/Select.js';
 import {click, pointerMove, altKeyOnly} from 'ol/events/condition.js';
-import { Circle as CircleStyle, Fill, Stroke, Style} from 'ol/style.js';
+import { Circle as CircleStyle, Fill, Stroke, Style, RegularShape} from 'ol/style.js';
 import Text from 'ol/style/Text';
 import { transform } from 'ol/proj.js';
 import Circle from 'ol/geom/Circle';
@@ -56,7 +56,7 @@ import './style.css';
 //consts
 const FONT = 'arial';
 // const [maxFont, minFont] = [16,12];
-const [maxFont, minFont] = [18,14];
+const [maxFont, minFont] = [14,14];
 const [maxEdgeWidth, minEdgeWidth] = [3,0.5];
 //globals
 let sl, se;
@@ -136,14 +136,21 @@ function nodeStyleFunction(feature, resolution) {
   // console.log(feature.getGeometry());
   if (getVisible(feature, resolution)){
     return new Style({
-      stroke: new Stroke({  
-        color: 'rgba(0,0,0,0.5)',  
-        width: 1  
+      image: new RegularShape({
+        stroke: new Stroke({  
+          color: 'rgba(0,0,0,0.5)',  
+          width: 1  
+        }),
+        fill: new Fill({
+          color: 'rgba(255,255,255,0.5)'
+        }),
+        radius: 10 / Math.SQRT2,
+        radius2: 10,
+        points: 4,
+        angle: 0,
+        scale: 0.5,
       }),
-      fill: new Fill({
-        color: 'rgba(255,255,255,0.5)'
-      }),
-      text: createTextStyle(feature, resolution)
+      // text: createTextStyle(feature, resolution)
     });
   }else{
     return new Style({
@@ -155,7 +162,7 @@ function nodeStyleFunction(feature, resolution) {
       //     color: '#3399CC',
       //     width: 0
       //   }),
-      //   radius: sl(+feature.get('level'))/2
+      //   radius: sl(+feature.get('level'))/20
       // }),
     });
   }
@@ -331,6 +338,7 @@ export function draw(
 
         if (xhr.status == 200) {
           nodeFeatures = nodeSource.getFormat().readFeatures(xhr.responseText);
+          global.nodeFeatures = nodeFeatures;
           let maxLevel = d3.max(nodeFeatures, d=>+d.get('level'));
           sl = d3.scaleLinear().domain([1, maxLevel]).range([maxFont, minFont]);
           se = d3.scaleLinear().domain([1, maxLevel]).range([maxEdgeWidth, minEdgeWidth]);
@@ -350,9 +358,9 @@ export function draw(
           }else{
             utils.markBoundingBox(nodeFeatures, sl, FONT);
             utils.markNonOverlapResolution(nodeFeatures, undefined, minResolution, maxResolution);
-            // dump resolutions to json
-            let resolutions = nodeFeatures.map(d=>d.get('resolution'));
-            utils.exportJson({resolutions:resolutions}, 'node_zoom_levels.json');
+            // download resolutions as a json
+            // let resolutions = nodeFeatures.map(d=>d.get('resolution'));
+            // utils.exportJson({resolutions:resolutions}, 'node_zoom_levels.json');
           }
           
           graphMinResolution = d3.min(nodeFeatures, d=>d.get('resolution'));
