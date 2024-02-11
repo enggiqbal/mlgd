@@ -1,3 +1,8 @@
+# Generating maps from layouts
+
+---
+
+# Old readme
 # Multi-level tree based approach for interactive graph visualization with semantic zoom (ZMLT)
 
 [Live system] (http://uamap-dev.arl.arizona.edu:8086)
