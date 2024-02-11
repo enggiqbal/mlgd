@@ -1,4 +1,16 @@
 # Generating maps from layouts
+## TL; DR
+To generate map from an existing layout (e.g., computed externally and dumped into a networkx readable file)
+checkout the notebook in javascript_to_dot-mw.ipynb
+The notebook calls binaries and scripts from
+` map_generator/` and `geojson_generator/`
+and output the geojson file under `visualization_system/` that is ready to visualize with 
+```
+cd visualization_system
+npm install # run once
+npm start # test run. For build, run npm run build
+```
+
 
 ---
 
